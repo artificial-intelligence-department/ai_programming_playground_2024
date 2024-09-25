@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.16">
+  <diagram name="Страница — 1" id="vSoDXx6h9l1DwcRdrrBq">
+    <mxGraphModel dx="2117" dy="1741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="-1150" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-2" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="XnYOCkoWaFclgu-5Z5BN-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="-1000" as="sourcePoint" />
+            <mxPoint x="410" y="-1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XnYOCkoWaFclgu-5Z5BN-3" target="XnYOCkoWaFclgu-5Z5BN-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-3" value="Ініцалізація масиву де будуть зберігатись максимальна послідовність до певного елементу" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="-1040" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-5" value="Цикл тривалістю в len(nums)&lt;div&gt;O(n)&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="-950" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-12" value="Цикл триває" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XnYOCkoWaFclgu-5Z5BN-5" target="XnYOCkoWaFclgu-5Z5BN-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="305" y="-910" as="sourcePoint" />
+            <mxPoint x="275" y="-850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="215" y="-905" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-13" value="Перевірки чи елемент додатний" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="-850" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-14" value="True" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XnYOCkoWaFclgu-5Z5BN-13" target="XnYOCkoWaFclgu-5Z5BN-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="-800" as="sourcePoint" />
+            <mxPoint x="80" y="-770" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="85" y="-805" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-15" value="Перевірка чи сума додатних елементів більша за суму від&#39;ємних" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="-760" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-16" value="True" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-20" y="-715" as="sourcePoint" />
+            <mxPoint x="-45" y="-670" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-45" y="-715" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-17" value="Додавання суми між елементами в масив послідовностей" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="-670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-18" value="False" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="XnYOCkoWaFclgu-5Z5BN-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="255" y="-715" as="sourcePoint" />
+            <mxPoint x="230" y="-670" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="230" y="-715" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-19" value="Додавання потоного елементу в масив послідовностей" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="-670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-20" value="False" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="XnYOCkoWaFclgu-5Z5BN-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="325" y="-810" as="sourcePoint" />
+            <mxPoint x="365" y="-765" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="365" y="-805" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-21" value="Додавання потоного елементу до інших негативних елементів&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="-765" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-23" value="Обнулення суми негативних елементів" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="17.5" y="-600" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-24" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XnYOCkoWaFclgu-5Z5BN-15" target="XnYOCkoWaFclgu-5Z5BN-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-25" value="Повернення максимальної послідовності. Кінець" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="-810" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XnYOCkoWaFclgu-5Z5BN-5" target="XnYOCkoWaFclgu-5Z5BN-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="515" y="-900" as="sourcePoint" />
+            <mxPoint x="560" y="-860" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="620" y="-905" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XnYOCkoWaFclgu-5Z5BN-27" value="Цикл закінчився" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="XnYOCkoWaFclgu-5Z5BN-26">
+          <mxGeometry x="-0.592" y="-2" relative="1" as="geometry">
+            <mxPoint x="14" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

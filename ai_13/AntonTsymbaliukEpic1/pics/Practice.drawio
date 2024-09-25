@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.16">
+  <diagram name="Страница — 1" id="3YdxiMdpm7BcF_MZY4J4">
+    <mxGraphModel dx="521" dy="972" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="We8GYD01QyvueZdKif_X-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="166" y="-50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="We8GYD01QyvueZdKif_X-2" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="We8GYD01QyvueZdKif_X-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="175" y="224" as="sourcePoint" />
+            <mxPoint x="226" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="We8GYD01QyvueZdKif_X-3" value="Введення користувачем всіх змінних" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="166" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="We8GYD01QyvueZdKif_X-4" value="Обраховуємо загальний дохід і прибуток" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="166" y="217" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="We8GYD01QyvueZdKif_X-5" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="225.5" y="160" as="sourcePoint" />
+            <mxPoint x="226" y="217" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="We8GYD01QyvueZdKif_X-6" value="Виведення доходу й прибутку" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="163" y="334" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="We8GYD01QyvueZdKif_X-7" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="222.5" y="277" as="sourcePoint" />
+            <mxPoint x="223" y="334" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
