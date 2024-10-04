@@ -11,4 +11,5 @@ int main()
         scanf("%d %d", &l, &r);
         std::cout << l + r << " ";
     }
+    return 0;
 }
