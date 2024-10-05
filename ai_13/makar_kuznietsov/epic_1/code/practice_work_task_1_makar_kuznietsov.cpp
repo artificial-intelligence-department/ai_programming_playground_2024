@@ -12,12 +12,12 @@ int main()
 
     if (per == 1)
     {
-        t = i;
+        t = i / 12;
         n = 12;
     }
     else if (per == 2)
     {
-        t = i * 4;
+        t = i / 4;
         n = 12;
     }
     do
@@ -31,8 +31,10 @@ int main()
         scanf("%lf", &r);
     } while (r <= 0);
 
+    r = r / 100;
+
     a = p * std::pow(1 + r / n, n * t);
-    printf("Amount invested: %lf", p);
-    printf("Final amount: %lf", a);
-    printf("Your profit: %lf", a - p);
+    printf("Amount invested: %lf\n", p);
+    printf("Final amount: %lf\n", a);
+    printf("Your profit: %lf\n", a - p);
 }
