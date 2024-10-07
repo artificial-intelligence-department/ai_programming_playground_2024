@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
+  <diagram name="Сторінка-1" id="07kxwsIDlU_DQ5_3TJsR">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NbhM_euuyiCsOGT7MI1E-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NbhM_euuyiCsOGT7MI1E-1" target="NbhM_euuyiCsOGT7MI1E-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbhM_euuyiCsOGT7MI1E-1" value="Початок програми" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="314" y="30" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NbhM_euuyiCsOGT7MI1E-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NbhM_euuyiCsOGT7MI1E-2" target="NbhM_euuyiCsOGT7MI1E-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbhM_euuyiCsOGT7MI1E-2" value="Виводимо що потрібно ввести та отримуємо значення" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="304" y="130" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NbhM_euuyiCsOGT7MI1E-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NbhM_euuyiCsOGT7MI1E-3" target="NbhM_euuyiCsOGT7MI1E-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbhM_euuyiCsOGT7MI1E-3" value="Обчислюємо результат за формулою" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="324" y="240" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NbhM_euuyiCsOGT7MI1E-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NbhM_euuyiCsOGT7MI1E-4" target="NbhM_euuyiCsOGT7MI1E-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbhM_euuyiCsOGT7MI1E-4" value="Виводимо всі введені значення та загальний результат" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="299" y="340" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NbhM_euuyiCsOGT7MI1E-5" value="Завершення програми" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="314" y="430" width="200" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
