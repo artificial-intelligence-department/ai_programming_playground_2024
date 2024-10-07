@@ -17,7 +17,7 @@ int main() {
         packs = number;
     }
     
-    int cookies[100];
+    int cookies[100]; 
     for(int i =0; i<packs;++i){
         cout<<"Введіть скільки печення в пачці №" << i<< ":"<< endl;
         cin>> cookies[i];
