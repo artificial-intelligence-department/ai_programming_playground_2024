@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdio.h> // ця бібліотека дає змогу користуватись printf/scanf
+#include <stdio.h> 
 #include <math.h>
 
 int main(){
