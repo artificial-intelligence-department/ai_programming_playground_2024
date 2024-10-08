@@ -39,7 +39,7 @@ int main()
         GreatestCommonDevider = gcd(GreatestCommonDevider, votes[i]);
     }
 
-    int TotalSeats;
+    int TotalSeats = 0;
     for (int i = 0; i < n; ++i)
     {
         TotalSeats += votes[i] / GreatestCommonDevider;
