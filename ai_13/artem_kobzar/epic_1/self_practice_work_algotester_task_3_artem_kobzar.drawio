@@ -1,0 +1,49 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Страница — 1" id="G7IhIhIpauqL9iBvye2r">
+    <mxGraphModel dx="1221" dy="717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FSKci6a8qyGAsGSH6QFJ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="FSKci6a8qyGAsGSH6QFJ-1" target="FSKci6a8qyGAsGSH6QFJ-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FSKci6a8qyGAsGSH6QFJ-1" value="&lt;font color=&quot;#ffff00&quot;&gt;Start&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="525" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FSKci6a8qyGAsGSH6QFJ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="FSKci6a8qyGAsGSH6QFJ-2" target="FSKci6a8qyGAsGSH6QFJ-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FSKci6a8qyGAsGSH6QFJ-2" value="Input n and m" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="525" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Uqu1yqsuqgJywxUCoY-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="FSKci6a8qyGAsGSH6QFJ-4" target="FSKci6a8qyGAsGSH6QFJ-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FSKci6a8qyGAsGSH6QFJ-4" value="Creating set of drinks that will save unique strings" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="475" y="240" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s1LasKy68r5vh8bBK_vW-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FSKci6a8qyGAsGSH6QFJ-6" target="Q5Uqu1yqsuqgJywxUCoY-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FSKci6a8qyGAsGSH6QFJ-6" value="Reading the drinks that Marichka remember" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="497.5" y="340" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s1LasKy68r5vh8bBK_vW-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q5Uqu1yqsuqgJywxUCoY-1" target="Q5Uqu1yqsuqgJywxUCoY-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Uqu1yqsuqgJywxUCoY-1" value="Reading the drinks that Zenyk remember" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="505" y="440" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Uqu1yqsuqgJywxUCoY-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Q5Uqu1yqsuqgJywxUCoY-4" target="Q5Uqu1yqsuqgJywxUCoY-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Uqu1yqsuqgJywxUCoY-4" value="Calculating the overall sum of unique drinks" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="452.5" y="530" width="265" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Uqu1yqsuqgJywxUCoY-7" value="&lt;font color=&quot;#ffff00&quot;&gt;End&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="525" y="620" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

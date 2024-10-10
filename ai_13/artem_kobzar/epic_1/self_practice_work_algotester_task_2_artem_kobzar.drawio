@@ -1,0 +1,51 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Страница — 1" id="faOTGALQELtKRAOniPJF">
+    <mxGraphModel dx="1221" dy="717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iB8xu0mfh3EZk8ztEnXX-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iB8xu0mfh3EZk8ztEnXX-1" target="iB8xu0mfh3EZk8ztEnXX-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iB8xu0mfh3EZk8ztEnXX-1" value="&lt;font color=&quot;#ffff00&quot;&gt;Start&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iB8xu0mfh3EZk8ztEnXX-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iB8xu0mfh3EZk8ztEnXX-2" target="iB8xu0mfh3EZk8ztEnXX-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iB8xu0mfh3EZk8ztEnXX-2" value="Input of n and m" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="518" y="140" width="132.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iB8xu0mfh3EZk8ztEnXX-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iB8xu0mfh3EZk8ztEnXX-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iB8xu0mfh3EZk8ztEnXX-22" value="&lt;font color=&quot;#00cc00&quot;&gt;Odd&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iB8xu0mfh3EZk8ztEnXX-16">
+          <mxGeometry x="0.4934" y="1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iB8xu0mfh3EZk8ztEnXX-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iB8xu0mfh3EZk8ztEnXX-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iB8xu0mfh3EZk8ztEnXX-23" value="&lt;font color=&quot;#00cc00&quot;&gt;Even&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iB8xu0mfh3EZk8ztEnXX-17">
+          <mxGeometry x="0.4812" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iB8xu0mfh3EZk8ztEnXX-8" value="&lt;div tabindex=&quot;0&quot; id=&quot;tw-target-text-container&quot; class=&quot;tw-ta-container F0azHf tw-nfl&quot;&gt;&lt;pre dir=&quot;ltr&quot; aria-label=&quot;Перекладений текст: Is the product of numbers even or odd&quot; data-ved=&quot;2ahUKEwiUsOnJj4KJAxWXIRAIHRdEACoQ3ewLegQIBxAV&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Переклад&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;span lang=&quot;en&quot; class=&quot;Y2IQFc&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;Is the product of numbers even or odd?&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="460" y="230" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iB8xu0mfh3EZk8ztEnXX-13" value="Dragon" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="730" y="350" width="132.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iB8xu0mfh3EZk8ztEnXX-14" value="Imp" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="310" y="350" width="132.5" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
