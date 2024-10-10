@@ -8,22 +8,22 @@ int main() {
     int n, m;
     cin >> n >> m;
 
-    set<string> drinks;  // Множина для збереження унікальних назв
+    set<string> drinks;  
     string drink;
 
-    // Читання напоїв від Марічки
     for (int i = 0; i < n; i++) {
         cin >> drink;
-        drinks.insert(drink);  // Додаємо напої до множини
+        drinks.insert(drink);  
     }
 
-    // Читання напоїв від Зеника
+   
     for (int i = 0; i < m; i++) {
         cin >> drink;
-        drinks.insert(drink);  // Додаємо напої до множини
+        drinks.insert(drink);  
     }
 
-    // Виведення кількості унікальних напоїв
+
+    
     cout << drinks.size() << endl;
 
     return 0;
