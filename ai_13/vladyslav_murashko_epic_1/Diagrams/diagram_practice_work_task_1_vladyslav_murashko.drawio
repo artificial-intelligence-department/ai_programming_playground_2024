@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
+  <diagram name="Page-1" id="kUjyvmZ7NP5CkjfX0QpB">
+    <mxGraphModel dx="875" dy="435" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EOrGZ35hiIoyipuWgsQX-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EOrGZ35hiIoyipuWgsQX-1" target="EOrGZ35hiIoyipuWgsQX-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EOrGZ35hiIoyipuWgsQX-1" value="Початок" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="368" y="40" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EOrGZ35hiIoyipuWgsQX-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EOrGZ35hiIoyipuWgsQX-2" target="EOrGZ35hiIoyipuWgsQX-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EOrGZ35hiIoyipuWgsQX-2" value="Запрос початкових&amp;nbsp;&lt;div&gt;даних у користувача&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="337" y="130" width="177" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EOrGZ35hiIoyipuWgsQX-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EOrGZ35hiIoyipuWgsQX-4" target="EOrGZ35hiIoyipuWgsQX-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EOrGZ35hiIoyipuWgsQX-4" value="Розрахунок складного відсотку за формулою" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="350" y="230" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="EOrGZ35hiIoyipuWgsQX-5" value="Кінець" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="368" y="430" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EOrGZ35hiIoyipuWgsQX-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EOrGZ35hiIoyipuWgsQX-6" target="EOrGZ35hiIoyipuWgsQX-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EOrGZ35hiIoyipuWgsQX-6" value="Вивід повної&amp;nbsp;&lt;div&gt;інформації&amp;nbsp;&lt;div&gt;про кошти&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="342" y="340" width="166" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
