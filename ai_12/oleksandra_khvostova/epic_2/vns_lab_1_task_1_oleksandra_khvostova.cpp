@@ -44,6 +44,7 @@ int main(){
             x5=4*x*pow(y, 3);
             x6=pow(y, 4);
             res=(x1-(x2+x3+x4))/(x5+x6);
+            cout<<"Результат: "<<res;
             break;
        
         default: cout<<"Некоректне значення";

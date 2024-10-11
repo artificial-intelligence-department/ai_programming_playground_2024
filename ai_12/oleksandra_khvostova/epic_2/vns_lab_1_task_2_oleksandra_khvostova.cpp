@@ -4,15 +4,19 @@ using namespace std;
 int main() {
     int m; int n;
     int res;
-    cout << "Enter m and: "<<endl;
+    cout << "Enter m and n: "<<endl;
     cin>>m>>n;
     res=--m-++n;
-    cout<<res<<endl;
+    cout<<"--m-++n = "<<res<<endl<<endl;
+    
+    cout<<"m*n<n++? ";
     if(m*n<n++){
-        cout<<"true"<<endl;
-    };
+        cout<<"true"<<endl;}
+    else cout<<"false";
+
+    cout<<"n-->m++? "<<endl;
     if(n-->m++){
-        cout<<"false"<<endl;
-    }
+        cout<<"true"<<endl;}
+    else cout<<"false";
     return 0;
 }

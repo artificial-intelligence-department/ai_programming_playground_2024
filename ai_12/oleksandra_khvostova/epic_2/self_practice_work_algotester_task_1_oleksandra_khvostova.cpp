@@ -25,11 +25,9 @@ int main() {
         return 0;
     }
 
-    for (int i = 0; i < 5; i++) {
-        if (i < 4) {
+    for (int i = 0; i < 4; i++) {
             h[i] -= d[i];
             minn = min(minn, h[i]);
-        }
 
         maxx = 0;
         for (int i = 0; i< 4; i++) {
