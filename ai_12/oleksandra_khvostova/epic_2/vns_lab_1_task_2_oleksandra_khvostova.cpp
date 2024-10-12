@@ -12,11 +12,11 @@ int main() {
     cout<<"m*n<n++? ";
     if(m*n<n++){
         cout<<"true"<<endl;}
-    else cout<<"false";
+    else cout<<"false"<<endl;
 
     cout<<"n-->m++? "<<endl;
     if(n-->m++){
         cout<<"true"<<endl;}
-    else cout<<"false";
+    else cout<<"false"<<endl;
     return 0;
 }
