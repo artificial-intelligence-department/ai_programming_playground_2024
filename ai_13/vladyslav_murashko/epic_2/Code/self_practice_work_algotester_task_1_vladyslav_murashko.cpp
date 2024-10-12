@@ -1,21 +1,31 @@
 #include <iostream>
+using namespace std;
 
+// Lab 2v3
 int main()
 {
-    short list[9]{1, 2, 5, 10, 20, 50, 100, 200, 500};
-    int price;
-    int answ = 0;
-    std::cin >> price;
-    for (short i = 8; i >= 0;i--)
+    unsigned short N;
+    cin >> N;
+    unsigned short arr[N];
+    for (auto &el : arr)
     {
-        while(price >= list[i])
-        {
-            price -= list[i];
-            answ++;
-        }
+        cin >> el;
     }
-
-    std::cout << answ;
-
-    return 0;
+    short i = 1, j = N;
+    while(true){
+        if(i==j){
+            cout << i << " " << j << endl << "Collision";
+            return 0;
+        }
+        if(i+1==j){
+            cout << i << " " << j << endl << "Stopped";
+            return 0;
+        }
+        if(i>j){
+            cout << i << " " << j << endl << "Miss";
+            return 0;
+        }
+        i += arr[i-1];
+        j -= arr[j-1];
+    }
 }

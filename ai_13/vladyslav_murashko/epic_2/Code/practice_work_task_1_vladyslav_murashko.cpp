@@ -1,35 +1,125 @@
-#include <stdio.h>
-#include <cmath>
+#include <iostream>
+#include <algorithm>
+
+#define success 0
+
+using namespace std;
+
+enum Weather
+{
+    Sunny,
+    Rainy,
+    Cloudy,
+    Snowy,
+    Windy
+};
+
+inline void stringToLower(string &str)
+{
+    transform(str.begin(), str.end(), str.begin(), [](unsigned char c)
+              { return tolower(c); });
+    return;
+}
 
 int main()
 {
-    double investitions;
-    float annual_rate;
-    short time_years, payment_per_year;
-    double result; // Майбутня загальна сума інвестиції, включаючи відсотки
-
-    printf("Enter the base investment amount ($): ");
-    scanf("%lf", &investitions);
-    printf("Enter the annual rate (5%% = 0.05): ");
-    scanf("%f", &annual_rate);
-    do
+    Weather weather;
+    string input;
+input_point:
+    try
     {
-        printf("Enter the payment frequency per year (1,4 or 12): ");
-        scanf("%d", &payment_per_year);
-    } while (payment_per_year != 1 && payment_per_year != 4 && payment_per_year != 12);
-    
-    
-    printf("Enter the investition time (in years): ");
-    scanf("%d", &time_years);
+        cout << "Enter the weather (Sunny, Rainy, Cloudy, Snowy or Windy): ";
+        cin >> input;
+        stringToLower(input);
+        if (input == "sunny")
+        {
+            weather = Sunny;
+        }
+        else if (input == "rainy")
+        {
+            weather = Rainy;
+        }
+        else if (input == "cloudy")
+        {
+            weather = Cloudy;
+        }
+        else if (input == "snowy")
+        {
+            weather = Snowy;
+        }
+        else if (input == "windy")
+        {
+            weather = Windy;
+        }
+        else
+        {
+            throw exception();
+        }
+    }
+    catch (...)
+    {
+        cout << "Wrong input! Try again." << endl;
+        goto input_point;
+    }
 
-    result = investitions * pow(1 + (double)annual_rate / payment_per_year, (int)payment_per_year * time_years);
+    cout << endl;
 
-    printf("\nBase investment amount: %0.2lf$\n",investitions);
-    printf("Annual rate: %0.1f%%\n",annual_rate*100);
-    printf("Payment frequency per year: %d time(s)\n",payment_per_year);
-    printf("Investition time: %d years\n",time_years);
-    printf("The future total amount of the investment, including interest is %0.2lf$\n",result);
-    printf("Total gain: %0.2lf$\n",result - investitions);
+    // Jacket recomendations
+    cout << "Jacket recomendations: ";
+    if (weather == Windy || weather == Rainy)
+    {
+        cout << "You better put on a jacket" << endl;
+    }
+    else
+    {
+        cout << "You better not wear a jacket" << endl;
+    }
 
-    return 0;
+    // Activity recommendation
+    cout << "Activity recomendations: ";
+    if (weather == Sunny)
+    {
+        cout << "A great day for a picnic!" << endl;
+    }
+    else if (weather == Rainy)
+    {
+        cout << "Perfect weather to read a book inside!" << endl;
+    }
+    else if (weather == Cloudy)
+    {
+        cout << "Maybe visit a museum?" << endl;
+    }
+    else if (weather == Snowy)
+    {
+        cout << "How about making a snowman?" << endl;
+    }
+    else if (weather == Windy)
+    {
+        cout << "Fly a kite if you have one!" << endl;
+    }
+
+    // Footwear recommendations
+    cout << "Footwear recomendations: ";
+    switch (weather)
+    {
+    case Weather::Sunny:
+        cout << "Wear your favorite sneakers!" << endl;
+        break;
+    case Weather::Rainy:
+        cout << "Rain boots are a good idea!" << endl;
+        break;
+    case Weather::Cloudy:
+        cout << "Today, any shoe is suitable." << endl;
+        break;
+    case Weather::Snowy:
+        cout << "Snow boots will keep your feet warm!" << endl;
+        break;
+    case Weather::Windy:
+        cout << "Wear something sturdy!" << endl;
+        break;
+    }
+
+    cout << endl;
+
+    return success;
 }
