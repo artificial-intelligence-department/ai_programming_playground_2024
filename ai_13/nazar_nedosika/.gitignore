@@ -1,0 +1,4 @@
+.DS_Store
+*.exe
+.vscode
+~$*.docx
