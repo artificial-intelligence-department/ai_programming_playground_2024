@@ -4,7 +4,7 @@ using namespace std;
 
 int main() 
 {
-    long long int a[5], k;
+    long long int a[5];
     bool error = false;
     bool loss = false;
     for (int i = 0; i < 5; i++) {
