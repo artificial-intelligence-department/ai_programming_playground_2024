@@ -27,7 +27,7 @@ void reversedArray(int arr[] , int size , int reversedArr[])
   }
 }
 
-bool areChangedArraysEquals (int arr1[], int arr2[], int size) // порівння зміненого з правильним
+bool areChangedArraysEquals (int arr1[], int arr2[], int size)
 {
   for (int i = 0; i < size; i++)
   {
