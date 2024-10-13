@@ -1,0 +1,123 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="kUjyvmZ7NP5CkjfX0QpB">
+    <mxGraphModel dx="2345" dy="949" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m1ybUP3E139ITR5hEYxf-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EOrGZ35hiIoyipuWgsQX-1" target="EOrGZ35hiIoyipuWgsQX-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EOrGZ35hiIoyipuWgsQX-1" value="Початок" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="380" y="40" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EOrGZ35hiIoyipuWgsQX-2" target="m1ybUP3E139ITR5hEYxf-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EOrGZ35hiIoyipuWgsQX-2" value="Заповнення масиву користувачем" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="346.81" y="150" width="181.38" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="m1ybUP3E139ITR5hEYxf-6" target="m1ybUP3E139ITR5hEYxf-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-6" value="позиція лівого дрону = 1&amp;nbsp;&lt;div&gt;позиція правого дрону = кількість елементів масиву&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="270" width="195" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m1ybUP3E139ITR5hEYxf-9" target="m1ybUP3E139ITR5hEYxf-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-17" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="m1ybUP3E139ITR5hEYxf-14">
+          <mxGeometry x="-0.4694" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m1ybUP3E139ITR5hEYxf-9" target="m1ybUP3E139ITR5hEYxf-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-41" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="m1ybUP3E139ITR5hEYxf-40">
+          <mxGeometry x="-0.389" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-9" value="позиції дронів співпадають?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="377.5" y="390" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="m1ybUP3E139ITR5hEYxf-12" target="m1ybUP3E139ITR5hEYxf-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-12" value="Виводимо позиції дронів та повідомлення &quot;Collision&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="510" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m1ybUP3E139ITR5hEYxf-18" target="m1ybUP3E139ITR5hEYxf-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-29" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="m1ybUP3E139ITR5hEYxf-26">
+          <mxGeometry x="-0.5306" y="-2" relative="1" as="geometry">
+            <mxPoint y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="m1ybUP3E139ITR5hEYxf-18" target="m1ybUP3E139ITR5hEYxf-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-30" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="m1ybUP3E139ITR5hEYxf-28">
+          <mxGeometry x="-0.4841" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-18" value="позиція лівого&amp;nbsp;&lt;div&gt;дрону на 1 меньша за позицію правого?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="362.5" y="580" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-19" value="Кінець" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="187.5" y="620" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="m1ybUP3E139ITR5hEYxf-24" target="m1ybUP3E139ITR5hEYxf-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-24" value="Виводимо позиції дронів та повідомлення &quot;Stopped&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="700" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-25" value="Кінець" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="607.5" y="810" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m1ybUP3E139ITR5hEYxf-27" target="m1ybUP3E139ITR5hEYxf-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-36" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="m1ybUP3E139ITR5hEYxf-34">
+          <mxGeometry x="-0.5636" y="2" relative="1" as="geometry">
+            <mxPoint x="-11" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m1ybUP3E139ITR5hEYxf-27" target="m1ybUP3E139ITR5hEYxf-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-38" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="m1ybUP3E139ITR5hEYxf-37">
+          <mxGeometry x="-0.575" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-27" value="позиція лівого&amp;nbsp;&lt;div&gt;дрона більша за&amp;nbsp;&lt;/div&gt;&lt;div&gt;позицію&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;правого?&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="362.5" y="780" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="m1ybUP3E139ITR5hEYxf-32" target="m1ybUP3E139ITR5hEYxf-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-32" value="Виводимо позиції дронів та повідомлення &quot;Miss&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="910" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-33" value="Кінець" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="167.5" y="1020" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="m1ybUP3E139ITR5hEYxf-35" target="m1ybUP3E139ITR5hEYxf-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="1100" />
+              <mxPoint x="810" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1ybUP3E139ITR5hEYxf-35" value="1. Збільшуємо позицію лівого дрона на число, що відповідає значенню елемента масиву за індексом на 1 меньше його минулої позиції.&amp;nbsp;&lt;div&gt;2. Від позиції правого віднімаємо число знайдене за таким самим алгоритмом&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="311.25" y="1040" width="252.5" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
