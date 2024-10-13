@@ -1,0 +1,122 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1685" dy="965" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-0" target="LfD7uGxHZMMDzM3MKtvx-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-0" value="Start" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="309" y="10" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-3" target="LfD7uGxHZMMDzM3MKtvx-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-3" value="Enter the investment amount" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="570" y="90" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-5" value="inv" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="334" y="170" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-10" target="LfD7uGxHZMMDzM3MKtvx-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-10" value="Enter the annual interest&lt;div&gt;rate&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="120" y="260" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-12" target="LfD7uGxHZMMDzM3MKtvx-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-12" value="proc" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="399" y="320" width="181" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.463;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-5" target="LfD7uGxHZMMDzM3MKtvx-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-23" target="LfD7uGxHZMMDzM3MKtvx-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-23" value="Enter the amount of interest per&amp;nbsp;&lt;div&gt;year&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="610" y="330" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-24" target="LfD7uGxHZMMDzM3MKtvx-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-24" value="nump" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="600" y="520" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-26" value="Enter the time of investing" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="250" y="540" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-28" target="LfD7uGxHZMMDzM3MKtvx-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-28" value="time" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="30" y="450" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.947;entryY=0.44;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-26" target="LfD7uGxHZMMDzM3MKtvx-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-31" target="LfD7uGxHZMMDzM3MKtvx-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-31" value="a=1+proc/nump" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="20" y="710" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-33" target="LfD7uGxHZMMDzM3MKtvx-35" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-33" value="A=inv*pow(a, time*nump)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="240" y="700" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-35" target="LfD7uGxHZMMDzM3MKtvx-37" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-35" value="Your result" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="500" y="700" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-37" target="LfD7uGxHZMMDzM3MKtvx-40" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-37" value="Invested amount (inv)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="570" y="900" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-40" target="LfD7uGxHZMMDzM3MKtvx-44" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-40" value="Total amount (A)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="310" y="860" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-44" target="LfD7uGxHZMMDzM3MKtvx-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-44" value="Amount of earnings (A-inv)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="20" y="840" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-47" value="end" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="1050" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LfD7uGxHZMMDzM3MKtvx-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#DDA15E;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LfD7uGxHZMMDzM3MKtvx-44" target="LfD7uGxHZMMDzM3MKtvx-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
