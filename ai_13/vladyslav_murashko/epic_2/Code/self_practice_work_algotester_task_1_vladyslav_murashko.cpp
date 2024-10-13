@@ -4,6 +4,7 @@ using namespace std;
 // Lab 2v3
 int main()
 {
+    // Користувач заповнює масив розміру, якого сам обирає
     unsigned short N;
     cin >> N;
     unsigned short arr[N];
@@ -12,6 +13,7 @@ int main()
         cin >> el;
     }
     short i = 1, j = N;
+    // Цикл виконується доки не справдиться одна з наведених умов
     while(true){
         if(i==j){
             cout << i << " " << j << endl << "Collision";

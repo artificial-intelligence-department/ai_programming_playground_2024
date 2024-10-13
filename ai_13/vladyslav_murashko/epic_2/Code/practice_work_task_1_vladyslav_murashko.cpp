@@ -14,6 +14,7 @@ enum Weather
     Windy
 };
 
+// Функція переведення стрічки в нижній регістр
 inline void stringToLower(string &str)
 {
     transform(str.begin(), str.end(), str.begin(), [](unsigned char c)
@@ -66,7 +67,7 @@ input_point:
 
     // Jacket recomendations
     cout << "Jacket recomendations: ";
-    if (weather == Windy || weather == Rainy)
+    if (weather == Snowy || weather == Rainy)
     {
         cout << "You better put on a jacket" << endl;
     }
