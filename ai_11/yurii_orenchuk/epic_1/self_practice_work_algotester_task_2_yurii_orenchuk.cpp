@@ -1,16 +1,25 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main(){
-    int n, m;
-    cin >> n >> m;
-    int grid = n * m;
-    if (grid % 2 == 0){
-        cout << "Dragon";
+    int n, x;
+    bool res = true;
+    vector<int> dis;
+
+    cin >> n;
+    for(int i = 0; i < n; i++){
+        cin >> x;
+        dis.push_back(x);
     }
-    else{
-        cout << "Imp";
+    cout << '\n';
+
+    for(int e = 1; e < n; ++e){
+         if ((dis[e] - dis[e-1]) < 2) res = false;
     }
+
+    if (res) cout << "YES";
+    else cout << "NO";
 
     return 0;
 }
