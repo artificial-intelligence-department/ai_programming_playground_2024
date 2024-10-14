@@ -1,1 +1,8 @@
-.DS_Store
+*.exe
+*.vscode
+*.gitignore
+assets/
+*.obj
+*.sln
+epic_3/
+#epic_4/
