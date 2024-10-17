@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    // because of different precision values with using float and double, both don't output one
+    // because of different precision values using float and double, both don't output one
     float a1=100;
     float b1=0.001;
     float c11=a1-b1;
@@ -24,7 +24,7 @@ int main()
     float o1=4*a1*n1;
     float p1=m1-o1;
     float q1=l1/p1;
-    cout << "Result with using float:" << q1 << endl;
+    cout << "Result with float: " << q1 << endl;
     double a2=100;
     double b2=0.001;
     double c21=a2-b2;
@@ -42,5 +42,5 @@ int main()
     double o2=4*a2*n2;
     double p2=m2-o2;
     double q2=l2/p2;
-    cout << "Result with using double: " << q2;
+    cout << "Result with double: " << q2;
 }
