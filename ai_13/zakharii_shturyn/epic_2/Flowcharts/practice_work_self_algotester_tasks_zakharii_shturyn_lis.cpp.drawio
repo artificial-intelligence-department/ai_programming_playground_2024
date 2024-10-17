@@ -1,0 +1,152 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Сторінка-1" id="j_VGzKYZYS4lYBmBJZLG">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-1" target="uBVte0GsTmIBEUXXbcnQ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-1" value="Початок програми" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="30" width="136" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-2" target="uBVte0GsTmIBEUXXbcnQ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-2" value="Введення кількості елементів у масиві" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="337" y="130" width="153" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-4" target="uBVte0GsTmIBEUXXbcnQ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-4" value="Створення двох масивів, один заповнений початковими довжинами зростання для кожного елемента, а інший пустий для введення елементів" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="336.5" y="240" width="153" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-8" target="uBVte0GsTmIBEUXXbcnQ-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-15" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="uBVte0GsTmIBEUXXbcnQ-11">
+          <mxGeometry x="-0.2873" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-8" target="uBVte0GsTmIBEUXXbcnQ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-28" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="uBVte0GsTmIBEUXXbcnQ-17">
+          <mxGeometry x="-0.172" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-8" value="Масив для елементів заповнений?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="343.5" y="400" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-10" target="uBVte0GsTmIBEUXXbcnQ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-10" value="Введення ітого числа" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="353.5" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O0vOBHJRZHEYmAiJu1q--7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-12" target="uBVte0GsTmIBEUXXbcnQ-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-12" value="іте + 1" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="495" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-16" target="uBVte0GsTmIBEUXXbcnQ-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-25" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="uBVte0GsTmIBEUXXbcnQ-19">
+          <mxGeometry x="0.0645" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O0vOBHJRZHEYmAiJu1q--2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-16" target="O0vOBHJRZHEYmAiJu1q--1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-16" value="Іте в проміжку&amp;nbsp;&lt;div&gt;від індексу останнього&amp;nbsp;&lt;/div&gt;&lt;div&gt;елемента до індексу першого елемента?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="365" width="196.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-18" target="uBVte0GsTmIBEUXXbcnQ-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-26" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="uBVte0GsTmIBEUXXbcnQ-21">
+          <mxGeometry x="-0.0913" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-18" target="uBVte0GsTmIBEUXXbcnQ-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-37" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="uBVte0GsTmIBEUXXbcnQ-32">
+          <mxGeometry x="-0.0183" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-18" value="Джете в&amp;nbsp;&lt;div&gt;проміжку від&amp;nbsp;&lt;/div&gt;&lt;div&gt;поточного ітого до&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;кінця масиву елементів?&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="372.5" width="160" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-20" target="uBVte0GsTmIBEUXXbcnQ-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-27" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="uBVte0GsTmIBEUXXbcnQ-23">
+          <mxGeometry x="-0.0234" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-39" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="uBVte0GsTmIBEUXXbcnQ-38">
+          <mxGeometry x="-0.2435" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-20" value="Елемент в масиві&amp;nbsp;&lt;div&gt;з індексом ітого є меншим за елемент з індексом джетого?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="366.25" width="160" height="147.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-22" target="uBVte0GsTmIBEUXXbcnQ-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-22" value="Порівнюємо та записуємо більший елемент серед масиву з довжиною послідовності ітого елемента та довжиною послідовності джетого елемента + 1&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="385" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-31" target="uBVte0GsTmIBEUXXbcnQ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-31" value="іте - 1" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uBVte0GsTmIBEUXXbcnQ-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="939.9999999999998" y="510.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uBVte0GsTmIBEUXXbcnQ-34" value="джете + 1" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O0vOBHJRZHEYmAiJu1q--4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="O0vOBHJRZHEYmAiJu1q--1" target="O0vOBHJRZHEYmAiJu1q--3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O0vOBHJRZHEYmAiJu1q--1" value="Шукаємо найбільший елемент у масиві довжин послідовностей" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="598.25" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O0vOBHJRZHEYmAiJu1q--6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="O0vOBHJRZHEYmAiJu1q--3" target="O0vOBHJRZHEYmAiJu1q--5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O0vOBHJRZHEYmAiJu1q--3" value="Виводимо цей елемент за його адресою" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="598.25" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O0vOBHJRZHEYmAiJu1q--5" value="Завершення програми" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="593.25" y="770" width="130" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

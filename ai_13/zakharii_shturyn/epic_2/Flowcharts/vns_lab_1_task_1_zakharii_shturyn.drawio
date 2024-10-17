@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Сторінка-1" id="B6lZc-kQC47C-m0GL_zG">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hgSsMCdFwNcEumT6WvCT-1" target="hgSsMCdFwNcEumT6WvCT-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-1" value="Початок програми" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="351" y="50" width="126" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hgSsMCdFwNcEumT6WvCT-2" target="hgSsMCdFwNcEumT6WvCT-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-2" value="Задання значень a, b та res" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hgSsMCdFwNcEumT6WvCT-4" target="hgSsMCdFwNcEumT6WvCT-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-4" value="Обрахування окремих доданків у чисельнику" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hgSsMCdFwNcEumT6WvCT-6" target="hgSsMCdFwNcEumT6WvCT-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-6" value="Обрахування чисельника" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hgSsMCdFwNcEumT6WvCT-8" target="hgSsMCdFwNcEumT6WvCT-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-8" value="Обрахування окремих доданків у знаменнику" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hgSsMCdFwNcEumT6WvCT-10" target="hgSsMCdFwNcEumT6WvCT-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-10" value="Обрахування знаменника" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hgSsMCdFwNcEumT6WvCT-12" target="hgSsMCdFwNcEumT6WvCT-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-12" value="Поділ чисельника на знаменник" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hgSsMCdFwNcEumT6WvCT-14" target="hgSsMCdFwNcEumT6WvCT-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-14" value="Вивід res" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hgSsMCdFwNcEumT6WvCT-16" value="Завершення програми" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="356" y="920" width="116" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
