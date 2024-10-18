@@ -15,6 +15,6 @@ int main() {
          summ += shtyk;
     }
 
-    cout << summ;
+    cout << summ << endl;
     return 0;
 }

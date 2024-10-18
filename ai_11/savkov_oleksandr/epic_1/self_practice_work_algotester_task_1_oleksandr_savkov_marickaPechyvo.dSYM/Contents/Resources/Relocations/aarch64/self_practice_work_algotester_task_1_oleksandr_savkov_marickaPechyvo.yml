@@ -1,0 +1,12 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/mikamika/Documents/epic1/ai_programming_playground_2024/ai_11/savkov_oleksandr/epic_1/self_practice_work_algotester_task_1_oleksandr_savkov_marickaPechyvo'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D00, symSize: 0xB4 }
+  - { offset: 0x3BE7, size: 0x8, addend: 0x0, symName: __ZNSt3__14endlB8ne180100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_, symObjAddr: 0xE0, symBinAddr: 0x100003DE0, symSize: 0x58 }
+  - { offset: 0x3C27, size: 0x8, addend: 0x0, symName: __ZNSt3__19use_facetB8ne180100INS_5ctypeIcEEEERKT_RKNS_6localeE, symObjAddr: 0x1BC, symBinAddr: 0x100003EBC, symSize: 0x2C }
+  - { offset: 0x4FBB, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D00, symSize: 0xB4 }
+  - { offset: 0x50F9, size: 0x8, addend: 0x0, symName: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsB8ne180100EPFRS3_S4_E, symObjAddr: 0xB4, symBinAddr: 0x100003DB4, symSize: 0x2C }
+  - { offset: 0x512B, size: 0x8, addend: 0x0, symName: __ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB8ne180100Ec, symObjAddr: 0x138, symBinAddr: 0x100003E38, symSize: 0x84 }
+  - { offset: 0x51A2, size: 0x8, addend: 0x0, symName: __ZNKSt3__15ctypeIcE5widenB8ne180100Ec, symObjAddr: 0x1E8, symBinAddr: 0x100003EE8, symSize: 0x38 }
+...
