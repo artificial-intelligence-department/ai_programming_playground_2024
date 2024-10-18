@@ -15,9 +15,6 @@ int main(){
         cout << "ERROR";
         return 0; 
         }    
-    }
-
-      for(int i = 1; i < 5; i++){
         if(cubes[i] > cubes[i-1]){
         cout << "LOSS"; 
         return 0;
