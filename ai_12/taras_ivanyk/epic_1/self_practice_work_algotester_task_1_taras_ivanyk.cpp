@@ -13,12 +13,17 @@ int main() {
         int amount;
         cin >> action >> amount;  
 
-        if (action == "earn") {
+        if (action == "earn")
+        {
             balance += amount;  
-        } else if (action == "spend") {
-            balance -= amount;  
+        }
 
-        if (balance < 0) {
+        else if (action == "spend") 
+        {
+            balance -= amount;  
+        }
+        if (balance < 0)
+        {
             debt_occurred = true;
         }
     }
@@ -30,5 +35,4 @@ int main() {
     }
 
     return 0;
-}
 }
