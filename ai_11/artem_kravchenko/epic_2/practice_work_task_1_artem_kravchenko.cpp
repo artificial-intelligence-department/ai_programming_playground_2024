@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -53,7 +52,6 @@ int main (){
        cout << "Одягніть щось міцне!" << endl;
   
     default:
-       cout << "Невідомий тип погоди" << endl;
        break;
     }
     return 0;
