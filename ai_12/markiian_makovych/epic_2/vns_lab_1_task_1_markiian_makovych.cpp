@@ -13,6 +13,7 @@ int main()
     f = 3 * a * pow(b, 2);
     g = 3 * pow(a, 2) * b;
 
+    cout << "Type double" << endl;
     cout << (c - d) / (e - f - g) << endl; // Виводить 1, бо це і є значення виразу
 
     float h = 1000;
@@ -23,6 +24,8 @@ int main()
     r = pow(m, 3);
     t = 3 * h * pow(m, 2);
     y = 3 * pow(h, 2) * m;
+
+    cout << "Type float" << endl;
 
     cout << (q - w) / (r - t - y); // Виводить 1.28... , бо в типу даних float недостатньо місця щоб помістити певні числа
 
