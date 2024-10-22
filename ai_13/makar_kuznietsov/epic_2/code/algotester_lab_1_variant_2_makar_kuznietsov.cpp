@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <cstdlib>
 
-unsigned long long findLongest(unsigned long long a[], int inx);
+unsigned long long findLongest(unsigned long long a[]);
 
 int main()
 {
@@ -21,7 +21,7 @@ int main()
             exit(0);
         }
         legs[i] -= action;
-        if (legs[i] * 2 <= findLongest(legs, i))
+        if (legs[i] * 2 <= findLongest(legs))
         {
             flip = 1;
         }
@@ -37,12 +37,12 @@ int main()
     return 0;
 }
 
-unsigned long long findLongest(unsigned long long a[], int idx) // найбільша помилка в моєму житті
+unsigned long long findLongest(unsigned long long a[]) // найбільша помилка в моєму житті
 {
     unsigned long long temp = 0;
     for (int i = 0; i < 4; i++)
     {
-        if (a[i] > temp && i != idx)
+        if (a[i] > temp)
         {
             temp = a[i];
         }
