@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+
     double da = 1000;
     double db = 0.0001;
     cout << "a = " << da << "  b = " << db << endl;
