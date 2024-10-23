@@ -2,12 +2,10 @@
 
 unsigned long long factorial(int n)
 {
-    unsigned long long result = 1;
-    for (int i = 2; i <= n; ++i)
-    {
-        result *= i;
+    if(n>=2){
+        return n*factorial(n-1);
     }
-    return result;
+    return 1;
 }
 
 double calculate_sum(double epsilon)

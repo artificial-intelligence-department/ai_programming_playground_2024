@@ -10,7 +10,6 @@ unsigned int kvadr(int variables_count, ...)
         ptr+=2;
         if (round(sqrt(*ptr)) == sqrt(*ptr))
         {
-            std::cout << sqrt(*ptr) << std::endl;
             count++;
         }
         variables_count--;
