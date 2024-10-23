@@ -16,18 +16,18 @@ void showBooksList(const vector<string> &books)
     }
 }
 
-bool showBooksAvailability(const vector<string> &books, const vector<bool> &booksAvailability, bool isAvaliable)
+bool showBooksAvailability(const vector<string> &books, const vector<bool> &booksAvailability, bool isAvailable)
 {
-    cout << "\n\n___" << (isAvaliable ? "Available" : "Borrowed") << " books list___\n";
+    cout << "\n\n___" << (isAvailable ? "Available" : "Borrowed") << " books list___\n";
     int count = 0;
     int i = 0;
     for (auto &book : books)
     {
-        if (booksAvailability[i] == isAvaliable)
+        if (booksAvailability[i] == isAvailable)
         {
             cout << i + 1 << ": " << book << endl;
             count++;
-        }
+        }   
         i++;
     }
     if (count == 0)

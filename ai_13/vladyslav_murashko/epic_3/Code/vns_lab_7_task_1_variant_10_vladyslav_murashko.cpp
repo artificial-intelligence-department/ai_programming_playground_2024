@@ -3,14 +3,14 @@
 
 unsigned int kvadr(int variables_count, ...)
 {
-    int *prt = &variables_count;
+    int *ptr = &variables_count;
     unsigned int count = 0;
     while (variables_count != 0)
     {
-        prt+=2;
-        if ((int)(sqrt(*prt) * 10) % 10 == 0)
+        ptr+=2;
+        if (round(sqrt(*ptr)) == sqrt(*ptr))
         {
-            std::cout << sqrt(*prt) << std::endl;
+            std::cout << sqrt(*ptr) << std::endl;
             count++;
         }
         variables_count--;

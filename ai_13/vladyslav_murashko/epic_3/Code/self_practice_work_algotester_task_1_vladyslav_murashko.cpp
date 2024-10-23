@@ -45,7 +45,7 @@ int main()
     {
         cin >> toCut[i];
         
-        if (heights[i]-toCut[i] < 0)
+        if (heights[i] < toCut[i])
         {
             cout << "ERROR";
             return 0;
