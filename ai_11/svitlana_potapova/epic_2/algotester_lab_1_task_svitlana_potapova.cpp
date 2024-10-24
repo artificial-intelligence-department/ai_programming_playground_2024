@@ -8,7 +8,7 @@ int main(){
     }
     
     for (int i = 1; i <5; i++) {
-        if(cubes[0]==0 || cubes[i]<=0){
+        if(cubes[0]<=0 || cubes[i]<=0){
             cout << "ERROR";
             return 0;
         }
