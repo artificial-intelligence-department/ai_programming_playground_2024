@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Epic_1",
-      "program": "c:/Epic_1/build/Debug/outDebug",
+      "cwd": "c:/Epic_2",
+      "program": "c:/Epic_2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
