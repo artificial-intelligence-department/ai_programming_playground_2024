@@ -1,29 +1,56 @@
-#include <stdio.h>
-#include <math.h>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
-int main(){
-    float a;
-    int p;
-    float r;
-    float n;
-    int t;
-
-    printf("Введіть суму інвестиції: ");
-    scanf("%d", &p);
-    printf("Введіть час інвестиції: ");
-    scanf("%d", &t);
-    printf("Введіть кількість нарахувань відсотків на рік (1,3,12): ");
-    scanf("%f", &n);
-    printf("Введіть відсоткоу ставку(в %): ");
-    scanf("%f", &r);
-
-    if (n==3 || n==12 || n==1) {
-        a = p*(pow((r/100.0)/n+1, n*t));
-        printf("Загальна сума депозиту: %.2f", a);
-    } else {
-        return 0;
+int main()
+{
+    string weather;
+    int a;
+    while (weather != "sunny" && weather != "rainy" && weather != "cloudy" && weather != "snowy" && weather != "windy"){
+        cout << "Введіть: sunny, rainy, cloudy, snowy або windy: ";
+        cin >> weather;
+    }
+    
+    if (weather == "rainy" || weather == "snowy"){
+        cout << "Треба одягнути куртку."<< endl;
+    }else{
+       cout << "Куртка не потрібна."<< endl;
+    }
+    cout << "Рекомендація щодо активності: " << endl;
+    if (weather == "sunny"){
+        cout << "Чудовий день для пікніка! "<< endl;
+        a = 1;
+    }else if (weather == "rainy"){
+        cout << "Ідеальна погода, щоб читати книгу всередині! "<< endl;
+        a = 2;
+    }else if (weather == "cloudy"){
+        cout << "Може, відвідати музей? "<< endl;
+        a = 3;
+    }else if (weather == "snowy"){
+        cout << "Як щодо того, щоб зліпити сніговика? "<< endl;
+        a = 4;
+    }else if (weather == "windy"){
+        cout << "Запустіть повітряного змія, якщо він у вас є! "<< endl;
+        a = 5;
+    }
+    cout << "Рекомендація щодо взуття: " << endl;
+    switch (a){
+        case 1:
+            cout << "Взуй улюблені кросівки!";
+            break;
+        case 2:
+            cout << "Дощові чоботи - гарна ідея!";
+            break;
+        case 3:
+            cout << "Сьогодні підходить будь-яке взуття.";
+            break;
+        case 4:
+            cout << "Снігові черевики зігріють ваші ноги!";
+            break;              
+        case 5:
+            cout << "Одягніть щось міцне";
+            break;      
     }
     return 0;
 }
