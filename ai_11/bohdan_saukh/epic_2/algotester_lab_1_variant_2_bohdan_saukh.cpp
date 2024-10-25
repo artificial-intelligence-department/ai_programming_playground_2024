@@ -9,6 +9,7 @@ int main()
     long C[4];
     bool er = false;
     bool win = true;
+    // вводимо масиви
     for (int i = 0; i<4; i++) {
         cin >> A[i];
         C[i] = A[i];
@@ -16,6 +17,7 @@ int main()
     for (int i = 0; i<4; i++) {
         cin >> B[i];
     } 
+    // перевірка на наявність помилки
     for (int i = 0; i < 4; i++) {
         if(A[i]-B[i] < 0){
             er = true;
@@ -23,7 +25,7 @@ int main()
         if(A[i]-B[i] == 0){
             win = false;
         }        
-    }
+    }// обрахунок результату
     if (er == false && win == true){
         for (int i = 0; i<4; i++){
             for (int j = 0; j<4; j++){
@@ -41,7 +43,7 @@ int main()
             if (win == false){
                 break;
             }
-        }
+        }// вивід
         if (win == true){
             cout << "YES";
         }else{
