@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.1">
+  <diagram name="Page-1" id="XjKNdMhh2U0nfwWWohRo">
+    <mxGraphModel dx="890" dy="360" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="MJ7d8MGrej0oFUK3ACLP-1" target="MJ7d8MGrej0oFUK3ACLP-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-1" value="Початок" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="90" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Main&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="140" y="30" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-3" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Kvadr function&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="465" y="30" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MJ7d8MGrej0oFUK3ACLP-4" target="MJ7d8MGrej0oFUK3ACLP-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-4" value="kradr (count, ...)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="495" y="80" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MJ7d8MGrej0oFUK3ACLP-5" target="MJ7d8MGrej0oFUK3ACLP-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-5" value="Рахуємо кількість чисел, квадратний корінь яких є цілим числом" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="478.75" y="160" width="162.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-6" value="return result" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="495" y="250" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-32" value="Кінець" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="390" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="MJ7d8MGrej0oFUK3ACLP-35" target="MJ7d8MGrej0oFUK3ACLP-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-35" value="&lt;div&gt;count1 = kvadr(3 ,1,4,9);&lt;/div&gt;&lt;div&gt;count2 = kvadr(7 ,1,4,9,3,5,7,10);&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;count3 = kvadr(11 ,1,4,9,13,22,25,11,53,64,81,90);&lt;/span&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="0.3200000000000003" y="180" width="369.37" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="MJ7d8MGrej0oFUK3ACLP-36" target="MJ7d8MGrej0oFUK3ACLP-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MJ7d8MGrej0oFUK3ACLP-36" value="count1&lt;div&gt;count2&lt;/div&gt;&lt;div&gt;count3&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="125" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
