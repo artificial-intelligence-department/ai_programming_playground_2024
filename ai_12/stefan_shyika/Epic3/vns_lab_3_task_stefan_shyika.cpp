@@ -44,7 +44,6 @@ int main() {
         double sumWithN = sumWithFixedN(x, n);
         double sumWithEpsilon = sumWithPrecision(x, epsilon);
         double funcValue = exactValue(x);
-        
         cout << x << "\t\t" << sumWithN << "\t\t" << sumWithEpsilon << "\t\t" << funcValue << endl;
     }
 }

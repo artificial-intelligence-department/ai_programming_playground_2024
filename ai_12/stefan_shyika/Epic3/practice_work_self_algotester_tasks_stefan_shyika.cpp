@@ -28,5 +28,4 @@ int main(){
     int unique = set.size();
 
     cout << unique;
-
 }

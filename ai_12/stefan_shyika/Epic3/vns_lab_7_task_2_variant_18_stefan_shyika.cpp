@@ -33,7 +33,7 @@ int func(string str){
 int main(){
     int arr[] = {1, 5 , 10 , 4, 15};
     int len = sizeof(arr) / sizeof(arr[0]);
-    string str = "Hello, I am Stefan";
+    string str = "Hello I am Stefan";
 
     cout << "Максимальний елемент у масиві: " << func(arr, len) << endl;
 
