@@ -1,12 +1,23 @@
 #include <iostream>
+#include <limits>
+
 using namespace std;
 int main(){
     int weather;
     while(true){
     cout << endl << "input type of weather:" << endl;
     cout << "1 - sunny, 2 - rainy, 3 - cloudy, 4 - snowy, 5 - windy"<< endl;
-    cin >> weather; //TODO why when i input char - infinite loop starts??
-    if (weather > 5 || weather <= 0){
+    cin >> weather; 
+    // Check if input is valid
+    if (cin.fail()) {
+        cin.clear(); // Clear error state
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Discard invalid input
+        cout << "Invalid input. Please enter a number between 1 and 5." << endl;
+        continue;
+    }
+
+    if (weather > 5 || weather <= 0) {
+        cout << "Please enter a number between 1 and 5." << endl;
         continue;
     }
     //recommendation about jacket
