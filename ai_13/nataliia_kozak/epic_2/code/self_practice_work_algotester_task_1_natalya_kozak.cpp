@@ -29,4 +29,5 @@ int main(){
         result += abs(a[j] - A) + abs(b[j] - B) + abs(c[j] - C);
     }
     cout << result;
+    return 0;
 }
