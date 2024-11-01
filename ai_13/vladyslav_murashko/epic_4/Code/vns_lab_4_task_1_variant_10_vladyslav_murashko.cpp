@@ -10,6 +10,12 @@ int main()
         el = rand();
     }
 
+    cout << "\nInitial array: \n\n";
+    for (int &el : arr)
+    {
+        cout << el << " ";
+    }
+
     arr.erase(arr.begin(), arr.begin() + 5);
 
     for (int i = 0; i < 3; i++)
@@ -17,8 +23,11 @@ int main()
         arr.push_back(rand());
     }
     
+    cout << "\n\nResulting array: \n\n";
     for (int &el : arr)
     {
         cout << el << " ";
     }
+    cout << "\n\n";
+    return 0;
 }

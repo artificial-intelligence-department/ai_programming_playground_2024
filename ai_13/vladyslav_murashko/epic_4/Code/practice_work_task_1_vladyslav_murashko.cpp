@@ -25,9 +25,10 @@ bool isPalindrome(int number)
     {
         count++;
     }
-    for (int i = 1; i < count / 2; i++)
+    for (int i = 1; i < count / 2 + 1; i++)
     {
-        if (number % (int)pow(10, i) != number / (int)pow(10, count - i)){
+        if ((number % (int)pow(10, i))/ (int)pow(10, i-1) 
+        != (number / (int)pow(10, count - i)) % 10){
             return false;
         }
     }
@@ -36,7 +37,8 @@ bool isPalindrome(int number)
 
 int main()
 {
-    string str = "HiiH";
-    cout << isPalindrome(str,0,str.length()-1) << endl;
-    cout << isPalindrome(14141) << endl;
+    string str = "HsiiH";
+    int number = 122333321;
+    cout << "Cheking string \"" + str + "\" on palindrome: " << isPalindrome(str,0,str.length()-1) << endl;
+    cout << "Cheking number \"" + to_string(number) + "\" on palindrome: " << isPalindrome(number) << endl;
 }
