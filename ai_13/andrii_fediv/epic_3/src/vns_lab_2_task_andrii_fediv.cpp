@@ -4,16 +4,18 @@
 double calculateSum(double e)
 {
     int n = 1;
-    //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//
-    /*AAAAAAAAAAA*/                 double sum_series = 1.5;                      /*AAAAAAAAAAA*/
-    /*AAAAAAAAAAA*/                         double An;                            /*AAAAAAAAAAA*/
-    //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//
-    double An1 = 0.5;
+    double sum_series = 0.0;
+    double An;
+
     while (true)
     {
-        // recurent for =a * (n+1)^2 / 2^(n+1) 
-        double q = pow(2, ((2 * n) + 1)) / pow((n + 1), 2);
-        An = An1 / q ;
+        double factorial_n = 1;
+        for (int i = 1; i <= n; ++i)
+        {
+            factorial_n *= i;
+        }
+
+        An = (pow(factorial_n, 2)) / pow(2, n * n);
 
         if (An < e)
         {
@@ -22,7 +24,6 @@ double calculateSum(double e)
 
         sum_series += An;
         n++;
-        An1 = An;
     }
 
     return sum_series;
