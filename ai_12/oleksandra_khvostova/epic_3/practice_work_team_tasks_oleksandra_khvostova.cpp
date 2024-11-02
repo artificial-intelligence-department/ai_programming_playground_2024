@@ -20,7 +20,9 @@ vector<bool> Availability ({true, false, false, false, true, true, false, false,
 
 int main(){
     int choice;
-    while(1){
+    char option = 'n';
+    do{
+        Main:
         cout<<"Choose the option:"<<endl;
         cout<<"1. Display the full list of books"<<endl;
         cout<<"2. Take the book"<<endl;
@@ -83,9 +85,13 @@ int main(){
 
             default: 
                 cout<<"Enter correct option";
+                goto Main;
                 break;
         }
+        cout<<"Would you like to continue? Enter 'y' for yes/ 'n' for no"<<endl;
+        cin>>option;
     }
-    
+    while (option == 'y');
+    cout<<"Have a nice day"<<endl;
     return 0;
 }
