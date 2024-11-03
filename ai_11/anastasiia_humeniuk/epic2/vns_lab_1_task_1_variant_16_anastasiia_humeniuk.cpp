@@ -23,3 +23,7 @@ int main() {
 
     return 0;
 }
+<<<<<<< HEAD
+=======
+//Тип даних float має меншу точність у порівнянні з double (близько 7 значущих цифр для float і 15 значущих цифр для double).
+>>>>>>> 938eb79 (Epic 3 - Anastasiia Humeniuk)
