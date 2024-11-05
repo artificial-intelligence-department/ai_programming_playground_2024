@@ -53,7 +53,7 @@ int main() {
 
     int choice;
     
-    while (true) { // Використовуємо while для циклу
+    while (true) { 
         showMenu();
         cout << "Your choice: ";
         cin >> choice;
