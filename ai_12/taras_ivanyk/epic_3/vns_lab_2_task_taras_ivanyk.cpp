@@ -6,9 +6,9 @@ int main() {
     double accuracy = 0.0001;
     double sum = 0.0;
     int n = 1;
-    double x; 
+    double x;
 
-    while (true) {
+    do {
         x = (2 * static_cast<double>(n) - 1) / pow(2, n);
 
         if (std::abs(x) < accuracy)
@@ -16,7 +16,8 @@ int main() {
 
         sum += x;
         n++;
-    }
+    } while (true);
+
     std::cout << std::fixed << std::setprecision(4) << sum << std::endl;
 
     return 0;
