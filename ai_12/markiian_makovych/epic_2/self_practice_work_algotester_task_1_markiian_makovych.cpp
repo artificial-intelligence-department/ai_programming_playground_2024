@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+
     int gift;
     cin >> gift;
     int num = 0;
