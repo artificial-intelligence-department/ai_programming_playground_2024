@@ -27,4 +27,5 @@ int main()
         std::cout << "SN = " << arifRes << '\n';
         std::cout << "SE = " << epsRes << '\n';
     }
+    return 0;
 }
