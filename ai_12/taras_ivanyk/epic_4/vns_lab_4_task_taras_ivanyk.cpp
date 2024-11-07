@@ -27,7 +27,6 @@ int main() {
             arr[newSize++] = arr[i];
         }
     }
-
     int newArr[2 * newSize]; // maximum size of new array with 0 before pair integers
     int NEWSIZE = 0;
 
@@ -37,12 +36,10 @@ int main() {
         }
         newArr[NEWSIZE++] = arr[i];
     }
-
     cout << "Array after deleting numbers and adding zeros: ";
     for (int i = 0; i < NEWSIZE ; ++i){
         cout << newArr[i] << " ";
     }
     cout << "\n";
-
     return 0;
 }
