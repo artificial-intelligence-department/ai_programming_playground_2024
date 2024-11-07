@@ -48,7 +48,6 @@ int main()
     delete[] arr;
 
     return 0;
-
 }
 
 void print_array(int arr[], int N)
