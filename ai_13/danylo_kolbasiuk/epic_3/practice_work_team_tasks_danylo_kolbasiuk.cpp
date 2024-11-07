@@ -20,7 +20,7 @@ int main()
     {
         options:
             cout << "\nYou are currently in a library. What would you like to do?" << endl;
-            cout << "1 - list all available books." << endl;
+            cout << "1 - list all books." << endl;
             cout << "2 - borrow a book." << endl;
             cout << "3 - return a book." << endl;
             cout << "4 - leave." << endl;

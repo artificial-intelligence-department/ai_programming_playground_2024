@@ -3,13 +3,24 @@
 
 using namespace std;
 
+double factorial(int n)
+{
+    if (n<1)
+    {
+        return 1;
+    }
+    else 
+    {
+        return factorial(n-1)*n;
+    }
+}
 double suma (int n)
 {
     double sum = 0.0;
     double factor = 1;
     for (int i=1; i<=n; i++)
     {   
-        double factor = tgamma(i+1);
+        double factor = factorial(i);
         double log = log10(factor);
         double temp = -i*sqrt(i);
         double an = log*exp(temp);
