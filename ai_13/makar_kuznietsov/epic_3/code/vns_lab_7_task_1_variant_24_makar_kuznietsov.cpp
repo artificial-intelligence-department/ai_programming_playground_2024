@@ -1,5 +1,6 @@
 #include <cmath>
 #include <cstdarg>
+#include <cstdlib>
 #include <iostream>
 #include <vector>
 
@@ -13,7 +14,6 @@ int main()
     int a[2] = {3, 5};
     int b[2] = {1, 2};
     int c[2] = {7, 3};
-    int i = sqrt(a[1]);
     std::cout << "A(" << a[0] << ";" << a[1] << ")" << '\n';
     std::cout << "B(" << b[0] << ";" << b[1] << ")" << '\n';
     std::cout << "C(" << c[0] << ";" << c[1] << ")" << '\n';
@@ -26,7 +26,8 @@ int main()
 
 double square(int a[2], int b[2], int c[2])
 {
-    return 0.5 * ((a[0] * b[1] + b[0] * c[1] + c[0] * a[1]) - (a[1] * b[0] + b[1] * c[0] + c[1] * a[0]));
+    double res = 0.5 * ((a[0] * b[1] + b[0] * c[1] + c[0] * a[1]) - (a[1] * b[0] + b[1] * c[0] + c[1] * a[0]));
+    return res;
 }
 double squaren(int k, ...)
 {
@@ -45,7 +46,7 @@ double squaren(int k, ...)
     for (int i = 0; i < k; i++)
     {
         int j = (i + 1) % k;
-        res += x_coords[i] * y_coords[j] - x_coords[j] * y_coords[i];
+        res += std::abs(x_coords[i] * y_coords[j] - x_coords[j] * y_coords[i]);
     }
     return res / 2;
 }

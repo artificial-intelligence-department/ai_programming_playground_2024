@@ -10,10 +10,10 @@ int main()
     bool work = 1;
     while (work)
     {
+    restart:
         int ind = -1;
         int choice = -1;
         int choice2 = -1;
-    restart:
         std::cout << "(1)Show all books\n(2)Show books' availability\n(3)Take a book(if available)\n(4)return the "
                      "book\n(5)exit\n";
         std::cin >> choice;
@@ -29,8 +29,8 @@ int main()
             for (auto book : name)
             {
                 std::cout << book << '\n';
-                break;
             }
+            break;
         case 2:
             for (int i = 0; i < name.size(); i++)
             {

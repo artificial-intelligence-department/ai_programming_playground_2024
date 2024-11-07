@@ -1,4 +1,3 @@
-#include <algorithm>
 #include <iostream>
 #include <sstream>
 #include <string>
@@ -33,7 +32,7 @@ void foo(std::vector<int> &a)
     {
         if (a[i] % 2 == 0)
         {
-            a.erase(std::remove(a.begin(), a.end(), a[i]), a.end());
+            a.erase(a.begin() + i);
             --i;
         }
     }
@@ -45,7 +44,7 @@ void foo(std::vector<std::string> &b)
     {
         if (b[i].length() % 2 == 0)
         {
-            b.erase(std::remove(b.begin(), b.end(), b[i]), b.end());
+            b.erase(b.begin() + i);
             --i;
         }
     }
@@ -55,10 +54,8 @@ void splitString(std::string &s, std::vector<std::string> &b)
 {
     std::stringstream ss(s);
     std::string word;
-    int i = 0;
     while (ss >> word)
     {
         b.push_back(word);
-        i++;
     }
 }
