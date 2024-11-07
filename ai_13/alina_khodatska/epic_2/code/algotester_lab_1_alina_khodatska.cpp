@@ -2,22 +2,28 @@
 using namespace std;
 
 int main() {
-    long long a[5];
+    long long prev_cube, current_cube;
+    cin >> prev_cube;
 
-    for (int i = 0; i < 5; ++i) {
-        cin >> a[i];
-
-        if (a[i] <= 0) {
-            cout << "ERROR" << endl;
-            return 0;
-        }
+    if (prev_cube <= 0) {
+        cout << "ERROR" << endl;
+        return 0;
     }
 
     for (int i = 1; i < 5; ++i) {
-        if (a[i] > a[i - 1]) {
+        cin >> current_cube;
+
+        if (current_cube <= 0) {
+            cout << "ERROR" << endl;
+            return 0;
+        }
+
+        if (current_cube > prev_cube) {
             cout << "LOSS" << endl;
             return 0;
         }
+
+        prev_cube = current_cube; 
     }
 
     cout << "WIN" << endl;
