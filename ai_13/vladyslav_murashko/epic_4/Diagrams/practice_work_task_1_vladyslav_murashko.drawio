@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
+  <diagram name="Page-1" id="iFA_ncnF5bAiXp2vwI5r">
+    <mxGraphModel dx="1500" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-1" target="AJFZOLvAFKbFvspeJoe5-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-1" value="Початок" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="10" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-2" target="AJFZOLvAFKbFvspeJoe5-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-2" value="bool isPalindrome(string, start, end)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="30" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-3" target="AJFZOLvAFKbFvspeJoe5-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-8" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AJFZOLvAFKbFvspeJoe5-6">
+          <mxGeometry x="-0.3845" y="-2" relative="1" as="geometry">
+            <mxPoint x="-10" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-3" target="AJFZOLvAFKbFvspeJoe5-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-16" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AJFZOLvAFKbFvspeJoe5-15">
+          <mxGeometry x="-0.5029" y="-3" relative="1" as="geometry">
+            <mxPoint x="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-3" value="Початок &amp;gt;= кінець?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="150" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-4" value="return true" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="185" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-10" target="AJFZOLvAFKbFvspeJoe5-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-14" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AJFZOLvAFKbFvspeJoe5-13">
+          <mxGeometry x="-0.0807" y="-2" relative="1" as="geometry">
+            <mxPoint x="2" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-10" target="AJFZOLvAFKbFvspeJoe5-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-21" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AJFZOLvAFKbFvspeJoe5-20">
+          <mxGeometry x="-0.3143" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-10" value="Літера на&amp;nbsp;&lt;div&gt;початку збігається&amp;nbsp;&lt;/div&gt;&lt;div&gt;з літерою на&amp;nbsp;&lt;/div&gt;&lt;div&gt;кінці?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="310" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-11" value="return false" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="345" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-19" value="Рекурсивно повертаємо цю&amp;nbsp;&lt;div&gt;функцію з початком та кінцем збільшеним та зменшеним на 1 відповідно&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="457.5" y="480" width="225" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-22" target="AJFZOLvAFKbFvspeJoe5-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-22" value="bool isPalindrome(number)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="30" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-23" target="AJFZOLvAFKbFvspeJoe5-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-27" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AJFZOLvAFKbFvspeJoe5-25">
+          <mxGeometry x="-0.3301" y="2" relative="1" as="geometry">
+            <mxPoint y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-23" target="AJFZOLvAFKbFvspeJoe5-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-23" value="Число &amp;lt; 0?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="827.5" y="155" width="115" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-24" value="return false" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-28" target="AJFZOLvAFKbFvspeJoe5-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-28" value="Рахуємо кількість цифр в числі" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="825" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-30" target="AJFZOLvAFKbFvspeJoe5-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-30" value="Перевіряємо чи цифри з обох боків збігаються" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="825" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-32" target="AJFZOLvAFKbFvspeJoe5-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-36" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AJFZOLvAFKbFvspeJoe5-35">
+          <mxGeometry x="0.0916" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-32" target="AJFZOLvAFKbFvspeJoe5-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-39" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AJFZOLvAFKbFvspeJoe5-38">
+          <mxGeometry x="-0.0227" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-32" value="Якась цифра&amp;nbsp;&lt;div&gt;не збігається?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="827.5" y="500" width="115" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-34" value="return false" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-37" value="return false" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="825" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AJFZOLvAFKbFvspeJoe5-40" target="AJFZOLvAFKbFvspeJoe5-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-40" value="Виводимо тестові виклики написанної переватнаженної функції" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="36.25" y="120" width="197.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AJFZOLvAFKbFvspeJoe5-42" value="Кінець" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="220" width="150" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
