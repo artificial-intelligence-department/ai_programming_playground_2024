@@ -8,8 +8,8 @@ int main() {
     scanf("%i", &P);
 
     double r;
-    printf("Enter the annual interest rate (if 5%%, enter 5): "); // заменил % на %%
-    scanf("%lf", &r); // используй %lf для ввода double
+    printf("Enter the annual interest rate (if 5%%, enter 5): "); 
+    scanf("%lf", &r); 
     r = r / 100;
 
     printf("Enter the number of interest charges per year: ");
