@@ -1,0 +1,335 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+  <diagram name="Сторінка-1" id="r1kVNLusah0mM83Z4e98">
+    <mxGraphModel dx="3090" dy="1815" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-azDUG_442jtJClhi5t5-10" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-1" target="-azDUG_442jtJClhi5t5-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-1" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;Start&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="139" y="73" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="199" y="350.81485451592334" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-2" value="String weather" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="139" y="258" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-4" target="-azDUG_442jtJClhi5t5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-4" value="&lt;span style=&quot;font-family: Roboto, -apple-system, &amp;quot;apple color emoji&amp;quot;, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start; white-space-collapse: preserve;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;What is the weather today? (sunny, windy, rainy, cloudy, snowy&lt;/font&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="68.5" y="172" width="261" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-15" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-6" target="-azDUG_442jtJClhi5t5-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-6" value="weather" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="139" y="354" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-19" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-14" target="-azDUG_442jtJClhi5t5-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-20" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Yes&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-19">
+          <mxGeometry x="-0.3705" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-22" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-14" target="-azDUG_442jtJClhi5t5-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-23" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-22">
+          <mxGeometry x="-0.06" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-14" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 11px;&quot;&gt;weather != &quot;sunny&quot; &amp;amp;&amp;amp; &lt;/div&gt;&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 11px;&quot;&gt;weather != &quot;windy&quot; &amp;amp;&amp;amp; &lt;/div&gt;&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 11px;&quot;&gt;weather != &quot;rainy&quot;&lt;/div&gt;&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 11px;&quot;&gt; &amp;amp;&amp;amp; weather != &quot;cloudy&quot;&lt;/div&gt;&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 11px;&quot;&gt; &amp;amp;&amp;amp; weather != &lt;/div&gt;&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 11px;&quot;&gt;&quot;snowy&quot;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40.5" y="450" width="317" height="188" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-16" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;Please return&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="490.5" width="206" height="103" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-25" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="327" y="763.4999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-26" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-25">
+          <mxGeometry x="-0.1623" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-28" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="25" y="763.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-29" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-28">
+          <mxGeometry x="0.0165" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-31" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-21" target="-azDUG_442jtJClhi5t5-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-21" value="weather == &quot;snowy&quot; ||&lt;div&gt;weather == &quot;rainy&quot;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="121.5" y="686" width="155" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-33" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="59" y="936" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-34" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-33">
+          <mxGeometry x="-0.45" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-36" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-30" target="-azDUG_442jtJClhi5t5-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-37" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-36">
+          <mxGeometry x="-0.1028" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-30" value="weather&lt;div&gt;==&lt;/div&gt;&lt;div&gt;sunny&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="896" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-39" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="539" y="936.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-40" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-39">
+          <mxGeometry x="0.077" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-42" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-35" target="-azDUG_442jtJClhi5t5-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-43" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-42">
+          <mxGeometry x="-0.3115" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-35" value="weather&lt;div&gt;==&lt;/div&gt;&lt;div&gt;rainy&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="359" y="896" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-45" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="259.0000000000002" y="1063" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-46" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-45">
+          <mxGeometry x="-0.1171" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-48" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-41" target="-azDUG_442jtJClhi5t5-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-49" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-48">
+          <mxGeometry x="-0.2284" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-41" value="weather&lt;div&gt;==&lt;/div&gt;&lt;div&gt;cloudy&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="359" y="1023" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-51" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="739" y="1063" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-52" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-51">
+          <mxGeometry x="-0.3251" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-54" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-47" target="-azDUG_442jtJClhi5t5-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-55" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-54">
+          <mxGeometry x="-0.15" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-47" value="weather&lt;div&gt;==&lt;/div&gt;&lt;div&gt;snowy&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="559" y="1023" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-57" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="739" y="1196" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-69" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-57">
+          <mxGeometry x="-0.1711" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-71" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-53" target="-azDUG_442jtJClhi5t5-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-53" value="weather&lt;div&gt;==&lt;/div&gt;&lt;div&gt;windy&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="559" y="1156" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-59" value="A great day for a picnic!" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-51.5" y="906" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-60" value="You don&#39;t need a&amp;nbsp;&lt;div&gt;jacked&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-85" y="733.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-61" value="Please, wear a jacked" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="314" y="733.5" width="182" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-64" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Perfect weather to&lt;/font&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;read a book&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;within!&lt;/font&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="906" width="138" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-65" value="Maybe visit a&amp;nbsp;&lt;div&gt;museum?&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1033" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-67" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;How about&amp;nbsp;&lt;/font&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;making a snowman?&lt;/font&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="731" y="1035" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-68" value="Launch the kite if&amp;nbsp;&lt;div&gt;it is in trehe you&amp;nbsp;&lt;/div&gt;&lt;div&gt;are&amp;nbsp;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="731" y="1166" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-73" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-70" target="-azDUG_442jtJClhi5t5-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-70" value="switch&amp;nbsp;&lt;div&gt;(weather[1])&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="539" y="1274" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-75" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-72" target="-azDUG_442jtJClhi5t5-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-76" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-75">
+          <mxGeometry x="-0.2491" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-78" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-72" target="-azDUG_442jtJClhi5t5-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-72" value="&#39;u&#39;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="559" y="1364" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-74" value="Wear your&lt;div&gt;favorite shoes!&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="668" y="1374" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-80" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-77" target="-azDUG_442jtJClhi5t5-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-81" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="-azDUG_442jtJClhi5t5-80">
+          <mxGeometry x="-0.3235" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-83" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-77" target="-azDUG_442jtJClhi5t5-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-77" value="&#39;n&#39;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="559" y="1462" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-79" value="Show boots&lt;div&gt;will keep your&amp;nbsp;&lt;/div&gt;&lt;div&gt;feet warm!&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="656" y="1472" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-85" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-82" target="-azDUG_442jtJClhi5t5-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-87" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-82" target="-azDUG_442jtJClhi5t5-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-82" value="&#39;a&#39;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="559" y="1566" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-84" value="Rain boots are&lt;div&gt;good idea!&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="656" y="1579" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-89" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-86" target="-azDUG_442jtJClhi5t5-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-91" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-86" target="-azDUG_442jtJClhi5t5-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-86" value="1" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="559" y="1673" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-88" value="Today any shoe&lt;div&gt;is suitable&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="654" y="1683" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-95" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-90" target="-azDUG_442jtJClhi5t5-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-90" value="default" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="559" y="1781" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-94" value="Wear something&lt;div&gt;sturdy&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="656" y="1796" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-99" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="778" y="1403.52" as="sourcePoint" />
+            <mxPoint x="846" y="1404" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-100" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="765" y="1504" as="sourcePoint" />
+            <mxPoint x="848" y="1504" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-101" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="764" y="1615" as="sourcePoint" />
+            <mxPoint x="848" y="1614" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-102" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="762" y="1719" as="sourcePoint" />
+            <mxPoint x="850" y="1719" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-103" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="763" y="1836" as="sourcePoint" />
+            <mxPoint x="851" y="1836" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-104" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="851" y="1861" as="sourcePoint" />
+            <mxPoint x="846" y="1404" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-105" value="break" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="788" y="1861" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-106" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="-azDUG_442jtJClhi5t5-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="990" y="542" as="sourcePoint" />
+            <mxPoint x="774" y="725" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-107" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="991" y="1892" as="sourcePoint" />
+            <mxPoint x="990" y="542" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-azDUG_442jtJClhi5t5-108" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-azDUG_442jtJClhi5t5-105">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="927" y="1917" as="sourcePoint" />
+            <mxPoint x="991" y="1891" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
