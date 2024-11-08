@@ -5,11 +5,11 @@
 
 using namespace std;
 
-void numbers_rem(vector<int>& vec){
+void rem(vector<int>& vec){
     vec.erase(remove_if(vec.begin(), vec.end(), [](int x) { return (x % 2) == 0 ; }), vec.end());
 }
 
-void words_rem(vector<string>& vec){
+void rem(vector<string>& vec){
     vec.erase(remove_if(vec.begin(), vec.end(), [&](const string& word) {
         auto index = &word - &vec[0];
         return index % 2 != 0;
@@ -27,7 +27,7 @@ int main(){
     {
         cin >> numbers[i];
     }
-    numbers_rem(numbers);
+    rem(numbers);
     cout << "Результат видалення парних чисел: " << endl;
     for (int i = 0; i < numbers.size(); i++)
     {
@@ -46,7 +46,7 @@ int main(){
         getline(cin, words[i]);
     }
 
-     words_rem(words);
+     rem(words);
      cout << "Результат видалення парних слів: " << endl;
     for (const string& word : words)
     {
