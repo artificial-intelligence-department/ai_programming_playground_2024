@@ -8,14 +8,9 @@ int main() {
     scanf("%i", &P);
 
     double r;
-<<<<<<< HEAD
     printf("Enter the annual interest rate (if 5%%, enter 5): ");
     scanf("%lf", &r); 
 
-=======
-    printf("Enter the annual interest rate (if 5%%, enter 5): "); 
-    scanf("%lf", &r); 
->>>>>>> fe0e1e895f761002ad9497ef747e1ea545dec0e2
     r = r / 100;
 
     printf("Enter the number of interest charges per year: ");
