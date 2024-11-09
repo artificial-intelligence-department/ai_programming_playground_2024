@@ -23,7 +23,7 @@ int main() {
             return 0;
         }
 
-        prev_cube = current_cube; 
+        prev_cube = current_cube;
     }
 
     cout << "WIN" << endl;
