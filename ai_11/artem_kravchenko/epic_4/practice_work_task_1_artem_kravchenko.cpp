@@ -4,17 +4,23 @@
 
 using namespace std;
 
-bool isPolindrom (const string& word){
-    string reversedWord = word;
-    reverse(reversedWord.begin(), reversedWord.end());
-    return word == reversedWord;
+bool audit(const string& word, int start, int end) {
+    if (start >= end) {
+        return true;
+    }
+    if (word[start] != word[end]) {
+        return false;
+    }
+    return audit(word, start + 1, end - 1);
 }
 
-bool isPolindrom( int number){
+bool isPolindrom(const string& word) {
+    return audit(word, 0, word.size() - 1);
+}
+
+bool isPolindrom(int number) {
     string numberStr = to_string(number);
-    string reversedStr = numberStr;
-    reverse(reversedStr.begin(), reversedStr.end());
-    return numberStr == reversedStr;
+    return audit(numberStr, 0, numberStr.size() - 1);
 }
 
 int main(){
