@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-void replaceMin(string num, int index) {
+void replaceMin(string &num, int index) {
     if (index == num.length()) return; 
     if (num[index] == '*') {
         num[index] = (index == 0) ? '1' : '0';
@@ -10,7 +10,7 @@ void replaceMin(string num, int index) {
     replaceMin(num, index + 1); 
 }
 
-void replaceMax(string num, int index) {
+void replaceMax(string &num, int index) {
     if (index == num.length()) return; 
     if (num[index] == '*') {
         num[index] = '9'; 
