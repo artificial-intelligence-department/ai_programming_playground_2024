@@ -21,7 +21,7 @@ Operation getOperation(const string& command) {
 }
 
 template<typename T = int>
-class BTree {
+class binaryTree {
 private:
     struct Node {
         T value;
@@ -31,7 +31,7 @@ private:
     };
 
     Node* root;
-    int treeSize; // Renaming to avoid conflict with the function name
+    int treeSize;
 
     void destroyTree(Node* root) {
         if (root != nullptr) {
@@ -75,9 +75,9 @@ private:
     }
 
 public:
-    BTree() : root(nullptr), treeSize(0) {}
+    binaryTree() : root(nullptr), treeSize(0) {}
 
-    ~BTree() {
+    ~binaryTree() {
         destroyTree(root);
     }
 
@@ -99,7 +99,7 @@ public:
     }
 
     // Overload << operator to print the tree in-order
-    friend ostream& operator<<(ostream& os, const BTree& tree) {
+    friend ostream& operator<<(ostream& os, const binaryTree& tree) {
         tree.printTree(tree.root, os);
         return os;
     }
@@ -108,7 +108,7 @@ public:
 int main() {
     int Q;
     cin >> Q;
-    BTree<int> tree;
+    binaryTree<int> tree;
 
     for (int i = 0; i < Q; i++) {
         string option;
