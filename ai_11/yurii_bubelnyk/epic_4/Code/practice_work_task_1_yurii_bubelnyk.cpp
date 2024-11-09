@@ -3,6 +3,7 @@
 using namespace std;
 
 bool isPalindrome(string a, int start, int end);
+bool isPalindrome(int num);
 
 int main(){
 
@@ -16,10 +17,22 @@ int main(){
     int end = a.length()-1;
 
     if(isPalindrome(a, start, end)){
-        cout << "Poli";
+        cout << "Pali";
     }else{
-        cout << "Not Poli";
+        cout << "Not Pali";
     }
+
+    cout << endl;
+
+    int number;
+    cin >> number;
+
+    if (isPalindrome(number)) {
+        cout << "Pali" << endl;
+    } else {
+        cout << "Not a Pali" << endl;
+    }
+
     return 0;
 }
 
@@ -34,3 +47,15 @@ bool isPalindrome(string a, int start, int end){
     return isPalindrome(a, ++start, --end);
 }
 
+bool isPalindrome(int num) {
+    int original = num;
+    int reversed = 0;
+    
+    while (num > 0) {
+        int digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num /= 10;
+    }
+    
+    return original == reversed;
+}
