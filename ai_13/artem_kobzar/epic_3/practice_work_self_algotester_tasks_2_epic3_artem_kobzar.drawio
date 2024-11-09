@@ -1,0 +1,116 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Страница — 1" id="j9DjgkxPOLqC21O9HBEP">
+    <mxGraphModel dx="1221" dy="717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_xCu2DR_NCA421wGbat--3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--1" target="_xCu2DR_NCA421wGbat--2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--1" value="&lt;font color=&quot;#ff3333&quot;&gt;Start&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--2" target="_xCu2DR_NCA421wGbat--4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--2" value="int n" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--4" target="_xCu2DR_NCA421wGbat--6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--4" value="input n" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="533" y="170" width="102.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--6" target="_xCu2DR_NCA421wGbat--8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--6" value="vectror&amp;lt;int&amp;gt;numbers(n)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="516.75" y="230" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--8" target="_xCu2DR_NCA421wGbat--10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--8" target="_xCu2DR_NCA421wGbat--13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="682" y="335" />
+              <mxPoint x="682" y="485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--8" value="i=0; i &amp;lt; n; i++" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="527" y="300" width="116" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--10" target="_xCu2DR_NCA421wGbat--8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="507" y="410" />
+              <mxPoint x="507" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--10" value="input numbers[i]" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="515.75" y="390" width="137" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--13" target="_xCu2DR_NCA421wGbat--17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--13" value="wow_count = 1&lt;div&gt;current_min = numbers [0]&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="507" y="460" width="154.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--17" target="_xCu2DR_NCA421wGbat--20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--17" target="_xCu2DR_NCA421wGbat--31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="575" />
+              <mxPoint x="400" y="935" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--17" value="i=1; i &amp;lt; n; i++" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="526.25" y="540" width="116" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--20" target="_xCu2DR_NCA421wGbat--22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--24" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_xCu2DR_NCA421wGbat--23">
+          <mxGeometry x="-0.15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--20" value="numbers[i] &amp;lt;= current_min?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="486.75" y="640" width="195" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--22" target="_xCu2DR_NCA421wGbat--25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--22" value="wow_count++" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="750" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--25" target="_xCu2DR_NCA421wGbat--17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="840" />
+              <mxPoint x="700" y="575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--25" value="current_min=numbers[i]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="820" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_xCu2DR_NCA421wGbat--31" target="_xCu2DR_NCA421wGbat--35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--31" value="wow_count output" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="511.75" y="910" width="145" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_xCu2DR_NCA421wGbat--35" value="&lt;font color=&quot;#ff3333&quot;&gt;Start&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="524.25" y="1000" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
