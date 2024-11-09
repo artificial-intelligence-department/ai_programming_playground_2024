@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <string> 
 #include <algorithm>
 
 using namespace std;
@@ -114,21 +113,20 @@ int main() {
                 cout << "Invalid number, try again" << endl;
                 goto start;
             }
+            if(caseValue != 4) {
+                cout << "Would you like to chose another option?\n type 1 if yes, or 0 if no \n";
+                perev:
+                cin >> temp;
 
-            cout << "Would you like to chose another option?\n type 1 if yes, or 0 if no \n";
-        perev:
-            cin >> temp;
-            cin.clear();
-            cin.ignore(100, '\n');
-
-            if (temp == 0) {
-                whileStopper = false;
-            } else if (temp == 1) {
-                
-            } else {
-                cout << "incorrect number,try again\n";
-                goto perev;
-            }
+                if (temp == 0) {
+                    whileStopper = false;
+                } else if (temp == 1) {
+                    
+                } else {
+                    cout << "incorrect number,try again\n";
+                    goto perev;
+                }
+            } 
 
         } while (whileStopper);
     }
