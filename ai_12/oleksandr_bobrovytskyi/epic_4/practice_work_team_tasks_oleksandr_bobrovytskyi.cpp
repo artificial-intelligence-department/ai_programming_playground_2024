@@ -4,14 +4,14 @@ using namespace std;
 
 bool IsPalindrome(const string& str, int start, int end)
 {    
-    if(str[start] != str[end - 1])
-    {
-        return false;
-    }  
-
     if(end <= start )
     {
         return true;
+    }
+
+    if(str[start] != str[end - 1])
+    {
+        return false;
     }
 
     return IsPalindrome(str, start + 1, end - 1);
