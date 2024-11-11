@@ -1,0 +1,198 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+  <diagram name="Сторінка-1" id="7t3cBfNXn9gUPWegho06">
+    <mxGraphModel dx="2211" dy="612" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="30" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-2" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="490" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-4" target="hYqrQj_pSU-IVMWZ1g-L-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-4" value="initialise a, b, c, n" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="118.76" y="100" width="152.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-7" value="void angles" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="126.25" y="240" width="137.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-1" target="hYqrQj_pSU-IVMWZ1g-L-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="150" as="sourcePoint" />
+            <mxPoint x="350" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-9" value="void angles" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="30" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-11" target="hYqrQj_pSU-IVMWZ1g-L-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-11" value="initialise array and write down its elements" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="537.5" y="90" width="145" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="hYqrQj_pSU-IVMWZ1g-L-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-9" target="hYqrQj_pSU-IVMWZ1g-L-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="552.5" y="90" as="sourcePoint" />
+            <mxPoint x="602.5" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-25" value="i &amp;lt; n, i++" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="170" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-26" target="hYqrQj_pSU-IVMWZ1g-L-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-26" value="a = sides[i]&lt;div&gt;b = sides[ (i+1)%n ]&lt;/div&gt;&lt;div&gt;c = sides [ (i+2)%n ]&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="636" y="250" width="122" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-29" target="hYqrQj_pSU-IVMWZ1g-L-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-29" value="Output angle" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="260" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-30" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-25" target="hYqrQj_pSU-IVMWZ1g-L-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="506" y="330" as="sourcePoint" />
+            <mxPoint x="556" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="697" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-34" value="Input n" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="126.25" y="170" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-38" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-34" target="hYqrQj_pSU-IVMWZ1g-L-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="220" as="sourcePoint" />
+            <mxPoint x="440" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-39" target="hYqrQj_pSU-IVMWZ1g-L-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-53" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hYqrQj_pSU-IVMWZ1g-L-51">
+          <mxGeometry x="-0.0923" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-39" value="n == 3" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="300" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-40" target="hYqrQj_pSU-IVMWZ1g-L-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-55" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hYqrQj_pSU-IVMWZ1g-L-46">
+          <mxGeometry x="-0.3627" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-40" value="n == 11" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="300" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-41" target="hYqrQj_pSU-IVMWZ1g-L-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-56" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hYqrQj_pSU-IVMWZ1g-L-44">
+          <mxGeometry x="-0.2421" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-41" target="hYqrQj_pSU-IVMWZ1g-L-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-54" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hYqrQj_pSU-IVMWZ1g-L-52">
+          <mxGeometry x="-0.1089" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-41" value="n == 9" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="181.26" y="300" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-42" value="Output angles ( 9, sides )" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="141.89" y="400" width="168.74" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-43" value="Output angles ( 11, sides )" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="400" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-47" value="Input a, b, c" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="13.76" y="380" width="102.48" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-48" value="a+b&amp;gt;c&lt;div&gt;a+c&amp;gt;b&lt;/div&gt;&lt;div&gt;b+c&amp;gt;a&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="11.559999999999999" y="440" width="106.87" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-49" value="Output angle_triangle_1&lt;div&gt;angle_triangle_2&lt;/div&gt;&lt;div&gt;angle_triangle_3&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-24.22999999999999" y="540" width="178.44" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-50" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-7" target="hYqrQj_pSU-IVMWZ1g-L-39">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="65" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-58" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-39" target="hYqrQj_pSU-IVMWZ1g-L-47">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-62" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hYqrQj_pSU-IVMWZ1g-L-58">
+          <mxGeometry x="-0.2045" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-59" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-47" target="hYqrQj_pSU-IVMWZ1g-L-48">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-60" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-48" target="hYqrQj_pSU-IVMWZ1g-L-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-61" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hYqrQj_pSU-IVMWZ1g-L-60">
+          <mxGeometry x="-0.2044" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-63" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-42" target="hYqrQj_pSU-IVMWZ1g-L-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-64" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-43" target="hYqrQj_pSU-IVMWZ1g-L-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="236" y="450" as="sourcePoint" />
+            <mxPoint x="305" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYqrQj_pSU-IVMWZ1g-L-65" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="hYqrQj_pSU-IVMWZ1g-L-49" target="hYqrQj_pSU-IVMWZ1g-L-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="295" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

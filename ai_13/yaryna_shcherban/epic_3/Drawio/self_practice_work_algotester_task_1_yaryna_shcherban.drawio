@@ -1,0 +1,126 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+  <diagram name="Сторінка-1" id="aEz-nr6bdWj7RBb74hUV">
+    <mxGraphModel dx="1176" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="140" y="30" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-2" value="End" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="140" y="430" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-3" value="Input&amp;nbsp;the number of teeth (n)&amp;nbsp;&lt;div&gt;and the limit of sharpness(k)&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="85" y="100" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-4" value="creation of an array of degrees of sharpness of teeth" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="170" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="LlNCs8To8BDl-L4a-BV5-5" target="LlNCs8To8BDl-L4a-BV5-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-5" value="Output result&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="132.5" y="360" width="125" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-6" value="function maxSharpenedTeeth" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="122.5" y="270" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="LlNCs8To8BDl-L4a-BV5-1" target="LlNCs8To8BDl-L4a-BV5-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="150" as="sourcePoint" />
+            <mxPoint x="350" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="LlNCs8To8BDl-L4a-BV5-3" target="LlNCs8To8BDl-L4a-BV5-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="205" y="80" as="sourcePoint" />
+            <mxPoint x="205" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="LlNCs8To8BDl-L4a-BV5-4" target="LlNCs8To8BDl-L4a-BV5-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="215" y="90" as="sourcePoint" />
+            <mxPoint x="215" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="LlNCs8To8BDl-L4a-BV5-6" target="LlNCs8To8BDl-L4a-BV5-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="225" y="100" as="sourcePoint" />
+            <mxPoint x="225" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-14" value="maxSharpenedTeeth" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="30" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-15" value="initialise max_count and current_count" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="375" y="120" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-16" value="&amp;nbsp;i &amp;lt; a.size() , ++i&lt;div&gt;a [ i ] &amp;gt;= k&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="350" y="200" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-18" value="current_count++" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="310" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-20" value="max_count = max ( max_count , current_count)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="310" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-21" value="return max_count" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="385" y="410" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="LlNCs8To8BDl-L4a-BV5-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="350" as="sourcePoint" />
+            <mxPoint x="450" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="LlNCs8To8BDl-L4a-BV5-15" target="LlNCs8To8BDl-L4a-BV5-16" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="100" as="sourcePoint" />
+            <mxPoint x="460" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.398;entryY=0.064;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="LlNCs8To8BDl-L4a-BV5-16" target="LlNCs8To8BDl-L4a-BV5-18" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="110" as="sourcePoint" />
+            <mxPoint x="470" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wYUFe-oZ4x9caa2_bBJN-1" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="LlNCs8To8BDl-L4a-BV5-24" vertex="1" connectable="0">
+          <mxGeometry x="-0.0719" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.542;entryY=0.078;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="LlNCs8To8BDl-L4a-BV5-16" target="LlNCs8To8BDl-L4a-BV5-20" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="250" as="sourcePoint" />
+            <mxPoint x="360" y="323" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wYUFe-oZ4x9caa2_bBJN-2" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="LlNCs8To8BDl-L4a-BV5-25" vertex="1" connectable="0">
+          <mxGeometry x="0.085" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="LlNCs8To8BDl-L4a-BV5-18" target="LlNCs8To8BDl-L4a-BV5-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="340" as="sourcePoint" />
+            <mxPoint x="450" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="365" y="380" />
+              <mxPoint x="455" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LlNCs8To8BDl-L4a-BV5-28" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" target="LlNCs8To8BDl-L4a-BV5-20" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="380" as="sourcePoint" />
+            <mxPoint x="450" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="545" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
