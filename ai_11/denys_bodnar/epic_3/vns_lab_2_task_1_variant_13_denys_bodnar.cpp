@@ -3,12 +3,13 @@
 
 using namespace std;
 
-double factorial(int n) {
-    double result = 1;
-    for (int i = 1; i <= n; i++) {
-        result *= i;
+namespace myfun {
+    double factorial(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+        return n * factorial(n - 1);
     }
-    return result;
 }
 
 int main() {
@@ -17,9 +18,9 @@ int main() {
     int n = 0;
 
     while (true) {
-        double s = pow(3, n) * factorial(n) / factorial(3 * n);
+        double s = pow(3, n) * myfun::factorial(n) / myfun::factorial(3 * n);
 
-        sum = sum + s;
+        sum += s;
 
         if (s < e) {
             break;

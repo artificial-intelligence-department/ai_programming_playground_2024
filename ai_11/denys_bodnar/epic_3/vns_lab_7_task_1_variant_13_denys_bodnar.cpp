@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cstdarg>
 
 using namespace std;
 
@@ -14,20 +15,23 @@ string Ternary(int number) {
     return ternary;
 }
 
-void convertToTernary(int count, int a = 0, int b = 0, int c = 0, int d = 0, int e = 0, int f = 0, int g = 0) {
+void convertToTernary(int count, ...) {
+    va_list args;
+    va_start(args, count);
+    
     cout << "Перетворення чисел у трійкову систему: ";
-    if (count > 0) cout << a << " -> " << Ternary(a) << "  ";
-    if (count > 1) cout << b << " -> " << Ternary(b) << "  ";
-    if (count > 2) cout << c << " -> " << Ternary(c) << "  ";
-    if (count > 3) cout << d << " -> " << Ternary(d) << "  ";
-    if (count > 4) cout << e << " -> " << Ternary(e) << "  ";
-    if (count > 5) cout << f << " -> " << Ternary(f) << "  ";
-    if (count > 6) cout << g << " -> " << Ternary(g) << "  ";
+    
+    for (int i = 0; i < count; i++) {
+        int number = va_arg(args, int);
+        cout << number << " -> " << Ternary(number) << "  ";
+    }
+    
+    va_end(args);
     cout << endl;
 }
 
 int main() {
-    convertToTernary(3, 0, 2, 3);
+    convertToTernary(3, 1, 2, 3);
     convertToTernary(4, 4, 5, 6, 7);
     convertToTernary(7, 8, 9, 10, 11, 12, 13, 14);
     return 0;
