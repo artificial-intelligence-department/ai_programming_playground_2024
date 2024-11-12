@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
   <diagram name="Страница — 1" id="G84uFZuVmrkQKi_ffffj">
-    <mxGraphModel dx="2620" dy="923" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1539" dy="737" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
         <mxCell id="kDMzE3e3oYd2NGhY_jBj-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="kDMzE3e3oYd2NGhY_jBj-2" target="kDMzE3e3oYd2NGhY_jBj-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="kDMzE3e3oYd2NGhY_jBj-2" value="&lt;div&gt;double factorial(int n) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; double result = 1;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; for (int i = 1; i &amp;lt;= n; i++) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; result *= i;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; return result;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+        <mxCell id="kDMzE3e3oYd2NGhY_jBj-2" value="&lt;div&gt;double factorial(int n) {&lt;/div&gt;&lt;div&gt;if (n &amp;lt;= 1) {&lt;/div&gt;&lt;div&gt;return 1;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;return n * factorial(n - 1);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
           <mxGeometry y="110" width="240" height="110" as="geometry" />
         </mxCell>
         <mxCell id="kDMzE3e3oYd2NGhY_jBj-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="kDMzE3e3oYd2NGhY_jBj-4" target="kDMzE3e3oYd2NGhY_jBj-6" edge="1">
