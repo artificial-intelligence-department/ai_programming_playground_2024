@@ -13,9 +13,9 @@ int main()
     {
         cin >> numbers[i];
     }
-    
+
     sort(numbers.begin(), numbers.end());
-    
+
     auto it = unique(numbers.begin(), numbers.end());
     numbers.resize(distance(numbers.begin(), it));
 
@@ -24,7 +24,8 @@ int main()
 
     cout << numbers.size() << endl;
 
-    for (int i = 0; i < numbers.size(); i++) {
+    for (int i = 0; i < numbers.size(); i++)
+    {
         cout << numbers[i] << ' ';
     }
-}    
+}

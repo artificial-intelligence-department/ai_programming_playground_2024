@@ -4,51 +4,65 @@
 
 using namespace std;
 
-enum FileOpResult { Success, Failure };
+enum FileOpResult
+{
+    Success,
+    Failure
+};
 
-FileOpResult write_to_file(const string& name, const string& content) {
-    if (name.empty() || content.empty()) {
+FileOpResult write_to_file(const string &name, const string &content)
+{
+    if (name.empty() || content.empty())
+    {
         return Failure;
     }
 
     ofstream file(name, ios::out | ios::trunc);
-    if (!file.is_open()) {
+    if (!file.is_open())
+    {
         return Failure;
     }
 
     file << content;
-    if (!file) {
+    if (!file)
+    {
         file.close();
         return Failure;
     }
 
     file.close();
-    if (!file) {
+    if (!file)
+    {
         return Failure;
     }
 
     return Success;
 }
 
-FileOpResult copy_file(const string& file_from, const string& file_to) {
-    if (file_from.empty() || file_to.empty()) {
+FileOpResult copy_file(const string &file_from, const string &file_to)
+{
+    if (file_from.empty() || file_to.empty())
+    {
         return Failure;
     }
 
     ifstream src_file(file_from, ios::binary);
-    if (!src_file.is_open()) {
+    if (!src_file.is_open())
+    {
         return Failure;
     }
 
     ofstream dest_file(file_to, ios::binary | ios::trunc);
-    if (!dest_file.is_open()) {
+    if (!dest_file.is_open())
+    {
         src_file.close();
         return Failure;
     }
 
     dest_file << src_file.rdbuf();
 
-    if (!dest_file) {
+    if (!dest_file)
+    {
         src_file.close();
         dest_file.close();
         return Failure;
@@ -57,14 +71,16 @@ FileOpResult copy_file(const string& file_from, const string& file_to) {
     src_file.close();
     dest_file.close();
 
-    if (!src_file || !dest_file) {
+    if (!src_file || !dest_file)
+    {
         return Failure;
     }
 
     return Success;
 }
 
-int main() {
+int main()
+{
     string file_name, content, source_file, target_file;
 
     cout << "Введіть ім'я файлу для запису: ";
@@ -75,12 +91,14 @@ int main() {
 
     FileOpResult write_result = write_to_file(file_name, content);
 
-    if (write_result == Success) {
+    if (write_result == Success)
+    {
         cout << "Запис успішний." << endl;
-    } else {
+    }
+    else
+    {
         cout << "Помилка запису." << endl;
     }
-
 
     cout << "Введіть ім'я файлу-джерела для копіювання: ";
     getline(cin, source_file);
@@ -90,12 +108,14 @@ int main() {
 
     FileOpResult copy_result = copy_file(source_file, target_file);
 
-    if (copy_result == Success) {
+    if (copy_result == Success)
+    {
         cout << "Копіювання успішне." << endl;
-    } else {
+    }
+    else
+    {
         cout << "Помилка копіювання." << endl;
     }
 
     return 0;
 }
-  

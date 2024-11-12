@@ -25,27 +25,27 @@ int main()
     cout << "Enter a sentence: ";
     getline(cin, input);
 
-    if (!input.empty() && input.back() == '.') {
+    if (!input.empty() && input.back() == '.')
+    {
         input.pop_back();
     }
 
     istringstream iss(input);
     vector<string> words;
     string word;
-    
 
-    while (iss >> word) {
+    while (iss >> word)
+    {
         words.push_back(word);
     }
 
-
     cout << "Palindromes: ";
-    for (int i = 0; i < words.size(); i++) {
+    for (int i = 0; i < words.size(); i++)
+    {
         if (isPalindrome(words[i], 0, words[i].length() - 1))
         {
             cout << words[i] << " ";
         }
-
     }
     return 0;
 }
