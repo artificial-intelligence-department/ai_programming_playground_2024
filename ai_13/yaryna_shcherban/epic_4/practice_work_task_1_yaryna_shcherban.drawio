@@ -1,0 +1,281 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+  <diagram id="8vOLyxxEgypHw81N3CXb" name="Сторінка-1">
+    <mxGraphModel dx="1680" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="flLs0yP791O9ZFForDXv-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="30" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-2" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="690" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-3" value="Input word" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="110" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-5" value="function isPalindrome (string)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="170" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-7" value="&amp;nbsp;isPalinfrome" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-8" value="Output : word is a palindrome" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry y="320" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-9" value="Output : word is not a palindrome" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="320" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-3" target="flLs0yP791O9ZFForDXv-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="300" as="sourcePoint" />
+            <mxPoint x="390" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-5" target="flLs0yP791O9ZFForDXv-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="300" as="sourcePoint" />
+            <mxPoint x="390" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-7" target="flLs0yP791O9ZFForDXv-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="300" as="sourcePoint" />
+            <mxPoint x="390" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="65" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-15" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="flLs0yP791O9ZFForDXv-13">
+          <mxGeometry x="0.213" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.564;entryY=0.058;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-7" target="flLs0yP791O9ZFForDXv-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="300" as="sourcePoint" />
+            <mxPoint x="390" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="235" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-16" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="flLs0yP791O9ZFForDXv-14">
+          <mxGeometry x="0.2704" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-17" value="Input number" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="400" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-18" value="function iaPalindrome (number)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="460" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-19" value="&amp;nbsp;isPalinfrome" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-20" value="Output : number is a palindrome" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry y="610" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-21" value="Output : number is not a palindrome" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="610" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-17" target="flLs0yP791O9ZFForDXv-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="590" as="sourcePoint" />
+            <mxPoint x="390" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-18" target="flLs0yP791O9ZFForDXv-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="590" as="sourcePoint" />
+            <mxPoint x="390" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-19" target="flLs0yP791O9ZFForDXv-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="590" as="sourcePoint" />
+            <mxPoint x="390" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="70" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-25" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="flLs0yP791O9ZFForDXv-24">
+          <mxGeometry x="0.213" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.564;entryY=0.058;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-19" target="flLs0yP791O9ZFForDXv-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="590" as="sourcePoint" />
+            <mxPoint x="390" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="230" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-27" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="flLs0yP791O9ZFForDXv-26">
+          <mxGeometry x="0.2704" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-28" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-1" target="flLs0yP791O9ZFForDXv-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="300" as="sourcePoint" />
+            <mxPoint x="390" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.453;exitY=1.039;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-8" target="flLs0yP791O9ZFForDXv-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="540" as="sourcePoint" />
+            <mxPoint x="360" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="60" y="380" />
+              <mxPoint x="150" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-30" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="flLs0yP791O9ZFForDXv-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="380" as="sourcePoint" />
+            <mxPoint x="360" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="225" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.453;exitY=1.039;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="67" y="641" as="sourcePoint" />
+            <mxPoint x="148" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="68" y="670" />
+              <mxPoint x="148" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-32" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="128" y="670" as="sourcePoint" />
+            <mxPoint x="233" y="640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="233" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-33" value="function isPalindrome (string)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="30" width="131.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-34" target="flLs0yP791O9ZFForDXv-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-34" value="function iaPalindrome (number)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="496.12" y="370" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-36" value="Initialize start, end, string str" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="331.5" y="120" width="113" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-37" target="flLs0yP791O9ZFForDXv-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-50" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="flLs0yP791O9ZFForDXv-46">
+          <mxGeometry x="-0.2395" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-37" value="start &amp;gt;= end" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345.5" y="190" width="86" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-38" target="flLs0yP791O9ZFForDXv-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-51" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="flLs0yP791O9ZFForDXv-48">
+          <mxGeometry x="0.3526" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-38" target="flLs0yP791O9ZFForDXv-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-53" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="flLs0yP791O9ZFForDXv-49">
+          <mxGeometry x="0.1952" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-38" value="str[start] != str[end]" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="275" width="137" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-39" value="return isPalindrome(str, start+1, end-1" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="332" y="360" width="113" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-41" value="return true" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="484.5" y="195" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-42" value="return false" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="484.5" y="280" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-44" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-33" target="flLs0yP791O9ZFForDXv-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="474.5" y="220" as="sourcePoint" />
+            <mxPoint x="524.5" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-45" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-36" target="flLs0yP791O9ZFForDXv-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="474.5" y="220" as="sourcePoint" />
+            <mxPoint x="524.5" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-47" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-37" target="flLs0yP791O9ZFForDXv-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="474.5" y="220" as="sourcePoint" />
+            <mxPoint x="524.5" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-52" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="flLs0yP791O9ZFForDXv-47">
+          <mxGeometry x="-0.2463" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="flLs0yP791O9ZFForDXv-63">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="561.0711764705883" y="630" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-54" value="&lt;div&gt;string str = to_string(number)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="600" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-55" target="flLs0yP791O9ZFForDXv-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-59" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="flLs0yP791O9ZFForDXv-58">
+          <mxGeometry x="-0.2769" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-55" value="number &amp;lt; 0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="516.87" y="510" width="88.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-57" value="return false" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650.62" y="515" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-60" target="flLs0yP791O9ZFForDXv-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-60" value="initialize number" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="503.62" y="460" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-63" value="return isPalindrome(str, 0, str.length()-1)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="486.5" y="650" width="149.25" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flLs0yP791O9ZFForDXv-65" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="flLs0yP791O9ZFForDXv-55">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="626.12" y="630" as="sourcePoint" />
+            <mxPoint x="561.13" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
