@@ -1,0 +1,315 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+  <diagram name="Page-1" id="scQGdCDw3DWLZQTQGmQm">
+    <mxGraphModel dx="3772" dy="1612" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-1" target="RIDF-Rgh8XSgJSFxhPPf-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-1" value="LotteryGame::myMax(int a , int b)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="50" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-2" value="return (a&amp;gt;b) ? a : b" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-5" target="RIDF-Rgh8XSgJSFxhPPf-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-5" value="LotteryGame::myMin(int a , int b)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="370" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-6" value="return (a&amp;lt;b) ? a : b" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-7" target="RIDF-Rgh8XSgJSFxhPPf-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-7" value="LotteryGame::&lt;div&gt;int chooseColumnwithMinRowMax(const vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; &amp;amp;table , int n , int m)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="40" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-8" target="RIDF-Rgh8XSgJSFxhPPf-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-8" value="int minMaxvalue = 1001; int chosenColumn = 0;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="235" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-10" target="RIDF-Rgh8XSgJSFxhPPf-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-10" target="RIDF-Rgh8XSgJSFxhPPf-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="1260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="630" y="435" />
+              <mxPoint x="630" y="1255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-40" value="TRUE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIDF-Rgh8XSgJSFxhPPf-24">
+          <mxGeometry x="-0.8686" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="551" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-41" value="FALSE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIDF-Rgh8XSgJSFxhPPf-26">
+          <mxGeometry x="0.0182" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-10" value="for (int j = 0; j&amp;lt;m ; j++)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="370" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-12" target="RIDF-Rgh8XSgJSFxhPPf-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-12" value="int maxInColumn = 0;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-14" target="RIDF-Rgh8XSgJSFxhPPf-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-14" target="RIDF-Rgh8XSgJSFxhPPf-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="565" y="740" />
+              <mxPoint x="565" y="870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-38" value="TRUE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIDF-Rgh8XSgJSFxhPPf-18">
+          <mxGeometry x="0.2333" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-14" target="RIDF-Rgh8XSgJSFxhPPf-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="1060" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="725" />
+              <mxPoint x="600" y="1050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-39" value="FALSE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIDF-Rgh8XSgJSFxhPPf-33">
+          <mxGeometry x="-0.7918" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-14" value="for(int i = 0;i&amp;lt;n;i++){" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="685" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-16" target="RIDF-Rgh8XSgJSFxhPPf-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="335" y="860" />
+              <mxPoint x="335" y="725" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-16" value="maxInColumn = myMax(maxInColumn , table[i][j]);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="840" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-20" target="RIDF-Rgh8XSgJSFxhPPf-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-20" value="if (maxInColumn&amp;lt;minMaxvalue)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="970" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-22" target="RIDF-Rgh8XSgJSFxhPPf-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="1255" />
+              <mxPoint x="280" y="435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-22" value="minMaxvalue=maxInColumn; chosenColumn = j;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="1210" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-27" value="return chosenColumn" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-28" target="RIDF-Rgh8XSgJSFxhPPf-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-28" value="LotteryGame::int chooseMaxInColumn(const vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; &amp;amp;table , int n , int chosenColumn)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="50" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-29" target="RIDF-Rgh8XSgJSFxhPPf-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-29" value="int maxValue = 0;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="995" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-31" target="RIDF-Rgh8XSgJSFxhPPf-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-31" target="RIDF-Rgh8XSgJSFxhPPf-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-45" value="FALSE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIDF-Rgh8XSgJSFxhPPf-44">
+          <mxGeometry x="-0.6205" y="2" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-31" value="for(int i = 0; i &amp;lt; n ;i++)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="982.5" y="390" width="145" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-34" target="RIDF-Rgh8XSgJSFxhPPf-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1210" y="630" />
+              <mxPoint x="1210" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-42" value="TRUE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIDF-Rgh8XSgJSFxhPPf-36">
+          <mxGeometry x="-0.0636" y="-2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-34" value="maxValue = myMax (maxValue , table[i][chosenColumn])" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="967.5" y="600" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-43" value="return maxValue;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-46" target="RIDF-Rgh8XSgJSFxhPPf-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-46" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;main&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-47" target="RIDF-Rgh8XSgJSFxhPPf-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-47" value="int n,m;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-49" target="RIDF-Rgh8XSgJSFxhPPf-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-49" value="cin &amp;gt;&amp;gt; n &amp;gt;&amp;gt; m;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-51" target="RIDF-Rgh8XSgJSFxhPPf-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-51" target="RIDF-Rgh8XSgJSFxhPPf-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-51" value="if ((n &amp;lt; 1 || n &amp;gt; 1000) || (m &amp;lt; 1 || m &amp;gt; 1000))" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1695" y="470" width="270" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-56" value="cerr &amp;lt;&amp;lt; &quot;Error: Input values for n and m are out of bounds.&quot; &amp;lt;&amp;lt; endl; return 1;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="760" width="369" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-57" target="RIDF-Rgh8XSgJSFxhPPf-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-57" value="vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; table (n, vector&amp;lt;int&amp;gt;(m))" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2030" y="730" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-59" target="RIDF-Rgh8XSgJSFxhPPf-67">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2340" y="950" />
+              <mxPoint x="2340" y="1519" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-81" value="TRUE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIDF-Rgh8XSgJSFxhPPf-76">
+          <mxGeometry x="-0.8596" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2460" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-82" value="FALSE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIDF-Rgh8XSgJSFxhPPf-80">
+          <mxGeometry x="0.2619" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-59" value="for (int i =0; i &amp;lt; n; i++)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2100" y="860" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-61" target="RIDF-Rgh8XSgJSFxhPPf-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-66" value="TRUE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIDF-Rgh8XSgJSFxhPPf-65">
+          <mxGeometry x="-0.2579" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2340" y="1360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-61" value="for(int j = 0;j &amp;lt; m;j++)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2115" y="1070" width="130" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-64" target="RIDF-Rgh8XSgJSFxhPPf-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-64" value="cin &amp;gt;&amp;gt; table[i][j];" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="2120" y="1301.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-67" target="RIDF-Rgh8XSgJSFxhPPf-69">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1860" y="1519" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-71" value="TRUE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RIDF-Rgh8XSgJSFxhPPf-70">
+          <mxGeometry x="-0.3929" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-67" target="RIDF-Rgh8XSgJSFxhPPf-59">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2040" y="1519" />
+              <mxPoint x="2040" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-67" value="if(table[i][j] &lt; 1 || table[i][j] &gt; 1000)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="1450" width="200" height="138.5" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-69" value="cerr &amp;lt;&amp;lt; &quot;Error: Input values for a_ij are out of bounds.&quot; &amp;lt;&amp;lt; endl; return 1;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="1610" width="390" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-83" target="RIDF-Rgh8XSgJSFxhPPf-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-83" value="int chosenColumn = LotteryGame::chooseColumnwithMinRowMax(table, n,m);&lt;div&gt;&amp;nbsp;int result = LotteryGame::chooseMaxInColumn(table,n,chosenColumn);&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2460" y="870" width="420" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RIDF-Rgh8XSgJSFxhPPf-84" target="RIDF-Rgh8XSgJSFxhPPf-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-84" value="cout &amp;lt;&amp;lt; result;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3040" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RIDF-Rgh8XSgJSFxhPPf-86" value="end" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3040" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
