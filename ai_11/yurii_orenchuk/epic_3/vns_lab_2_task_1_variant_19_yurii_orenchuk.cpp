@@ -1,20 +1,21 @@
 #include <iostream>
-#include <math.h>
+#include <cmath>
 #include <iomanip>
 using namespace std;
 
-int main (){
+double recursiveSum(int n, double accuracy) {
+    double calc = n / pow((n - 1), 2);
+
+    if (calc < accuracy)
+        return 0;
+
+    return calc + recursiveSum(n + 1, accuracy);
+}
+
+int main() {
     double accuracy = 0.0001;
-    double sum = 0.0;
-    int n = 2;
-    double calc; 
+    decltype(accuracy) sum = recursiveSum(2, accuracy);
 
-    do {
-        calc = n / pow((n-1), 2);
-        sum += calc;
-        n++;
-    } while (calc >= accuracy);
-    cout << sum;
-
+    cout << typeid(sum).name() << " " << setprecision(10) << sum << endl;
     return 0;
 }

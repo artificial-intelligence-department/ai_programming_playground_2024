@@ -3,17 +3,15 @@
 #include <math.h>
 using namespace std;
 
-int Factorial(int n)
-{
-    int factorial = 1.0;
-
-    for(int i = 1; i <= n; i++){
-        factorial *= i;
-    } 
-
-    return factorial;
+namespace FacSpace{
+    int Factorial(int n) {
+        if (n <= 1)
+            return 1;
+        else
+            return n * Factorial(n - 1);
+    }
 }
-
+using namespace FacSpace;
 int main(){
     double a = 0.1, b = 1.0, eps = 0.0001;
     int k = 10, n = 20;
