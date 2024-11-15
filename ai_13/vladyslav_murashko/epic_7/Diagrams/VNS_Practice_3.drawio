@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.6">
+  <diagram name="Page-1" id="g6qNUVN4c_omKDiHqcdO">
+    <mxGraphModel dx="724" dy="1460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nHUujYxosqZVvBC90jhY-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHUujYxosqZVvBC90jhY-1" target="nHUujYxosqZVvBC90jhY-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-1" value="Початок" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="50" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHUujYxosqZVvBC90jhY-2" target="nHUujYxosqZVvBC90jhY-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-2" value="Отримуємо ціни та кількість від&amp;nbsp;&lt;div&gt;користувача&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="150" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHUujYxosqZVvBC90jhY-4" target="nHUujYxosqZVvBC90jhY-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-10" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nHUujYxosqZVvBC90jhY-9">
+          <mxGeometry x="-0.1184" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-4" value="Дані введено нормально?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="260" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.081;entryY=0.427;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="nHUujYxosqZVvBC90jhY-4" target="nHUujYxosqZVvBC90jhY-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="315" />
+              <mxPoint x="270" y="176" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-7" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nHUujYxosqZVvBC90jhY-6">
+          <mxGeometry x="-0.6888" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHUujYxosqZVvBC90jhY-8" target="nHUujYxosqZVvBC90jhY-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-8" value="Розраховуємо загальну ціну покупки" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHUujYxosqZVvBC90jhY-11" target="nHUujYxosqZVvBC90jhY-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-11" value="Виводимо&amp;nbsp;&lt;div&gt;результат&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHUujYxosqZVvBC90jhY-14" target="nHUujYxosqZVvBC90jhY-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-14" value="Розраховуємо площу nа об&#39;єм кулі з заданим радіусом та використанням функції power(radius, power)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="650" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHUujYxosqZVvBC90jhY-16" target="nHUujYxosqZVvBC90jhY-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-16" value="power(number, n)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="60" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHUujYxosqZVvBC90jhY-17" target="nHUujYxosqZVvBC90jhY-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-24" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nHUujYxosqZVvBC90jhY-20">
+          <mxGeometry x="-0.3379" y="3" relative="1" as="geometry">
+            <mxPoint x="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHUujYxosqZVvBC90jhY-17" target="nHUujYxosqZVvBC90jhY-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-23" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nHUujYxosqZVvBC90jhY-22">
+          <mxGeometry x="-0.1972" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-17" value="n == 1?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="145" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-19" value="return number" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="285" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-21" value="return number* power(number, n-1)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="155" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-26" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;Функція Power&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="820" y="-20" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHUujYxosqZVvBC90jhY-27" target="nHUujYxosqZVvBC90jhY-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-27" value="Виводимо&amp;nbsp;&lt;div&gt;результат&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nHUujYxosqZVvBC90jhY-29" value="Кінець" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="910" width="120" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
