@@ -29,4 +29,6 @@ int main(){
         pos1 += arr[pos1];
         pos2 -= arr[pos2];
     }
+
+    return 0;
 }
