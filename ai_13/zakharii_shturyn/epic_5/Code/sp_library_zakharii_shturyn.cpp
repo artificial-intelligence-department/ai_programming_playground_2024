@@ -84,9 +84,9 @@ void returnbook(string& inventory) {
 
         string line;
         int currentLine = 1;
-        int deleteLine = indx - 1;
+        int deleteLine = indx;
         while(getline(myFile, line)) {
-            if(currentLine == deleteLine) {
+            if(currentLine != deleteLine) {
                 tmpFile << line << endl;
             }
             currentLine++;
@@ -151,7 +151,11 @@ void removefromlibrary(string& archive) {
     cin >> indx;
     if(indx <= BooksIndx.size() && indx > 0 && BooksIndx[indx - 1] == 1) {
         BooksIndx.erase(BooksIndx.begin() + indx - 1);
-
+        for(int i = 0; i < BooksIndxInventory.size(); i++) {
+            if(indx - 1 < BooksIndxInventory[i]) {
+                BooksIndxInventory[i]--;
+            }
+        }
         ifstream myFile(archive);
         ofstream tmpFile("temp.txt");
         if (!myFile.is_open() || !tmpFile.is_open()) {
