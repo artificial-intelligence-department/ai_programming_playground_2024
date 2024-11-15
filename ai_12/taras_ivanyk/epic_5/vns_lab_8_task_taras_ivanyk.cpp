@@ -23,7 +23,8 @@ void create_binary_file(const string& myFile, const vector<Buyer>& buyers){
         outFile.write(reinterpret_cast<const char*>(&buyer), sizeof(Buyer));
     }
     outFile.close();
-    cout << " File was createn and filled with data " << endl;
+    cout << "*****************************************" << endl;
+    cout << "File was createn and filled with data " << endl;
 }
 
 void print_binary_file(const string& myFile){
@@ -34,11 +35,9 @@ void print_binary_file(const string& myFile){
         }
         Buyer buyer;
         while (inFile.read(reinterpret_cast<char*>(&buyer), sizeof(Buyer))){
-            cout << "Surname: " << buyer.surname << ", Name: " << buyer.name << endl;
-            cout << "Middle name: " << buyer.middle_name << endl;
-            cout << "Address: " << buyer.address << endl;
-            cout << "Telephone number: " << buyer.telephone_number << endl;
-            cout << "Card number: " << buyer.card_number << endl;
+            cout << "Surname: " << buyer.surname << ", Name: " << buyer.name << ", Middle name: " << buyer.middle_name <<  endl;
+            cout << "Address: " << buyer.address << ", Telephone number: " << buyer.telephone_number << ", Card number: " << buyer.card_number << endl;
+            cout << "------------------------" << endl;
         }
         inFile.close();
 }
@@ -100,7 +99,8 @@ int main(){
 
     create_binary_file(myFile, initial_buyers);
 
-    cout << "Original file contents " << endl;
+    cout << "Original file contents: " << endl;
+    cout << endl;
     print_binary_file(myFile);
 
     delete_first_three(myFile);
@@ -113,6 +113,7 @@ int main(){
     three_to_end(myFile, newBuyers);
 
     cout << "New file contents: " << endl;
+    cout << endl;
     print_binary_file(myFile);
 
     return 0;
