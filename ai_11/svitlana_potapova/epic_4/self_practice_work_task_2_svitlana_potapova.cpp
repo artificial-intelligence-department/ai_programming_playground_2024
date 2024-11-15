@@ -5,13 +5,21 @@ struct employee{
     int id;
     string name;
     int salary;
-};
 
-void displayInfo(employee person){
-    cout << "Employee ID: " << person.id << endl;
-    cout << "Name: " << person.name << endl;
-    cout << "Salary: " << person.salary <<endl;
-}
+    friend ostream& operator<<(ostream& os, const employee emp){
+      os << "Employee ID: " << emp.id << ", name: " << emp.name << ", salary: " << emp.salary;
+      return os;
+    }
+    friend istream& operator>>(istream& is, employee& emp){
+      cout << "Enter ID: ";
+      is >> emp.id;
+      cout << "Enter name: ";
+      is >> emp.name;
+      cout << "Enter salary: ";
+      is >> emp.salary;
+      return is;
+    }
+};
 
 int main(){
     int N;
@@ -22,10 +30,7 @@ int main(){
 
     for(int i=0; i<N; i++){
         cout << "Enter data for employee №" << i+1 << endl;
-        employee temp;
-        cin >> temp.id >> temp.name >> temp.salary;
-
-        array[i] = temp;
+        cin >> array[i];
     }
 
     int maxSalary = 0;
@@ -33,13 +38,9 @@ int main(){
         if(array[i].salary > maxSalary){
             maxSalary = array[i].salary;
         }
-        displayInfo(array[i]);
-        cout << endl;
+        cout << array[i] << endl;
     }
-
     cout << "The highest salary is: " << maxSalary;
-
     delete[] array;
     return 0;
-
 }
