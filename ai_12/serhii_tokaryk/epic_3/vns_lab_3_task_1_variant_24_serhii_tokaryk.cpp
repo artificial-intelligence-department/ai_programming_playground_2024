@@ -28,11 +28,11 @@ double sumSeriesWithPrecision(double x, double eps) {
 }
 
 int main() {
-    double a = -2.0, b = -0.1;  // Початок і кінець діапазону значень x
-    int k = 10;                 // Кількість кроків
-    double step = (b - a) / k;   // Крок зміни x
-    int n = 40;                  // Задане значення n
-    double eps = 0.0001;         // Задана точність eps
+    double a = -2.0, b = -0.1;  
+    int k = 10;                
+    double step = (b - a) / k;  
+    int n = 40;                 
+    double eps = 0.0001;         
 
     cout << "Обчислення функції" << endl;
     cout << "-------------------------------------------------------------" << endl;
@@ -40,16 +40,14 @@ int main() {
     for (int i = 0; i <= k; ++i) {
         double x = a + i * step;
 
-        // Обчислення суми для заданого n = 40
+        
         double sumN = sumSeriesFixedN(x, n);
-
-        // Обчислення суми з точністю eps
+        
         double sumEps = sumSeriesWithPrecision(x, eps);
 
-        // Точне значення функції
         double exactValue = log(1.0 / (2 + 2 * x + x * x));
 
-        // Вивід у заданому форматі
+       
         cout << fixed << setprecision(5);
         cout << "X=" << x << "\tSN=" << sumN << "\tSE=" << sumEps << "\tY=" << exactValue << endl;
     }

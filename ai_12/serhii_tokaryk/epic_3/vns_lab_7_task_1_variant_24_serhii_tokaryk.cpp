@@ -20,11 +20,21 @@ int square(point& A, point& B, point& C) {
     return abs((A.x * (B.y - C.y) + B.x * (C.y - A.y) + C.x * (A.y - B.y)) / 2.0);
 }
 
-double squaren(int count, ...)
-{
+double squarenHelper(const vector<point>& points, int i, double currentArea) {
+    int n = points.size();
+    if (i == n) { 
+        return abs(currentArea) / 2.0;
+    }
+
+    int j = (i + 1) % n;
+    currentArea += points[i].x * points[j].y - points[j].x * points[i].y;
+    return squarenHelper(points, i + 1, currentArea);
+}
+
+double squaren(int count, ...) {
     va_list argptr;
     va_start(argptr, count);
-    
+
     vector<point> points;
     for (int i = 0; i < count / 2; i++) {
         int x = va_arg(argptr, int);
@@ -32,18 +42,11 @@ double squaren(int count, ...)
         points.emplace_back(x, y);
     }
 
-    
     va_end(argptr);
-    
-    double area = 0.0;
-    int n = points.size();
-    for (int i = 0; i < n; i++) {
-        int j = (i + 1) % n;
-        area += points[i].x * points[j].y - points[j].x * points[i].y;
-    }
-    
-    return abs(area) / 2.0;
-}                                                                                                                                        //дуже дякую назарко<3
+
+    return squarenHelper(points, 0, 0.0);
+}
+                                                                                         
 int main() {
     point A = {0, 0};
     point B = {3, 0};
