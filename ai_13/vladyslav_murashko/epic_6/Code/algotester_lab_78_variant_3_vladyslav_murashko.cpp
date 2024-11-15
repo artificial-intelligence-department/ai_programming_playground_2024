@@ -32,6 +32,9 @@ public:
 template <class T>
 class BinarySearchTree
 {
+private:
+    Node<T> *root;
+
 public:
     BinarySearchTree() : root(nullptr) {}
 
@@ -71,8 +74,6 @@ public:
     }
 
 private:
-    Node<T> *root;
-
     int countNodes(Node<T> *node)
     {
         int count = 0;
