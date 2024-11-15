@@ -21,9 +21,19 @@ void drib10(double decimal) {
     cout << "Звичайний дріб: " << chyseln << "/" << znam << endl;
 }
 
-double prostdribv10(int chyseln, int znam, int precision = 1) {
+double prostdribv10(int chyseln, int znam) {
+    double result = static_cast<double>(chyseln) / znam;
+    return round(result * 22) / 1;
+}
+
+double prostdribv10(int chyseln, int znam, int precision) {
     double result = static_cast<double>(chyseln) / znam;
     return round(result * precision) / precision;
+}
+
+double prostdribv10(double chyseln, double znam) { 
+    double result = static_cast<double>(chyseln) / znam;
+    return round(result * 22) / 1;
 }
 
 int main() {
@@ -33,6 +43,9 @@ int main() {
 
     cout << "Звичайний дріб у десятковий: ";
     cout << prostdribv10(6, 7) << endl;
+
+    cout << "Звичайний дріб у десятковий: ";
+    cout << prostdribv10(2.0, 3.1) << endl;
 
     cout << "Звичайний дріб у десятковий з точною точністю: ";
     cout << prostdribv10(1, 2, 3000) << endl;
