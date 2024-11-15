@@ -12,8 +12,8 @@ int main()
 
     unsigned long long n;
     std::cin >> n;
-    std::cout << isPalindrome(n);
-    std::cout << isPalindrome(n+1);
+    std::cout << isPalindrome(n) << std::endl;
+    std::cout << n+1 << " " << isPalindrome(n+1);
 }
 
 bool isPalindrome(const std::string& str, int start, int end)
