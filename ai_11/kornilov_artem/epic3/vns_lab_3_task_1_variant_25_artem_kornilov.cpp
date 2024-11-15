@@ -10,13 +10,15 @@ double exactFunction(double x) {
 }
 
 
-double seriesWithFixedN(double x, int n) {
-    double sum = 0.0;
-    for (int i = 0; i <= n; i++) {
-        double term = pow(x, 2 * i + 1) / tgamma(2 * i + 2); 
-        sum += term;
+double seriesWithFixedNRecursive(double x, int n, int i = 0) {
+
+    if (i > n) {
+        return 0.0;
     }
-    return sum;
+
+    double term = pow(x, 2 * i + 1) / tgamma(2 * i + 2);
+
+    return term + seriesWithFixedNRecursive(x, n, i + 1);
 }
 
 
@@ -47,7 +49,7 @@ int main() {
     cout << "--------------------------------------------------------------------------\n";
 
     for (double x = a; x <= b; x += step) {
-        double valueWithN = seriesWithFixedN(x, n);
+        double valueWithN = seriesWithFixedNRecursive(x, n);
         double valueWithEpsilon = seriesWithEpsilon(x, epsilon);
         double exactValue = exactFunction(x);
 

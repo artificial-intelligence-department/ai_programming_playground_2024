@@ -36,19 +36,8 @@ void deleteBetweenZeros(vector<int>& arr) {
    
 }
 
-int main() {
-    
-    vector<vector<int>> matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {10, 11, 12}};
-    cout << "Original 2-dimensional arr: " << endl;
-    for (const auto& row : matrix) {
-        for (int val : row) {
-            cout << val << " ";
-        }
-        cout << endl;
-    }
-    deleteEvenRows(matrix);
-    cout << "\nWith lines deleted:" << endl;
-    for (const auto& row : matrix) {
+void print (vector<vector<int>> vec2d) {
+    for (const auto& row : vec2d) {
         if (!row.empty()) { 
             for (int val : row) {
                 cout << val << " ";
@@ -56,19 +45,36 @@ int main() {
             cout << endl;
         }
     }
+} 
 
+void print (vector<int> vec1d) {
+    for (int val : vec1d) {
+        cout << val << " ";
+    }
+}
+
+int main() {
     
+    vector<vector<int>> matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {10, 11, 12}};
+    
+    cout << "Original 2-dimensional arr: " << endl;
+    print(matrix);
+
+    deleteEvenRows(matrix);
+
+    cout << "\nWith lines deleted:" << endl;
+    print(matrix);
+ 
     vector<int> arr = {1, 2, 0, 3, 4, 0, 5, 6};
+    
     cout << "\nOriginal arr: ";
-    for (int val : arr) {
-        cout << val << " ";
-    }
+    print(arr);
     cout << endl;
+    
     deleteBetweenZeros(arr);
+    
     cout << "After deleting elements between two 0's: ";
-    for (int val : arr) {
-        cout << val << " ";
-    }
+    print(arr);
     cout << endl;
 
     return 0;
