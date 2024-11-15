@@ -22,6 +22,7 @@ void checkAscending(int * f_column, int N){
 
 int main(){
     string l;
+    cout << endl;
     cin >> l;
     int N = l.size();
     int f_column[100];
