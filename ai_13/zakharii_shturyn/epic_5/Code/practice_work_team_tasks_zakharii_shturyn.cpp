@@ -63,6 +63,7 @@ int main() {
         cout << "Success" << endl;
     } else {
         cout << "Failure" << endl;
+        return 0;
     }
 
     char filename2[20];
@@ -72,6 +73,7 @@ int main() {
         cout << "Success" << endl;
     } else {
         cout << "Failure" << endl;
+        return 0;
     }
 
     return 0;
