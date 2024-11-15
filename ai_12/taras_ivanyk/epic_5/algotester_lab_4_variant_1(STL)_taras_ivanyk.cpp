@@ -49,7 +49,8 @@ int main(){
     for (int i = 0; i < M; ++i){
         cin >> m[i];
     }
-
+    sort(n.begin(), n.end());
+    sort(m.begin(), m.end());
     vector<int> difM_N = differenceM_N(n, m);
     vector<int> difN_M = differenceN_M(m, n);
     vector<int> intersectionN_M = intersection(n, m);
