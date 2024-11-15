@@ -4,9 +4,17 @@
 
 using namespace std;
 
-double Taylor(double x, int i) {
-    return pow(-1, i) * pow(x, 2 * i) * (2 * i * i + 1) / tgamma(2 * i + 1);
+// Рекурсивна функція для обчислення факторіала
+double Factorial(int n) {
+    if (n <= 1) return 1;
+    return n * Factorial(n - 1);
 }
+
+// Функція для обчислення членів ряду Тейлора
+double Taylor(double x, int i) {
+    return pow(-1, i) * pow(x, 2 * i) * (2 * i * i + 1) / Factorial(2 * i);
+}
+
 
 double Approximate_N(double x, int n) {
     double sum = 1.0;
@@ -17,18 +25,18 @@ double Approximate_N(double x, int n) {
     return sum;
 }
 
+// Функція для обчислення суми SE (з точністю до epsilon)
 double Approximate_Epsilon(double x, double epsilon) {
-    double sum = 1.0; 
+    double sum = 1.0;
     double previous_sum = 0.0;
     int i = 1;
 
     while (true) {
         double n_result = Taylor(x, i);
-        previous_sum = sum;//Sn
-        sum += n_result;//Sn+1
+        previous_sum = sum; // Sn
+        sum += n_result; // Sn+1
 
-        
-        if (fabs(sum - previous_sum) < epsilon) {
+        if (abs(sum - previous_sum) < epsilon) {
             break;
         }
 
