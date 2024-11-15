@@ -1,4 +1,3 @@
-#include <algorithm>
 #include <cctype>
 #include <iostream>
 #include <string>
@@ -14,14 +13,13 @@ int main()
     std::cin >> a;
     std::cout << "enter integer: ";
     std::cin >> n;
-    std::cout << isPalindrom(a);
-    std::cout << isPalindrom(n);
+    std::cout << isPalindrom(a) << '\n';
+    std::cout << isPalindrom(n) << '\n';
     return 0;
 }
 
 bool isPalindrom(std::string &str)
 {
-    transform(str.begin(), str.end(), str.begin(), ::tolower);
     if (str.length() <= 1)
     {
         return true;
@@ -39,7 +37,6 @@ bool isPalindrom(std::string &str)
 
 bool isPalindrom(int n)
 {
-    std::cout << "Using int func" << '\n';
     int reverse = 0;
     int temp = n;
     while (temp != 0)
