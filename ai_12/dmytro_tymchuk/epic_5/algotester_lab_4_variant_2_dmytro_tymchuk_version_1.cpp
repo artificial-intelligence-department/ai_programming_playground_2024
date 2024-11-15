@@ -11,12 +11,10 @@ void print_arr (vector<int>& arr)
         cout<<arr[i]<<" ";
     }
 }
-
 int remainder_0(int n)
 {
     return n % 3 == 0;
 }
-
 int remainder_1(int n)
 {
     return n % 3 == 1;
@@ -33,7 +31,6 @@ int main()
         cin>>arr[i];
     }
     
-    
     auto begin_1 = partition(arr.begin(), arr.end(), remainder_0);
     sort(arr.begin(), begin_1);
     auto index_1 = unique(arr.begin(), begin_1);
@@ -47,13 +44,6 @@ int main()
     sort(index_2, arr.end());
     auto index_3 = unique(index_2, arr.end());
     arr.erase(index_3, arr.end());
-
-    
-    
-
-    
-
-    
 
     sort(index_1, index_2, [](int a, int b) {
         return a > b;  

@@ -20,8 +20,6 @@ int main()
         return 1;
     }
     
-    
-
     int max_num_of_vowels = 0, index = 0, max_index, num_of_vowels = 0;
     while (fgets(s, sizeof(s), f1) != NULL)
     {

@@ -24,7 +24,6 @@ int main()
         cin>>x[i]>>y[i];
     }
     
-    
     for (int i = 0; i < q; i++)
     {
         int missing_elements[10]{}, num_of_missing_elements = 0;
