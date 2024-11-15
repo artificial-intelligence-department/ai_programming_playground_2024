@@ -18,10 +18,8 @@ int main(){
     int both_arrays = 0, unique = 0;
 
     for(int i=0; i<N; i++){
-        bool isUnique = true;
         for(int j=0; j<M; j++){
             if (array1[i]==array2[j]){
-                isUnique = false;
                 both_arrays++;
                 break;
             }
