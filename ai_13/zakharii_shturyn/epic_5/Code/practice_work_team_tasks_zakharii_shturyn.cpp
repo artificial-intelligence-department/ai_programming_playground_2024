@@ -40,7 +40,9 @@ FileOpResult copy_file(char *file_from, char *file_to) {
         char line[100];
         while(fgets(line, sizeof(line), myFile)){
                 line[strcspn(line, "\n")] = 0;
-                write_to_file(file_to, line);
+                if(!write_to_file(file_to, line)) {
+                    return Failure;
+                }
             }
 
         fclose(myFile);
