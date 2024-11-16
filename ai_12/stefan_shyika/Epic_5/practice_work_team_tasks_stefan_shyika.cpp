@@ -42,7 +42,7 @@ FileOpResult write_to_file(const char *name, const char *content) {
     }
 
     int len = strlen(content);
-    int written = fwrite(content, sizeof(char), len, f);
+    size_t written = fwrite(content, sizeof(char), len, f);
 
     if (written != len) {
         fclose(f);
