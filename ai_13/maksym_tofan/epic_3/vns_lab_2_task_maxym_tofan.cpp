@@ -1,12 +1,21 @@
 #include <iostream>
 #include <cmath>
 
+
 double factorial(int n) {
-    double result = 1.0;
-    for (int i = 1; i <= n; ++i) {
-        result *= i;
+    if (n <= 1) {
+        return 1.0; 
     }
-    return result;
+    return n * factorial(n - 1); 
+}
+
+
+double factorial(double x) {
+  
+    if (x <= 1.0) {
+        return 1.0;
+    }
+    return tgamma(x + 1); 
 }
 
 int main() {
@@ -16,8 +25,8 @@ int main() {
     int n = 0;
 
     do {
-        double numerator = pow(3, n) * factorial(n);
-        double denominator = factorial(3 * n);
+        double numerator = pow(3, n) * factorial(n);    
+        double denominator = factorial(3 * n);         
         term = numerator / denominator;
         sum += term;
         ++n;
