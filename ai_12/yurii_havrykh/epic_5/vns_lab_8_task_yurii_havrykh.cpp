@@ -25,7 +25,8 @@ void createFile() {
     for (int i = 0; i < n; ++i) {
         Car car;
         cout << "Марка: ";
-        cin.ignore();
+        if(i==0)
+            cin.ignore();
         cin.getline(car.brand, 50);
         cout << "Рік випуску: ";
         cin >> car.year;
@@ -34,7 +35,6 @@ void createFile() {
         cout << "Колір: ";
         cin.ignore();
         cin.getline(car.color, 30);
-
         fwrite(&car, sizeof(Car), 1, file);
     }
 

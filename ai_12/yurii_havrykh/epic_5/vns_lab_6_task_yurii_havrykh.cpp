@@ -37,7 +37,6 @@ int main() {
         }
     }
 
-    // Вивід результату
     if (!most_frequent_words.empty()) {
         cout << "Найчастіше(ші) слово(а): { ";
         for (auto most_frequent_word: most_frequent_words) cout << "\"" << most_frequent_word << "\" ";
@@ -48,4 +47,3 @@ int main() {
 
     return 0;
 }
-

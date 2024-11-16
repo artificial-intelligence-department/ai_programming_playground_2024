@@ -41,5 +41,3 @@ int main() {
         cout << dist[find[i].first - 1] + dist[find[i].second - 1] << endl;
     }
 }
-
-
