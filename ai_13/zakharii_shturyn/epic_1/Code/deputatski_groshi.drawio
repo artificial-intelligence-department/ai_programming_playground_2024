@@ -1,0 +1,98 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
+  <diagram name="Сторінка-1" id="pY3aH7o-2-tlL0Jl4Ukz">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ftpu_4vryyNREy8pyN-q-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ftpu_4vryyNREy8pyN-q-1" target="ftpu_4vryyNREy8pyN-q-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-1" value="Початок" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="339" y="30" width="149" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ftpu_4vryyNREy8pyN-q-2" target="ftpu_4vryyNREy8pyN-q-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-2" value="Вводимо ціна для пошуку купюр" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="304" y="150" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ftpu_4vryyNREy8pyN-q-4" target="ftpu_4vryyNREy8pyN-q-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-8" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="ftpu_4vryyNREy8pyN-q-7">
+          <mxGeometry x="-0.0258" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ftpu_4vryyNREy8pyN-q-4" target="ftpu_4vryyNREy8pyN-q-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-22" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="ftpu_4vryyNREy8pyN-q-21">
+          <mxGeometry x="-0.8666" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-4" value="і = 0, і &amp;lt; 9?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="209" y="320" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ftpu_4vryyNREy8pyN-q-6" target="ftpu_4vryyNREy8pyN-q-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-13" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="ftpu_4vryyNREy8pyN-q-10">
+          <mxGeometry x="-0.2282" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ftpu_4vryyNREy8pyN-q-6" target="ftpu_4vryyNREy8pyN-q-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-19" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="ftpu_4vryyNREy8pyN-q-17">
+          <mxGeometry x="-0.2842" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-6" value="Ціна - Банкнота[кінець - і]&amp;nbsp;&lt;div&gt;&amp;gt;= 0&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="310" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ftpu_4vryyNREy8pyN-q-9" target="ftpu_4vryyNREy8pyN-q-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-9" value="Ціна = ціна - банкнота[кінець - і]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ftpu_4vryyNREy8pyN-q-11" target="ftpu_4vryyNREy8pyN-q-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="781" y="500" />
+              <mxPoint x="781" y="260" />
+              <mxPoint x="450" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-11" value="Кількість банкнот + 1" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ftpu_4vryyNREy8pyN-q-16" target="ftpu_4vryyNREy8pyN-q-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-16" value="і + 1" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ftpu_4vryyNREy8pyN-q-20" target="ftpu_4vryyNREy8pyN-q-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-20" value="Вивести кількість банкнот" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="620" width="139" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpu_4vryyNREy8pyN-q-23" value="Кінець" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="750" width="140" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

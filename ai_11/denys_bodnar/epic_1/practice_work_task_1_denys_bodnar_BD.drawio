@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1366" dy="703" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xxEcYrFnsaPfUemh0yTb-1" target="xxEcYrFnsaPfUemh0yTb-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xxEcYrFnsaPfUemh0yTb-2" target="xxEcYrFnsaPfUemh0yTb-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-2" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Введіть суму інвестицій:&lt;/font&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry y="108" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xxEcYrFnsaPfUemh0yTb-4" target="xxEcYrFnsaPfUemh0yTb-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-4" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Введіть річну процентну ставку:&lt;/font&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry y="258" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eYf8IWfGOcrXyFrHjCoX-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xxEcYrFnsaPfUemh0yTb-6" target="xxEcYrFnsaPfUemh0yTb-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-6" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Введіть час інвестиції (в роках):&lt;/font&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry y="455" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xxEcYrFnsaPfUemh0yTb-8" target="xxEcYrFnsaPfUemh0yTb-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-8" value="r = r / 100" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="25" y="396" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xxEcYrFnsaPfUemh0yTb-10" target="xxEcYrFnsaPfUemh0yTb-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="215" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xxEcYrFnsaPfUemh0yTb-10" target="xxEcYrFnsaPfUemh0yTb-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-10" value="Оберіть кількість нарахувань відсотків на рік(1-щороку, 4-кожен квартал, 12-кожного місяця):" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="203" y="3" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xxEcYrFnsaPfUemh0yTb-13" target="xxEcYrFnsaPfUemh0yTb-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-13" value="A=P*((1+r/n)^n*t)" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="213" y="95" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xxEcYrFnsaPfUemh0yTb-17" target="xxEcYrFnsaPfUemh0yTb-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-17" value="P" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" y="196" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xxEcYrFnsaPfUemh0yTb-20" target="xxEcYrFnsaPfUemh0yTb-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-20" value="r" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="45" y="342" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eYf8IWfGOcrXyFrHjCoX-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xxEcYrFnsaPfUemh0yTb-23" target="xxEcYrFnsaPfUemh0yTb-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="169" y="559" />
+              <mxPoint x="169" y="33" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-23" value="t" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="45" y="544" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eYf8IWfGOcrXyFrHjCoX-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xxEcYrFnsaPfUemh0yTb-32" target="aVHOn-qLrfGF6zDQYbQz-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-32" value="np=A-P" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="278" y="186" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xxEcYrFnsaPfUemh0yTb-40" value="Finish" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="253" y="515" width="110" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="aVHOn-qLrfGF6zDQYbQz-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="aVHOn-qLrfGF6zDQYbQz-0" target="aVHOn-qLrfGF6zDQYbQz-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aVHOn-qLrfGF6zDQYbQz-0" value="Сума інвестиції" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="256.5" y="253" width="103" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="aVHOn-qLrfGF6zDQYbQz-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="aVHOn-qLrfGF6zDQYbQz-3" target="aVHOn-qLrfGF6zDQYbQz-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aVHOn-qLrfGF6zDQYbQz-3" value="Фнальна сума інвестицій" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="256.5" y="326" width="103" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="aVHOn-qLrfGF6zDQYbQz-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="aVHOn-qLrfGF6zDQYbQz-6" target="xxEcYrFnsaPfUemh0yTb-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aVHOn-qLrfGF6zDQYbQz-6" value="Сума зароблених відсотків" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="256.5" y="407" width="103" height="48" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

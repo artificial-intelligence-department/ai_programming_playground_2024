@@ -1,0 +1,156 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0" version="24.7.17">
+  <diagram name="Page-1" id="GbgQJ5qdhJwq2DoJmUP9">
+    <mxGraphModel dx="618" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MOBIPCl_3TF-jlMuR6qW-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-1" value="&lt;div&gt;start&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="MOBIPCl_3TF-jlMuR6qW-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="220" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="MOBIPCl_3TF-jlMuR6qW-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="541" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-7" value="&lt;div&gt;false&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MOBIPCl_3TF-jlMuR6qW-6" vertex="1" connectable="0">
+          <mxGeometry x="-0.8226" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="MOBIPCl_3TF-jlMuR6qW-4" target="MOBIPCl_3TF-jlMuR6qW-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="320" />
+              <mxPoint x="270" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-14" value="&lt;div&gt;true&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MOBIPCl_3TF-jlMuR6qW-11" vertex="1" connectable="0">
+          <mxGeometry x="-0.71" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-4" value="&lt;div&gt;check if values&lt;/div&gt;&lt;div&gt;are valid&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MOBIPCl_3TF-jlMuR6qW-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="635" y="450" />
+              <mxPoint x="635" y="60" />
+              <mxPoint x="850" y="60" />
+            </Array>
+            <mxPoint x="850" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-10" value="format into one variable and set frequency" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="MOBIPCl_3TF-jlMuR6qW-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="220" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="MOBIPCl_3TF-jlMuR6qW-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="971" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-20" value="&lt;div&gt;false&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MOBIPCl_3TF-jlMuR6qW-19" vertex="1" connectable="0">
+          <mxGeometry x="-0.8226" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MOBIPCl_3TF-jlMuR6qW-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1289.04" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="721" y="320" />
+              <mxPoint x="721" y="450" />
+              <mxPoint x="1080" y="450" />
+              <mxPoint x="1080" y="60" />
+              <mxPoint x="1289" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-23" value="&lt;div&gt;check if values&lt;/div&gt;&lt;div&gt;are valid&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="790" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="MOBIPCl_3TF-jlMuR6qW-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1289.04" y="220" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="MOBIPCl_3TF-jlMuR6qW-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1289.04" y="130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1410.04" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-33" value="&lt;div&gt;false&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MOBIPCl_3TF-jlMuR6qW-32" vertex="1" connectable="0">
+          <mxGeometry x="-0.8226" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MOBIPCl_3TF-jlMuR6qW-36" target="MOBIPCl_3TF-jlMuR6qW-38" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1139" y="320" />
+              <mxPoint x="1139" y="450" />
+              <mxPoint x="1520" y="450" />
+              <mxPoint x="1520" y="60" />
+              <mxPoint x="1670" y="60" />
+            </Array>
+            <mxPoint x="1560" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-35" value="&lt;div&gt;true&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MOBIPCl_3TF-jlMuR6qW-34" vertex="1" connectable="0">
+          <mxGeometry x="-0.71" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-36" value="&lt;div&gt;check if values&lt;/div&gt;&lt;div&gt;are valid&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1229.04" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MOBIPCl_3TF-jlMuR6qW-38" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1670" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-38" value="calculate using formula" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1610" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MOBIPCl_3TF-jlMuR6qW-41" value="output the deposit, final amount and profit" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1610" y="290" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1gDrG3tLhYU1c6ziljh6-1" value="enter duration variables" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1gDrG3tLhYU1c6ziljh6-3" value="enter amount to invest" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1gDrG3tLhYU1c6ziljh6-4" value="enter annual percentage" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1229.04" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
