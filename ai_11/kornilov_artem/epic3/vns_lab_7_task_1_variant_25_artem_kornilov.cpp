@@ -22,7 +22,7 @@ double square(double x1, double y1, double x2, double y2, double x3, double y3) 
 }
 
 double square1(int num_cords, ...) {
-    if (num_cords < 3) {
+    if (num_cords < 6) {
         cerr << "Not enough points to form a polygon" << endl;
         return 0;
     }
@@ -38,9 +38,9 @@ double square1(int num_cords, ...) {
     va_end(args);
 
     vector<pair<double, double>> points;
-    for (int i = 0; i < num_cords/2; i++) {
+    for (int i = 0; i < num_cords/2; i ++) {
         double x = cords[i];
-        double y = cords[i + 1];
+        double y = cords[i+1];
         points.emplace_back(x, y);
     }
 

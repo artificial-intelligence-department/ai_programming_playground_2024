@@ -111,6 +111,10 @@ switch (option){
         break;
 }
 
+if (exit) {
+    break;
+}
+
 char otherOps;
 
 do {

@@ -4,7 +4,7 @@
 using namespace std;
 
 
-void deleteEvenRows(vector<vector<int>>& matrix) {
+void deleteUnnes(vector<vector<int>>& matrix) {
     for (int i = 0; i < matrix.size(); ++i) {
         if (i % 2 == 1) {
             matrix[i].clear();  
@@ -13,7 +13,7 @@ void deleteEvenRows(vector<vector<int>>& matrix) {
 }
 
 
-void deleteBetweenZeros(vector<int>& arr) {
+void deleteUnnes(vector<int>& arr) {
     int firstZero = -1, secondZero = -1;
     
     for (int i = 0; i < arr.size(); ++i) {
@@ -60,7 +60,7 @@ int main() {
     cout << "Original 2-dimensional arr: " << endl;
     print(matrix);
 
-    deleteEvenRows(matrix);
+    deleteUnnes(matrix);
 
     cout << "\nWith lines deleted:" << endl;
     print(matrix);
@@ -71,7 +71,7 @@ int main() {
     print(arr);
     cout << endl;
     
-    deleteBetweenZeros(arr);
+    deleteUnnes(arr);
     
     cout << "After deleting elements between two 0's: ";
     print(arr);
