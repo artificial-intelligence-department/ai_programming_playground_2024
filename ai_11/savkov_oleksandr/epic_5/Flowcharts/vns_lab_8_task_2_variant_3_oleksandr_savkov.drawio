@@ -1,0 +1,504 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15" version="24.8.4">
+  <diagram name="Page-1" id="szab3ZNXPAMErpoJf3iV">
+    <mxGraphModel dx="2683" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-2" target="Rs7uVpNpl5kbR52D8kE1-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-2" value="&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;adder&lt;/span&gt;(&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;char*&lt;/span&gt; &lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;filename&lt;/span&gt;)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="100" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-4" target="Rs7uVpNpl5kbR52D8kE1-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-4" value="Відкриваємо/створюємо файл для запису в бінарному форматі" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="271.25" y="210" width="187.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-9" target="Rs7uVpNpl5kbR52D8kE1-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-6" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rs7uVpNpl5kbR52D8kE1-5">
+          <mxGeometry x="-0.1687" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-9" target="Rs7uVpNpl5kbR52D8kE1-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-8" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rs7uVpNpl5kbR52D8kE1-7">
+          <mxGeometry x="-0.3657" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-9" value="Файл відкрився?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="300" width="115" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-11" target="Rs7uVpNpl5kbR52D8kE1-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-11" value="&amp;nbsp; Виводимо повідомлення&amp;nbsp;&lt;div&gt;про помилку&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="330" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-12" value="return" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="430" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-14" target="Rs7uVpNpl5kbR52D8kE1-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-14" value="Представляємо кожен елемент в бінарному форматі та записуємо в файл" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290.63" y="460" width="148.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-16" target="Rs7uVpNpl5kbR52D8kE1-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-16" value="Закриваємо файл" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="560" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-17" value="return" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="640" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-19" target="Rs7uVpNpl5kbR52D8kE1-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-19" value="&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;displayCountries&lt;/span&gt;(&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;char*&lt;/span&gt; &lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;filename&lt;/span&gt;)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="100" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-21" target="Rs7uVpNpl5kbR52D8kE1-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-21" value="Відкриваємо файл для читання в бінарному форматі" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="575.63" y="220" width="198.75" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-26" target="Rs7uVpNpl5kbR52D8kE1-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-23" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rs7uVpNpl5kbR52D8kE1-22">
+          <mxGeometry x="-0.1687" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-26" target="Rs7uVpNpl5kbR52D8kE1-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-25" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rs7uVpNpl5kbR52D8kE1-24">
+          <mxGeometry x="-0.4621" y="-2" relative="1" as="geometry">
+            <mxPoint x="2" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-26" value="Файл відкрився?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="617.5" y="310" width="115" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-28" target="Rs7uVpNpl5kbR52D8kE1-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-28" value="&amp;nbsp; Виводимо повідомлення&amp;nbsp;&lt;div&gt;про помилку&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="340" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-29" value="return" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="835" y="440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-99" target="Rs7uVpNpl5kbR52D8kE1-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-31" value="Читаємо з файлу кожен елемент, представляючи його бінарний еквівалент&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580.32" y="480" width="189.37" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-33" target="Rs7uVpNpl5kbR52D8kE1-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-33" value="Закриваємо файл" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="615.01" y="695" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-34" value="return" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="615.01" y="775" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-36" target="Rs7uVpNpl5kbR52D8kE1-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-36" value="&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;deleteByPopulation&lt;/span&gt;(&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;char*&lt;/span&gt;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;filename&lt;/span&gt;, &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;long&lt;/span&gt; &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;long&lt;/span&gt; &lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;population&lt;/span&gt;)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="100" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-38" target="Rs7uVpNpl5kbR52D8kE1-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-38" value="Відкриваємо файл для читання в бінарному форматі" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1261.25" y="210" width="187.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-43" target="Rs7uVpNpl5kbR52D8kE1-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-40" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rs7uVpNpl5kbR52D8kE1-39">
+          <mxGeometry x="-0.1687" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-43" target="Rs7uVpNpl5kbR52D8kE1-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-42" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rs7uVpNpl5kbR52D8kE1-41">
+          <mxGeometry x="-0.2549" relative="1" as="geometry">
+            <mxPoint y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-43" value="Файл відкрився?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1297.5" y="300" width="115" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-45" target="Rs7uVpNpl5kbR52D8kE1-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-45" value="&amp;nbsp; Виводимо повідомлення&amp;nbsp;&lt;div&gt;про помилку&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="330" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-46" value="return" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1105" y="430" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-48" target="Rs7uVpNpl5kbR52D8kE1-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-48" value="Додаємо в тимчасову структуру тільки дані тільки про ті країни що мають більше населення" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1277.5" y="470" width="155" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-50" target="Rs7uVpNpl5kbR52D8kE1-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-50" value="Закриваємо файл" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1295" y="580" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-52" target="Rs7uVpNpl5kbR52D8kE1-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-52" value="Відкриваємо файл для перезапису в бінарному форматі" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1261.25" y="660" width="187.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-57" target="Rs7uVpNpl5kbR52D8kE1-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-54" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rs7uVpNpl5kbR52D8kE1-53">
+          <mxGeometry x="-0.1687" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-57" target="Rs7uVpNpl5kbR52D8kE1-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-56" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rs7uVpNpl5kbR52D8kE1-55">
+          <mxGeometry x="-0.339" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-57" value="Файл відкрився?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1297.5" y="750" width="115" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-59" target="Rs7uVpNpl5kbR52D8kE1-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-59" value="&amp;nbsp; Виводимо повідомлення&amp;nbsp;&lt;div&gt;про помилку&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="780" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-60" value="return" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1105" y="880" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-62" target="Rs7uVpNpl5kbR52D8kE1-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-62" value="Записуємо в файл дані з тимчасової структури" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1277.5" y="950" width="155" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-64" target="Rs7uVpNpl5kbR52D8kE1-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-64" value="Закриваємо файл" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1295" y="1050" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-65" value="return" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1295" y="1130" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-67" target="Rs7uVpNpl5kbR52D8kE1-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-67" value="&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;addAfterCountry&lt;/span&gt;(&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;char*&lt;/span&gt; &lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;filename&lt;/span&gt;,&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;Dergava&lt;/span&gt;&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;newCountry&lt;/span&gt;, &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;char*&lt;/span&gt; &lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;tempName&lt;/span&gt;)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1740" y="100" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-69" target="Rs7uVpNpl5kbR52D8kE1-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-69" value="Відкриваємо файл для читання в бінарному форматі" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1761.25" y="210" width="187.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-74" target="Rs7uVpNpl5kbR52D8kE1-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-71" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rs7uVpNpl5kbR52D8kE1-70">
+          <mxGeometry x="-0.1687" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-74" target="Rs7uVpNpl5kbR52D8kE1-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-73" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rs7uVpNpl5kbR52D8kE1-72">
+          <mxGeometry x="-0.2549" relative="1" as="geometry">
+            <mxPoint y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-74" value="Файл відкрився?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1797.5" y="300" width="115" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-76" target="Rs7uVpNpl5kbR52D8kE1-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-76" value="&amp;nbsp; Виводимо повідомлення&amp;nbsp;&lt;div&gt;про помилку&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="330" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-77" value="return" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1605" y="430" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-79" target="Rs7uVpNpl5kbR52D8kE1-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-79" value="Зчитуємо всі дані і додаємо дані про нову країну в тимчасову структуру" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1777.5" y="470" width="155" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-80" value="Закриваємо файл" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1795" y="580" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-82" target="Rs7uVpNpl5kbR52D8kE1-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-82" value="Відкриваємо файл для перезапису в бінарному форматі" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1761.25" y="730" width="187.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-87" target="Rs7uVpNpl5kbR52D8kE1-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-84" value="Ні" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rs7uVpNpl5kbR52D8kE1-83">
+          <mxGeometry x="-0.1687" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-87">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1855" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-86" value="Так" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rs7uVpNpl5kbR52D8kE1-85">
+          <mxGeometry x="-0.339" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-87" value="Файл відкрився?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1797.5" y="820" width="115" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-88" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-89" target="Rs7uVpNpl5kbR52D8kE1-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-89" value="&amp;nbsp; Виводимо повідомлення&amp;nbsp;&lt;div&gt;про помилку&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="850" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-90" value="return" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1605" y="950" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-91" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="Rs7uVpNpl5kbR52D8kE1-93">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1855" y="1080" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-92" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-93" target="Rs7uVpNpl5kbR52D8kE1-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-93" value="Закриваємо файл" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1795" y="1120" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-94" value="return" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1795" y="1200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-80" target="Rs7uVpNpl5kbR52D8kE1-82">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1855" y="610" as="sourcePoint" />
+            <mxPoint x="1855" y="720" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-96" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-97">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-520" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-97" value="Початок" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-98" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-31" target="Rs7uVpNpl5kbR52D8kE1-99">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="675" y="560" as="sourcePoint" />
+            <mxPoint x="675" y="695" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-99" value="Виводемо зчитані елементи" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="602.5" y="590" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-101">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-520" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-101" value="&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;adder&lt;/span&gt;(&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;char*&lt;/span&gt; &lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;filename&lt;/span&gt;)&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-655" y="210" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-113">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-520" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-104">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1040" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-104" value="&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;choice&lt;/span&gt; &lt;span style=&quot;color: rgb(212, 212, 212);&quot;&gt;!=&lt;/span&gt; &lt;span style=&quot;color: rgb(181, 206, 168);&quot;&gt;4&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="310" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-109">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-520" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-109" target="Rs7uVpNpl5kbR52D8kE1-116">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-750" y="530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-750" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-109" target="Rs7uVpNpl5kbR52D8kE1-119">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-980" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-109" target="Rs7uVpNpl5kbR52D8kE1-132">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1190" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-109" value="Виберіть опцію" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-111">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-520" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-111" value="&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;Delete&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt; countries&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt; with population&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt; less than&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;specified&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="550" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-112" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-104" target="Rs7uVpNpl5kbR52D8kE1-113">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-520" y="440" as="targetPoint" />
+            <mxPoint x="-520" y="380" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-113" value="True" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-550" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-114" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="510" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-116" target="Rs7uVpNpl5kbR52D8kE1-126">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-750" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-116" value="&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;Add a new&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;country after&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt; a specified&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;country&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-840" y="550" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-117" value="2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="500" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-119">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-980" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-119" value="&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;Display all&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt; countries&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1070" y="550" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-120" value="3" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-990" y="500" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-122">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-520" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-122" value="&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre; font-size: 9px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;deleteByPopulation&lt;/span&gt;(&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;char*&lt;/span&gt; &lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;filename&lt;/span&gt;,&lt;/div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt; &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;long&lt;/span&gt; &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;long&lt;/span&gt; &lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;population&lt;/span&gt;)&lt;/div&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-663.75" y="760" width="287.5" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-980" y="960" as="targetPoint" />
+            <mxPoint x="-980.71" y="797.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-124" value="&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre; font-size: 10px;&quot;&gt;&lt;div style=&quot;font-size: 12px; line-height: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;displayCountries&lt;/span&gt;(&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;char*&lt;/span&gt; &lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;filename&lt;/span&gt;)&lt;/div&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-1160" y="760" width="380" height="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-126">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-750" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-126" value="&lt;div style=&quot;font-style: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;addAfterCountry&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;char*&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;filename&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;Dergava&lt;/span&gt;&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;newCountry&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;char*&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;tempName&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-935" y="830" width="370" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-127" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-980" y="960" as="sourcePoint" />
+            <mxPoint x="-319" y="960" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-880" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-128" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="-320" y="960" as="sourcePoint" />
+            <mxPoint x="-320" y="280" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-129" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="-320" y="280" as="sourcePoint" />
+            <mxPoint x="-520" y="280" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-130" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Кінець&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1160" y="310" width="120" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rs7uVpNpl5kbR52D8kE1-132">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1185" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-132" value="&lt;div style=&quot;text-align: start; color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;Invalid type&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1275" y="550" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-133" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="-1180" y="960" as="sourcePoint" />
+            <mxPoint x="-960" y="960" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1140" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rs7uVpNpl5kbR52D8kE1-134" value="Записуємо в файл дані з тимчасової структури" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1777.5" y="1020" width="155" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
