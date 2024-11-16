@@ -27,6 +27,7 @@ void copy_file(char *file_from_copy, char *file_to_insert) {
     string line;
     while (getline(file_from, line)) {
         file_to << line << endl;
+
         is_empty_file_from = false;
     }
     if (is_empty_file_from)
