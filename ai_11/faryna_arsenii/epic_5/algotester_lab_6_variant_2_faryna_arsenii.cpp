@@ -5,8 +5,6 @@
 
 using namespace std;
 
-#define pb insert  // Замінюємо pb на insert, щоб використовувати set
-
 char board[8][8];
 
 // Перевірка на валідні координати
@@ -42,59 +40,49 @@ void attackKnight(int x, int y, set<char>& attackers) {
 }
 
 void attackBishop(int x, int y, set<char>& attackers) {
-    // Directions for bishop movement (diagonals)
     vector<pair<int, int>> directions = { {1, 1}, {1, -1}, {-1, 1}, {-1, -1} };
 
     for (auto dir : directions) {
         int dx = dir.first, dy = dir.second;
-        for (int i = 1; i < 8; i++) {  // Bishop can move up to 7 squares
+        for (int i = 1; i < 8; i++) {
             int new_x = x + i * dx;
             int new_y = y + i * dy;
 
             if (!validCoordinate(new_x, new_y)) break;  // Stop if out of bounds
 
             char piece = board[new_x][new_y];
-            if (piece == 'Q' || piece == 'B') {  // Queen or bishop attacking
+            if (piece == 'Q' || piece == 'B') {
                 attackers.insert(piece);
-                break;  // Stop further checks in this direction
-            }
-            else if (piece != 'O') {
-                break;  // Stop if blocked by any other piece
             }
         }
     }
 }
 
 void attackRook(int x, int y, set<char>& attackers) {
-    // Перевіряємо весь рядок
-    for (int col = 1; col < 8; col++) {
-        if (col != y) { // Уникаємо перевірки клітинки, де стоїть тура
+    for (int col = 0; col < 8; col++) {
+        if (col != y) {
             if (board[x][col] == 'R' || board[x][col] == 'Q') {
                 attackers.insert(board[x][col]);
-                break; // Тура або ферзь атакують, перериваємо
+                break;
             }
-            if (board[x][col] != 'O') break; // Інша фігура блокує
         }
     }
 
-    // Перевіряємо весь стовпчик
-    for (int row = 1; row < 8; row++) {
-        if (row != x) { // Уникаємо перевірки клітинки, де стоїть тура
+    for (int row = 0; row < 8; row++) {
+        if (row != x) {
             if (board[row][y] == 'R' || board[row][y] == 'Q') {
                 attackers.insert(board[row][y]);
-                break; // Тура або ферзь атакують, перериваємо
+                break;
             }
-            if (board[row][y] != 'O') break; // Інша фігура блокує
         }
     }
 }
+
 // Атака королевою (поєднання тури та слона)
 void attackQueen(int x, int y, set<char>& attackers) {
     attackRook(x, y, attackers);   // Check rook-like movements
     attackBishop(x, y, attackers); // Check bishop-like movements
 }
-
-
 // Атака королем
 void attackKing(int x, int y, set<char>& attackers) {
     // Можливі напрямки для короля (по вертикалі, горизонталі і діагоналях)
@@ -122,10 +110,9 @@ int main() {
         }
     }
 
-
     int Q;
     cin >> Q;
-    while (Q--) {
+    for(int i = 0; Q-i > 0; i++) {
         int x, y;
         cin >> x >> y;
         x--; y--;
