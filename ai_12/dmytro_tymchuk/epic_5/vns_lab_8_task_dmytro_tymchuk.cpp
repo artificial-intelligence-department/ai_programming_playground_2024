@@ -54,7 +54,7 @@ void print_file(const char* file_name)
     }
 
     Music_disk new_disk;
-    while (fread(&new_disk, sizeof(Music_disk), 1, music_file) == 1)
+    while (fread(&new_disk, sizeof(Music_disk), 1, music_file))
     {
         cout<<"Назва: "<<new_disk.name<<endl;
         cout<<"Автор: "<<new_disk.author<<endl;
@@ -139,7 +139,7 @@ void add_elements_to_file (const char* file_name, int num)
         {"Encore", "Eminem", 45, 18.33},
         {"Amnesiac", "Radiohead", 43, 25.75}
     };
-    while (fread(&new_disk, sizeof(Music_disk), 1, music_file) == 1)
+    while (fread(&new_disk, sizeof(Music_disk), 1, music_file))
     {
         if (fwrite(&new_disk, sizeof(Music_disk), 1, new_music_file) != 1)
         {
