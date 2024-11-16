@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip>
+#include <iomanip>           // setprecision
 #include <cmath>
 using namespace std;
 

@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstdarg>
+#include <cstdarg>    // для різної к-сті змінних toTernary
 #include <string>
 using namespace std;
 

@@ -9,7 +9,7 @@ int nsd(int a, int b) {
 }
 
 // Перетворення десяткового дробу у звичайний
-void convertDecimalToFraction(double decimal) {
+void convert(double decimal) {
     int denominator = 1;
 
     // Перетворення у ціле число
@@ -29,7 +29,7 @@ void convertDecimalToFraction(double decimal) {
 }
 
 // Перетворення звичайного дробу у десятковий
-void convertFractionToDecimal(int numerator, int denominator) {
+void convert(int numerator, int denominator) {
     if (denominator == 0) {
         cout << "Помилка: знаменник не може бути нулем.\n";
         return;
@@ -42,12 +42,12 @@ void convertFractionToDecimal(int numerator, int denominator) {
 int main() {
     // Тестування функцій
     cout << "Перетворення десяткового дробу у звичайний:\n";
-    convertDecimalToFraction(0.25);   // Очікуваний результат: 1/4
-    convertDecimalToFraction(0.75);   // Очікуваний результат: 3/4
+    convert(0.25);   // Очікуваний результат: 1/4
+    convert(0.75);   // Очікуваний результат: 3/4
 
     cout << "\nПеретворення звичайного дробу у десятковий:\n";
-    convertFractionToDecimal(1, 4);   // Очікуваний результат: 0.25
-    convertFractionToDecimal(3, 4);   // Очікуваний результат: 0.75
+    convert(1, 4);   // Очікуваний результат: 0.25
+    convert(3, 4);   // Очікуваний результат: 0.75
 
     return 0;
 }
