@@ -4,14 +4,13 @@ using namespace std;
 void Sort(int temp[], int size);
 void Show(int temp[], int size);
 void Rotate(int temp[], int size, int K);
-int main(){
 
+int main(){
     int N, K;
     cin >> N;
     if( N > 1000 || N < 1) return 1;
     cin >> K;
     if( K > 1000 || K < 1) return 1;
-
 
     int* arr = new int[N];
 
@@ -24,6 +23,8 @@ int main(){
 
     int* temp = new int[N];
     int uniqueSize = 0;
+    
+    // Видалення дублюючих елементів
     for (int i = 0; i < N; i++) {
         bool isDuplicate = false;
         for (int j = 0; j < uniqueSize; j++) {
@@ -50,13 +51,9 @@ int main(){
 
 void Sort(int temp[], int size)
 {
-    
-    for(int i = 0; i < size-1; i++)
-    {
-        for(int j = i + 1; j < size; j++)
-        {
-            if(temp[i] > temp[j])
-            {
+    for(int i = 0; i < size-1; i++) {
+        for(int j = i + 1; j < size; j++) {
+            if(temp[i] > temp[j]) {
                 int temporary = temp[j];
                 temp[j] = temp[i];
                 temp[i] = temporary;
@@ -64,24 +61,25 @@ void Sort(int temp[], int size)
         }
     }
 }
+
 void Show(int temp[], int size)
 {
-    for(int i = 0; i < size; i++)
-    {
+    cout << size << endl;
+    for(int i = 0; i < size; i++) {
         cout << temp[i] << " ";
     }
+    cout << endl;
 }
+
 void Rotate(int temp[], int size, int K) {
     K = K % size;
     int* rotated = new int[size];
-
     for (int i = 0; i < size; i++) {
-        rotated[i] = temp[(i + K) % size];
+        rotated[i] = temp[(i + K) % size]; 
     }
-
     for (int i = 0; i < size; i++) {
         temp[i] = rotated[i];
     }
-
-    delete[] rotated;
+    delete[] rotated; 
 }
+
