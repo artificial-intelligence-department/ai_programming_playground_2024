@@ -1,0 +1,146 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.6">
+  <diagram name="Сторінка-1" id="RwycpwF0ID0V59SPnYuY">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="egEVnEspeztC_HiSIc8C-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="60" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-3" target="egEVnEspeztC_HiSIc8C-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-3" value="double a = 0.1, b = 1.0; int k = 10; int n = 25; double epsilon = 0.0001; double step = (b - a) / k;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="580" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-4" target="egEVnEspeztC_HiSIc8C-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-4" value="int i = 0; i &lt;= k; ++i" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="45" y="750" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-6" target="egEVnEspeztC_HiSIc8C-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-6" value="double x = a + i * step;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="45" y="950" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-9" target="egEVnEspeztC_HiSIc8C-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-9" value="double exact = exactFunction(x); double taylorN = taylorSeriesFixedN(x, n); double taylorEps = taylorSeriesWithEpsilon(x, epsilon);" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-65" y="1060" width="370" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-11" target="egEVnEspeztC_HiSIc8C-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-11" target="egEVnEspeztC_HiSIc8C-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-11" value="exactFunction" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-13" target="egEVnEspeztC_HiSIc8C-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-13" value="taylorSeriesFixedN" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-15" target="egEVnEspeztC_HiSIc8C-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-15" value="taylorSeriesWithEpsilon" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="35" y="420" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-18" value="Enb" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1290" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-19" target="egEVnEspeztC_HiSIc8C-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-19" value="exactFunction" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="390" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-21" value="return exp(cos(x * sin(M_PI / 4.0)))" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="210" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-22" target="egEVnEspeztC_HiSIc8C-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="705" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-22" value="taylorSeriesWithEpsilon" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="630" y="50" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-27" target="egEVnEspeztC_HiSIc8C-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="705" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-27" value="double result = 1.0; double term = 1.0;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="622.5" y="210" width="165" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-29" target="egEVnEspeztC_HiSIc8C-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="705" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-29" value="for (int i = 1; i &lt;= n; ++i)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="612.5" y="350" width="185" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-31" target="egEVnEspeztC_HiSIc8C-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="705" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-31" value="term *= (cos(M_PI / 4.0) * x) / i; result += term;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="520" width="290" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-33" value="return result;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="645" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-35" target="egEVnEspeztC_HiSIc8C-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-35" value="taylorSeriesWithEpsilon" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="880" y="50" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-36" target="egEVnEspeztC_HiSIc8C-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-36" value="double result = 1.0; double term = 1.0; int i = 1;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="878.75" y="210" width="152.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-40" target="egEVnEspeztC_HiSIc8C-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="955" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-40" value="while (abs(term) &gt; epsilon)" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="882.5" y="365" width="145" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-43" target="egEVnEspeztC_HiSIc8C-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="955" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-43" value="term *= (cos(M_PI / 4.0) * x) / i; result += term; ++i;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="872.5" y="490" width="165" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-45" value="return result" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="895" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="egEVnEspeztC_HiSIc8C-46" target="egEVnEspeztC_HiSIc8C-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="egEVnEspeztC_HiSIc8C-46" value="return 0;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1190" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

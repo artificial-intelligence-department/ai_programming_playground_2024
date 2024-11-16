@@ -1,0 +1,14 @@
+*.exe
+assets/
+.vscode/
+.gitignore
+epic_1/
+epic_2/
+epic_3/
+epic_4/
+epic_5/
+# epic_6/
+*.bin
+*.txt
+*temp
+*.names

@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0" version="24.8.4">
+  <diagram id="cXdEuI-s0UGQRrB07dpl" name="Страница — 1">
+    <mxGraphModel dx="996" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ePT1VyTMWm48nv6pnefS-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ePT1VyTMWm48nv6pnefS-1" target="ePT1VyTMWm48nv6pnefS-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="10" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-3" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="400" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ePT1VyTMWm48nv6pnefS-4" target="ePT1VyTMWm48nv6pnefS-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-4" value="введення змінних a і b типу float та double" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="132.5" y="100" width="155" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ePT1VyTMWm48nv6pnefS-5" target="ePT1VyTMWm48nv6pnefS-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-5" value="введення змінної типу float &quot;чисельник_ф&quot; та присвоєння їй значення ((a-b)^3-(a^3-3a^2b))" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ePT1VyTMWm48nv6pnefS-6" target="ePT1VyTMWm48nv6pnefS-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-6" value="введення змінної типу float&amp;nbsp;&quot;знаменник_ф&quot; та присвоєння їй значення (b^3-3ab^2)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="290" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ePT1VyTMWm48nv6pnefS-7" target="ePT1VyTMWm48nv6pnefS-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-7" value="введення змінної типу double &quot;чисельник_д&quot; та присвоєння їй значення ((a-b)^3-(a^3-3a^2b))" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ePT1VyTMWm48nv6pnefS-8" target="ePT1VyTMWm48nv6pnefS-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-8" value="введення змінної типу double&amp;nbsp;&quot;знаменник_д&quot; та присвоєння їй значення (b^3-3ab^2)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="110" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ePT1VyTMWm48nv6pnefS-9" target="ePT1VyTMWm48nv6pnefS-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-9" value="введення змінної типу float&amp;nbsp;&quot;результат_ф&quot; та присвоєння їй значення (чисельник_ф/знаменник_ф)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="380" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ePT1VyTMWm48nv6pnefS-15" target="ePT1VyTMWm48nv6pnefS-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-15" value="введення змінної типу double &quot;результат_д&quot; та присвоєння їй значення (чисельник_д/знаменник_д)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ePT1VyTMWm48nv6pnefS-21" target="ePT1VyTMWm48nv6pnefS-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ePT1VyTMWm48nv6pnefS-21" value="Виведення змінних&amp;nbsp;&lt;div&gt;результат_ф та результат_д&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="300" width="190" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
