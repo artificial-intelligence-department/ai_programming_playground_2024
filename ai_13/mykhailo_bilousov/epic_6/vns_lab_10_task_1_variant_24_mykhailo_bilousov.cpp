@@ -1,5 +1,7 @@
 #include <iostream>
 
+#define SIZE 5
+
 struct Node 
 {
     char* value;
@@ -16,5 +18,11 @@ struct LinkedList
 
 int main()
 {
-    
+    Node* head = new Node { "abcde", NULL, NULL };
+    Node* n = head;
+    LinkedList l { SIZE, head, NULL };
+    for (int i = 1; i < SIZE; i++)
+    {
+        
+    }
 }
