@@ -2,15 +2,20 @@
 
 using namespace std;
 
-vector<int> Difference(vector<int> &v1, vector<int> &v2)
+vector<int> Difference(vector<int> v1, vector<int> v2)
 {
     vector<int> result;
 
     for(int i = 0; i < v1.size(); i++)
     {
-        if(find(v2.begin(), v2.end(), v1[i]) == v2.end())
+        auto FindPosition = find(v2.begin(), v2.end(), v1[i]);
+        if(FindPosition == v2.end())
         {
             result.push_back(v1[i]);
+        }
+        else
+        {
+            *FindPosition = -1;
         }
     }
 
@@ -29,7 +34,6 @@ vector<int> ArrayIntersection(vector<int> v1, vector<int> v2)
         if(FindPosition != v2.end())
         {
             result.push_back(v1[i]);
-            v1[i] = -1;
             *FindPosition = -1;
         }
     }
@@ -39,45 +43,24 @@ vector<int> ArrayIntersection(vector<int> v1, vector<int> v2)
     return result;
 }
 
-vector<int> ArrayUnion(vector<int> v1, vector<int> v2)
+vector<int> ArrayUnion(vector<int> v1, vector<int> v2, vector<int> v3)
 {   
-    vector<int> result = v1;
+    v1.insert(v1.begin(), v2.begin(), v2.end());
 
-    for(int i = 0; i < v2.size(); i++)
-    {   
-        if(find(v1.begin(), v1.end(), v2[i]) == v1.end())
-        {
-            result.push_back(v2[i]);
-        }
-    }
+    v1.insert(v1.begin(), v3.begin(), v3.end());
 
-    sort(result.begin(), result.end());
+    sort(v1.begin(), v1.end());
 
-    return result;
+    return v1;
 }
 
 vector<int> SymmetricDifference(vector<int> v1, vector<int> v2)
 {
-    vector<int> result;
-    for (int value : v1)
-    {
-        if (find(v2.begin(), v2.end(), value) == v2.end())
-        {
-            result.push_back(value);
-        }
-    }
+    v1.insert(v1.begin(), v2.begin(), v2.end());
 
-    for (int value : v2)
-    {
-        if (find(v1.begin(), v1.end(), value) == v1.end())
-        {
-            result.push_back(value);
-        }
-    }
+    sort(v1.begin(), v1.end());
 
-    sort(result.begin(), result.end());
-
-    return result;
+    return v1;
 }
 
 int main()
@@ -120,11 +103,11 @@ int main()
 
     sort(num2.begin(), num2.end());
 
+    vector<int> Intersection = ArrayIntersection(num1, num2);
     vector<int> N_M_difference = Difference(num1, num2);
     vector<int> M_N_difference = Difference(num2, num1);
-    vector<int> Intersection = ArrayIntersection(num1, num2);
-    vector<int> Union = ArrayUnion(num1, num2);
-    vector<int> XOR = SymmetricDifference(num1, num2);
+    vector<int> Union = ArrayUnion(N_M_difference, M_N_difference, Intersection);
+    vector<int> XOR = SymmetricDifference(N_M_difference, M_N_difference);
 
     cout << N_M_difference.size() << endl;
     for(int i : N_M_difference)

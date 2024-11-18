@@ -27,13 +27,18 @@ int main()
         }
         else if (response == ">")
         {
-            right = middle - 1; 
+            right = middle - 1;
         }
         else if (response == "<")
         {
-            left = middle + 1; 
+            left = middle + 1;
         }
         count++;
+    }
+
+    if(response != "=")
+    {
+        cout << "Wrong answer";
     }
 
     return 0;
