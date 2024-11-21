@@ -4,30 +4,30 @@
 #include <ctime>
 using namespace std;
 
-// Функція для обчислення суми елементів нижче головної діагоналі
+
 int sumBelowDiagonal(const vector<vector<int>>& matrix) {
     int size = matrix.size();
     int sum = 0;
-    for (int i = 1; i < size; i++) { // Починаємо з другого рядка (i=1)
-        for (int j = 0; j < i; j++) { // Проходимо елементи лівіше головної діагоналі (j < i)
+    for (int i = 1; i < size; i++) { 
+        for (int j = 0; j < i; j++) { 
             sum += matrix[i][j];
         }
     }
     return sum;
 }
 
-// Функція для генерації випадкової квадратної матриці
+
 vector<vector<int>> generateMatrix(int size) {
     vector<vector<int>> matrix(size, vector<int>(size));
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
-            matrix[i][j] = rand() % 100; // Генеруємо числа від 0 до 99
+            matrix[i][j] = rand() % 100;
         }
     }
     return matrix;
 }
 
-// Функція для друку матриці
+
 void printMatrix(const vector<vector<int>>& matrix) {
     for (const auto& row : matrix) {
         for (int elem : row) {
@@ -38,7 +38,7 @@ void printMatrix(const vector<vector<int>>& matrix) {
 }
 
 int main() {
-    srand(time(0)); // Ініціалізація генератора випадкових чисел
+    srand(time(0)); 
 
     int n, size;
     cout << "Enter the number of matrices (n): ";
@@ -46,8 +46,8 @@ int main() {
     cout << "Enter the size of square matrices: ";
     cin >> size;
 
-    int maxSum = INT_MIN; // Початкове значення для пошуку максимуму
-    vector<vector<int>> maxMatrix; // Матриця з максимальною сумою
+    int maxSum = INT_MIN; 
+    vector<vector<int>> maxMatrix; 
 
     for (int i = 0; i < n; i++) {
         cout << "\nMatrix " << i + 1 << ":" << endl;
@@ -59,7 +59,7 @@ int main() {
 
         if (currentSum > maxSum) {
             maxSum = currentSum;
-            maxMatrix = matrix; // Зберігаємо матрицю з максимальною сумою
+            maxMatrix = matrix; 
         }
     }
 

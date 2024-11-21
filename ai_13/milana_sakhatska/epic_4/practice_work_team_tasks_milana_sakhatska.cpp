@@ -4,15 +4,15 @@
 using namespace std;
 
 bool isPalindrome(const string& str, int start, int end) {
-    if (start >= end) return true; // Базовий випадок
-    if (str[start] != str[end]) return false; // Якщо символи не співпадають
-    return isPalindrome(str, start + 1, end - 1); // Рекурсивний виклик
+    if (start >= end) return true; 
+    if (str[start] != str[end]) return false; 
+    return isPalindrome(str, start + 1, end - 1); 
 }
 
-// Перевантажена функція для перевірки, чи є число паліндромом
+
 bool isPalindrome(int num) {
-    string str = to_string(num); // Перетворюємо число в рядок
-    return isPalindrome(str, 0, str.length() - 1); // Використовуємо функцію для рядків
+    string str = to_string(num); 
+    return isPalindrome(str, 0, str.length() - 1); 
 }
 
 int main() {

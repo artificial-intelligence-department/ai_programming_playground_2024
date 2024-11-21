@@ -13,7 +13,7 @@ void print(vector<short>& arr) {
 
 void shiftRight(vector<short>& arr, int K) {
     int n = arr.size();
-    K = K % n; // Запобігання зайвим зсувам
+    K = K % n; 
     if (K == 0) return;
 
     vector<short> temp(arr.end() - K, arr.end());
@@ -26,7 +26,7 @@ void shiftRight(vector<short>& arr, int K) {
 }
 
 int main() {
-    srand(time(0)); // Ініціалізація генератора випадкових чисел
+    srand(time(0)); 
 
     int size;
     cout << "Enter the size of array: ";
@@ -35,7 +35,7 @@ int main() {
     vector<short> arr(size);
     cout << "Generated array: ";
     for (int i = 0; i < size; i++) {
-        arr[i] = rand() % 100; // Генеруємо числа від 0 до 99
+        arr[i] = rand() % 100;
         cout << arr[i] << " ";
     }
     cout << endl;
@@ -48,7 +48,7 @@ int main() {
     for (short i = 0; i < arr.size(); i++) {
         if (arr[i] == del) {
             index.push_back(i);
-            break; // Видаляємо тільки перше входження
+            break;
         }
     }
 

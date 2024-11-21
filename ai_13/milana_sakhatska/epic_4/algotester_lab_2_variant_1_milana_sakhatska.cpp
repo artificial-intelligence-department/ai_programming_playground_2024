@@ -14,23 +14,23 @@ int main() {
         cin >> r[i];
     }
 
-    // Якщо лише 2 елементи або менше, немає сенсу викидати щось
+    
     if (N <= 2) {
         cout << 0 << endl;
         return 0;
     }
 
-    int minFatigue = INT_MAX; // Максимально можливе значення для пошуку мінімуму
+    int minFatigue = INT_MAX; 
 
     for (int i = 0; i < N; ++i) {
         vector<int> temp = r;
-        temp.erase(temp.begin() + i); // Викидаємо один елемент
+        temp.erase(temp.begin() + i); 
 
-        int maxElement = *max_element(temp.begin(), temp.end()); // Максимальний елемент після видалення
-        int minElement = *min_element(temp.begin(), temp.end()); // Мінімальний елемент після видалення
+        int maxElement = *max_element(temp.begin(), temp.end()); 
+        int minElement = *min_element(temp.begin(), temp.end()); 
 
-        int fatigue = maxElement - minElement; // Втома для поточного варіанту
-        minFatigue = min(minFatigue, fatigue); // Оновлюємо мінімальну втому
+        int fatigue = maxElement - minElement; 
+        minFatigue = min(minFatigue, fatigue); 
     }
 
     cout << minFatigue << endl;

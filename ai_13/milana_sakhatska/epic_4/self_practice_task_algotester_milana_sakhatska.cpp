@@ -19,18 +19,18 @@ int main() {
     
     cin >> a >> b >> c;
 
-    // Видалення заданих чисел
+    
     r.erase(remove(r.begin(), r.end(), a), r.end());
     r.erase(remove(r.begin(), r.end(), b), r.end());
     r.erase(remove(r.begin(), r.end(), c), r.end());
 
-    // Побудова нового масиву сум
+    
     vector<int> sums;
     for (size_t i = 1; i < r.size(); ++i) {
         sums.push_back(r[i - 1] + r[i]);
     }
 
-    // Вивід результату
+    
     cout << sums.size() << endl;
     for (int sum : sums) {
         cout << sum << " ";
