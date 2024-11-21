@@ -1,0 +1,26 @@
+Initials: Serhiy S. O.
+Address: Shevchenka
+Phone number: 380954862571
+Age: 50
+--------------------------
+Initials: Maria O. R.
+Address: Bandery
+Phone number: 380501486571
+--------------------------
+Initials: Arsen B. B.
+Address: Gorbachevskogo
+Phone number: 380965874855
+Age: 14
+--------------------------
+Initials: Matviy T. A.
+Address: Naukova
+Phone number: 380954887215
+Age: 42
+--------------------------
+Initials: Juliett N. K.
+Address: Struyska
+Phone number: 380501452369
+Age: 33
+--------------------------
+Note: мама
+--------------------------
