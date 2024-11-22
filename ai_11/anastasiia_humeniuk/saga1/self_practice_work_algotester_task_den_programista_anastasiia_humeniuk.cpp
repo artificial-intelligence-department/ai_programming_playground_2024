@@ -4,44 +4,55 @@
 using namespace std;
 
 int main() {
-    int n, m;
+
+    int n, m, count = 0; // Використано цілочисельні змінні
     cin >> n >> m;
     
-    string* all_drinks = new string[n + m]; 
+    string* all_drinks = new string[n + m]; // Використано вказівник для динамічного масиву
     string drink;
-    int count = 0;
-    
-    for (int i = 0; i < n; i++) {
+
+    int i = 0;
+    while (i < n) { // Цикл while для введення першої групи напоїв
         cin >> drink;
         all_drinks[count++] = drink;
+        i++;
     }
     
-    for (int i = 0; i < m; i++) {
+    int j = 0;
+    while (j < m) {     // Цикл while для введення другої групи напоїв
         cin >> drink;
         all_drinks[count++] = drink;
+        j++;
     }
     
-    int unique_count = 0;
+    // Використано цілочисельні змінні для підрахунку унікальних елементів
+    int unique_count = 0; 
     bool is_unique;
     
-    for (int i = 0; i < count; i++) {
+    
+    int k = 0;
+    while (k < count) { // Цикл while для перевірки унікальності напоїв
         is_unique = true;
 
-        for (int j = 0; j < i; j++) {
-            if (all_drinks[i] == all_drinks[j]) {
+        int l = 0;
+        while (l < k) {
+           
+            if (all_drinks[k] == all_drinks[l]) { // Використано умовний оператор if для порівняння елементів
                 is_unique = false;
-                break;
+                break; // Оператор break для виходу з циклу
             }
+            l++;
         }
 
         if (is_unique) {
             unique_count++;
         }
+        k++;
     }
-    
-    cout << unique_count << endl;
 
-    delete[] all_drinks;
+    cout << unique_count << endl;    // Оператор виведення даних
+
+    delete[] all_drinks; // Звільнення пам'яті
 
     return 0;
 }

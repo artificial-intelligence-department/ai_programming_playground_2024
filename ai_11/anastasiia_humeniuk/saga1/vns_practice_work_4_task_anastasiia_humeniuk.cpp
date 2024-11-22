@@ -1,19 +1,29 @@
 #include <iostream>
 using namespace std;
-int main ()
-{
-    int n;
+
+// Оголошення структури для зберігання числа та суми
+struct SumCalculator {
+    int n;     
+    int sum;     
+};
+
+int main() {
+    SumCalculator calculator;  //Створення об'єкта структури
+
     cout << "n = ";
-    cin >> n;
+    cin >> calculator.n;
 
-    int sum = 0; 
+    calculator.sum = 0; 
 
-    for (int i = 1; i < n + 1; i++){
+    int i = 1; 
 
-        sum +=i;
-    }
+    // Цикл do-while для обчислення суми перших n чисел
+    do {
+        calculator.sum += i; 
+        i++; 
+    } while (i <= calculator.n);  // Перевірка умови продовження циклу
 
-    cout << "Сума перших " << n << " цілих позитивних чисел: " << sum << endl;
+    cout << "Сума перших " << calculator.n << " цілих позитивних чисел: " << calculator.sum << endl;
 
     return 0;
 }
