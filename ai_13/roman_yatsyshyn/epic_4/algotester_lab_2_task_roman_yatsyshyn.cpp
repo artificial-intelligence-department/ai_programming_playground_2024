@@ -3,42 +3,14 @@
 #include <iostream>
 #include <stdarg.h>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
-int func(int n, int i, int dif_old, vector<int> inputs){
-    int differ = 0;
-
-    while (i < n)    
-    {
-        int current_element = inputs.at(i);
-
-        inputs.erase(inputs.begin() + i);
-
-        for (int a = 0; a < n-1; a++)
-        {   
-            for (int b = 0; b < n-1; b++)
-            {
-                if (abs(inputs.at(a)-inputs.at(b)) > differ)
-                {
-                    differ = abs(inputs.at(a)-inputs.at(b));
-                }
-            }
-        }
-
-        inputs.insert(inputs.begin() + i, current_element);
-
-        if (differ < dif_old) {dif_old = differ;}
-
-        int recursive = func(n, ++i, dif_old, inputs);
-        return recursive;
-    }
-
-    return dif_old;    
-}
-
 int main(){
     int element = 0;
+    int dif = 1e6;
+    // int differ = 0;
     
     int n = 0;
     cin >> n;
@@ -48,13 +20,33 @@ int main(){
     for (int c = 0; c < n; c++) {
         cin >> element;
         inputs.push_back(element);
-    }    
+    }
+    
+    sort(inputs.begin(), inputs.end());
 
-    int i = 0;
-    int dif_old = 1e6;
-    int dif = func(n, i, dif_old, inputs);
+    if (n != 1)
+    {
 
-    cout << dif;
+        // delete first element
+        int current_element1 = inputs.at(0);
+        inputs.erase(inputs.begin() + 0);
+        int abc1 = abs(inputs.at(0)-inputs.at(n-2));
 
-    return 0;
+        inputs.insert(inputs.begin() + 0, current_element1);
+
+        // delete last element
+        inputs.erase(inputs.begin() + (n-1));
+        int abc2 = abs(inputs.at(0)-inputs.at(n-2));
+
+        if (abc1 < abc2)
+        {
+            cout << abc1;
+        }
+        else{
+            cout << abc2;
+        }
+    }
+    else{
+        cout << "0";
+    }
 }
