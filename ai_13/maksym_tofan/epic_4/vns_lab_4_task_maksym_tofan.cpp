@@ -33,6 +33,13 @@ void prependElement(int array[], int& length, int value) {
     length++;
 }
 
+void printArray(int array[], int length) {
+    for (int i = 0; i < length; i++) {
+        cout << array[i] << " ";
+    }
+    cout << endl;
+}
+
 int main() {
     srand(static_cast<unsigned int>(time(0)));
     
@@ -52,19 +59,14 @@ int main() {
 
     for (int i = 0; i < arraySize; i++) {
         totalSum += numbers[i];
-        cout << numbers[i] << " ";
     }
-    cout << endl;
-
     int average = totalSum / arraySize;
 
     for (int i = 0; i < 3; i++) {
         prependElement(numbers, arraySize, average);
     }
 
-    for (int i = 0; i < arraySize; i++) {
-        cout << numbers[i] << " ";
-    }
+    printArray(numbers, arraySize);
 
     return 0;
 }
