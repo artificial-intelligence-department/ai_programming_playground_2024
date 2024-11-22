@@ -1,45 +1,48 @@
 #include<bits/stdc++.h>
 
-using  namespace std;
+using namespace std;
 
 int main()
 {
-    int left, count = 1;
-    int right = 1e9;
-    int middle;
-    string response;
+    int n;
+    string palindrome, half, middle;
 
-    while (left <= right && count !=48)
+    cin >> n;
+    if(n > 1000 || n < 1)
     {
-        middle = left + (right - left) / 2; 
-        cout << middle << endl << flush; 
-
-        cin >> response;
-
-        if(response != "=" && response != ">" && response != "<")
-        {
-            continue;
-        }
-
-        if (response == "=")
-        {
-            break; 
-        }
-        else if (response == ">")
-        {
-            right = middle - 1;
-        }
-        else if (response == "<")
-        {
-            left = middle + 1;
-        }
-        count++;
+        return 1;
+    }
+    
+    vector<char> letters(n);
+    for(int i = 0; i < n; i++)
+    {
+        cin >> letters[i];
     }
 
-    if(response != "=")
+    unordered_map<char, int> frequency;
+    for(char c : letters)
     {
-        cout << "Wrong answer";
+        frequency[c]++;
     }
+
+    for(auto [letter, number] : frequency)
+    {
+        if(middle.empty() && number % 2 != 0)
+        {
+            middle = letter;
+        }
+
+        if(number > 1)
+        {
+            half += string(number / 2, letter);
+        }
+    }
+    
+    palindrome = half + middle;
+    reverse(half.begin(), half.end());
+    palindrome += half;
+
+    cout << palindrome;
 
     return 0;
 }
