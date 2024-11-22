@@ -39,7 +39,7 @@ int main() {
         } else {
             right = mid;
         }
-    }
+    }  
 
     cout << fixed << setprecision(7) << result << endl;
 
