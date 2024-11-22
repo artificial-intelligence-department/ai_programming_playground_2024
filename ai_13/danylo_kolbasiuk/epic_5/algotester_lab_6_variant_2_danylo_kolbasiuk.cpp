@@ -59,7 +59,7 @@ std::string attackers(std::vector<std::string> &board, int x, int y)
     for(int i = 1; x+i < 8 && y-i >= 0; i++) 
     {
         if (board[x+i][y-i] == 'B' || board [x+i][y-i] == 'Q') attack.insert(board[x+i][y-i]);
-    }
+    }   
     for(int i = 1; x-i >= 0 && y+i < 8; i++)
     {
         if (board[x-i][y+i] == 'B' || board [x-i][y+i] == 'Q') attack.insert(board[x-i][y+i]);

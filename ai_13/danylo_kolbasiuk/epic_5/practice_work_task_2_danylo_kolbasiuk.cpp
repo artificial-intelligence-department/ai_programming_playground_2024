@@ -29,17 +29,7 @@ FileOpResult copy_file(char *file_from, char *file_to)
     }
     file2 << file1.rdbuf();
     file1.close();
-    if(file1.fail())
-    {
-        std::cout << "Something went wrong while copying from file 1." << std::endl;
-        return Failure;
-    }
     file2.close();
-    if(file1.fail())
-    {
-        std::cout << "Something went wrong while copying to file 2." << std::endl;
-        return Failure;
-    }
     return Success;
 }
 
