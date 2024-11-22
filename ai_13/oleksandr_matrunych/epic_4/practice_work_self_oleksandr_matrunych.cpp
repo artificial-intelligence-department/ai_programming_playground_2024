@@ -27,7 +27,6 @@ int main() {
         rotate(a.begin(), a.begin() + K, a.end());
     }
 
-    // Вивід результату
     cout << a.size() << endl;
     for (int num : a) {
         cout << num << " ";
@@ -40,7 +39,6 @@ int main() {
 #include <vector>
 using namespace std;
 
-// Видалення повторюваних елементів без STL
 vector<int> removeDuplicates(const vector<int>& a) {
     vector<int> result;
     for (int num : a) {
@@ -58,7 +56,6 @@ vector<int> removeDuplicates(const vector<int>& a) {
     return result;
 }
 
-// Сортування бульбашкою
 void bubbleSort(vector<int>& a) {
     int n = a.size();
     for (int i = 0; i < n - 1; ++i) {
@@ -70,7 +67,6 @@ void bubbleSort(vector<int>& a) {
     }
 }
 
-// Обрізання на K
 void rotateArray(vector<int>& a, int K) {
     int n = a.size();
     K %= n;
@@ -95,16 +91,12 @@ int main_2() {
         cin >> a[i];
     }
 
-    // Видалення повторів
     a = removeDuplicates(a);
 
-    // Сортування
     bubbleSort(a);
 
-    // Обрізання на K
     rotateArray(a, K);
 
-    // Вивід результату
     cout << a.size() << endl;
     for (int num : a) {
         cout << num << " ";

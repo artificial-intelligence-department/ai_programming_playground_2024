@@ -9,7 +9,6 @@ bool isSaddlePoint(const vector<vector<int>>& matrix, int row, int col) {
     
     int element = matrix[row][col];
     
-    // Перевірка, чи елемент найменший у своєму рядку та найбільший у своєму стовпці
     bool isMinInRow = true;
     for (int j = 0; j < m; j++) {
         if (matrix[row][j] < element) {
@@ -30,7 +29,6 @@ bool isSaddlePoint(const vector<vector<int>>& matrix, int row, int col) {
         return true;
     }
     
-    // Перевірка, чи елемент найбільший у своєму рядку та найменший у своєму стовпці
     bool isMaxInRow = true;
     for (int j = 0; j < m; j++) {
         if (matrix[row][j] > element) {
