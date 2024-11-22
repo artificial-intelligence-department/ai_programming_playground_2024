@@ -68,7 +68,6 @@ void deleteAge(const char *filename, int targetAge)
     if (file.is_open() && tempFile.is_open())
     {
         string line;
-        bool isDeleting = false;
 
         while (getline(file, line))
         {
