@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.8.6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.8.8">
   <diagram name="Сторінка-1" id="0hdriCNylg0J70wgF8Mk">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -153,6 +153,20 @@
         </mxCell>
         <mxCell id="BPXdv4qKAqIuUl87QLlF-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BPXdv4qKAqIuUl87QLlF-41" target="BPXdv4qKAqIuUl87QLlF-43">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I1TNnB7yJvNzlQKoEvI7-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BPXdv4qKAqIuUl87QLlF-41" target="BPXdv4qKAqIuUl87QLlF-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1420" y="940" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1421" y="420" />
+              <mxPoint x="1421" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I1TNnB7yJvNzlQKoEvI7-2" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="I1TNnB7yJvNzlQKoEvI7-1">
+          <mxGeometry x="-0.9224" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="BPXdv4qKAqIuUl87QLlF-41" value="x&amp;gt;0?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1060" y="380" width="140" height="80" as="geometry" />
