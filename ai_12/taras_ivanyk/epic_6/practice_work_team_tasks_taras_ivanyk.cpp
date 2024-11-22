@@ -106,7 +106,6 @@ int main() {
     cout << "Reversed list: ";
     printList(reversedHead);
 
-    // Задача 2: Порівняння списків
     Node* list1 = new Node(1);
     list1->next = new Node(2);
     list1->next->next = new Node(3);
