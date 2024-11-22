@@ -32,7 +32,7 @@ void unionSets(int x, int y) {
         parent[rootX] = rootY;
 }
 
-double distance(int i, int j, int x[], int y[]) {
+double findD(int i, int j, int x[], int y[]) {
     return sqrt((x[i] - x[j]) * (x[i] - x[j]) + (y[i] - y[j]) * (y[i] - y[j]));
 }
 
@@ -51,7 +51,7 @@ int main() {
         for (int j = i + 1; j < n; j++) {
             edges[edgeCount].u = i;
             edges[edgeCount].v = j;
-            edges[edgeCount].weight = distance(i, j, x, y);
+            edges[edgeCount].weight = findD(i, j, x, y);
             edgeCount++;
         }
     }
@@ -68,7 +68,10 @@ int main() {
         int v = edges[i].v;
         double w = edges[i].weight;
 
-        if (find(u) != find(v)) {
+        if(find(u) == find(v)){
+            continue;
+        }
+        else if (find(u) != find(v)) {
             unionSets(u, v);
             totalWeight += w;
             edgesUsed++;

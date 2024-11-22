@@ -1,10 +1,31 @@
 #include <iostream>
-#include <iomanip> 
+#include <iomanip>
+#include <stdio.h>
+#include <cstdlib>
+#include <fstream>
+#include <string>
+#include <iostream>
 
 using namespace std;
+ 
+int main()
+{
+    ofstream vFile("Volume.txt");
+    if (vFile.is_open())
+    {
+        vFile << "Обчислення об'єму паралелепіпеда." << endl;
+        vFile.close();
+    }
 
-int main() {
-    cout << "Обчислення об'єму паралелепіпеда." << endl;
+    ifstream inputFile("Volume.txt");
+    if (inputFile.is_open())
+    {
+        string vString;
+        getline(inputFile, vString);
+        cout << vString << endl;
+
+        inputFile.close();
+    }
     cout << "Введіть початкові дані:" << endl;
 
     double length, width, height, volume;
@@ -17,17 +38,19 @@ int main() {
 
     volume = length * width * height;
 
-    cout << fixed << setprecision(2); 
+    cout << fixed << setprecision(2);
     cout << "Об'єм: " << volume << " куб.см." << endl;
 
     double pound, kilos, grams;
     cout << "Введіть вагу у фунтах: ";
     cin >> pound;
 
-    grams = pound * 405.9;
-    kilos = grams / 1000;
+    const int gToK = 1000;
 
-    cout << pound <<  " фунтів дорівнюють " << kilos << " кілограмам" << endl;
+    grams = pound * 405.9;
+    kilos = grams / gToK;
+
+    cout << pound << " фунтів дорівнюють " << kilos << " кілограмам" << endl;
 
     return 0;
 }

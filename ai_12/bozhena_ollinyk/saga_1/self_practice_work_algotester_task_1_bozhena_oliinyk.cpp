@@ -10,9 +10,11 @@ int main() {
     int prices[10], n, k, z; 
 
     cin >> n >> k >> z;
-    for (int i = 0; i < n; i++) {
-        cin >> prices[i];
-    }
+    int j = 0;
+    do{
+        cin >> prices[j];
+        j++;
+    } while(j < n);
 
     sort(prices, prices + n);  
     int girls = 0;      

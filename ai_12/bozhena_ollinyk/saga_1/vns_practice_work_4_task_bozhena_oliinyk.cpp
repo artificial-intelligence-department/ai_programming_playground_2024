@@ -6,17 +6,19 @@ using namespace std;
 
 int main()
 {
-    double y, x[18];
+    double y, x[1][18];
     int n = 0;
     for (double i = -4; i <= 4; i += 0.5)
     {
-        x[n] = i;
+        x[1][n] = i;
         n++;
     }
 
-    for (int i = 0; i < n; i++)
-    {
-        y = fabs(x[i] - 2) + fabs(x[i] + 1);
-        cout << "x = " << x[i] << "   " << '\t' << "y = " << y << endl;
+    int j = 0;
+    while(j < n){
+        y = fabs(x[1][j] - 2) + fabs(x[1][j] + 1);
+        cout << "x = " << x[j] << "   " << '\t' << "y = " << y << endl;
+        j++;
     }
+
 }

@@ -16,7 +16,9 @@ int main()
 
     double b = 1 + tangens;
 
-    cout << "a = " << a << endl;
+    double *A = &a;
+
+    cout << "a = " << *A << endl;
 
     cout << "b = " << b << endl;
 }
