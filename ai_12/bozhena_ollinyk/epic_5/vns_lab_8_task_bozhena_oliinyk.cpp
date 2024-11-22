@@ -160,5 +160,13 @@ int main()
     addStatus(filename, phone, "мама");
     printFile(filename);
 
+    if (remove("humans.txt") == 0)
+    {
+        cout << "File \"humans.txt\" is removed successfully." << endl;
+    }
+    else
+    {
+        cout << "Couldn't delete file \"humans.txt\" ." << endl;
+    }
     return 0;
 }
