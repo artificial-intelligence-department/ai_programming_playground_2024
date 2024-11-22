@@ -51,7 +51,7 @@ bool compare(Node* h1, Node* h2)
     {
         return false;
     }
-    return compare(h1->next, h2->next);
+    return compare(h1->next, h2->next) && h1->value == h2->value;
 }
 
 // 3
