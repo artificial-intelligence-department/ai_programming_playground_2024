@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.9.0">
+  <diagram name="Сторінка-1" id="6DXRS3csCj2I16RjvyHf">
+    <mxGraphModel dx="711" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u6bNEP01-yX-sxlxN0_T-38" target="u6bNEP01-yX-sxlxN0_T-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-38" value="int factorial (int n)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="260" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-43" value="F" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u6bNEP01-yX-sxlxN0_T-39" target="u6bNEP01-yX-sxlxN0_T-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="u6bNEP01-yX-sxlxN0_T-39" target="u6bNEP01-yX-sxlxN0_T-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-45" value="T" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="u6bNEP01-yX-sxlxN0_T-44">
+          <mxGeometry x="-0.3672" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-39" value="n &amp;lt;= 1" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="340" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-40" value="return 1" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="350" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-41" value="return n * factorial(n-1)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="450" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="u6bNEP01-yX-sxlxN0_T-46" target="u6bNEP01-yX-sxlxN0_T-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-46" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="250" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u6bNEP01-yX-sxlxN0_T-47" target="u6bNEP01-yX-sxlxN0_T-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-47" value="int n" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="320" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u6bNEP01-yX-sxlxN0_T-48" target="u6bNEP01-yX-sxlxN0_T-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-48" value="input n" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="380" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u6bNEP01-yX-sxlxN0_T-49" target="u6bNEP01-yX-sxlxN0_T-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-49" value="output factorial(n)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="440" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="u6bNEP01-yX-sxlxN0_T-49" target="u6bNEP01-yX-sxlxN0_T-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u6bNEP01-yX-sxlxN0_T-51" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="500" width="80" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
