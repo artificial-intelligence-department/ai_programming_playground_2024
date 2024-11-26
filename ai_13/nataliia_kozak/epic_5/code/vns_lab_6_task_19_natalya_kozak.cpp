@@ -16,7 +16,7 @@ bool isIdentifier(const char* word) {
 
 int main() {
     char s[255]; 
-    cout << "Введіть текст (не більше 255 символів, закінчується крапкою):" << endl;
+    cout << endl << "Input text (<255 characters, ends with period):" << endl;
 
     gets(s);
     char result[255] = "";

@@ -14,7 +14,7 @@ typedef struct
 } FILM;
 istream &operator>>(istream &is, FILM &film)
 {
-    cout << "name = ";
+    cout << "\nname = ";
     is >> film.name;
     cout << "director = ";
     is >> film.director;

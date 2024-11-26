@@ -50,6 +50,7 @@ FileOpResult copy_file(char *file_from, char *file_to)
 int main()
 {
     char name[20], content[100];
+    cout << endl;
     cin >> name;
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
     cin.getline(content, 100);
