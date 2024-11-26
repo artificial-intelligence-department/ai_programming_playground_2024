@@ -19,10 +19,22 @@ float CountSquare(){
     a3=sqrt(pow((x3-x1), 2) + pow((y3-y1), 2));
     p=(a1+a2+a3)/2;
     float S=sqrt(p*(p-a1)*(p-a2)*(p-a3));
-    cout<<S;
+    cout<<S<<endl;
+    return S;
 }
 
 int main(){
     CountSquare();
+    int N1, N2, V1, V2, res;
+    cout<<"Кількість зошитів у наборі: ";
+    cin>>N1;
+    cout<<"Вартість одного зошита: ";
+    cin>>V1;
+    cout<<"Кількість олівців у наборі: ";
+    cin>>N2;
+    cout<<"Вартість одного олівця: ";
+    cin>>V2;
+    res=N1*V1+N2*V2;
+    cout<<"Вартість набору: "<<res<<endl;
     return 0;
 }
