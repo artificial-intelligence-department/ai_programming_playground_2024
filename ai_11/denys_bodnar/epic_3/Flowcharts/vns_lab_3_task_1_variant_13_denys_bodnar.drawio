@@ -1,0 +1,158 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+  <diagram name="Страница — 1" id="s-Jh-jquGEub2cP8r44p">
+    <mxGraphModel dx="2876" dy="1054" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2Jp_2XMDZToTsp9jalSi-1" target="2Jp_2XMDZToTsp9jalSi-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2Jp_2XMDZToTsp9jalSi-2" target="2Jp_2XMDZToTsp9jalSi-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-2" value="Функція з n" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2Jp_2XMDZToTsp9jalSi-4" target="2Jp_2XMDZToTsp9jalSi-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-4" value="Функція з e" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2Jp_2XMDZToTsp9jalSi-6" target="4Lt2NXuOOJUbZpbpZh6w-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-6" value="&lt;div&gt;&amp;nbsp;double a = 0.2, b = 1&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;int k = 10;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;int n = 10;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;double e = 0.0001;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;double step = (b - a) / k;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry y="270" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-18" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="75" y="760" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2Jp_2XMDZToTsp9jalSi-20" target="2Jp_2XMDZToTsp9jalSi-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-20" value="Функція з n" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="395" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2Jp_2XMDZToTsp9jalSi-21" target="2Jp_2XMDZToTsp9jalSi-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-21" value="double SN(double x, int n)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="375" y="90" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2Jp_2XMDZToTsp9jalSi-23" target="2Jp_2XMDZToTsp9jalSi-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-23" value="&lt;div&gt;&amp;nbsp;double sum = 0;&lt;/div&gt;&lt;div&gt;&amp;nbsp;double term = (x - 1) / (x + 1);&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="370" y="120" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2Jp_2XMDZToTsp9jalSi-25" target="2Jp_2XMDZToTsp9jalSi-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-25" value="for (int i = 1; i &amp;lt;= n; i++)" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="200" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="2Jp_2XMDZToTsp9jalSi-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="455" y="370" />
+              <mxPoint x="561" y="370" />
+              <mxPoint x="561" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-27" value="&lt;div&gt;&amp;nbsp;sum += term / (2 * i - 1);&lt;/div&gt;&lt;div&gt;&amp;nbsp;term *= ((x - 1) * (x - 1)) / ((x + 1) * (x + 1));&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="290" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2Jp_2XMDZToTsp9jalSi-30" target="2Jp_2XMDZToTsp9jalSi-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-30" value="Функція з e" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="707" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2Jp_2XMDZToTsp9jalSi-36" target="2Jp_2XMDZToTsp9jalSi-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-36" value="double SE(double x, double e)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="678.5" y="90" width="177" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2Jp_2XMDZToTsp9jalSi-38" target="2Jp_2XMDZToTsp9jalSi-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-38" value="&lt;div&gt;double sum = 0;&lt;/div&gt;&lt;div&gt;double term = (x - 1) / (x + 1);&lt;/div&gt;&lt;div&gt;int i = 1;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="665.5" y="140" width="203" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2Jp_2XMDZToTsp9jalSi-40" target="2Jp_2XMDZToTsp9jalSi-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-40" value="&amp;nbsp;while (fabs(term) &amp;gt; e)" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="690.5" y="220" width="153" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="2Jp_2XMDZToTsp9jalSi-44" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="767" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="767" y="380" />
+              <mxPoint x="881" y="380" />
+              <mxPoint x="881" y="210" />
+              <mxPoint x="770" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2Jp_2XMDZToTsp9jalSi-44" value="&lt;div&gt;sum += term / (2 * i - 1);&lt;/div&gt;&lt;div&gt;term *= ((x - 1) * (x - 1)) / ((x + 1) * (x + 1));&lt;/div&gt;&lt;div&gt;i++;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="695.5" y="310" width="143" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4Lt2NXuOOJUbZpbpZh6w-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4Lt2NXuOOJUbZpbpZh6w-1" target="4Lt2NXuOOJUbZpbpZh6w-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4Lt2NXuOOJUbZpbpZh6w-1" value="Обчислення функції" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="400" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4Lt2NXuOOJUbZpbpZh6w-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4Lt2NXuOOJUbZpbpZh6w-2" target="4Lt2NXuOOJUbZpbpZh6w-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="195" y="490" />
+              <mxPoint x="328" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4Lt2NXuOOJUbZpbpZh6w-2" value="cout &amp;lt;&amp;lt; fixed &amp;lt;&amp;lt; setprecision(4)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="450" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4Lt2NXuOOJUbZpbpZh6w-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4Lt2NXuOOJUbZpbpZh6w-4" target="4Lt2NXuOOJUbZpbpZh6w-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4Lt2NXuOOJUbZpbpZh6w-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4Lt2NXuOOJUbZpbpZh6w-4" target="4Lt2NXuOOJUbZpbpZh6w-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4Lt2NXuOOJUbZpbpZh6w-4" value="for (double x = a; x &amp;lt;= b; x += step)" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="504.5" width="235" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4Lt2NXuOOJUbZpbpZh6w-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="4Lt2NXuOOJUbZpbpZh6w-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="328" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="328" y="700" />
+              <mxPoint x="481" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4Lt2NXuOOJUbZpbpZh6w-6" value="&lt;div&gt;double N = SN(x, n);&lt;/div&gt;&lt;div&gt;double E = SE(x, e);&lt;/div&gt;&lt;div&gt;double exactValue = 0.5 * log(x);&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="226.25" y="610" width="202.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4Lt2NXuOOJUbZpbpZh6w-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4Lt2NXuOOJUbZpbpZh6w-10" target="2Jp_2XMDZToTsp9jalSi-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4Lt2NXuOOJUbZpbpZh6w-10" value="&lt;div&gt;cout &amp;lt;&amp;lt; &quot;X=&quot; &amp;lt;&amp;lt; setw(6) &amp;lt;&amp;lt; x &amp;lt;&amp;lt; &quot;\t&quot;&lt;/div&gt;&lt;div&gt;&amp;lt;&amp;lt; &quot;SN=&quot; &amp;lt;&amp;lt; setw(8) &amp;lt;&amp;lt; N &amp;lt;&amp;lt; &quot;\t&quot;&lt;/div&gt;&lt;div&gt;&amp;lt;&amp;lt; &quot;SE=&quot; &amp;lt;&amp;lt; setw(8) &amp;lt;&amp;lt; E &amp;lt;&amp;lt; &quot;\t&quot;&lt;/div&gt;&lt;div&gt;&amp;lt;&amp;lt; &quot;Y=&quot; &amp;lt;&amp;lt; setw(8) &amp;lt;&amp;lt; exactValue &amp;lt;&amp;lt; endl;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="-75" y="590" width="270" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
