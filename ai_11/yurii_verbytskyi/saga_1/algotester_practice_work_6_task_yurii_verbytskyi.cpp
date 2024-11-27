@@ -3,69 +3,67 @@
 
 using namespace std;
 
-struct Filled {
-    int row;
-    int col;
-};
-
-/* Matrix for check
-0 1 0 0 1 0 0 0
-0 0 0 0 0 0 1 0
-1 1 0 0 1 0 0 1
-0 0 0 0 0 0 0 0
-1 0 0 1 0 0 1 1
-0 0 0 0 0 0 0 0
-0 1 1 0 1 0 0 0
-0 0 0 1 0 1 0 0
-*/ 
-int main() {
-    const int size = 8;
-    int board[size][size];
-
-    int r = 0, c = 0;
-    cout << "Enter board (0 or 1): \n";
-    do {
-        cin >> board[r][c];
-
-        if (board[r][c] != 0 && board[r][c] != 1) {
-            cout << "Wrong value! Enter 0 or 1.\n";
-            continue; 
-        }
-        c++;
-        if (c == size) {
-            c = 0;
-            r++;
-        }
-    } while (r < size);
-
-    vector<Filled> filledcells;  
-    int rowCounts[size] = {0};   
-
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size; j++) {
-            if (board[i][j] == 1) {
-                filledcells.push_back({i + 1, j + 1}); 
-                rowCounts[i]++;
+void bubbleSort(vector<int> &r, int size) {
+    for (int i = 0; i < size - 1; ++i) {
+        for (int j = 0; j < size - i - 1; ++j) {
+            if (r[j] > r[j + 1]) {
+                int temp = r[j];
+                r[j] = r[j + 1];
+                r[j + 1] = temp;
             }
         }
     }
+}
 
-   
-    cout << "\nQuantity of filled cells in each row:\n";
-    for (int i = 0; i < size; i++) {
-        cout << "Row " << i + 1 << ": " << rowCounts[i] << endl;
+int main() {
+    int size;
+    cin >> size;
+    vector<int> r(size);
+    for(int i = 0; i < size; i++){
+        cin >> r[i];
     }
+
+    vector<int> new_r1;
+    vector<int> new_r2;
+
+    bubbleSort(r, size);
+    
+    
+    for (int i = 0; i < size; i++) {
+        new_r1.push_back(r[i]);
+    }
+    new_r1.pop_back();
+    int min1 = new_r1[0], max1 = new_r1[0];
+    for (int i = 0; i < size-1; i++) {
+        if (new_r1[i] < min1) {
+            min1 = new_r1[i];
+        }
+        if (new_r1[i] > max1) {
+            max1 = new_r1[i];
+        }
+    }
+    int difference1 = max1 - min1;
+
+    for (int i = size - 1; i >= 0; i--) {
+        new_r2.push_back(r[i]);
+    }
+    new_r2.pop_back();
+    int min2 = new_r2[0], max2 = new_r2[0];
+    for (int i = 0; i < size-1; i++) {
+        if (new_r2[i] < min2) {
+            min2 = new_r2[i];
+        }
+        if (new_r2[i] > max2) {
+            max2 = new_r2[i];
+        }
+    }
+    int difference2 = max2 - min2;
+
+    if(difference1 < difference2){
+        cout << difference1;
+    } else cout << difference2;
 
     
-    cout << "\nCoordinates of filled cells: \n";
-    for (const auto& fill : filledcells) {
-        cout << "(" << fill.row << ", " << fill.col << ") ";
-    }
-    cout << endl;
-
-   
-    int sum_of_filled_cells = filledcells.size();
-    cout << "Sum of filled cells: " << sum_of_filled_cells << endl;
 
     return 0;
 }

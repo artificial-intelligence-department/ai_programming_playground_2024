@@ -3,52 +3,37 @@
 
 using namespace std;
 
-int main() {
-    int rowsA, colsA, rowsB, colsB;
-
-    cout << "Enter dimensions of matrix A (rows cols): ";
-    cin >> rowsA >> colsA;
-    cout << "Enter dimensions of matrix B (rows cols): ";
-    cin >> rowsB >> colsB;
-
-    if (colsA != rowsB) {
-        cout << "Error: Matrices cannot be multiplied (columns of A != rows of B)." << endl;
-        return 1;
-    }
-
-    vector<vector<int>> A(rowsA, vector<int>(colsA));
-    cout << "Enter elements of matrix A:" << endl;
-    for (int i = 0; i < rowsA; i++) {
-        for (int j = 0; j < colsA; j++) {
-            cin >> A[i][j];
-        }
-    }
-
-
-    vector<vector<int>> B(rowsB, vector<int>(colsB));
-    cout << "Enter elements of matrix B:" << endl;
-    for (int i = 0; i < rowsB; i++) {
-        for (int j = 0; j < colsB; j++) {
-            cin >> B[i][j];
-        }
-    }
-
-    vector<vector<int>> AB(rowsA, vector<int>(colsB, 0));
-    for (int i = 0; i < rowsA; i++) {
-        for (int j = 0; j < colsB; j++) {
-            for (int k = 0; k < colsA; k++) {
-                AB[i][j] += A[i][k] * B[k][j];
+void bubbleSort(vector<int> &r, int n) {
+    for (int i = 0; i < n - 1; ++i) {
+        for (int j = 0; j < n - i - 1; ++j) {
+            if (r[j] > r[j + 1]) {
+                int temp = r[j];
+                r[j] = r[j + 1];
+                r[j + 1] = temp;
             }
         }
     }
+}
 
-    cout << "Resulting matrix AB:" << endl;
-    for (int i = 0; i < rowsA; i++) {
-        for (int j = 0; j < colsB; j++) {
-            cout << AB[i][j] << " ";
-        }
-        cout << endl;
+int main() {
+    int n;
+    cin >> n;
+    int m;
+    cin >> m;
+    vector<int> a(n);
+    for(int i = 0; i < n; i++){
+        cin >> a[i];
     }
 
+    vector<int> b(m);
+    for(int i = 0; i < m; i++){
+        cin >> b[i];
+    }
+    bubbleSort(a, n);
+    bubbleSort(b, m);
+    int mina = a[0];
+    int minb = b[0];
+    int min = mina + minb;
+    cout << min;
     return 0;
 }

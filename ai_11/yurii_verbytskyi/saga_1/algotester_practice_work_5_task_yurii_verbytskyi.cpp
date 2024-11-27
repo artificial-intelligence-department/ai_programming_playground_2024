@@ -1,81 +1,57 @@
 #include <iostream>
-#include <fstream>
-#include <sstream>
-#include <string>
-#include <cctype>
-#include <vector>
-#include <map>
 
 using namespace std;
 
-// Files: 
-// input.txt
-// output.txt
-// capitalized_words.txt
-
 int main() {
-    string input, output, capitalized_words;
-
-    cout << "Enter name of input file: ";
-    getline(cin, input);
-    cout << "Enter name of output file: ";
-    getline(cin, output);
-    cout << "Enter name of capitalized words file: ";
-    getline(cin, capitalized_words);
-
-    ifstream inputFile(input);
-    ofstream outputFile(output);
-    ofstream capitalizedWordsFile(capitalized_words);
-
-    if (!inputFile.is_open() || !outputFile.is_open() || !capitalizedWordsFile.is_open()) {
-        cerr << "Error opening files!" << endl;
-        return 1;
+    unsigned long long h[4];
+    for (int i = 0; i < 4; i++) {
+        cin >> h[i];
     }
-    
-    string line;
-    int lineCount = 0, wordCount = 0, charCount = 0;
-    vector<string> capitalizedWords; 
 
-    while (getline(inputFile, line)) {
-        lineCount++; 
-        charCount += line.size() + 1; 
-        string word = "";  
+    unsigned long long d[4];
+    for (int i = 0; i < 4; i++) {
+        cin >> d[i];
+    }
 
-        for (char ch : line) {
-            if (isalnum(ch)) {
-                word += ch;
-            } else {
-                if (!word.empty()) {
-                    wordCount++;  
+    unsigned long long max = h[0];
+    bool turn_over = false;
+    for (int i = 0; i < 4; i++) {
+        if (d[i] > h[i]) {
+            cout << "ERROR";
+            return 0;
+        }
 
-                    if (isupper(word[0])) {
-                        capitalizedWords.push_back(word); 
-                    }
-                    word = "";  
+        if (h[i] - d[i] == 0) {
+            turn_over = true;
+        }
+
+        h[i] -= d[i];
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                if (h[i] >= 2 * h[j]) {
+                    turn_over = true;
+                    break;
                 }
             }
-        }
-
-        if (!word.empty()) {
-            wordCount++;
-            if (isupper(word[0])) {
-                capitalizedWords.push_back(word);
+            if (turn_over) {
+                break;
             }
         }
     }
 
-    outputFile << "Lines: " << lineCount << endl;
-    outputFile << "Words: " << wordCount << endl;
-    outputFile << "Chars: " << charCount << endl;
+    unsigned long long min = h[0];
 
-    for (const string &word : capitalizedWords) {
-        capitalizedWordsFile << word << endl;
+    for (int i = 0; i < 4; i++) {
+        if (h[i] < min) {
+            min = h[i];
+        }
+        if (h[i] > max) {
+            max = h[i];
+        }
     }
 
-    inputFile.close();
-    outputFile.close();
-    capitalizedWordsFile.close();
-
-    cout << "Everything is written." << endl;
+    if(turn_over == true){
+        cout << "NO";
+    } else cout << "YES";
     return 0;
 }

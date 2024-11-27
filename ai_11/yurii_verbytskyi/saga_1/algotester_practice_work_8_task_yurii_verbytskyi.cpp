@@ -1,42 +1,29 @@
 #include <iostream>
-#include <vector>
+#include <string>
+
 using namespace std;
 
 int main() {
-    int quantity;
+    string S;
+    cin >> S;  
 
-    cout << "Enter quantity of marks: ";
-    cin >> quantity;
-
-    if (quantity <= 0) {
-        cout << "Invalid quantity of marks. Exiting program." << endl;
-        return 1;
-    }
-
-    vector<int> a(quantity);
-    int sum = 0;
-    int maxMark = INT_MIN; 
-    int minMark = INT_MAX; 
-
-    cout << "Enter the marks (1-12):" << endl;
-    for (int i = 0; i < quantity; i++) {
-        cin >> a[i];
-        while (a[i] < 1 || a[i] > 12) {
-            cout << "Wrong value of mark, please enter (1-12): ";
-            cin >> a[i];
+    string compressed = "";  
+    int n = S.length();
+    
+    for (int i = 0; i < n; i++) {
+        int count = 1;
+        while (i + 1 < n && S[i] == S[i + 1]) {
+            i++;
+            count++;
         }
-        sum += a[i];
-        if (a[i] > maxMark) {
-            maxMark = a[i];
-        }
-        if (a[i] < minMark) {
-            minMark = a[i];
+
+        compressed += S[i];
+        if (count > 1) {
+            compressed += to_string(count); 
         }
     }
-    double average = static_cast<double>(sum) / quantity;
-    cout << "\nAverage mark: " << average << endl;
-    cout << "Max mark: " << maxMark << endl;
-    cout << "Min mark: " << minMark << endl;
+
+    cout << compressed << endl;  
 
     return 0;
 }
