@@ -16,10 +16,10 @@ int main()
     }
     if((total-sum)>0)
     {
-        std::cout << total-sum << std::endl;
+        std::cout << total-sum;
     }
     else
     {
-        std::cout << "Another mistake!" << std::endl;    
+        std::cout << "Another mistake!";    
     }
 }

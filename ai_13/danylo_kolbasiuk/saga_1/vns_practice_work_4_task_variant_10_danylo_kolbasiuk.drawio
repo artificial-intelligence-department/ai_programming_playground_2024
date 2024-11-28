@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.9.2">
+  <diagram name="Page-1" id="4cG4MPOYXa2AKBjEAywv">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3jkGafP0216l2RSiJ3yr-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3jkGafP0216l2RSiJ3yr-1" target="3jkGafP0216l2RSiJ3yr-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3jkGafP0216l2RSiJ3yr-2" target="3jkGafP0216l2RSiJ3yr-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-6" value="input" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="3jkGafP0216l2RSiJ3yr-5">
+          <mxGeometry x="-0.1571" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-2" value="int n" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3jkGafP0216l2RSiJ3yr-4" target="3jkGafP0216l2RSiJ3yr-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-4" value="Output &quot;Input a whole positive number: &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="270" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3jkGafP0216l2RSiJ3yr-7" target="3jkGafP0216l2RSiJ3yr-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-7" value="Input n" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3jkGafP0216l2RSiJ3yr-9" target="3jkGafP0216l2RSiJ3yr-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-15" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="3jkGafP0216l2RSiJ3yr-11">
+          <mxGeometry x="-0.6971" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3jkGafP0216l2RSiJ3yr-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-18" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="3jkGafP0216l2RSiJ3yr-17">
+          <mxGeometry x="-0.0821" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-9" value="n&amp;lt;0?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="450" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="3jkGafP0216l2RSiJ3yr-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="206" y="237" as="targetPoint" />
+            <mxPoint x="143.5" y="602" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="87" y="605" />
+              <mxPoint x="87" y="237" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-16" value="goto" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="3jkGafP0216l2RSiJ3yr-14">
+          <mxGeometry x="-0.863" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-13" value="&lt;div&gt;Output &quot;The number is&amp;nbsp;&lt;/div&gt;&lt;div&gt;less than zero, try again!&quot;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="137.5" y="560" width="165" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3jkGafP0216l2RSiJ3yr-19" target="3jkGafP0216l2RSiJ3yr-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-19" value="factorial(n)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3jkGafP0216l2RSiJ3yr-21" target="3jkGafP0216l2RSiJ3yr-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-21" value="&lt;div&gt;Output &quot;The factorial of &quot; n&lt;/div&gt;&lt;div&gt;&quot;equals &quot; factorial(n) &quot;.&quot;&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="550" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3jkGafP0216l2RSiJ3yr-23" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="630" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

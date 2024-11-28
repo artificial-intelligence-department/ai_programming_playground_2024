@@ -16,7 +16,7 @@ int main()
 {
     int n;
     input:
-    std::cout << "Input a whole number: ";
+    std::cout << "Input a whole positive number: ";
     std::cin >> n;
     if(n<0)
     {
