@@ -32,15 +32,28 @@ public:
         return size;
     }
 
-    void print()
+    friend ostream& operator<<(ostream& os, const  binary_tree& tree) 
     {
-        print(root);
+        tree.print_tree(tree.root, os);
+        return os;
     }
 
 private:
     tree_node* root;
     int size = 0;
     
+    //Виведення дерева
+    void print_tree(tree_node* node, ostream& os) const 
+    {
+        if (node != nullptr) 
+        {
+            print_tree(node->left, os);
+
+            os << node->data << " ";
+
+            print_tree(node->right, os);
+        }
+    }
 
     //Вставити число
     tree_node* insert(tree_node* node, int value)
@@ -83,17 +96,6 @@ private:
         return true;
     }
 
-    void print( tree_node* node)
-    {
-        if (node == nullptr) return;
-
-        print( node->left);
-        
-        cout<<node->data<<" ";
-
-        print(node->right);
-    }
-
 };
 
 
@@ -114,8 +116,7 @@ int main()
         }
         else if (s == "print")
         {
-            my_tree.print();
-            cout<<endl;
+            cout<<my_tree<<endl;
         }
         else if (s =="insert")
         {
@@ -134,3 +135,4 @@ int main()
     
     return 0;
 }
+
