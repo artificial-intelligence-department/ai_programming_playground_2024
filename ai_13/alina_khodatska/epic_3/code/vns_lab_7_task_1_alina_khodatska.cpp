@@ -1,9 +1,8 @@
 #include <iostream>
-#include <cstdarg>
-#include <sstream> // Для std::ostringstream
+#include <cstdarg>  
+#include <sstream> // включення бібліотеки для роботи зі стрічками
 
-// Функція для перетворення одного числа з десяткової системи числення у вісімкову
-std::string toOctal(int number) {
+std::string toOctal(int number) {  // функція для переведення числа в вісімкову систему числення
     std::ostringstream result;
     do {
         int remainder = number % 8;
@@ -12,23 +11,22 @@ std::string toOctal(int number) {
     } while (number > 0);
 
     std::string octal = result.str();
-    std::reverse(octal.begin(), octal.end()); // Перевертаємо рядок, оскільки ми будували його у зворотному порядку
+    std::reverse(octal.begin(), octal.end());
     return octal;
 }
-// Функція зі змінною кількістю параметрів для перетворення чисел у вісімкову систему
-void convertToOctal(int count, ...) {
-    va_list args;
-    va_start(args, count);
+void convertToOctal(int count, ...) {   // Функції зі змінною кількістю параметрів (еліпсис)
+    va_list args;  // тип для зберігання аргументів
+    va_start(args, count);  // макрос для отримання поточного аргументу
     for (int i = 0; i < count; ++i) {
         int number = va_arg(args, int);
         std::string octal = toOctal(number);
         std::cout << "Decimal: " << number << " -> Octal: " << octal << std::endl;
     }
-    va_end(args);
+    va_end(args);  // макрос для очищення пам'яті
 }
 int main() {
     std::cout << "Conversion with 3 parameters:" << std::endl;
-    convertToOctal(3, 10, 20, 30);
+    convertToOctal(3, 10, 20, 30);  // виклик функції зі змінною кількістю параметрів
 
     std::cout << "\nConversion with 5 parameters:" << std::endl;
     convertToOctal(5, 15, 25, 35, 45, 55);

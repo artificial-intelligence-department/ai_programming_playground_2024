@@ -2,7 +2,7 @@
 #include <cmath>
 #include <vector>
 
-const double PI = 3.14159265358979323846; // Визначення числа ?
+const double PI = 3.14159265358979323846; // Визначення числа пі
 
 // Функція для обчислення точного значення функції y
 double exactFunction(double x) {
@@ -28,7 +28,7 @@ double seriesFunctionEpsilon(double x, double epsilon) {
         sum += term;
         ++i;
     } while (std::abs(term) >= epsilon);
-    return sum;
+    return sum;    // повернення результату функції
 }
 
 int main() {
@@ -39,7 +39,7 @@ int main() {
     double epsilon = 0.0001; // Точність
 
     double step = (b - a) / k;
-    std::vector<double> x_values;
+    std::vector<double> x_values;  // Вектор для зберігання значень x
 
     // Заповнення вектора значеннями x
     for (int i = 0; i <= k; ++i) {
@@ -51,8 +51,8 @@ int main() {
 
     // Обчислення значень функції для кожного x
     for (double x : x_values) {
-        double exact = exactFunction(x);
-        double series_n = seriesFunctionN(x, n);
+        double exact = exactFunction(x);  // виклик функції 
+        double series_n = seriesFunctionN(x, n); // передача параметру функції (x i n як параметри)
         double series_epsilon = seriesFunctionEpsilon(x, epsilon);
 
         std::cout << x << "\t" << exact << "\t" << series_n << "\t" << series_epsilon << "\n";

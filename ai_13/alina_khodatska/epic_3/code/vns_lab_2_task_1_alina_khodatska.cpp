@@ -1,18 +1,17 @@
 #include <iostream>
 #include <cmath>
 
-// Функція для обчислення факторіала числа
+// Рекурсивна функція для обчислення факторіала числа
 unsigned long long factorial(int n) {
-    unsigned long long result = 1;
-    for (int i = 1; i <= n; ++i) {
-        result *= i;
+    if (n <= 1) {
+        return 1;
     }
-    return result;
+    return n * factorial(n - 1);  // Рекурсивний виклик
 }
 
 // Функція для обчислення n-го члена ряду
 double computeTerm(int n) {
-    return (pow(2, n) * factorial(n)) / pow(n, n);
+    return (pow(2, n) * factorial(n)) / pow(n, n);  // повернення значення n-го члена ряду
 }
 
 int main() {
@@ -21,15 +20,14 @@ int main() {
     double term; // Поточний член ряду
     int n = 1; // Індекс члена ряду
 
-    // Цикл для обчислення суми ряду, поки член не стане меншим за epsilon
+    // Цикл do while для обчислення суми ряду
     do {
         term = computeTerm(n);
         sum += term;
         ++n;
     } while (std::abs(term) >= epsilon);
 
-    // Виведення результату з відповідним заголовком
     std::cout << "Row sum with accuracy epsilon = " << epsilon << " equals: " << sum << std::endl;
 
-    return 0;
+    return 0;  // Повернення 0
 }

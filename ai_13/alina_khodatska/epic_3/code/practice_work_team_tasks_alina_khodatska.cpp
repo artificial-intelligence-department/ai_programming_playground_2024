@@ -2,48 +2,25 @@
 #include <vector>
 #include <string>
 
-void listBooks(const std::vector<std::string>& books, const std::vector<bool>& availability) {
+void listBooks(const std::vector<std::string>& books, const std::vector<bool>& availability) {  // оголошення та передача пареметру функції 
     std::cout << "List of books:\n";
-    for (size_t i = 0; i < books.size(); ++i) {
-        std::cout << i + 1 << ". " << books[i];
-        if (availability[i]) {
-            std::cout << " (available)\n";
-        }
-        else {
-            std::cout << " (borrowed)\n";
-        }
+    for (size_t i = 0; i < books.size(); ++i) {   // цикл for для виведення списку книг
+        std::cout << i + 1 << ". " << books[i] << (availability[i] ? " (available)\n" : " (borrowed)\n");
     }
 }
 
-void borrowBook(std::vector<bool>& availability) {
+void updateBookStatus(std::vector<bool>& availability, bool borrow) {   // оголошення та передача пареметру функції
     int bookNumber;
-    std::cout << "Enter the number of the book you want to borrow: ";
+    std::cout << "Enter the number of the book you want to " << (borrow ? "borrow" : "return") << ": ";
     std::cin >> bookNumber;
-    if (bookNumber > 0 && bookNumber <= static_cast<int>(availability.size())) {
-        if (availability[bookNumber - 1]) {
-            availability[bookNumber - 1] = false;
-            std::cout << "You have successfully borrowed the book.\n";
-        }
-        else {
-            std::cout << "This book is already borrowed.\n";
-        }
-    }
-    else {
-        std::cout << "Invalid book number.\n";
-    }
-}
 
-void returnBook(std::vector<bool>& availability) {
-    int bookNumber;
-    std::cout << "Enter the number of the book you want to return: ";
-    std::cin >> bookNumber;
-    if (bookNumber > 0 && bookNumber <= static_cast<int>(availability.size())) {
-        if (!availability[bookNumber - 1]) {
-            availability[bookNumber - 1] = true;
-            std::cout << "You have successfully returned the book.\n";
+    if (bookNumber > 0 && bookNumber <= static_cast<int>(availability.size())) {   // оператор if else для перевірки введеного номера книги
+        if (availability[bookNumber - 1] == borrow) {
+            availability[bookNumber - 1] = !borrow;
+            std::cout << "You have successfully " << (borrow ? "borrowed" : "returned") << " the book.\n";
         }
         else {
-            std::cout << "This book is already available.\n";
+            std::cout << "This book is already " << (borrow ? "borrowed" : "available") << ".\n";
         }
     }
     else {
@@ -52,14 +29,11 @@ void returnBook(std::vector<bool>& availability) {
 }
 
 int main() {
-    std::vector<std::string> books = { "Book 1", "Book 2", "Book 3", "Book 4" };
-    std::vector<bool> availability(books.size(), true);
+    std::vector<std::string> books = { "Book 1", "Book 2", "Book 3", "Book 4" };   // оголошення та ініціалізація вектора
+    std::vector<bool> availability(books.size(), true);   // оголошення та ініціалізація вектора
 
-    bool continueProgram = true;
-
-    do {
-        int choice;
-
+    while (true) {   // цикл while 
+        int choice;  // оголошення змінної
         std::cout << "\nMain Menu:\n";
         std::cout << "1. List all books\n";
         std::cout << "2. Borrow a book\n";
@@ -70,37 +44,20 @@ int main() {
 
         switch (choice) {
         case 1:
-            listBooks(books, availability);
+            listBooks(books, availability);  // виклик функції
             break;
         case 2:
-            borrowBook(availability);
+            updateBookStatus(availability, true); // виклик функції
             break;
         case 3:
-            returnBook(availability);
+            updateBookStatus(availability, false);	// виклик функції
             break;
         case 4:
-            continueProgram = false;
-            break;
+            std::cout << "Thank you for using our library!\n";
+            return 0;   // фунФункція main повертає значення 0 при завершенні роботи програми
         default:
             std::cout << "Invalid choice, please try again.\n";
-            goto mainMenu;
+            break;   //оператор break для виходу з оператора switch
         }
-
-        if (!continueProgram) {
-            break;
-        }
-
-        char anotherOperation;
-        std::cout << "Do you want to perform another operation? (y/n): ";
-        std::cin >> anotherOperation;
-        if (anotherOperation == 'n' || anotherOperation == 'N') {
-            continueProgram = false;
-        }
-
-    mainMenu:
-        continue;
-    } while (continueProgram);
-
-    std::cout << "Thank you for using our library!\n";
-    return 0;
+    }
 }
