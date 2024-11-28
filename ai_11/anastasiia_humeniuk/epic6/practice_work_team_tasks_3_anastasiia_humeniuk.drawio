@@ -1,0 +1,380 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.8">
+  <diagram name="Страница — 1" id="su4LdkSQXIup_nqFoSOk">
+    <mxGraphModel dx="500" dy="252" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kcVb27nSimBX3UgIGa_4-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-1" target="kcVb27nSimBX3UgIGa_4-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="128.75" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="83.75" y="40" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-3" target="kcVb27nSimBX3UgIGa_4-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="128.75" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-3" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;Node* n1 = &lt;/span&gt;&lt;span class=&quot;pl-k&quot; style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-keyword); text-align: start; white-space-collapse: preserve;&quot;&gt;new&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt; &lt;/span&gt;&lt;span class=&quot;pl-c1&quot; style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot;&gt;Node&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;pl-c1&quot; style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot;&gt;9&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="68.75" y="90" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-5" target="kcVb27nSimBX3UgIGa_4-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="128.75" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-5" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;n1-&amp;gt;&lt;/span&gt;&lt;span class=&quot;pl-smi&quot; style=&quot;box-sizing: border-box; color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;next&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt; = &lt;/span&gt;&lt;span class=&quot;pl-k&quot; style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-keyword); text-align: start; white-space-collapse: preserve;&quot;&gt;new&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt; &lt;/span&gt;&lt;span class=&quot;pl-c1&quot; style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot;&gt;Node&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;pl-c1&quot; style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="68.75" y="140" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-7" target="kcVb27nSimBX3UgIGa_4-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="128.75" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-7" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;n1-&amp;gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-smi&quot;&gt;next&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-smi&quot;&gt;next&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-keyword); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-k&quot;&gt;new&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-c1&quot;&gt;Node&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-c1&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="68.75" y="190" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-9" target="kcVb27nSimBX3UgIGa_4-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="128.75" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-9" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;Node* n2 = &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-keyword); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-k&quot;&gt;new&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-c1&quot;&gt;Node&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-c1&quot;&gt;6&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="68.75" y="240" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-11" target="kcVb27nSimBX3UgIGa_4-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="128.75" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-11" value="&lt;span style=&quot;color: rgb(31, 35, 40); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;n2-&amp;gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(31, 35, 40); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot; class=&quot;pl-smi&quot;&gt;next&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-keyword); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot; class=&quot;pl-k&quot;&gt;new&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot; class=&quot;pl-c1&quot;&gt;Node&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot; class=&quot;pl-c1&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="68.75" y="290" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-13" target="kcVb27nSimBX3UgIGa_4-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="128.75" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-13" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;n2-&amp;gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-smi&quot;&gt;next&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-smi&quot;&gt;next&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-keyword); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-k&quot;&gt;new&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-c1&quot;&gt;Node&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-c1&quot;&gt;8&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="68.75" y="340" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-15" target="kcVb27nSimBX3UgIGa_4-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="128.75" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-15" value="&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot; class=&quot;pl-c1&quot;&gt;add&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;(n1, n2)&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="68.75" y="390" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-17" target="kcVb27nSimBX3UgIGa_4-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="128.75" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-17" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;Node* result = &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-c1&quot;&gt;add&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;(n1, n2)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="68.75" y="430" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-20" target="kcVb27nSimBX3UgIGa_4-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="128.75" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-20" value="&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-c1&quot;&gt;printList&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;(result)&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="56.25" y="490" width="145" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-22" target="kcVb27nSimBX3UgIGa_4-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="128.75" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-22" value="delete n1-&amp;gt;next-&amp;gt;next;&lt;div&gt;delete n1-&amp;gt;next;&lt;/div&gt;&lt;div&gt;delete n1;&lt;/div&gt;&lt;div&gt;delete n2-&amp;gt;next-&amp;gt;next;&lt;/div&gt;&lt;div&gt;delete n2-&amp;gt;next;&lt;/div&gt;&lt;div&gt;delete n2;&lt;/div&gt;&lt;div&gt;delete result-&amp;gt;next-&amp;gt;next;&lt;/div&gt;&lt;div&gt;delete result-&amp;gt;next;&lt;/div&gt;&lt;div&gt;delete result;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="40" y="550" width="177.5" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-24" value="End" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Helvetica;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="86.25" y="700" width="85" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-25" value="&lt;b&gt;Main&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="103.75" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-26" value="&lt;b&gt;Add&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="430" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-27" target="kcVb27nSimBX3UgIGa_4-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="465" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-27" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;Node* &lt;/span&gt;&lt;span class=&quot;pl-en&quot; style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-entity); text-align: start; white-space-collapse: preserve;&quot;&gt;add&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;(Node* n1, Node* n2)&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="385" y="30" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-29" target="kcVb27nSimBX3UgIGa_4-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="465" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-29" value="Node* result = nullptr; Node* tail = nullptr;&amp;nbsp; &amp;nbsp; &amp;nbsp;int carry = 0;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="405" y="90" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-31" target="kcVb27nSimBX3UgIGa_4-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="595" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-41" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" vertex="1" connectable="0" parent="kcVb27nSimBX3UgIGa_4-32">
+          <mxGeometry x="-0.4273" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-31" target="kcVb27nSimBX3UgIGa_4-74">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-77" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" vertex="1" connectable="0" parent="kcVb27nSimBX3UgIGa_4-73">
+          <mxGeometry x="-0.8491" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-31" value="&lt;span style=&quot;text-align: start; white-space-collapse: preserve;&quot;&gt;n1 != &lt;/span&gt;&lt;span class=&quot;pl-c1&quot; style=&quot;box-sizing: border-box; text-align: start; white-space-collapse: preserve;&quot;&gt;nullptr&lt;/span&gt;&lt;span style=&quot;text-align: start; white-space-collapse: preserve;&quot;&gt; || n2 != &lt;/span&gt;&lt;span class=&quot;pl-c1&quot; style=&quot;box-sizing: border-box; text-align: start; white-space-collapse: preserve;&quot;&gt;nullptr&lt;/span&gt;&lt;span style=&quot;text-align: start; white-space-collapse: preserve;&quot;&gt; || carry &amp;gt; &lt;/span&gt;&lt;span class=&quot;pl-c1&quot; style=&quot;box-sizing: border-box; text-align: start; white-space-collapse: preserve;&quot;&gt;0&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="368.75" y="160" width="192.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-33" target="kcVb27nSimBX3UgIGa_4-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="595" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-33" value="&lt;span class=&quot;pl-k&quot; style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-keyword); text-align: start; white-space-collapse: preserve;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt; sum = carry&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="535" y="240" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-35" target="kcVb27nSimBX3UgIGa_4-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="685" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-42" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" vertex="1" connectable="0" parent="kcVb27nSimBX3UgIGa_4-36">
+          <mxGeometry x="-0.3635" y="4" relative="1" as="geometry">
+            <mxPoint y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-35" target="kcVb27nSimBX3UgIGa_4-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="485" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="475" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-46" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" vertex="1" connectable="0" parent="kcVb27nSimBX3UgIGa_4-43">
+          <mxGeometry x="-0.6428" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-35" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;n1 != &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-c1&quot;&gt;nullptr&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="532.5" y="290" width="125" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-37" target="kcVb27nSimBX3UgIGa_4-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="695" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-37" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;sum += n1-&amp;gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-smi&quot;&gt;data&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="635" y="330" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-39" target="kcVb27nSimBX3UgIGa_4-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="695" y="410" />
+              <mxPoint x="475" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-39" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;n1 = n1-&amp;gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-smi&quot;&gt;next&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="635" y="380" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-44" target="kcVb27nSimBX3UgIGa_4-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="555" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-47" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" vertex="1" connectable="0" parent="kcVb27nSimBX3UgIGa_4-45">
+          <mxGeometry x="-0.2613" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-44" target="kcVb27nSimBX3UgIGa_4-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-76" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" vertex="1" connectable="0" parent="kcVb27nSimBX3UgIGa_4-52">
+          <mxGeometry x="-0.3304" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-44" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;n2 != &lt;/span&gt;&lt;span class=&quot;pl-c1&quot; style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot;&gt;nullptr&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="415" y="430" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-48" target="kcVb27nSimBX3UgIGa_4-50">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-48" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;sum += n2-&amp;gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-smi&quot;&gt;data&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="515" y="490" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-50" target="kcVb27nSimBX3UgIGa_4-54">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="580" />
+              <mxPoint x="395" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-50" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;n2 = n2-&amp;gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-smi&quot;&gt;next&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="512.5" y="540" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-54" target="kcVb27nSimBX3UgIGa_4-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-54" value="&amp;nbsp;carry = sum / 10;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int data = sum % 10" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="335" y="600" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-57" target="kcVb27nSimBX3UgIGa_4-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-57" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;Node* newNode = &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-keyword); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-k&quot;&gt;new&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-c1&quot;&gt;Node&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;(data)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="335" y="650" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=none;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-59" target="kcVb27nSimBX3UgIGa_4-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-65" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontFamily=Helvetica;" vertex="1" connectable="0" parent="kcVb27nSimBX3UgIGa_4-60">
+          <mxGeometry x="0.1782" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=none;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-59" target="kcVb27nSimBX3UgIGa_4-67">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-68" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontFamily=Helvetica;" vertex="1" connectable="0" parent="kcVb27nSimBX3UgIGa_4-66">
+          <mxGeometry x="0.1782" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-59" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;result == &lt;/span&gt;&lt;span class=&quot;pl-c1&quot; style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant); text-align: start; white-space-collapse: preserve;&quot;&gt;nullptr&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="320" y="710" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-61" target="kcVb27nSimBX3UgIGa_4-63">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-61" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;result = newNode&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="430" y="760" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;labelBackgroundColor=none;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-63">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-63" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;tail = newNode&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="430" y="810" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-67" target="kcVb27nSimBX3UgIGa_4-70">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="295" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-67" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;tail-&amp;gt;&lt;/span&gt;&lt;span class=&quot;pl-smi&quot; style=&quot;box-sizing: border-box; color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;next&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt; = newNode&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="250" y="755" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-70">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="465" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="295" y="880" />
+              <mxPoint x="820" y="880" />
+              <mxPoint x="820" y="150" />
+              <mxPoint x="525" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-70" value="&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;tail = tail-&amp;gt;&lt;/span&gt;&lt;span class=&quot;pl-smi&quot; style=&quot;box-sizing: border-box; color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt;next&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="235" y="810" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-74" value="&lt;span class=&quot;pl-k&quot; style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-keyword); text-align: start; white-space-collapse: preserve;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot;color: rgb(31, 35, 40); text-align: start; white-space-collapse: preserve;&quot;&gt; result&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="170" y="890" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-78" target="kcVb27nSimBX3UgIGa_4-81">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-78" value="&lt;span style=&quot;box-sizing: border-box; font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-k&quot;&gt;void&lt;/span&gt;&lt;span style=&quot;font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; text-align: start; white-space-collapse: preserve;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-en&quot;&gt;printList&lt;/span&gt;&lt;span style=&quot;font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; text-align: start; white-space-collapse: preserve;&quot;&gt;(Node* head)&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="900" y="40" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-79" value="&lt;span style=&quot;font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;printList&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="940" y="10" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-81" target="kcVb27nSimBX3UgIGa_4-83">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1050" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-84" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=default;" vertex="1" connectable="0" parent="kcVb27nSimBX3UgIGa_4-82">
+          <mxGeometry x="-0.51" y="-1" relative="1" as="geometry">
+            <mxPoint x="20" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-81" target="kcVb27nSimBX3UgIGa_4-91">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-90" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=default;" vertex="1" connectable="0" parent="kcVb27nSimBX3UgIGa_4-87">
+          <mxGeometry x="0.3142" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-81" value="&lt;span style=&quot;font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; text-align: start; white-space-collapse: preserve;&quot;&gt;head != &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-c1&quot;&gt;nullptr&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="910" y="110" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-83" target="kcVb27nSimBX3UgIGa_4-86">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-83" value="&lt;span style=&quot;font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; text-align: start; white-space-collapse: preserve;&quot;&gt;cout &amp;lt;&amp;lt; head-&amp;gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-smi&quot;&gt;data&lt;/span&gt;&lt;span style=&quot;font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; text-align: start; white-space-collapse: preserve;&quot;&gt; &amp;lt;&amp;lt; &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-s&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt; &lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="175" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="kcVb27nSimBX3UgIGa_4-86">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1070" y="280" />
+              <mxPoint x="1170" y="280" />
+              <mxPoint x="1170" y="100" />
+              <mxPoint x="1040" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-86" value="&lt;span style=&quot;font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; text-align: start; white-space-collapse: preserve;&quot;&gt;head = head-&amp;gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; text-align: start; white-space-collapse: preserve;&quot; class=&quot;pl-smi&quot;&gt;next&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="235" width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="kcVb27nSimBX3UgIGa_4-91" value="End" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="840" y="170" width="80" height="35" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
