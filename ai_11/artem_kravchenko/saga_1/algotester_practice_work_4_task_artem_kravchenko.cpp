@@ -1,6 +1,6 @@
 #include <iostream>
-#include <iomanip>
-#include <cmath>
+#include <iomanip> // для форматування виводу
+#include <cmath> // для round та sqrte
 
 using namespace std;
 

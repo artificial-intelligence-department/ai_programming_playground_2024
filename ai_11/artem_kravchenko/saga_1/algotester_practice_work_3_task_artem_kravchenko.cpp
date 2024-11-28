@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+#include <string> // для string та length
 
 using namespace std;
 
@@ -7,7 +7,7 @@ int main(){
     string s;
     cin >> s;
 
-    bool lit[26] = {false};
+    bool lit[26] = {false}; // ініціалізація масиву, зі значенням false для кожного елемента
     int result = 0;
     for (int i = 0; i < s.length(); i++)
     {

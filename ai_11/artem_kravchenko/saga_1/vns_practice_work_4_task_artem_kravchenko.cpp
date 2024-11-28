@@ -13,7 +13,7 @@ void print(float x, float end, float hx){
         return;
     }
     cout << setw(10) << x <<  setw(10) << value(x) << endl;
-    print (x + hx, end, hx);
+    print (x + hx, end, hx); // рекрусивний виклик
 }
 
 int main(){
