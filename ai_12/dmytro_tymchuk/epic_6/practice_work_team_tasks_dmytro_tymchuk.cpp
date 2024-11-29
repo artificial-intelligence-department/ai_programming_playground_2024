@@ -76,7 +76,6 @@ Node* reverse_list(Node* head)
             current = next;
         }
 
-        
         return prev;
     }
 }
