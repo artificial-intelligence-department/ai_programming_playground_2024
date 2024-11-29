@@ -61,7 +61,7 @@ public:
     //Виведення списку
     void print_list()
     {
-        if (head == nullptr) cout<<"List is epty";
+        if (head == nullptr) cout<<"List is empty";
         else
         {
             Node* current = head;

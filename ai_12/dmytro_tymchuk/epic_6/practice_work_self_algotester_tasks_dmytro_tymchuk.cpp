@@ -2,18 +2,11 @@
 #include<string>
 using namespace std;
 
-struct Node
-{
-    int data;
-    Node* next;
-};
-
-    
 int main()
 {
     string num1, num2, box;
     cin>>num1>>num2;
-    int arr[1000]{};
+    int arr[111112]{};
 
     if (num1.length() < num2.length())
     {
@@ -45,7 +38,6 @@ int main()
         current2--;
         current1--;
     }
-
     
     if (current1 >= 0)
     {
