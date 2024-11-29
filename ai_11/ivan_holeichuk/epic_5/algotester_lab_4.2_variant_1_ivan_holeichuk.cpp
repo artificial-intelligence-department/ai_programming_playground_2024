@@ -1,90 +1,94 @@
+
 #include <iostream>
 #include <vector>
-#include <set>
 #include <algorithm>
-#include <iterator>
 
 using namespace std;
 
-vector<int> custom_difference(const set<int>& a, const set<int>& b) {
-    vector<int> result;
-    for (int x : a) {
-        if (b.find(x) == b.end()) {
-            result.push_back(x);
-        }
-    }
-    return result;
+void print(const vector<int>& res) {
+    cout << res.size() << endl;
+    for (int x : res) cout << x << " ";
+    cout << endl;
 }
 
-vector<int> custom_intersection(const set<int>& a, const set<int>& b) {
-    vector<int> result;
-    for (int x : a) {
-        if (b.find(x) != b.end()) {
-            result.push_back(x);
+vector<int> un(const vector<int>& a, const vector<int>& b) {
+    vector<int> res;
+    int i = 0, j = 0;
+    while (i < a.size() && j < b.size()) {
+        if (a[i] < b[j]) res.push_back(a[i++]);
+        else if (b[j] < a[i]) res.push_back(b[j++]);
+        else {
+            res.push_back(a[i]);
+            i++; j++;
         }
     }
-    return result;
+    while (i < a.size()) res.push_back(a[i++]);
+    while (j < b.size()) res.push_back(b[j++]);
+    return res;
 }
 
-vector<int> custom_union(const set<int>& a, const set<int>& b) {
-    vector<int> result(a.begin(), a.end());
-    for (int x : b) {
-        if (a.find(x) == a.end()) {
-            result.push_back(x);
+vector<int> inter(const vector<int>& a, const vector<int>& b) {
+    vector<int> res;
+    int i = 0, j = 0;
+    while (i < a.size() && j < b.size()) {
+        if (a[i] < b[j]) i++;
+        else if (b[j] < a[i]) j++;
+        else {
+            res.push_back(a[i]);
+            i++; j++;
         }
     }
-    sort(result.begin(), result.end());
-    return result;
+    return res;
 }
 
-vector<int> custom_symmetric_difference(const set<int>& a, const set<int>& b) {
-    vector<int> result;
-    for (int x : a) {
-        if (b.find(x) == b.end()) {
-            result.push_back(x);
+vector<int> diff(const vector<int>& a, const vector<int>& b) {
+    vector<int> res;
+    int i = 0, j = 0;
+    while (i < a.size() && j < b.size()) {
+        if (a[i] < b[j]) res.push_back(a[i++]);
+        else if (b[j] < a[i]) j++;
+        else {
+            i++;
+            j++;
         }
     }
-    for (int x : b) {
-        if (a.find(x) == a.end()) {
-            result.push_back(x);
-        }
-    }
-    sort(result.begin(), result.end());
-    return result;
+    while (i < a.size()) res.push_back(a[i++]);
+    return res;
 }
 
-void print_result(const vector<int>& v) {
-    cout << v.size() << endl;
-    for (int x : v) cout << x << " ";
-    if (!v.empty()) cout << endl;
+vector<int> symDiff(const vector<int>& a, const vector<int>& b) {
+    vector<int> res1 = diff(a, b);
+    vector<int> res2 = diff(b, a);
+    return un(res1, res2);
 }
 
 int main() {
-    int n, m;
-    cin >> n;
-    vector<int> a(n);
-    for (int& x : a) cin >> x;
+    int N, M;
+    cin >> N;
+    vector<int> n(N);
+    for (int i = 0; i < N; i++) {
+        cin >> n[i];
+    }
+    cin >> M;
+    vector<int> m(M);
+    for (int i = 0; i < M; i++) {
+        cin >> m[i];
+    }
+    sort(n.begin(), n.end());
+    sort(m.begin(), m.end());
 
-    cin >> m;
-    vector<int> b(m);
-    for (int& x : b) cin >> x;
+    vector<int> d1 = diff(n, m);
+    vector<int> d2 = diff(m, n);
+    vector<int> interRes = inter(n, m);
+    vector<int> unRes = un(n, m);
+    vector<int> symRes = symDiff(n, m);
 
-    set<int> sa(a.begin(), a.end()), sb(b.begin(), b.end());
-
-    vector<int> res = custom_difference(sa, sb);
-    print_result(res);
-
-    res = custom_difference(sb, sa);
-    print_result(res);
-
-    res = custom_intersection(sa, sb);
-    print_result(res);
-
-    res = custom_union(sa, sb);
-    print_result(res);
-
-    res = custom_symmetric_difference(sa, sb);
-    print_result(res);
+    print(d1);
+    print(d2);
+    print(interRes);
+    print(unRes);
+    print(symRes);
 
     return 0;
 }
+```

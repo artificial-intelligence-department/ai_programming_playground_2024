@@ -1,51 +1,54 @@
 #include <iostream>
-#include <vector>
 #include <string>
-#include <unordered_set>
-
+#include <unordered_map>
+#include <set>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
+void toLower(string& str) {
+    for (char& c : str) {
+        c = tolower(c);
+    }
+}
+
 int main() {
-    int n, k;
-    cin >> n >> k;
-    cin.ignore();
+    int N, K;
+    cin >> N >> K;
 
-    vector<int> letter_count(26, 0);
+    unordered_map<string, int> freq;
+    vector<string> words(N);
+    for (int i = 0; i < N; i++) {
+        cin >> words[i];
+        toLower(words[i]);
+        freq[words[i]]++;
+    }
 
-    for (int i = 0; i < n; ++i) {
-        string word;
-        getline(cin, word);
-        unordered_set<char> unique_letters;
-
-        for (char c : word) {
-            if (isalpha(c)) {
-                unique_letters.insert(tolower(c));
+    set<char> letters;
+    for (const auto& [word, count] : freq) {
+        if (count >= K) {
+            for (char c : word) {
+                letters.insert(c);
             }
         }
-
-        for (char letter : unique_letters) {
-            letter_count[letter - 'a']++;
-        }
     }
 
-    vector<char> result;
-    for (int i = 0; i < 26; ++i) {
-        if (letter_count[i] >= k) {
-            result.push_back('a' + i);
-        }
-    }
-
-    if (result.empty()) {
+    if (letters.empty()) {
         cout << "Empty!" << endl;
+        return 0;
     }
-    else {
-        cout << result.size() << endl;
-        for (int i = result.size() - 1; i >= 0; --i) {
-            cout << result[i] << (i == 0 ? "" : " ");
+
+    vector<char> sortedLetters(letters.begin(), letters.end());
+    sort(sortedLetters.rbegin(), sortedLetters.rend());
+
+    cout << sortedLetters.size() << endl;
+    for (size_t i = 0; i < sortedLetters.size(); i++) {
+        cout << sortedLetters[i];
+        if (i != sortedLetters.size() - 1) {
+            cout << " ";
         }
-        cout << endl;
     }
+    cout << endl;
 
     return 0;
 }
-

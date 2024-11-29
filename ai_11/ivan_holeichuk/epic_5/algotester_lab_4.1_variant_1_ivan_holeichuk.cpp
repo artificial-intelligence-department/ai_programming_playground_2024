@@ -1,46 +1,71 @@
 #include <iostream>
-#include <vector>
 #include <set>
+#include <vector>
 #include <algorithm>
-
 using namespace std;
 
-void print_set(const set<int>& s) {
-    cout << s.size() << endl;
-    for (int x : s) cout << x << " ";
-    if (!s.empty()) cout << endl;
-}
-
 int main() {
-    int n, m;
-    cin >> n;
-    vector<int> a(n);
-    for (int& x : a) cin >> x;
+    int N, M;
 
-    cin >> m;
-    vector<int> b(m);
-    for (int& x : b) cin >> x;
+    cin >> N;
+    vector<int> a(N);
+    for (int i = 0; i < N; i++) {
+        cin >> a[i];
+    }
 
-    set<int> sa(a.begin(), a.end()), sb(b.begin(), b.end()), res;
+    cin >> M;
+    vector<int> b(M);
+    for (int i = 0; i < M; i++) {
+        cin >> b[i];
+    }
 
-    set_difference(sa.begin(), sa.end(), sb.begin(), sb.end(), inserter(res, res.begin()));
-    print_set(res);
-    res.clear();
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
 
-    set_difference(sb.begin(), sb.end(), sa.begin(), sa.end(), inserter(res, res.begin()));
-    print_set(res);
-    res.clear();
+    vector<int> diff;
+    set_difference(a.begin(), a.end(), b.begin(), b.end(), back_inserter(diff));
+    cout << diff.size() << endl;
+    for (size_t i = 0; i < diff.size(); i++) {
+        if (i > 0) cout << " ";
+        cout << diff[i];
+    }
+    cout << endl;
 
-    set_intersection(sa.begin(), sa.end(), sb.begin(), sb.end(), inserter(res, res.begin()));
-    print_set(res);
-    res.clear();
+    vector<int> revDiff;
+    set_difference(b.begin(), b.end(), a.begin(), a.end(), back_inserter(revDiff));
+    cout << revDiff.size() << endl;
+    for (size_t i = 0; i < revDiff.size(); i++) {
+        if (i > 0) cout << " ";
+        cout << revDiff[i];
+    }
+    cout << endl;
 
-    set_union(sa.begin(), sa.end(), sb.begin(), sb.end(), inserter(res, res.begin()));
-    print_set(res);
-    res.clear();
+    vector<int> intersec;
+    set_intersection(a.begin(), a.end(), b.begin(), b.end(), back_inserter(intersec));
+    cout << intersec.size() << endl;
+    for (size_t i = 0; i < intersec.size(); i++) {
+        if (i > 0) cout << " ";
+        cout << intersec[i];
+    }
+    cout << endl;
 
-    set_symmetric_difference(sa.begin(), sa.end(), sb.begin(), sb.end(), inserter(res, res.begin()));
-    print_set(res);
+    vector<int> unio;
+    set_union(a.begin(), a.end(), b.begin(), b.end(), back_inserter(unio));
+    cout << unio.size() << endl;
+    for (size_t i = 0; i < unio.size(); i++) {
+        if (i > 0) cout << " ";
+        cout << unio[i];
+    }
+    cout << endl;
+
+    vector<int> symDiff;
+    set_symmetric_difference(a.begin(), a.end(), b.begin(), b.end(), back_inserter(symDiff));
+    cout << symDiff.size() << endl;
+    for (size_t i = 0; i < symDiff.size(); i++) {
+        if (i > 0) cout << " ";
+        cout << symDiff[i];
+    }
+    cout << endl;
 
     return 0;
 }
