@@ -1,19 +1,12 @@
 #include <iostream>
-
 using namespace std;
 
-void printMultiplicationTable(int number, int multiplier) {
-    if (multiplier > 10) {
-        return;
-    }
-    cout << number << " * " << multiplier << " = " << number * multiplier << endl;
-    printMultiplicationTable(number, multiplier + 1);
-}
-
 int main() {
-    int number; 
+    int number;
     cout << "Таблиця множення на ";
-    cin >> number;    
-    printMultiplicationTable(number, 1); 
+    cin >> number;
+    for (int i = 1; i <= 10; i++) {
+        cout << number << " * " << i << " = " << number * i << endl;
+    }
     return 0;
 }
