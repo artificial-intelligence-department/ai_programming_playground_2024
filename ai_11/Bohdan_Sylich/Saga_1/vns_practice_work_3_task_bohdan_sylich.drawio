@@ -1,0 +1,101 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.3">
+  <diagram name="Сторінка-1" id="qktd5GMDUdEpSGfXQr9d">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgeQJ7fsSZsXcK0zcbtH-1" target="vgeQJ7fsSZsXcK0zcbtH-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="354" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgeQJ7fsSZsXcK0zcbtH-3" target="vgeQJ7fsSZsXcK0zcbtH-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-3" value="double length, width, height, weightPounds;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgeQJ7fsSZsXcK0zcbtH-5" target="vgeQJ7fsSZsXcK0zcbtH-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-5" value="cout &lt;&lt; &quot;Обчислення об&#39;єму паралелепіпеда.\n&quot;; cout &lt;&lt; &quot;Введіть початкові дані:\n&quot;;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="331" y="260" width="166" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgeQJ7fsSZsXcK0zcbtH-7" target="vgeQJ7fsSZsXcK0zcbtH-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-7" value="cout &lt;&lt; &quot;Довжина (см) &gt; &quot;; cin &gt;&gt; length;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="336" y="430" width="156" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgeQJ7fsSZsXcK0zcbtH-9" target="vgeQJ7fsSZsXcK0zcbtH-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-9" value="cout &lt;&lt; &quot;Ширина (см) &gt; &quot;; cin &gt;&gt; width;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="328" y="570" width="172" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgeQJ7fsSZsXcK0zcbtH-11" target="vgeQJ7fsSZsXcK0zcbtH-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-11" value="cout &lt;&lt; &quot;Висота (см) &gt; &quot;; cin &gt;&gt; height;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="331" y="710" width="166" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgeQJ7fsSZsXcK0zcbtH-13" target="vgeQJ7fsSZsXcK0zcbtH-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-13" value="double volume = length * width * height;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgeQJ7fsSZsXcK0zcbtH-15" target="vgeQJ7fsSZsXcK0zcbtH-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="432" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-15" value="cout &lt;&lt; fixed &lt;&lt; setprecision(2); cout &lt;&lt; &quot;Об&#39;єм: &quot; &lt;&lt; volume &lt;&lt; &quot; куб.см.\n&quot;;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="336" y="950" width="156" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgeQJ7fsSZsXcK0zcbtH-17" target="vgeQJ7fsSZsXcK0zcbtH-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="1270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-17" value="cout &lt;&lt; &quot;\nПерерахунок ваги:\n&quot;; cout &lt;&lt; &quot;Введіть вагу в фунтах &gt; &quot;; cin &gt;&gt; weightPounds;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="1090" width="158" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgeQJ7fsSZsXcK0zcbtH-19" target="vgeQJ7fsSZsXcK0zcbtH-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="1410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-19" value="double weightKilograms = (weightPounds * 405.9) / 1000;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="346" y="1240" width="136" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgeQJ7fsSZsXcK0zcbtH-21" target="vgeQJ7fsSZsXcK0zcbtH-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="1510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-21" value="cout &lt;&lt; &quot;Вага: &quot; &lt;&lt; weightKilograms &lt;&lt; &quot; кг.\n&quot;;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="346" y="1380" width="136" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgeQJ7fsSZsXcK0zcbtH-23" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="354" y="1490" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

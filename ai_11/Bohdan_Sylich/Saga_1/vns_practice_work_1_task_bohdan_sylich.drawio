@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.2">
+  <diagram name="Сторінка-1" id="uxXiCQF8Plbpy8Yc2-TX">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Gxehj76WluwMjmEu_3-P-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Gxehj76WluwMjmEu_3-P-1" target="Gxehj76WluwMjmEu_3-P-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gxehj76WluwMjmEu_3-P-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="350" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Gxehj76WluwMjmEu_3-P-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Gxehj76WluwMjmEu_3-P-2" target="Gxehj76WluwMjmEu_3-P-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gxehj76WluwMjmEu_3-P-2" value="double a = 0.5, b = 2.9, x = 0.3; double numerator = pow(a, x) + pow(b, -x) * sin(a - b); double denominator = sqrt(fabs(a - b)); double alpha = numerator / denominator;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="274" y="140" width="280" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Gxehj76WluwMjmEu_3-P-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Gxehj76WluwMjmEu_3-P-4" target="Gxehj76WluwMjmEu_3-P-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Gxehj76WluwMjmEu_3-P-4" value="double beta = a * exp(-sqrt(a)) * cos(b * x / a);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="286" y="390" width="256" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Gxehj76WluwMjmEu_3-P-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Gxehj76WluwMjmEu_3-P-7" target="Gxehj76WluwMjmEu_3-P-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Gxehj76WluwMjmEu_3-P-7" value="cout &amp;lt;&amp;lt; &quot;alpha (α) = &quot; &amp;lt;&amp;lt; alpha &amp;lt;&amp;lt; endl;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="296" y="530" width="236" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Gxehj76WluwMjmEu_3-P-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Gxehj76WluwMjmEu_3-P-9" target="Gxehj76WluwMjmEu_3-P-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Gxehj76WluwMjmEu_3-P-9" value="cout &amp;lt;&amp;lt; &quot;beta (β) = &quot; &amp;lt;&amp;lt; beta &amp;lt;&amp;lt; endl;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="306" y="630" width="216" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Gxehj76WluwMjmEu_3-P-11" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="354" y="760" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
