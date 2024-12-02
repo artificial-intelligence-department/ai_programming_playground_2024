@@ -1,19 +1,40 @@
 #include <iostream>
-#include <iomanip>
+#include <limits>
 using namespace std;
 
 int main() {
-    double x, y;
+    int n;
+    cin >> n;
 
-    cout << "Table of function values y = 2.6x - 3:\n";
-    cout << "-----------------\n";
-    cout << "   x    |    y\n";
-    cout << "-----------------\n";
-
-    for (x = -2; x <= 2; x += 0.5) {
-        y = 2.6 * x - 3;
-        cout << setw(6) << x << " | " << setw(6) << y << endl;
+    if (n <= 0) {
+        cout << "The number of elements must be positive." << endl;
+        return 1;
     }
+
+    double sum = 0;
+    double min_num = numeric_limits<double>::max();
+    double max_num = numeric_limits<double>::min();
+
+    for (int i = 0; i < n; i++) {
+        double num;
+        cin >> num;
+        
+        sum += num;
+
+        if (num < min_num) {
+            min_num = num;
+        }
+
+        if (num > max_num) {
+            max_num = num;
+        }
+    }
+
+    double average = sum / n;
+
+    cout << "Arithmetic average mean: " << average << endl;
+    cout << "Minimum number: " << min_num << endl;
+    cout << "Maximum number: " << max_num << endl;
 
     return 0;
 }

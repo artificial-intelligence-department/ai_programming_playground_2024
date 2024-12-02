@@ -4,7 +4,6 @@ using namespace std;
 
 int main() {
     int Quadrant1 = 0, Quadrant2 = 0, Quadrant3 = 0, Quadrant4 = 0;
-
     for (int i = 0; i < 10; i++) {
         double x, y;
         cout << "Enter coordinates of point " << i + 1 << " (x, y): ";
@@ -20,7 +19,6 @@ int main() {
             Quadrant4++;
         }
     }
-
     cout << "Number of points in the first quadrant: " << Quadrant1 << endl;
     cout << "Number of points in the second quadrant: " << Quadrant2 << endl;
     cout << "Number of points in the third quadrant: " << Quadrant3 << endl;

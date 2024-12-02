@@ -10,7 +10,7 @@ int main() {
         return 1;
     }
 
-    int votes[1000];
+    int votes[n];
 
     for (int i = 0; i < n; i++) {
         cin >> votes[i];
