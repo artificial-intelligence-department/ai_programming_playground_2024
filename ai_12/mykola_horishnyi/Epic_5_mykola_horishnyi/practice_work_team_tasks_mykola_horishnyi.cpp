@@ -4,31 +4,27 @@
 using namespace std;
 
 enum FileOpResult {
-    Success, // Все пройшло успішно
-    Failure  // Помилка при роботі з файлом
+    Success, 
+    Failure 
 };
 
 FileOpResult write_to_file(char* name, char* content) {
-    // Відкриваємо файл для запису (перезаписуємо вміст, якщо файл існує)
     FILE* file = fopen(name, "w");
 
-    // Перевіряємо, чи вдалося відкрити файл
     if (file == nullptr) {
-        return Failure;  // Не вдалося відкрити файл
+        return Failure;  
     }
 
-    // Записуємо вміст у файл
     if (fprintf(file, "%s", content) < 0) {
-        fclose(file);  // Закриваємо файл у разі помилки запису
-        return Failure; // Помилка при записі
+        fclose(file);  
+        return Failure; 
     }
 
-    // Закриваємо файл після успішного запису
     if (fclose(file) != 0) {
-        return Failure;  // Помилка при закритті файлу
+        return Failure; у
     }
 
-    return Success; // Операція завершена успішно
+    return Success; 
 }
 
 int main() {
@@ -36,11 +32,11 @@ int main() {
     char content[1024];
 
     cout << "Enter name of your file: ";
-    cin >> filename; // Вводимо ім'я файлу
+    cin >> filename; 
 
     cout << "Enter text which do you wanna to see insede: ";
-    cin.ignore();  // Очищаємо буфер вводу
-    cin.getline(content, 1024);  // Вводимо вміст
+    cin.ignore(); 
+    cin.getline(content, 1024); 
 
     FileOpResult result = write_to_file(filename, content);
 
