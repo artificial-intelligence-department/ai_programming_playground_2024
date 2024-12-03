@@ -60,7 +60,7 @@ void function_2(double &x, double matrix[5][5]) {
 
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
-            matrix[i][j] = (matrix[i][j] + VARIANT + j - i) * rand(1, 100);
+            matrix[i][j] = (matrix[i][j] + VARIANT + j - i) * (rand() % 100 + 1);
         }
     }
     //оновленя матриця за формулою(Виведення)
@@ -75,19 +75,18 @@ void function_3(double matrix[5][5], double arr[5]) {
     //Знаходження найменшого елемента матриці з стовпця
     double minCols;
     for(int j = 0; j < 5; j++) {
-        double minCols = matrix[0][j];
-    }
-
-    for (int j = 0; j < 5; j++) {
+        minCols = matrix[0][j];
         for (int i = 1; i < 5; i++) {
             if (matrix[i][j] < minCols) {
                 minCols = matrix[i][j];
             }
         }
-       double arr[j] = minCols;
+        arr[j] = minCols;
     }
-
+    
+for(int j = 0; j < 5; j++) {
     cout << "The smallest values in each column: " << arr[j] << " " << endl;
+}
 
 }
 int main() {
