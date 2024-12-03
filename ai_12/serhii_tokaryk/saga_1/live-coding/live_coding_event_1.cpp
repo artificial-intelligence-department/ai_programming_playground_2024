@@ -56,7 +56,23 @@ float function_1()
     x = bigSum + smallSum;
    }
 
-    return x;
+    return x / 56;
+}
+
+float function_2(int& x)  // 280 / 56 = 5 
+{
+int x = 5;
+ int array[5][5];
+ for (int i = 0; i < 5; i++)
+ {
+    for (int  i = 0; )
+    {
+        
+    }
+    
+ }
+ 
+
 }
 
 int main()
