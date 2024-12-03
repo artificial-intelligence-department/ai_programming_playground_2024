@@ -1,10 +1,11 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
 const int var = 12;
 
-double functiun_1 (double x) {
+double function_1 (double x) {
     float a, b;
     int c, d, e;
     double f;
@@ -13,7 +14,12 @@ double functiun_1 (double x) {
     
     double max1, max2, max3, min1, min2, min3;
 
-    max1 = 0
+    max1 = -99999999;
+    max2 = -99999999;
+    max3 = -99999999;
+    min1 = 99999999;
+    min2 = 99999999;
+    min3 = 99999999;
 
     double numbers[6] = {a, b, c, d, e, f};
 
@@ -64,12 +70,12 @@ double functiun_1 (double x) {
         result = sumMax + sumMin;
     }
     
-    double x = result/(double)var;
+    x = result/(double)var;
 
     return x;
 }
 
-double function_2 (double& x) {
+void function_2 (double& x, double arr[][5]) {
     double** matrix = new double* [5];
 
     for (int i = 0; i < 5; i++) {
@@ -80,13 +86,15 @@ double function_2 (double& x) {
 
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
-            matrix[i][j] = (x + var + j - i);
+            matrix[i][j] = (x + var + j - i)*(1 + rand() % 9);
         }
     }
     
-    
-    
-    return matrix;
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            arr[i][j] = matrix[i][j];
+        }
+    }
 }
 
 
@@ -94,10 +102,10 @@ double function_2 (double& x) {
 
 int main () {
     double x = 0;
-    functiun_1(x);
-    
-    
-    
+    function_1(x);
+    double tower[5][5];
+    function_2(x, tower);
+    double ass[5][5];
     
     
     
