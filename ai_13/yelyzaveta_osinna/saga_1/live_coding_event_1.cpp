@@ -17,7 +17,6 @@ int function_1() {
 
     sort(array, array+6);
 
-    cout << array[6] << endl;
 
     double sumMax = array[3]+array[4]+array[5];
     double sumMin = array[0]+array[1]+array[2];
@@ -34,11 +33,18 @@ int function_1() {
     }
     cout << result;
     cout << result/76;
-    return result/76;
+    double x = result/76;
+    return x;
 } 
 
 int function_2() {
     int matrix[5][5];
+
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            matrix[i][j] = function_1();
+        }   
+    }
 
     int random = 1 + (rand() % 100);
 
@@ -47,6 +53,13 @@ int function_2() {
             matrix[i][j] = (matrix[i][j]+76+j-i)*random;
         }   
     }
+
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            cout << matrix[i][j];
+        }   
+    }
+    return matrix[5][5];
 } 
 
 int main() {
