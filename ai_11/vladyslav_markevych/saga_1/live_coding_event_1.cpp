@@ -61,13 +61,52 @@ for(int c = 0; c<5;c++){
 }
 
 } 
+void function_3(double matrix[5][5],double result[5]){
+    double elements[5] = {0};
+
+    for(int j = 0;j<5;j++){
+        double value = matrix[0][j];
+        for(int i = 0; i<5;i++){
+            if(matrix[i][j] < value){
+                value = matrix[i][j];
+            }
+        }
+        elements[j] = value;
+    }
+
+
+    bool match_result = true;
+    for(int i = 0; i<5; i++){
+        double value = matrix[0][i];
+        for(int j = 0; j < 5; j++){
+            value = (matrix[j][i] < value) ? matrix[j][i] : value;
+        }
+        if(value != elements[i]){
+            match_result = false;
+        }
+    }
+    
+
+cout<<"Результати обчислення: " << (match_result ? "Yes" : "No")<<endl;
+    
+for(int i = 0;i<5;i++){
+    result[i] = elements[i];
+}
+}
 
 int main(){
     double x = function_1();
-    cout<<function_1();
+    // cout<<function_1();
     double matrix[5][5];
     function_2(x, matrix);
 
+    double tower[5];
+    function_3(matrix, tower);
+
+for(int i = 0; i<5;i++){
+    cout<<tower[i]<<" ";
+}
+cout<<endl;
     return 0;
 }
 
