@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <ctime>
 #include <cstdlib>
+#include <string>
+#include <list>
 
 using namespace std;
 
@@ -77,14 +79,75 @@ vector<double> function_3(const vector<vector<double>> &tower) {
             }
         }
 
-        min_2 = *min_element(tower.begin(), tower.end());
-        
+        min_2 = *min_element(tower.begin(), tower.end(), [j](const vector<double>& row1, const vector<double>& row2) {
+            return row1[j] < row2[j];
+        })[j];
+
+        if(min_1 != min_2) {
+            cout << "Різниця у результатах стовбця " << j << "!" << endl;
+        } else {
+            cout << "Результати співпадають для стовпців " << j << endl;
+        }
+        min_elements[j] = min_1;
     }
+
+    return min_elements;
 }
+
+struct Student {
+    string firstName;
+    string lastName;
+    double money;
+
+    void print() const {
+        cout << firstName << " " << lastName << ", Гроші: " << money << endl; 
+    }
+};
+
+list<Student> function_4(const vector<double> &array) {
+    srand(time(0));
+
+    vector<string> firstNames = {"Олена", "Андрій", "Максим", "Марія", "Іван", "Анна", "Петро", "Софія", "Олег"};
+    vector<string> lastNames = {"Шевченко", "Коваленко", "Бондаренко", "Мельник", "Лисенко", "Кравченко", "Сидоренко", "Дмитренко", "Ткаченко"};
+
+    list<Student> students;
+
+    for(int i = 0; i < 7; ++i) {
+        Student student;
+        student.firstName = firstNames[rand() % firstNames.size()];
+        student.lastName = lastNames[rand() % lastNames.size()];
+        students.push_back(student);
+    }
+
+    auto it = students.begin();
+    it -> money *max_element(array.begin(), array.end());
+    ++it;
+    for(int i = 1; i < 5; ++i) {
+        it -> money = array[i - 1];
+        ++i;
+    }
+    it -> money *min_element(array.begin(), array.end());
+
+    for(const auto &student : students) {
+        student.print();
+    }
+    return students;
+}
+
 
 int main() {
     double x = function_1();
     cout << "Результат 1: " << x << endl;
+
     vector<vector<double>> tower = function_2(x);
+
+    vector<double> min_elements = function_3(tower);
+    cout << "Результат 3(найм. елементи по стовпцях): " << endl;
+    for(double value : min_elements) {
+        cout << value << " ";
+    }
+    cout << endl;
+
+    list<Student> studentList = function_4(min_elements);
     return 0;
 }
