@@ -8,6 +8,21 @@
 
 const int myVariant = 78;
 
+bool isEqual(double a, double b, double epsilon = 1e-9)
+{
+    return std::abs(a - b) < epsilon;
+}
+
+bool lessThan(double a, double b, double epsilon = 1e-9)
+{
+    return (b - a) > epsilon;
+}
+
+bool greaterThan(double a, double b, double epsilon = 1e-9)
+{
+    return (a - b) > epsilon;
+}
+
 double partition(double array[], int lb, int ub)
 {
     double pivot = array[lb];
@@ -15,22 +30,22 @@ double partition(double array[], int lb, int ub)
     int end = ub;
     while (start < end)
     {
-        while (array[start] <= pivot)
+        while (start < ub && (lessThan(array[start], pivot) || isEqual(array[start], pivot)))
         {
             start++;
         }
-        while (array[end] > pivot)
+        while (end > lb && greaterThan(array[start], pivot))
         {
             end--;
         }
         if (start < end)
         {
-            int temp = array[start];
+            double temp = array[start];
             array[start] = array[end];
             array[end] = temp;
         }
     }
-    int temp = array[end];
+    double temp = array[end];
     array[end] = array[lb];
     array[lb] = temp;
     return end;
@@ -38,7 +53,7 @@ double partition(double array[], int lb, int ub)
 
 void quick_sort(double array[], double lb, double ub)
 {
-    while (lb < ub)
+    if (lb < ub)
     {
         int loc = partition(array, lb, ub);
         quick_sort(array, loc + 1, ub);
@@ -62,11 +77,11 @@ int getMinValue(int array[], int size)
 
 double getMinValue(double *array, int size)
 {
-    double minValue = INT_MIN;
+    double minValue = DBL_MAX;
 
     for (int i = 0; i < size; i++)
     {
-        if (array[i] < minValue)
+        if (lessThan(array[i], minValue))
         {
             minValue = array[i];
         }
@@ -169,12 +184,12 @@ double *function_3(double **tower)
 
     for (int i = 0; i < 5; ++i)
     {
-        quick_sort(tower[i], 0, 5);
+        quick_sort(tower[i], 0, 4);
         minValues_v2[i] = tower[i][0];
     }
 
     int ind = 0;
-    while (minValues_v1[ind] == minValues_v2[ind])
+    while (isEqual(minValues_v1[ind], minValues_v2[ind]))
     {
         ++ind;
         if (ind == 5)
