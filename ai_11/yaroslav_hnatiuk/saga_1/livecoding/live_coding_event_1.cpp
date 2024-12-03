@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <random>
 
 using namespace std;
 
@@ -13,10 +14,17 @@ int main() {
 
     cout << x;
 
-    float tower[5][5];
-    //function_2(x, tower);
+    double tower[5][5];
+    random_device seed;
+    mt19937 gen{seed()};
+    uniform_int_distribution<> dist(1, 100);
 
-    
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            tower[i][j] = (x + 5 + i + j) * dist(gen);
+            cout << tower[i][j];
+        }
+    }
 
     return 0;
 }
