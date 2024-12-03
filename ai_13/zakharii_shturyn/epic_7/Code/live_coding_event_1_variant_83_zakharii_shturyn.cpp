@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <fstream>
 using namespace std;
 
 
@@ -39,6 +40,15 @@ public:
 
     void print() {
         while(head != nullptr) {
+            cout << head->data.firstName << " " <<head->data.lastName <<  " " << head->data.moneycount << " ";
+            head = head->next;
+            cout << endl;
+        }
+    }
+
+    string get() {
+        while(head != nullptr) {
+            
             cout << head->data.firstName << " " <<head->data.lastName <<  " " << head->data.moneycount << " ";
             head = head->next;
             cout << endl;
@@ -153,6 +163,12 @@ LinkedList function_4(double* tmp) {
     list.print();
 
     return list;
+}
+
+void function_5(LinkedList list) {
+    string filename = "test.txt";
+    ofstream myFile(filename, ios::app);
+
 }
 
 
