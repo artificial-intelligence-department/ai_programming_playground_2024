@@ -11,7 +11,7 @@ int main()
 {
     int x = function_1();
     std::cout << x << '\n';
-    std::vector<std::vector<int>> y = function_2(x);
+    std::vector<std::vector<int>> tower = function_2(x);
 }
 
 int function_1()
@@ -52,12 +52,10 @@ int function_1()
 
 std::vector<std::vector<int>> function_2(int &x)
 {
-    std::vector<std::vector<int>> matrix = {
-        {x, x, x, x, x}, {x, x, x, x, x}, {x, x, x, x, x}, {x, x, x, x, x}, {x, x, x, x, x},
-    };
-    for (int i = 0; i < 5; i++) // рядок
+    std::vector<std::vector<int>> matrix(5, std::vector<int>{x, x, x, x, x});
+    for (int i = 0; i < matrix.size(); i++) // рядок
     {
-        for (int j; j < 5; j++) // стовпець
+        for (int j = 0; j < matrix.size(); j++) // стовпець
         {
             matrix[i][j] = (matrix[i][j] + 68 + j + i) * (rand() % 100 + 1);
         }
