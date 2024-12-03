@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <string.h>
 
 const int VARIANT = 61;
 
@@ -82,23 +83,87 @@ double* function_3(double** tower)
     min4 = std::min({tower[0][4], tower[1][4], tower[2][4], tower[3][4], tower[4][4]});
     for (int i = 0; i < 5; i++)
     {
-        if (min0a < tower[i][0]) min0a = tower[i][0];
+        if (min0a > tower[i][0]) min0a = tower[i][0];
     }
     for (int i = 0; i < 5; i++)
     {
-        if (min1a < tower[i][1]) min1a = tower[i][1];
+        if (min1a > tower[i][1]) min1a = tower[i][1];
     }
     for (int i = 0; i < 5; i++)
     {
-        if (min2a < tower[i][2]) min2a = tower[i][2];
+        if (min2a > tower[i][2]) min2a = tower[i][2];
     }
     for (int i = 0; i < 5; i++)
     {
-        if (min3a < tower[i][3]) min3a = tower[i][3];
+        if (min3a > tower[i][3]) min3a = tower[i][3];
     }
     for (int i = 0; i < 5; i++)
     {
-        if (min4a < tower[i][4]) min4a = tower[i][4];
+        if (min4a > tower[i][4]) min4a = tower[i][4];
+    }
+    if (min0 == min0a && min1 == min1a && min2 == min2a && min3 == min3a && min4 == min4a)
+    {
+        std::cout << "Mins are equal" << std::endl;
+    }
+    else
+    {
+        std::cout << "Mins are not equal" << std::endl;
+    }
+    arr[0] = min0;
+    arr[1] = min1;
+    arr[2] = min2;
+    arr[3] = min3;
+    arr[4] = min4;
+    return arr;
+}
+
+struct Student
+{
+    std::string name;
+    std::string surname;
+    double money;
+};
+
+struct Node
+{
+    Student value;
+    Node* next = NULL;
+    Node* prev = NULL;
+};
+
+void function_4(double* arr)
+{
+    Node* head = new Node{};
+    Node* curr = head;
+    for (int i = 1; i < 7; i++)
+    {
+        curr->next = new Node{Student(), NULL, curr};
+        curr = curr->next;
+    }
+    curr = head;
+    while (curr != NULL)
+    {
+        curr->value.name = "Aaaaaaaaaa";
+        curr->value.surname = "Aaaaaaaaaa";
+        curr->value.name[0] = (char)(rand() % 26 + 0x41);
+        for (int i = 1; i < 10; i++)
+        {
+            curr->value.name[i] = (char)(rand() % 26 + 0x61);
+        }
+        curr->value.surname[0] = (char)(rand() % 26 + 0x41);
+        for (int i = 1; i < 10; i++)
+        {
+            curr->value.surname[i] = (char)(rand() % 26 + 0x61);
+        }
+        
+    }
+    curr = head;
+    while (curr != NULL)
+    {
+        std::cout << curr->value.name << " " 
+            << curr->value.surname << " " 
+            << curr->value.money << std::endl;
+        curr = curr->next;
     }
 }
 
@@ -106,8 +171,6 @@ int main()
 {
     double x = function_1();
     double** tower = function_2(x);
-    //double** tower = new double*[5];
-    //for (int i = 0; i < 5; i++) tower[i] = new double[5];
-    //for (int i = 0; i < 5; i++) memcpy(towertower0[i])
-    function_3(tower);
+    double* arr = function_3(tower);
+    function_4(arr);
 }
