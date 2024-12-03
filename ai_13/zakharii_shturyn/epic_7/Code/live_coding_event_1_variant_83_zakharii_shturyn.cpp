@@ -2,6 +2,53 @@
 #include <algorithm>
 using namespace std;
 
+
+struct Person
+{
+    string firstName;
+    string lastName;
+    double moneycount;
+
+};
+
+class Node {
+public:
+    Person data;
+    Node* next;
+    Node* prev;
+
+    Node(Person value) {
+        data = value;
+        next = nullptr;
+        prev = nullptr;
+    }
+};
+
+class LinkedList {
+    Node* head;
+public:
+    LinkedList() {
+        head = nullptr;
+    }
+
+    void insert(Person me) {
+        Node* newNode = new Node(me);
+        newNode->next = head;
+        head = newNode;
+    }
+
+    void print() {
+        while(head != nullptr) {
+            cout << head->data.firstName << " " <<head->data.lastName <<  " " << head->data.moneycount << " ";
+            head = head->next;
+            cout << endl;
+        }
+    }
+
+};
+
+
+
 double function_1() {
     double a,b;
     int c,d,e;
@@ -52,7 +99,7 @@ double** function_2(double x) {
 
     for (int i = 0; i < 5; i++) {
         for(int j = 0; j < 5; j++) {
-            array2D[i][j] = (array2D[i][j] + 83 + j + i) * (rand() % 101);
+            array2D[i][j] = (array2D[i][j] + 83 + j + i) * (rand() % 100 + 1);
             cout << array2D[i][j] << " ";
         }
         cout << endl;
@@ -61,10 +108,10 @@ double** function_2(double x) {
     return array2D;
 }
 
-double** function_3(double** tower) {
+double* function_3(double** tower) {
     double arr[5];
-    double arr1min[5];
-    double arr2min[5];
+    double* arr1min = new double[5];
+    double* arr2min = new double[5];
     for(int i = 0; i < 5; i++) {
         for(int j = 0; j < 5; j++) {
             arr[j] = tower[j][i];
@@ -75,13 +122,46 @@ double** function_3(double** tower) {
         sort_heap(arr, arr + 5);
         arr2min[i] = arr[0];
     }
+    bool isEqual = true;
+    for(int i = 0; i < 5; i++) {
+        if(arr1min[i] != arr2min[i]) {
+            isEqual = false;
+        }
+    }
+    if(isEqual) {
+        cout << "Масиви однакові" << endl;
+    } else {
+        cout << "Масиви різні" << endl;
+    }
+
+    return arr1min;
 }
+
+LinkedList function_4(double* tmp) {
+    LinkedList list;
+    sort(tmp, tmp + 5);
+    Person me;
+    me.firstName = "Zahar";
+    me.lastName = "Shturyn";
+    me.moneycount = tmp[4];
+    list.insert(me);
+    me.firstName = "Anton";
+    me.lastName = "Tsymbaluk";
+    me.moneycount = tmp[0];
+    list.insert(me);
+
+    list.print();
+
+    return list;
+}
+
 
 int main() {
 
     double x = function_1();
     double** tower = function_2(x);
-    function_3(tower);
+    double* tmp = function_3(tower);
+    LinkedList res = function_4(tmp);
 
     return 0;
 }
