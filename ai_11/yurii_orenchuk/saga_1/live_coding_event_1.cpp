@@ -1,10 +1,15 @@
 #include <iostream>
 #include <algorithm>
 #include <cstdlib>
+#include <vector>
 using namespace std;
 
 const int var = 19;
 const int N = 5;
+
+struct ArrStruct{
+    double arr[N][N];
+};
 
 float function_1(){
     float a, b;
@@ -39,32 +44,48 @@ float function_1(){
     return x;
 }
 
-double** function_2(double x){
-    double** arr = new double *[N];
-    for(int i = 0; i < 5; i++){
-        arr[i] = new double[N]; 
+ArrStruct function_2(double x){
+    ArrStruct var;
+    var.arr[N][N];
+    for(int i = 0; i < 5; i++){ 
         for(int j = 0; j < 5; j++){
-            arr[i][j] = x;
+            var.arr[i][j] = x;
         }
     }
 
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
             int randint = rand() % 100 + 1;
-            arr[i][j] = ((x + 19 + i - j) * randint);
-            cout << arr[i][j];
+            var.arr[i][j] = ((x + 19 + i - j) * randint);
+            cout << var.arr[i][j];
         }
     }
-    return arr;
+    return var;
 }
 
-double function_3(tower[N][N]);
+double function_3(double tower[N][N]){
+    double fin_arr[N];
+    double min_el = 1000;
+    double min_els1[N];
+    int n = sizeof(fin_arr) / sizeof(fin_arr[0]);
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < 5; j++){
+            if(min_el > tower[i][j]) {
+                min_el = tower[i][j];
+                min_els1[i] = min_el;
+            }    
+        }    
+    }
+}
 
 int main(){
     double x = function_1();
-    double** tower = function_2(x);
-    function_3(tower);
-
-
+    ArrStruct ftower = function_2(x);
+    double tower[5][5];
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < 5; j++){
+            tower[i][j] = ftower.arr[i][j];
+        }
+    }
     return 0;
 }
