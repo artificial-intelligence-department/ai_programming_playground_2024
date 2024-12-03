@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     const int MAX_SIZE = 100;
-    int array[MAX_SIZE];
+    int array[MAX_SIZE]; //використовую одновимірний масив
     int realLength;
 
     cout << "Enter the size of the array (max " << MAX_SIZE << "): ";
