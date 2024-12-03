@@ -131,7 +131,7 @@ struct Node
     Node* prev = NULL;
 };
 
-void function_4(double* arr)
+Node* function_4(double* arr)
 {
     Node* head = new Node{};
     Node* curr = head;
@@ -155,8 +155,17 @@ void function_4(double* arr)
         {
             curr->value.surname[i] = (char)(rand() % 26 + 0x61);
         }
-        
+        curr = curr->next;
     }
+    curr = head;
+    curr->value.money = *(std::max_element(arr, arr + 5));
+    curr = curr->next;
+    for (int i = 0; i < 5; i++)
+    {
+        curr->value.money = arr[i];
+        curr = curr->next;
+    }
+    curr->value.money = *(std::min_element(arr, arr + 5));
     curr = head;
     while (curr != NULL)
     {
@@ -165,6 +174,7 @@ void function_4(double* arr)
             << curr->value.money << std::endl;
         curr = curr->next;
     }
+    return head;
 }
 
 int main() 
@@ -172,5 +182,5 @@ int main()
     double x = function_1();
     double** tower = function_2(x);
     double* arr = function_3(tower);
-    function_4(arr);
+    Node* ll = function_4(arr);
 }
