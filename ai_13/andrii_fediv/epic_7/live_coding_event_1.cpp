@@ -39,7 +39,8 @@ public:
             return bMin(current->lchild, current);
         }
     }
-    T bMin(){
+    T bMin()
+    {
         return bMin(this->root, this->root);
     }
 
@@ -58,7 +59,8 @@ public:
         }
     }
 
-    T bMax(){
+    T bMax()
+    {
         return bMax(this->root, this->root);
     }
 
@@ -127,6 +129,143 @@ public:
     };
 };
 // ВЗЯВ ЗІ СВОГО СЕЛФ ПРАКТІС В 6 ЕПІКУ (ДЛЯ ПОШУКУ БІНАРНОГО)
+
+
+
+struct student
+{
+    string name;
+    string surname;
+    float money;
+};//представляє студента: ім'я (рядок),прізвище (рядок),кількість
+//грошей на рахунку (дійсне число).
+
+
+
+
+template <class T>
+class DCL
+{
+private:
+    struct Node
+    {
+        T data;
+        Node *next;
+        Node *prev;
+    };
+
+    Node *first;
+    Node *last;
+
+public:
+    int size;
+
+    class Inode
+    {
+    private:
+        Node *node;
+
+    public:
+        Inode(Node *node) : node(node) {};
+
+        Node *operator*()
+        {
+            return this->node;
+        }
+
+        Inode operator+(int index)
+        {
+            while (index--)
+                this->node = this->node->next;
+            return *this;
+        }
+    };
+
+    DCL() : first(nullptr), last(nullptr), size(0) {}
+
+    Inode begin()
+    {
+        return Inode(first);
+    }
+
+    DCL &operator<<(string separator)
+    {
+        Node *node = this->first;
+        while (node != nullptr)
+        {
+            cout << "name " << node->data.name << "surname " << node->data.surname << "money " << node->data.money << separator;
+            node = node->next;
+        }
+        cout << endl;
+        return *this;
+    }
+
+    //  position after witch and value
+    void insert(int index, T data)
+    {
+        Node *node = new Node{data, nullptr, nullptr};
+        if (this->size == 0)
+        {
+            this->first = this->last = node;
+        }
+        else if (index == 0)
+        {
+            node->next = this->first;
+            first->prev = node;
+            first = node;
+        }
+        else if (index == size)
+        {
+            node->prev = this->last;
+            last->next = node;
+            last = node;
+        }
+        else
+        {
+            Inode pointer = this->begin() + index;
+            node->next = *pointer;
+            node->prev = (*pointer)->prev;
+            (*pointer)->prev->next = node;
+            (*pointer)->prev = node;
+        }
+        ++size;
+    }
+
+    void delNodes(Inode pointer, int n)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            Node *toDelete = *pointer;
+            pointer = pointer + 1;
+            if (toDelete->prev)
+                toDelete->prev->next = toDelete->next;
+            else
+                first = toDelete->next;
+
+            if (toDelete->next)
+                toDelete->next->prev = toDelete->prev;
+            else
+                last = toDelete->prev;
+            delete toDelete;
+            --size;
+        }
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 double function_1()
 {
@@ -219,7 +358,7 @@ double **function_2(double x)
     // нове_значення=(поточне_значення+номер_варіанту+індекс_стовбця−індекс_стрічки)∗rand(1,100)
 }
 
-void function_3(double **matrix)
+double* function_3(double **matrix)
 {
     double *arr = new double(5);
     double *min1 = new double(5);
@@ -242,14 +381,107 @@ void function_3(double **matrix)
     {
         min2[i] = tree.bMin();
     }
-    
+
+    bool acc = true;
+    for (size_t i = 0; i < 5; i++)
+    {
+        if (min1[i] != min2[i])
+            acc = false;
+    }
+
+    if (acc)
+    {
+        cout << "Algorithm works correctly\n";
+    }
+    else
+    {
+        cout << "Not works :(\n";
+    }
+    for (size_t i = 0; i < 5; i++)
+    {
+        arr[i] = min1[i];
+    }
+    return arr;
 }
+
+
+
+
+
+string RANDOMIZER(const int len) {
+    static const char alphanum[] = "abcdefghijklmnopqrstuvwxyz";
+    string tmp_s;
+    tmp_s.reserve(len);
+
+    for (int i = 0; i < len; ++i) {
+        tmp_s += alphanum[rand() % (sizeof(alphanum) - 1)];
+    }
+    
+    return tmp_s;
+}//вкрав на stackoverflow
+
+
+DCL<student> function_4(double* arr){
+    double max = -999999;     
+    for (size_t i = 0; i < 5; i++)
+    {
+        if(arr[i] > max){
+            max = arr[i];
+        }
+    }
+
+    double min = 999999;     
+    for (size_t i = 0; i < 5; i++)
+    {
+        if(arr[i] < min){
+            max = arr[i];
+        }
+    }
+    
+    double el_sum = 0;
+    for (size_t i = 0; i < 5; i++)
+    {
+        el_sum += arr[i];
+    }
+    
+    
+
+    DCL<student> list;
+    
+
+    student student1 = {RANDOMIZER(5), RANDOMIZER(5), max};
+    student student2 = {RANDOMIZER(7), RANDOMIZER(5), el_sum};
+    student student3 = {RANDOMIZER(5), RANDOMIZER(5), el_sum};
+    student student4 = {RANDOMIZER(5), RANDOMIZER(15), el_sum};
+    student student5 = {RANDOMIZER(4), RANDOMIZER(5), el_sum};
+    student student6 = {RANDOMIZER(5), RANDOMIZER(5), el_sum};
+    student student7 = {RANDOMIZER(9), RANDOMIZER(12), min};
+
+    list.insert(0, student1);
+    list.insert(1, student1);
+    list.insert(2, student1);
+    list.insert(3, student1);
+    list.insert(4, student1);
+    list.insert(5, student1);
+    list.insert(6, student1);
+
+
+    list << " \n";
+
+    return list;
+}
+
+
 
 int main()
 {
     double x = function_1();
 
     double **tower = function_2(x);
+
+    double* arr = function_3(tower);
+
+    DCL<student> list = function_4(arr);
 
     return 0;
 }
