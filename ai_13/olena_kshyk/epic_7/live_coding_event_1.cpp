@@ -45,7 +45,15 @@ double function_1()
 
 double (*function_2(double &x))[5]
 {
-    double arr[5][5] = {x};
+    double arr[5][5];
+
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            arr[i][j] = x;
+        }
+    }
 
     for (int i = 0; i < 5; i++)
     {
@@ -56,16 +64,16 @@ double (*function_2(double &x))[5]
         }
         cout << endl;
     }
-    return arr[5][5];
+    return arr;
 }
 
-double function_3(double (*tower)[5])
+double *function_3(double (*tower)[5])
 {
     double arr[5];
     for (int i = 0; i < 5; i++)
     {
         double temp[5];
-        for (int j = 0; i < 5; i++)
+        for (int j = 0; j < 5; j++)
         {
             temp[i] = tower[i][j];
         }
@@ -86,7 +94,7 @@ double function_3(double (*tower)[5])
         }
         arr[i] = min1;
     }
-    return arr[5];
+    return arr;
 }
 
 struct student
@@ -101,13 +109,26 @@ struct Node
     student data;
     Node *next;
     Node *prev;
-    Node(student value):data(value), prev(nullptr), next(nullptr){};
+    Node(student value) : data(value), prev(nullptr), next(nullptr) {};
 };
+
+void function_4()
+{
+    student students[7];
+    Node* nodes[7];
+    for (int i = 0; i < 7; i++)
+    {
+        nodes[i] = new Node(students[i]);
+    }
+    
+}
 
 int main()
 {
     double x = function_1();
+
     double(*tower)[5] = function_2(x);
+
     double *min_el = function_3(tower);
 
     return 0;
