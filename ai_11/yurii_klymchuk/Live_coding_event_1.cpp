@@ -150,7 +150,11 @@ struct Student{
 //     }
 // };
 void function_5(){
+    ofstream MyFile("text.txt");
 
+    MyFile << "Some information";
+
+    MyFile.close();
 }
 int main() {
     float x = function_1();
