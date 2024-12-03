@@ -7,6 +7,18 @@ struct student // 19. в коді використано свою структу
     std::string surname;
     float money;
 };
+struct Node
+{
+    float val;
+    Node* next;
+    Node* prev;
+    Node(float value)
+    {
+        val=value;
+        next=nullptr;
+        prev=nullptr;
+    }
+};
 float function_1()
 {
     float a,b; // 2. в коді використана як мінімум одна дійсна змінна
@@ -118,9 +130,31 @@ float* function_3(float** tower)
     return array1;
 }
 
+void function_4(float* array)
+{
+    Node* head;
+    head=nullptr;
+    student stud1, stud2, stud3, stud4, stud5, stud6, stud7;
+    stud1.name="a";
+    stud2.name="a";
+    stud3.name="a";
+    stud4.name="a";
+    stud5.name="a";
+    stud6.name="a";
+    stud7.name="a";
+    stud1.surname="b";
+    stud2.surname="b";
+    stud3.surname="b";
+    stud4.surname="b";
+    stud5.surname="b";
+    stud6.surname="b";
+    stud7.surname="b";
+}
+
 int main()
 {
     float x=function_1();
     float** tower=function_2(x);
-    function_3(tower);
+    float* array=function_3(tower);
+    function_4(array);
 }
