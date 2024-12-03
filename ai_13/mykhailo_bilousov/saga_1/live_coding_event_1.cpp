@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <string.h>
+#include <fstream>
 
 const int VARIANT = 61;
 
@@ -175,6 +176,12 @@ Node* function_4(double* arr)
         curr = curr->next;
     }
     return head;
+}
+
+void function_5(Node* ll)
+{
+    std::ofstream fs("livecoding.txt", std::ofstream::out | std::ofstream::binary);
+    
 }
 
 int main() 
