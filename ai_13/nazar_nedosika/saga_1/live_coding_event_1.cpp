@@ -1,7 +1,11 @@
 #include <iostream>
-
+#include <iomanip>
+#include <cstdlib> 
+#include <ctime>   
 
 using namespace std;
+
+const int variant = 74;
 
 double function1(){
     int c, d, e;
@@ -12,7 +16,6 @@ double function1(){
 
     double values[6] = {a, b, static_cast<double>(c), static_cast<double>(d), static_cast<double>(e), f};
 
-    int variant = 74;
     double max1 = values[0], max2 = values[1], max3 = values[2];
     double min1 = values[0], min2 = values[1], min3 = values[2];
     int maxs = max1 + max2 + max3;
@@ -43,14 +46,33 @@ void function2(double& x, double matrix[5][5]){
             matrix[i][j] = x;
         }
     }
+
+    srand(time(nullptr));
+    for (int i = 0; i < 6; i++)
+    {
+        for (int j = 0; i <= 5; i++)
+        {
+            double randomf = rand() % 100 + 1;
+            matrix[i][j] = (matrix[i][j] + variant + j - i * randomf);
+        }
+    }
+
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
 }
+ 
+// :(
 
 int main(){
     double x = function1();
     double matrix[5][5];
 
-    function2(x, matrix);
     cout << x;
+    function2(x, matrix);
 
     return 0;
 }
