@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -43,12 +45,39 @@ int function_1(){
     double x = result / var;
     cout<<"результат:"<<x<<endl;
     return x;
+}
+
+vector<vector<double>> function_2(double &x) {
+
+    srand(static_cast<unsigned>(time(0)));
+
+    vector<vector<double>> matrix(5, vector<double>(5, x));
+
+    for (int i = 0; i < 5; ++i) {
+        for (int j = 0; j < 5; ++j) {
+            double random_factor = static_cast<double>(rand() % 100 + 1);
+            matrix[i][j] = (matrix[i][j] + var + j - i) * random_factor;
+        }
     }
+
+    // Виводимо матрицю
+    cout << "Оновлена матриця:" << endl;
+    for (const auto &row : matrix) {
+        for (double val : row) {
+            cout << val << "\t";
+        }
+        cout << endl;
+    }
+
+    // Повертаємо оновлену матрицю
+    return matrix;
+}
+    
 
 int main() {
 
     double result = function_1();
-    cout<<"результат:"<<result<<endl;
+    vector<vector<double>> updated_matrix = function_2(x);
 
 
     return 0;
