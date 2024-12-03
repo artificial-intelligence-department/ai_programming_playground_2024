@@ -7,6 +7,46 @@
 const int INF = INT32_MAX;
 const int VARIANT = 82;
 
+struct Student{
+    std::string name, surname;
+    double balance;
+};
+
+struct Node{
+    Student student;
+    Node* next;
+    Node* prev;
+
+    Node(Student student){
+        this->student = student;
+        next = nullptr;
+        prev = nullptr;
+    }
+
+    void add(Student student){
+        Node* temp = next;
+        if(temp == nullptr){
+            next = new Node(student);
+            return;
+        }
+        while(temp->next != nullptr){
+            temp = temp->next;
+        }
+        temp->next = new Node(student);
+    }
+
+    Student& operator[](int i){
+        if(i == 0) return student;
+        Node* temp = next;
+        int j = 1;
+        while(temp->next != nullptr && i != j){
+            temp = temp->next;
+            j++;
+        }
+        return temp->student;
+    }
+};
+
 double function_1(){
     float a, b; 
     std::cin >> a >> b;
@@ -93,10 +133,61 @@ double* function_3(double** tower){
     return arr2;
 }
 
+Node& function_4(double* bebe){
+    Student student1;
+    student1.balance = 100;
+    student1.name = "Zahar";
+    student1.surname = "Shturyn";
+    Node node(student1);
+    Student student2;
+    student2.balance = 1;
+    student2.name = "A";
+    student2.surname = "X";
+    Student student3;
+    student3.balance = 0;
+    student3.name = "S";
+    student3.surname = "C";
+    Student student4;
+    student4.balance = 50;
+    student4.name = "F";
+    student4.surname = "B";
+    Student student5;
+    student5.balance = 200;
+    student5.name = "G";
+    student5.surname = "B";
+    Student student6;
+    student6.balance = 40;
+    student6.name = "H";
+    student6.surname = "N";
+    Student student7;
+    student7.balance = 65;
+    student7.name = "J";
+    student7.surname = "M";
+    node.add(student2);
+    node.add(student3);
+    node.add(student4);
+    node.add(student5);
+    node.add(student6);
+    node.add(student7);
+    node[0].balance = bebe[4];
+    node[1].balance = bebe[0] + bebe[1];
+    node[2].balance = bebe[0] + bebe[1];
+    node[3].balance = bebe[0] + bebe[1]  + bebe[2];
+    node[4].balance = bebe[0] + bebe[1]  + bebe[2] + bebe[3];
+    node[5].balance = bebe[0] + bebe[1]  + bebe[2] + bebe[3] + bebe[4];
+    node[6].balance = bebe[0];
+    int i = 0;
+    do{
+        std::cout << node[i].name << std::endl;
+        i++;
+    }while(i < 7);          //DO WHILE!!
+    return node;
+}
 
 int main(){
     double x = function_1();
     double** tower = function_2(x); 
     double* bebe = function_3(tower);
+    Node node = function_4(bebe);
     return 0;
 }
