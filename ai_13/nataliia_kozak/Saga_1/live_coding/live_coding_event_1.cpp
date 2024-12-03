@@ -156,5 +156,5 @@ int main()
     array = function_3(tower);
     Student* stud_array;
     stud_array = function_4(array);
-    function_5
+    return 0;
 }
