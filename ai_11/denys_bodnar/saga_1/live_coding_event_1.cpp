@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 #include <algorithm>
 
 using namespace std;
@@ -39,6 +41,9 @@ double function_1 () {
 }
 
 double function_2(double &x, double matrix [5][5]) {
+
+    srand(static_cast<unsigned>(time(0)));
+
     for (int a = 0; a < 5; a++){
         for (int b = 0; b < 5; b++){
             matrix[a][b] = x;
@@ -53,18 +58,21 @@ double function_2(double &x, double matrix [5][5]) {
     cout << "Matrix: " << endl;
     for (int a = 0; a < 5; a++){
         for (int b = 0; b < 5; b++){
-            cout << matrix[a][b] << "";
+            cout << matrix[a][b] << "\t";
         }
         cout << endl;
     }
 
-    
 }
+
+
 
 int main (){
     
     cout << "Результат обчислення (function_1):\n " << function_1() << endl;
-
+    double x = function_1();
+    double matrix [5][5];
+    function_2(x, matrix);
 
     return 0;
 }
