@@ -5,10 +5,10 @@
 
 using namespace std;
 
-const int Variant = 2;
+const int Variant = 2; // оголосив константу для варіанту щоб використовувати їх в всіх в функціях
 
-double function_1 () {
-    float a, b;
+double function_1 () { // Перша задача
+    float a, b; // 
     int c, d, e;
     double f;
 
@@ -40,7 +40,7 @@ double function_1 () {
     return x;
 }
 
-double function_2(double &x, double matrix [5][5]) {
+void function_2(double &x, double matrix [5][5]) { // Друга задача 
 
     srand(static_cast<unsigned>(time(0)));
 
@@ -62,10 +62,16 @@ double function_2(double &x, double matrix [5][5]) {
         }
         cout << endl;
     }
-
 }
 
+double  function_3 (double matrix [5][5], double rexult [5]) {
+    double el [5] = {0};
 
+
+
+
+
+}
 
 int main (){
     
