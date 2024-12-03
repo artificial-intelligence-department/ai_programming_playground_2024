@@ -35,15 +35,19 @@ double function_1(){
     }
     return x;
 }
+double function_2(int x){
 
+}
 
 
 
 
 int main(){
+    int x;
+    int a;
 
-function_1();
-
+    x = function_1();
+    function_2(x);
 
 return 0;
 }
