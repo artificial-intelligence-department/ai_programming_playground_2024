@@ -32,12 +32,12 @@ int function_1() {
         result = sumMax + sumMin;
     }
     cout << result;
-    cout << result/76;
-    double x = result/76;
-    return x;
+    
+    
+    return result/76;
 } 
 
-int function_2() {
+int function_2(double &x) {
     int matrix[5][5];
 
     for (int i = 0; i < 5; i++) {
@@ -63,8 +63,8 @@ int function_2() {
 } 
 
 int main() {
-    function_1();
-    function_2();
+    double x = function_1();
+    function_2(x);
     return 0;
 
 }
