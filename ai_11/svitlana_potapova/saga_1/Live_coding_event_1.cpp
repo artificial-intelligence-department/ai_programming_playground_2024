@@ -1,6 +1,7 @@
 #include <iostream> 
 #include <vector>
 #include <algorithm>
+#include <fstream>
 using namespace std;
 
 const int variant = 20;
@@ -163,6 +164,10 @@ Node* function_4(vector<double> &money){
         return head;
 }
 
+void function_5(Node*& head){
+    ofstream("file.txt");
+}
+
 
 int main(){
     double x = function_1();
@@ -173,7 +178,7 @@ int main(){
 
     vector<double> minEls = function_3(tower);
 
-    function_4(minEls);
+    Node* head = function_4(minEls);
 
     return 0;
 
