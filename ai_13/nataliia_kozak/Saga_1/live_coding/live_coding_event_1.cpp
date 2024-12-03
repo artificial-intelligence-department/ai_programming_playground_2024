@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <fstream>
 using namespace std;
 const int V = 66;
 float function_1()
@@ -131,6 +132,18 @@ Student* function_4(float* a){
     for(int i = 0; i < 7; i++){
         array[i].name = "Nata";
         array[i].surname = "Kozak";
+        if(i == 0){
+            array[i].next = &array[i+1];
+            array[i].previous = &array[6];
+            continue;
+        }
+        if(i == 6){
+            array[i].next = &array[0];
+            array[i].previous = &array[i-1];
+            continue;
+        }
+        array[i].next = &array[i+1];
+        array[i].previous = &array[i-1];
     }
     sort(a, a+5);
     array[0].money = a[4];
@@ -146,6 +159,13 @@ Student* function_4(float* a){
         cout << array[i].name << " "<< array[i].surname << " "<< array[i].money;
     }
     return array;
+}
+void functin_5(Student* array){
+    ofstream SomeFile("textfile.txt");
+    if(V % 2 == 0){
+        
+    }
+    SomeFile.close();
 }
 int main()
 {
