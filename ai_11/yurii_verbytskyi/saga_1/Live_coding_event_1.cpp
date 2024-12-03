@@ -1,9 +1,11 @@
 #include <iostream>
+#include "stdlib.h"
+#include <cmath>
 
 using namespace std;
 
 double function_1(){
-const double num_of_var = 4;
+const double num_of_var = 4.00;
     float a, b; 
     cin >> a >> b;
     int c, d, e;
@@ -50,16 +52,39 @@ const double num_of_var = 4;
     
     else cout << "Check the input" << endl;
     
-    double x = result_of_1 / num_of_var;
-    return x;
+    double y = result_of_1 / num_of_var;
+    return y;
 }
 
 
 
+void function_2(double x){
+    double matrix[5][5];
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < 5; j++){
+            matrix[i][j] = x;
+        }
+    }
 
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < 5; j++){
+            matrix[i][j] = (matrix[i][j] + 4.00 + j - i) * (rand() % 100);
+        }
+    }
+
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < 5; j++){
+            cout << matrix[i][j]; 
+        }
+    }
+}
 
 int main(){
-    double x = function_1();
+    //double x = 30.2038;
+    //double x = function_1();  // не могло присвоїтись, просто безмежно довго вантажило
     cout << function_1();
+
+    //double x = 30.2038;
+    //function_2(x);
     return 0;
 }
