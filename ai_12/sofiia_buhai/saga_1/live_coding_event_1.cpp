@@ -3,8 +3,8 @@
 using namespace std;
 
 
-void buublesort(float** &&tower, int n, int l){
-    bool swapped;
+float buublesort(float** &&tower, int n, int l){
+    bool swapped; // для перевірки, чи закінчилась перестановка
   
     for (int i = 0; i < n - 1; i++) {
         swapped = false;
@@ -17,6 +17,7 @@ void buublesort(float** &&tower, int n, int l){
         if (!swapped)
             break;
     }
+    return tower[0][l];
 }
 
 void sort(float** &&tower, int n, int l){
@@ -102,6 +103,9 @@ float** function_2(float &x){
 
 float function_3(float** tower){
     float arr[5];
+    for(int l=0; l<5; l++){
+        float min_bub = buublesort(tower, 5, l);
+    }
 }
 
 
