@@ -20,7 +20,7 @@ float buublesort(float** &&tower, int n, int l){
     return tower[0][l];
 }
 
-void sort(float** &&tower, int n, int l){
+float sortt(float** &&tower, int n, int l){
     for (int i = 0; i < n - 1; i++)
 	{
 		int smallestIndex = i;
@@ -31,6 +31,7 @@ void sort(float** &&tower, int n, int l){
 		}
 		swap(tower[i][l], tower[smallestIndex][l]);
 	}
+    return tower[0][l];
 }
 
 
@@ -104,7 +105,9 @@ float** function_2(float &x){
 float function_3(float** tower){
     float arr[5];
     for(int l=0; l<5; l++){
-        float min_bub = buublesort(tower, 5, l);
+        float min_bub = buublesort(&&tower, 5, l);
+        float min_sort = sortt(&&tower, 5, l);
+        if(sortt(&&tower, 5, l) == min_bub = buublesort(&&tower, 5, l))
     }
 }
 
