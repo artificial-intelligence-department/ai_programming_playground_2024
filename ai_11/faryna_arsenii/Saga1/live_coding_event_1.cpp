@@ -73,11 +73,20 @@ void function_2(double& x, double matrix[5][5]){
         cout << endl;
     }
 
+    for (int i = 0; i < 5; i++){
+        for (int j = 0; j < 5; j++){
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+
 }
 
 int main (){
     
     double x = function_1();
+    double matrix[5][5];
+    double showMatrix = function_2(x, matrix);
 
     return 0;
 }
