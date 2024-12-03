@@ -1,5 +1,6 @@
 #include <iostream> 
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 const int variant = 20;
@@ -102,6 +103,65 @@ vector<double> function_3(vector<vector<double>> &tower){
     return res;
 }
 
+struct Node{
+    string name;
+    string surname;
+    double balance;
+    Node* prev;
+    Node* next;
+
+    Node(const string& n, const string& s, double b) : name(n), surname(s), balance(b), prev(nullptr), next(nullptr) {};
+};
+
+
+
+
+Node* function_4(vector<double> &money){
+    vector<string> names = {"Світлана", "Андріана", "Марта", "Анастасія", "Юля", "Марія", "Соломія"};
+    vector<string> surnames = {"a", "b", "c", "d", "e", "f", "g"};
+    
+    sort(money.begin(), money.end());
+
+
+    Node* head = nullptr;
+    Node* tail = nullptr;
+
+    for(int i=0; i<7; i++){
+        string name = names[i];
+        string surname = surnames[i];
+        double balance;
+        if(i==0){
+            balance = money[4];
+        }
+        else if(i==6){
+            balance = money[0];
+        }
+        else{
+            balance = 0;
+            for(int j=0; j<money.size(); j++){
+                balance += money[j];
+            }
+        }
+        Node* newNode = new Node(name, surname, balance);
+
+        if(head == nullptr){
+            head = newNode;
+            tail = newNode;
+        } 
+        else{
+            tail->next = newNode;
+            newNode->prev = tail;
+            tail = newNode; 
+        }
+    }
+        Node* current = head;
+        while(current){
+            cout << current->name << " " << current->surname << " " << current->balance << endl;
+            current = current->next;
+        }
+
+        return head;
+}
 
 
 int main(){
@@ -112,10 +172,8 @@ int main(){
     vector<vector<double>> tower = function_2(x);
 
     vector<double> minEls = function_3(tower);
-    for(double num : minEls){
-        cout << num << " ";
-    }
 
+    function_4(minEls);
 
     return 0;
 
