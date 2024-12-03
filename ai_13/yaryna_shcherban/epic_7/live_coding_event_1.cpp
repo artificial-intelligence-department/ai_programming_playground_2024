@@ -4,6 +4,7 @@
 using namespace std;
 //Цілочисельна константа
 const int Variant = 84;
+const int MAX = 100;
 
 double function_1(){
 //Дійсна змінна
@@ -12,6 +13,7 @@ double function_1(){
     int c, d, e;
 //З подвійною точністю 
     double f;
+//Оператори виведення та введення
     cout << "Enter a, b (float) : " << endl;
     cin >> a >> b;
     cout << "Enter c, d, e (int) : " << endl;
@@ -53,11 +55,11 @@ double function_1(){
     return x;
 }
 
-//Двовимірний масив
-void function_2 ( double &x, double matrix[5][5]) {
+//Двовимірний масив , параметри та аргументи функції 
+void function_2 ( double &x_1, double matrix[5][5]) {
     for (int i = 0; i < 5; i++) {
         for ( int j = 0; j < 5; j++){
-            matrix[i][j] = x;
+            matrix[i][j] = x_1;
         }
     }
     srand(static_cast<unsigned>(time(nullptr)));
@@ -77,13 +79,63 @@ void function_2 ( double &x, double matrix[5][5]) {
 
 }
 
+void function_3 ( double matrix[5][5], double tower[5], int n, int m) {
+       cout << " { ";
+    for (int i = 0; i < n; i++) {
+        int minm = matrix[i][0];
+        for (int j = 1; j < m; j++) {
+ 
+            if (matrix[i][j] < minm) {
+                minm = matrix[i][j];
+            }
+        }
+        cout << minm << ", ";
+    }
+        cout << "}";
+    
+    void smallestInRow(int matrix[][MAX], int n, int m) {
+        cout << " { ";
+        for (int i = 0; i < n; i++) {
+ 
+            int minm = mat[i][0];
+ 
+            for (int j = 1; j < m; j++) {
+                if (mat[i][j] < minm)
+                    minm = mat[i][j];
+            }
+            cout << minm << ", ";
+        }
+        cout << "}";
+    }
+    void smallestInCol(int matrix[][MAX], int n, int m) {
+        cout << " { ";
+        for (int i = 0; i < m; i++) {
+            int minm = matrix[0][i];
+        for (int j = 1; j < n; j++) {
+            if (matrix[j][i] < minm)
+                minm = matrix[j][i];
+        }
+        cout << minm << ", ";
+        }
+        cout << "}";
+    }
+}
+
+
 int main (){
-
+    int n, m;
     double x = function_1();
+    double x_1 = x;
     double matrix[5][5];
-    function_2(x, matrix);
+    function_2(x_1, matrix);
 
-
+    double tower[5];
+    function_3(matrix, tower, n, m);
+        cout << "Minimum element of each row is ";
+        smallestInRow(matrix, n, m);
+ 
+        cout << "\nMinimum element of each column is ";
+        smallestInCol(matrix, n, m);
 
     return 0;
 }
