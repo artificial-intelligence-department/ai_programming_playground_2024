@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <algorithm>
 #include <ctime>
 using namespace std;
 
@@ -75,9 +76,45 @@ void function_2 (double&x , double matrix[5][5]){
     }
     cout << endl;
   }
-
 }
 
+void function_3(double matrix [5][5]){
+  const int size = 5;
+  double tower[size];
+
+  for (size_t j = 0; j < size; ++j)
+  {
+    double min_element = matrix[0][j];
+    for (size_t i = 1; i < size; ++i)
+    {
+      if(matrix[i][j]<min_element){
+        min_element = matrix [i][j];
+      }
+    }
+    tower[j]= min_element;
+  }
+
+  cout << "the smallest elements every row: " << endl;
+  for (size_t i = 0; i < size; i++)
+  {
+    cout << "Row" << i+1 << ": " << tower[i] << endl;
+  }
+  
+  cout << "checking the smallest elements in an alternative way: " << endl;
+  for (size_t j = 0; j < size; ++j)
+  {
+    double min_element = matrix[0][j];
+    for (size_t i = 1; i < size; i++)
+    {
+      if ( matrix[i][j] < min_element){
+        min_element = matrix[i][j];
+      }
+    }
+    
+    cout << "Row " << j+1 << ": " << min_element << endl;
+  }
+  
+}
 int main (){
   const int var = 18;
   double x = function_1();
@@ -86,6 +123,6 @@ int main (){
   
   function_2(x,matrix);
 
-  
+  function_3(matrix);
   return 0;
 }
