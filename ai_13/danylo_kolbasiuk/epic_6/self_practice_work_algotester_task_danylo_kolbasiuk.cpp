@@ -18,9 +18,9 @@ int main()
             mount[i][j] = peakHeight - (abs(x - i) + abs(y - j));
         }
     }
-    for (int i = 0; i < N; ++i) 
+    for (int i=0; i<N; i++) 
     {
-        for (int j = 0; j < M; ++j) 
+        for (int j=0; j<M; j++) 
         {
             std::cout << mount[i][j] << " ";
         }

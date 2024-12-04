@@ -59,7 +59,7 @@ class DoublyLinkedList
     void insert(char value[], int pos)
     {
         DoublyLinkedListNode* node = new DoublyLinkedListNode(value);
-        if(pos<=1)
+        if(pos<1)
         {
             std::cout << "Position is out of bounds." << std::endl;
             delete node;
