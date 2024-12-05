@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string compressString(const string &s) {
+    string compressed = "";
+    int count = 1;
+    
+    for (size_t i = 0; i < s.length(); ++i) {
+        if (i + 1 < s.length() && s[i] == s[i + 1]) {
+            count++;
+        } else {
+            compressed += s[i];
+            if (count > 1) {
+                compressed += to_string(count);
+            }
+            count = 1;
+        }
+    }
+    return compressed;
+}
+int main() {
+    string s;
+    cout << "Enter string: ";
+    cin >> s;
+
+    string compressed = compressString(s);
+    cout << "Compressed string: " << compressed << endl;
+
+    return 0;
+}
