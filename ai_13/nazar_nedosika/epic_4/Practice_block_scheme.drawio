@@ -1,0 +1,165 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Сторінка-1" id="sz9FATK_aJmKstTGcBAv">
+    <mxGraphModel dx="1050" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-1" target="Qs_h_s6r6YygUC8vdwiP-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-1" value="Початок" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="20" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-2" target="Qs_h_s6r6YygUC8vdwiP-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-2" value="Введення слова" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="132.5" y="90" width="125" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-4" target="Qs_h_s6r6YygUC8vdwiP-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-4" target="Qs_h_s6r6YygUC8vdwiP-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-4" target="Qs_h_s6r6YygUC8vdwiP-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-4" value="isPalindrome" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="160" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-6" value="Вивід &quot;Слово є паліндромом&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-8" value="Вивід &quot;Слово не є паліндромом&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-10" target="Qs_h_s6r6YygUC8vdwiP-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-10" value="Введення числа" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="132.5" y="240" width="125" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-12" target="Qs_h_s6r6YygUC8vdwiP-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-12" target="Qs_h_s6r6YygUC8vdwiP-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-12" target="Qs_h_s6r6YygUC8vdwiP-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-12" value="isPalindrome" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="310" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-14" value="Вивід &quot;Число є паліндромом&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-15" value="Вивід &quot;Число не є паліндромом&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-18" value="Кінець" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="390" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-20" target="Qs_h_s6r6YygUC8vdwiP-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-20" value="Початок&lt;div&gt;isPalindrome str&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="20" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-21" target="Qs_h_s6r6YygUC8vdwiP-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-21" target="Qs_h_s6r6YygUC8vdwiP-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-21" value="start &amp;gt;= end" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="424" y="90" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-23" value="Повертаєм true" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="524" y="92.5" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-25" value="Повертаєм false" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="524" y="165" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-27" target="Qs_h_s6r6YygUC8vdwiP-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-27" target="Qs_h_s6r6YygUC8vdwiP-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-27" value="str[start] != str[end]" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="419" y="157.5" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-30" target="Qs_h_s6r6YygUC8vdwiP-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-30" value="Викликаєм функцію рекурсивно" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="419" y="240" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-32" value="Кінець" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="424" y="310" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-34" target="Qs_h_s6r6YygUC8vdwiP-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-34" value="Початок&lt;div&gt;isPalindrome int&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="637" y="20" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-35" target="Qs_h_s6r6YygUC8vdwiP-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-35" target="Qs_h_s6r6YygUC8vdwiP-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-35" value="num &lt; 0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="647" y="92.5" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-37" value="Повертаєм false" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="747" y="92.5" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-39" target="Qs_h_s6r6YygUC8vdwiP-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-39" value="Збереження оригінального числа" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="635.5" y="160" width="103" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-41" target="Qs_h_s6r6YygUC8vdwiP-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-41" value="num &amp;gt; 0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="647" y="220" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-43" target="Qs_h_s6r6YygUC8vdwiP-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-43" value="Знаходим останню цифру" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="645.5" y="290" width="83" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-45" target="Qs_h_s6r6YygUC8vdwiP-41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="383" />
+              <mxPoint x="740" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-45" target="Qs_h_s6r6YygUC8vdwiP-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-45" value="Ділим число на 10" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="644" y="360" width="83" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs_h_s6r6YygUC8vdwiP-48" target="Qs_h_s6r6YygUC8vdwiP-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-48" value="Повертаєм результат порівняння" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="637" y="430" width="93" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs_h_s6r6YygUC8vdwiP-50" value="Кінець" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="643.5" y="490" width="80" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
