@@ -1,193 +1,132 @@
 #include <iostream>
-
 using namespace std;
 
-
-struct Node {
-    int value;
-    Node *next;
-};
-
-
-class linkedList {
+template <typename T>
+class DynamicArray {
     private:
-        Node* head;
-
-        void deleteNode(Node*& current) {
-            Node* temp = current;
-            current = current->next;
-            delete temp;
-        }
-
-        void destroyTree() {
-            while (head != nullptr) {
-                deleteNode(head);
-            }
-        }
+        int dynArrSize;
+        int dynArrCapacity;
+        T *dynArr;
 
     public:
-        linkedList() : head(nullptr) {}
-
-        ~linkedList() {
-            destroyTree();
+        DynamicArray() {
+            dynArrSize = 0;
+            dynArrCapacity = 1;
+            dynArr = new T[1];
         }
 
-        void insert(int value, int position) {
-            Node *newNode = new Node{value, nullptr};
+        ~DynamicArray() {delete[] dynArr;}
 
-            if (position == 0) {
-                newNode->next = head;
-                head = newNode;
-                return;
+        void resize(int N) {
+            while (dynArrSize + N >= dynArrCapacity) {
+                dynArrCapacity *= 2;
+            }
+        }
+
+        void insert(int index, int N, T* values) {
+            resize(N);
+
+            for (int i = dynArrSize - 1; i >= index; i--) {
+                dynArr[i + N] = dynArr[i];
             }
 
-            Node *current = head;
-            int currentIndex = 0;
-
-            while (current != nullptr && currentIndex < position - 1) {
-                current = current->next;
-                currentIndex++;
+            for (int i = 0; i < N; i++) {
+                dynArr[index + i] = values[i];
             }
 
-            newNode->next = current->next;
-            current->next = newNode;
+            dynArrSize += N;
+
             return;
         }
 
-        void erase(int index, int diapasone) {
-            if (index == 0) {
-                for (int i = 0; i < diapasone && head != nullptr; i++) {
-                    deleteNode(head);
+        void erase(int index, int N) {
+            T *temp = new T[dynArrCapacity];
+            int newDynArrSize = 0;
+
+            for (int i = 0; i < dynArrSize; i++) {
+                if (i < index || i >= index + N) {
+                    temp[newDynArrSize] = dynArr[i];
+                    newDynArrSize++;
                 }
-                return;
             }
+    
+            dynArrSize -= N;
+            delete[] dynArr;
+            dynArr = temp;
 
-            Node *current = head;
-            int currentIndex = 0;
-
-            while (current != nullptr && currentIndex < index - 1) {
-                current = current->next;
-                currentIndex++;
-            }
-
-            Node *toDelete = current->next;
-
-            for (int i = 0; i < diapasone && toDelete != nullptr; i++) {
-                deleteNode(toDelete);
-            }
-
-            current->next = toDelete;
             return;
         }
 
-        int size() {
-            Node *current = head;
-
-            int listSize = 0;
-            while (current != nullptr) {
-                current = current->next;
-                listSize++;
-            }
-
-            return listSize;
+        void size() const {
+            cout << dynArrSize << endl;
+            return;
         }
 
-        void capacity() {
-            Node *current = head;
-            if (current == nullptr) {
-                cout << 1 << endl;
-                return;
-            }
-
-            int listSize = size();
-
-            int num = 2;
-            while (listSize >= num) {
-                num *= 2;
-            }
-            cout << num << endl;
+        void capacity() const {
+            cout << dynArrCapacity << endl;
             return;
         }
 
         void get(int index) {
-           Node *current = head;
-
-           for (int i = 0; i < index; i++) {
-            current = current->next;
-           } 
-
-           cout << current->value << endl;
-           return;
+            cout << dynArr[index] << endl;
+            return;
         }
 
         void set(int index, int value) {
-            Node *current = head;
-
-           for (int i = 0; i < index; i++) {
-            current = current->next;
-           }
-
-           current->value = value;
-           return;
+            dynArr[index] = value;
+            return;
         }
 
-        void print() const {
-            Node *current = head;
-            while (current != nullptr) {
-                cout << current->value << " ";
-                current = current->next;
-            }
-            
-            cout << endl;
+        void print() {
+            for (int i = 0; i < dynArrSize; i++) cout << dynArr[i] << " ";
             return;
         }
 };
 
-
 int main() {
-    linkedList list;
+    DynamicArray<int> arr;
 
     int Q;
     cin >> Q;
 
-    for (int i = 0; i < Q; i++) {
+    while (Q--) {
+
         string choise;
         cin >> choise;
 
         if (choise == "insert") {
-            int index, N; 
+            int index, N;
             cin >> index >> N;
-            for (int j = 0; j < N; j++) {
-                int value;
-                cin >> value;
-                list.insert(value, index + j);
-            }
+
+            int *values = new int[N];
+            for (int i = 0; i < N; i++) cin >> values[i];
+
+            arr.insert(index, N, values);
 
         } else if (choise == "erase") {
-            int index, diapasone;
-            cin >> index >> diapasone;
-            list.erase(index, diapasone);
+            int index, N;
+            cin >> index >> N;
+
+            arr.erase(index, N);
+
+        } else if (choise == "size") {
+            arr.size();
 
         } else if (choise == "capacity") {
-            list.capacity();
+            arr.capacity();
 
         } else if (choise == "get") {
             int index;
             cin >> index;
-            list.get(index);
+
+            arr.get(index);
 
         } else if (choise == "set") {
             int index, value;
             cin >> index >> value;
-            list.set(index, value);
 
-        } else if(choise == "size") {
-            cout << list.size() << endl;
+            arr.set(index, value);
 
-        } else if (choise == "print") {
-            list.print();
-        }
+        } else if (choise == "print") arr.print();
     }
-
-    return 0;
 }
