@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.3">
+  <diagram id="WMeYWQhFeEamHyBcXMyG" name="Страница — 1">
+    <mxGraphModel dx="3218" dy="1103" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="eh63Y3hK-yACD_ZTSTT_-1" target="eh63Y3hK-yACD_ZTSTT_-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-2" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="160" y="980" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eh63Y3hK-yACD_ZTSTT_-3" target="eh63Y3hK-yACD_ZTSTT_-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-3" value="cout &amp;lt;&amp;lt; &quot;Задача 1&quot; &amp;lt;&amp;lt; endl" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="125" y="110" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="eh63Y3hK-yACD_ZTSTT_-5" target="eh63Y3hK-yACD_ZTSTT_-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-5" value="double groshi" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="175" y="170" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="eh63Y3hK-yACD_ZTSTT_-7" target="eh63Y3hK-yACD_ZTSTT_-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-7" value="&lt;div&gt;cout &amp;lt;&amp;lt; &quot;Введіть дробове число &amp;gt; &quot;;&lt;/div&gt;&lt;div&gt;cin &amp;gt;&amp;gt; groshi;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="230" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eh63Y3hK-yACD_ZTSTT_-13" target="eh63Y3hK-yACD_ZTSTT_-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eh63Y3hK-yACD_ZTSTT_-13" target="eh63Y3hK-yACD_ZTSTT_-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="316" y="445" />
+              <mxPoint x="316" y="540" />
+              <mxPoint x="219" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-13" value="if (kopiyki &amp;gt;= 100)" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="162" y="410" width="116" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="eh63Y3hK-yACD_ZTSTT_-14" target="eh63Y3hK-yACD_ZTSTT_-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-14" value="&lt;div&gt;int hryvna = static_cast&amp;lt;int&amp;gt;(groshi);&lt;/div&gt;&lt;div&gt;int kopiyki = static_cast&amp;lt;int&amp;gt;((groshi - hryvna) * 100 + 0.5);&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="57" y="320" width="325" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eh63Y3hK-yACD_ZTSTT_-17" target="eh63Y3hK-yACD_ZTSTT_-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-17" value="kopiyki -= 100;&#xa;hryvna += 1;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="57" y="480" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="eh63Y3hK-yACD_ZTSTT_-19" target="eh63Y3hK-yACD_ZTSTT_-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-19" value="&lt;div&gt;cout &amp;lt;&amp;lt;&amp;nbsp; fixed &amp;lt;&amp;lt;&amp;nbsp; setprecision(2);&lt;/div&gt;&lt;div&gt;cout &amp;lt;&amp;lt; groshi &amp;lt;&amp;lt; &quot; грн. - це &quot; &amp;lt;&amp;lt; hryvna &amp;lt;&amp;lt; &quot; грн. &quot; &amp;lt;&amp;lt; kopiyki &amp;lt;&amp;lt; &quot; коп.&quot; &amp;lt;&amp;lt; endl&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="-13" y="560" width="466" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="eh63Y3hK-yACD_ZTSTT_-23" target="eh63Y3hK-yACD_ZTSTT_-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-23" value="Задача 2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="165.5" y="660" width="107" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="eh63Y3hK-yACD_ZTSTT_-25" target="eh63Y3hK-yACD_ZTSTT_-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-25" value="&lt;div&gt;int shaybHour = 100;&lt;/div&gt;&lt;div&gt;int fullzmina = 8;&lt;/div&gt;&lt;div&gt;int dwozmin = 2;&lt;/div&gt;&lt;div&gt;int workDaysMonth = 30 - 4;&lt;/div&gt;&lt;div&gt;int profilactika = 1;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="710" width="216" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="eh63Y3hK-yACD_ZTSTT_-27" target="eh63Y3hK-yACD_ZTSTT_-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-27" value="&lt;div&gt;int shayb8Hour = shaybHour * fullzmina - profilactika;&lt;/div&gt;&lt;div&gt;int fullday = shayb8Hour * dwozmin;&lt;/div&gt;&lt;div&gt;int fullMonth = fullday * workDaysMonth;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="69.5" y="810" width="297" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="eh63Y3hK-yACD_ZTSTT_-29" target="eh63Y3hK-yACD_ZTSTT_-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eh63Y3hK-yACD_ZTSTT_-29" value="Шайб за 8- годинну зміну&lt;br&gt;Шайб за робочий день&lt;br&gt;Шайб за місяць" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="123" y="900" width="190" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

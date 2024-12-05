@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.8">
+  <diagram name="Страница — 1" id="SIF3pLwxvh3FoLFNzqEi">
+    <mxGraphModel dx="593" dy="643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bFTzVbvXgE3mp43hQNle-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bFTzVbvXgE3mp43hQNle-1" target="bFTzVbvXgE3mp43hQNle-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bFTzVbvXgE3mp43hQNle-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="125" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bFTzVbvXgE3mp43hQNle-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bFTzVbvXgE3mp43hQNle-2" target="bFTzVbvXgE3mp43hQNle-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bFTzVbvXgE3mp43hQNle-2" value="double a = 0.7&lt;br&gt;double b = 0.05&lt;br&gt;double x = 0.5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bFTzVbvXgE3mp43hQNle-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bFTzVbvXgE3mp43hQNle-4" target="bFTzVbvXgE3mp43hQNle-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bFTzVbvXgE3mp43hQNle-4" value="double R = (pow(x, 3) * (x + 1)) / pow(b, 2) - pow(sin(x * (x + a)), 2)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="210" width="370" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bFTzVbvXgE3mp43hQNle-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bFTzVbvXgE3mp43hQNle-6" target="bFTzVbvXgE3mp43hQNle-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bFTzVbvXgE3mp43hQNle-6" value="double S = sqrt(x * b / a) + pow(cos(x + b), 2) * pow(x + b, 3)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="260" width="330" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bFTzVbvXgE3mp43hQNle-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bFTzVbvXgE3mp43hQNle-8" target="bFTzVbvXgE3mp43hQNle-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bFTzVbvXgE3mp43hQNle-8" value="&lt;div&gt;cout &amp;lt;&amp;lt; &quot;R = &quot; &amp;lt;&amp;lt; R &amp;lt;&amp;lt; endl&lt;/div&gt;&lt;div&gt;cout &amp;lt;&amp;lt; &quot;S = &quot; &amp;lt;&amp;lt; S &amp;lt;&amp;lt; endl&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="310" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bFTzVbvXgE3mp43hQNle-10" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="125" y="390" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
