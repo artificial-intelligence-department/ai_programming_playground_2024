@@ -58,7 +58,7 @@ Node *add(Node *n1, Node *n2)
 {
     Node *result = nullptr; // Результат (новий список)
     Node *tail = nullptr;   // Хвіст нового списку
-    int carry = 0;          // Перенос (як у шкільному додаванні)
+    int carry = 0;          // Перенос
 
     // Ітерація, доки є цифри в обох списках або є перенос
     while (n1 != nullptr || n2 != nullptr || carry != 0)
@@ -120,7 +120,7 @@ TreeNode *create_mirror_flip(TreeNode *root)
 
     return newRoot;
 }
-// Допоміжна функція для друку дерева (обхід у порядку in-order)
+// Допоміжна функція для друку дерева
 void printTree(TreeNode *root)
 {
     if (root == nullptr)
