@@ -1,37 +1,37 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <cstring>  // Required for strncpy
+#include <cstring>
 #include <string>
 
 using namespace std;
 
-// Struct "Information"
+//структура "Information"
 struct Information {
-    char medium[50];  // Medium
-    int volume;       // Volume
-    char title[100];  // Title
-    char author[50];  // Author
+    char medium[50];
+    int volume;
+    char title[100];
+    char author[50];
 };
 
-// Helper function to create `Information` objects
+//допоміжна функція для створення об'єктів в 'Інформації'
 Information create_information(const char* medium, int volume, const char* title, const char* author) {
     Information info;
     strncpy(info.medium, medium, sizeof(info.medium) - 1);
-    info.medium[sizeof(info.medium) - 1] = '\0';  // Ensure null termination
+    info.medium[sizeof(info.medium) - 1] = '\0';
 
     info.volume = volume;
 
     strncpy(info.title, title, sizeof(info.title) - 1);
-    info.title[sizeof(info.title) - 1] = '\0';  // Ensure null termination
+    info.title[sizeof(info.title) - 1] = '\0';
 
     strncpy(info.author, author, sizeof(info.author) - 1);
-    info.author[sizeof(info.author) - 1] = '\0';  // Ensure null termination
+    info.author[sizeof(info.author) - 1] = '\0';
 
     return info;
 }
 
-// Create the binary file
+//створюємо бінарний файл
 void create_file(const string& filename, const vector<Information>& elements) {
     ofstream file(filename, ios::binary);
     if (!file) {
@@ -44,7 +44,7 @@ void create_file(const string& filename, const vector<Information>& elements) {
     file.close();
 }
 
-// Print the contents of the file
+//виводимо складові файлу
 void print_file(const string& filename) {
     ifstream file(filename, ios::binary);
     if (!file) {
@@ -64,7 +64,7 @@ void print_file(const string& filename) {
 int main() {
     string filename = "information.bin";
 
-    // Initialize the vector with elements using the helper function
+    //ініціалізуємо вектор використовуючи допоміжну функцію
     vector<Information> elements = {
         create_information("CD", 700, "Learning C++", "Bjarne Stroustrup"),
         create_information("USB", 16000, "C++ Primer", "Stanley Lippman"),
