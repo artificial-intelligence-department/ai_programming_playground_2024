@@ -4,12 +4,10 @@
 #include <cctype>
 #include <vector>
 
-
 bool isConsonant(char c) {
     c = std::tolower(c);
     return (c >= 'a' && c <= 'z') && !(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
 }
-
 
 int countConsonants(const std::string& line) {
     int count = 0;
@@ -21,8 +19,34 @@ int countConsonants(const std::string& line) {
     return count;
 }
 
+void writeBinaryFile(const std::vector<std::string>& lines, const std::string& filename) {
+    std::ofstream file(filename, std::ios::binary);
+    for (const auto& line : lines) {
+        size_t length = line.size();
+        file.write(reinterpret_cast<char*>(&length), sizeof(length));
+        file.write(line.c_str(), length);
+    }
+    file.close();
+}
+
+void readBinaryFile(std::vector<std::string>& lines, const std::string& filename) {
+    std::ifstream file(filename, std::ios::binary);
+    while (file) {
+        size_t length;
+        file.read(reinterpret_cast<char*>(&length), sizeof(length));
+        if (!file) break;
+
+        char* buffer = new char[length + 1];
+        file.read(buffer, length);
+        buffer[length] = '\0';
+
+        lines.push_back(std::string(buffer));
+        delete[] buffer;
+    }
+    file.close();
+}
+
 int main() {
-  
     std::vector<std::string> linesF1 = {
         "Apple is a fruit.",
         "Banana is yellow.",
@@ -36,35 +60,31 @@ int main() {
         "Animal kingdom is diverse."
     };
 
-    std::ofstream fileF1("F1.txt");
-    for (const auto& line : linesF1) {
-        fileF1 << line << std::endl;
-    }
-    fileF1.close();
+    writeBinaryFile(linesF1, "F1.bin");
 
-   
+    std::vector<std::string> linesF1Read;
+    readBinaryFile(linesF1Read, "F1.bin");
+
     int N1 = 2, N2 = 6;  
-    std::ifstream fileF1In("F1.txt");
-    std::ofstream fileF2("F2.txt");
-
-    std::string line;
+    std::ofstream fileF2("F2.bin", std::ios::binary);
     int lineNumber = 1;
-    while (std::getline(fileF1In, line)) {
+    for (const auto& line : linesF1Read) {
         if (lineNumber >= N1 && lineNumber <= N2 && !line.empty() && std::tolower(line[0]) == 'a') {
-            fileF2 << line << std::endl;
+            size_t length = line.size();
+            fileF2.write(reinterpret_cast<char*>(&length), sizeof(length));
+            fileF2.write(line.c_str(), length);
         }
         lineNumber++;
     }
-    fileF1In.close();
     fileF2.close();
 
-    
-    std::ifstream fileF2In("F2.txt");
+    std::vector<std::string> linesF2Read;
+    readBinaryFile(linesF2Read, "F2.bin");
+
     int maxConsonants = 0;
     int maxConsonantsLine = 0;
     int currentLineNumber = 1;
-
-    while (std::getline(fileF2In, line)) {
+    for (const auto& line : linesF2Read) {
         int consonantsCount = countConsonants(line);
         if (consonantsCount > maxConsonants) {
             maxConsonants = consonantsCount;
@@ -73,8 +93,7 @@ int main() {
         currentLineNumber++;
     }
 
-    fileF2In.close();
-
     std::cout << "The line with the most consonants is line number " << maxConsonantsLine << std::endl;
+
     return 0;
 }
