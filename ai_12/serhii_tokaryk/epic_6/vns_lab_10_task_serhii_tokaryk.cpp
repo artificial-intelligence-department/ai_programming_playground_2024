@@ -26,7 +26,7 @@ void deleteDblLinkedList(DblLinkedList **list) {
     Node *next = NULL;
     while (tmp) {
         next = tmp->next;
-        free(tmp->pc); // Звільняємо пам'ять, виділену для рядка
+        free(tmp->pc); 
         free(tmp);
         tmp = next;
     }
@@ -36,7 +36,7 @@ void deleteDblLinkedList(DblLinkedList **list) {
 
 void pushFront(DblLinkedList *list, const char *data) {
     Node *tmp = (Node*)malloc(sizeof(Node));
-    tmp->pc = strdup(data); // Копіюємо рядок
+    tmp->pc = strdup(data); 
     tmp->next = list->head;
     tmp->prev = NULL;
     if (list->head) {
@@ -51,7 +51,7 @@ void pushFront(DblLinkedList *list, const char *data) {
 
 void pushBack(DblLinkedList *list, const char *value) {
     Node *tmp = (Node*)malloc(sizeof(Node));
-    tmp->pc = strdup(value); // Копіюємо рядок
+    tmp->pc = strdup(value); 
     tmp->next = NULL;
     tmp->prev = list->tail;
     if (list->tail) {
@@ -96,7 +96,7 @@ void insert(DblLinkedList *list, size_t index, const char *value) {
     Node *elm = getNth(list, index);
     if (!elm) return;
     Node *newNode = (Node*)malloc(sizeof(Node));
-    newNode->pc = strdup(value); // Копіюємо рядок
+    newNode->pc = strdup(value); 
     newNode->prev = elm;
     newNode->next = elm->next;
     if (elm->next) elm->next->prev = newNode;
