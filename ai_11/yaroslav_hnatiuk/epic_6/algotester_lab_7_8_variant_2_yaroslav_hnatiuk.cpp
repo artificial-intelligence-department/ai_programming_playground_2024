@@ -26,15 +26,23 @@ class DynamicArray {
         void insert(int index, int N, T* values) {
             resize(N);
 
-            for (int i = dynArrSize - 1; i >= index; i--) {
-                dynArr[i + N] = dynArr[i];
+            T *temp = new T[dynArrCapacity];
+
+            for (int i = 0; i < index; i++) {
+                temp[i] = dynArr[i];
             }
 
             for (int i = 0; i < N; i++) {
-                dynArr[index + i] = values[i];
+                temp[index + i] = values[i];
             }
 
+            for (int i = index; i < dynArrSize; i++) {
+                temp[i + N] = dynArr[i];
+            }
+            
             dynArrSize += N;
+            delete[] dynArr;
+            dynArr = temp;
 
             return;
         }
@@ -90,7 +98,6 @@ int main() {
     cin >> Q;
 
     while (Q--) {
-
         string choise;
         cin >> choise;
 
@@ -130,3 +137,4 @@ int main() {
         } else if (choise == "print") arr.print();
     }
 }
+
