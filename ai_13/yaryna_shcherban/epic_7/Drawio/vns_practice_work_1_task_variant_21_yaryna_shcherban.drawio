@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.8">
+  <diagram name="Сторінка-1" id="U0VVFsc21lSevNmIvKL0">
+    <mxGraphModel dx="1176" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TsDMpINJ4SS-EkFlFmVS-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TsDMpINJ4SS-EkFlFmVS-1" target="TsDMpINJ4SS-EkFlFmVS-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TsDMpINJ4SS-EkFlFmVS-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="30" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TsDMpINJ4SS-EkFlFmVS-2" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="380" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TsDMpINJ4SS-EkFlFmVS-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TsDMpINJ4SS-EkFlFmVS-3" target="TsDMpINJ4SS-EkFlFmVS-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TsDMpINJ4SS-EkFlFmVS-3" value="Initialize a, b, x" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="120" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TsDMpINJ4SS-EkFlFmVS-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TsDMpINJ4SS-EkFlFmVS-5" target="TsDMpINJ4SS-EkFlFmVS-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TsDMpINJ4SS-EkFlFmVS-5" value="alpha = sqrt(abs ((a * pow(x, 2) * sin(2 * x)) + (exp(-2 * x) * (x + b))) )&lt;div&gt;omega = 1 / pow(cos(x * x * x), 2) - x / pow(a * a + b * b, 1.0 / 3)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="35" y="200" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TsDMpINJ4SS-EkFlFmVS-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TsDMpINJ4SS-EkFlFmVS-6" target="TsDMpINJ4SS-EkFlFmVS-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TsDMpINJ4SS-EkFlFmVS-6" value="Output : alpha, omega" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="300" width="160" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

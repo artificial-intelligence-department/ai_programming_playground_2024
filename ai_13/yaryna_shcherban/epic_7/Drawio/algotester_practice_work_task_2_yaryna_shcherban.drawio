@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.1">
+  <diagram name="Сторінка-1" id="dQgPleh8jp6fR6r9UL5n">
+    <mxGraphModel dx="1176" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EYOIj_pjHuruViIrGIVu-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EYOIj_pjHuruViIrGIVu-1" target="EYOIj_pjHuruViIrGIVu-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EYOIj_pjHuruViIrGIVu-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="40" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EYOIj_pjHuruViIrGIVu-2" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="600" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EYOIj_pjHuruViIrGIVu-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EYOIj_pjHuruViIrGIVu-3" target="EYOIj_pjHuruViIrGIVu-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EYOIj_pjHuruViIrGIVu-3" value="Input n" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="120" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EYOIj_pjHuruViIrGIVu-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EYOIj_pjHuruViIrGIVu-6" target="EYOIj_pjHuruViIrGIVu-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EYOIj_pjHuruViIrGIVu-6" value="amount = 500 - n" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="180" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EYOIj_pjHuruViIrGIVu-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EYOIj_pjHuruViIrGIVu-9" target="EYOIj_pjHuruViIrGIVu-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EYOIj_pjHuruViIrGIVu-9" value="&lt;div&gt;count += amount / 500;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; amount %= 500;&lt;/div&gt;&lt;div&gt;&amp;nbsp;count += amount / 200;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; amount %= 200;&lt;/div&gt;&lt;div&gt;&amp;nbsp;count += amount / 100;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; amount %= 100;&lt;/div&gt;&lt;div&gt;&amp;nbsp;count += amount / 50;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; amount %= 50;&lt;/div&gt;&lt;div&gt;&amp;nbsp;count += amount / 20;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; amount %= 20;&lt;/div&gt;&lt;div&gt;&amp;nbsp;count += amount / 10;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; amount %= 10;&lt;/div&gt;&lt;div&gt;count += amount / 5;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; amount %= 5;&lt;/div&gt;&lt;div&gt;count += amount / 2;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; amount %= 2;&lt;/div&gt;&lt;div&gt;&amp;nbsp;count += amount;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="240" width="150" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="EYOIj_pjHuruViIrGIVu-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EYOIj_pjHuruViIrGIVu-11" target="EYOIj_pjHuruViIrGIVu-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EYOIj_pjHuruViIrGIVu-11" value="Output : count" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="135" y="530" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

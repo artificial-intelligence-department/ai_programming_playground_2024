@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.1">
+  <diagram name="Сторінка-1" id="EeZ7P9zpZBEd1pHSV9OV">
+    <mxGraphModel dx="1176" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="70" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-2" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="350" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2aIwnw-rTDfLN0-Nvp5S-3" target="2aIwnw-rTDfLN0-Nvp5S-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-3" value="Input P, t, r" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="182.5" y="130" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-4" value="Output : profit, A" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="182.5" y="280" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-5" value="&lt;div&gt;r /= 100;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; profit = P * (r/365) * t;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; A = P + profit;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="182.5" y="200" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2aIwnw-rTDfLN0-Nvp5S-1" target="2aIwnw-rTDfLN0-Nvp5S-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="160" as="sourcePoint" />
+            <mxPoint x="420" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2aIwnw-rTDfLN0-Nvp5S-5" target="2aIwnw-rTDfLN0-Nvp5S-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="120" as="sourcePoint" />
+            <mxPoint x="270" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2aIwnw-rTDfLN0-Nvp5S-4" target="2aIwnw-rTDfLN0-Nvp5S-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="320" as="sourcePoint" />
+            <mxPoint x="260" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-12" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="387.5" y="70" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-13" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="382.5" y="350" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2aIwnw-rTDfLN0-Nvp5S-15" target="2aIwnw-rTDfLN0-Nvp5S-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-15" value="Input r1, r2, h" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="130" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-16" value="Output : volume" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="280" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-17" value="volume = pi * h * (r1 * r1 - r2 * r2)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="347.5" y="205" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2aIwnw-rTDfLN0-Nvp5S-12" target="2aIwnw-rTDfLN0-Nvp5S-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="557.5" y="160" as="sourcePoint" />
+            <mxPoint x="607.5" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2aIwnw-rTDfLN0-Nvp5S-17" target="2aIwnw-rTDfLN0-Nvp5S-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="457.5" y="120" as="sourcePoint" />
+            <mxPoint x="457.5" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2aIwnw-rTDfLN0-Nvp5S-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2aIwnw-rTDfLN0-Nvp5S-16" target="2aIwnw-rTDfLN0-Nvp5S-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="447.5" y="320" as="sourcePoint" />
+            <mxPoint x="447.5" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
