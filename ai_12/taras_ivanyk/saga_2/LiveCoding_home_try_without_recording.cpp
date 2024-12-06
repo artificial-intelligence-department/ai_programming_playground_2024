@@ -91,7 +91,7 @@ int** function_2(float x){
         }
     }   
     cout << endl;
-    cout << "Buble sorted matrix: \n";
+    cout << "New matrix: \n";
     cout << "**************************" << endl;
 
     for(int i = 0; i < 5; ++i){
