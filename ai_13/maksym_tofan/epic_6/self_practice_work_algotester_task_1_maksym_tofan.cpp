@@ -36,5 +36,7 @@ int main() {
         cout << row << endl;
     }
 
+    
     return 0;
 }
+

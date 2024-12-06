@@ -146,5 +146,11 @@ int main() {
     // Очищення пам'яті
     deleteList(head);
 
+
+
     return 0;
 }
+
+
+
+
