@@ -2,15 +2,6 @@
 #include <vector>
 #include <cmath>
 using namespace std;
-/*
-void NORMA(string str){
-    bool acc = true;
-        for (size_t i = 0; i < str.size() / 2; i++)
-            if (str[i] != str[str.size() - i - 1])
-                acc = false;
-        cout << (acc ? "yes, it is a polindrom" : "it`s not a polindrom");
-}
- */
 
 bool isPalindrome(string t, int s, int e)
 {
@@ -32,13 +23,13 @@ int main()
     cin >> str;
     try
     {
-        int num = stoi(str); // trans to num
+        int num = stoi(str); 
         cout << (isPalindrome(num, 1, log10(num)) ? "yes, it is a polindrom" : "it`s not a polindrom");
     }
     catch (exception &e)
     {
         cout << (isPalindrome(str, 0, str.size() - 1) ? "yes, it is a polindrom" : "it`s not a polindrom");
     }
-    // NORMA(str);
+    
     return 0;
 }
