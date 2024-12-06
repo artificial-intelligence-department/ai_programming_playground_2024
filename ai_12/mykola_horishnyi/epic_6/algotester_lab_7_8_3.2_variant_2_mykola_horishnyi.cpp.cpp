@@ -1,199 +1,119 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
-template <typename T>
-struct Node 
-{
-    T value;
-    Node* next;
-    Node* prev;
-
-    Node(T val) : value(val), next(nullptr), prev(nullptr) 
-    {
-    }
-};
-
-template <typename T>
-class DoublyLinkedList 
-{
+template <class T>
+class DynamicMas {
 private:
-    Node<T>* head;
-    Node<T>* tail;
-    int count;
+    int s;
+    int capacity;
+    T* array;
+
+    void resize(int size) {
+        if (size >= capacity) {
+            while (size >= capacity)
+                capacity *= 2;
+
+            T* newArray = new T[capacity];
+            for (int i = 0; i < s; i++) {
+                newArray[i] = array[i];
+            }
+            delete[] array;
+            array = newArray;
+        }
+    }
 
 public:
-    DoublyLinkedList() : head(nullptr), tail(nullptr), count(0) 
-    {
-    }
+    DynamicMas() : s(0), capacity(1), array(new T[1]) {}
 
-    ~DoublyLinkedList() 
-    {
-        Node<T>* current_node = head;
-        while (current_node) {
-            Node<T>* next_node = current_node->next;
-            delete current_node;
-            current_node = next_node;
-        }
-    }
+    ~DynamicMas() { delete[] array; }
 
-    void insert(int index, const T arr[], int N) 
-    {
-        Node<T>* new_nodes_start = nullptr;
-        Node<T>* new_nodes_end = nullptr;
+    int cap() const { return capacity; }
+    int size() const { return s; }
 
-        for (int i = 0; i < N; ++i) 
-        {
-            Node<T>* new_node = new Node<T>(arr[i]);
-            if (!new_nodes_start) new_nodes_start = new_node;
-            else {
-                new_nodes_end->next = new_node;
-                new_node->prev = new_nodes_end;
-            }
-            new_nodes_end = new_node;
-        }
+    void insert(int index, int num, T* array2) {
+        resize(s + num);
 
-        if (index == 0) {
-            new_nodes_end->next = head;
-            if (head) head->prev = new_nodes_end;
-            head = new_nodes_start;
-            if (!tail) tail = new_nodes_end;
-        }
-        else {
-            Node<T>* current_node = head;
-            int curr_index = 0;
+        for (int i = s - 1; i >= index; i--)
+            array[i + num] = array[i];
 
-            while (current_node && curr_index < index) {
-                current_node = current_node->next;
-                curr_index++;
-            }
+        for (int i = 0; i < num; i++)
+            array[index + i] = array2[i];
 
-            if (current_node) {
-                new_nodes_end->next = current_node;
-                if (current_node->prev) current_node->prev->next = new_nodes_start;
-                new_nodes_start->prev = current_node->prev;
-                current_node->prev = new_nodes_end;
-            }
-        }
-        count += N;
+        s += num;
     }
 
     void erase(int index, int n) {
-        Node<T>* current_node = head;
-        int curr_index = 0;
+        for (int i = index; i < s - n; i++)
+            array[i] = array[i + n];
 
-        while (current_node && curr_index < index) {
-            current_node = current_node->next;
-            curr_index++;
-        }
-
-        if (!current_node) return;
-
-        for (int i = 0; i < n && current_node; ++i) {
-            Node<T>* next_node = current_node->next;
-
-            if (current_node == head) head = next_node;
-            if (current_node == tail) tail = current_node->prev;
-
-            if (next_node) next_node->prev = current_node->prev;
-            if (current_node->prev) current_node->prev->next = next_node;
-
-            delete current_node;
-            current_node = next_node;
-            count--;
-        }
+        s -= n;
     }
 
-    int size() const { return count; }
+    T& operator[](int index) { return array[index]; }
+    T get(int index) const { return array[index]; }
+    void set(int index, T num) { array[index] = num; }
 
-    void get(int index) const {
-        Node<T>* current_node = head;
-        int curr_index = 0;
+    friend ostream& operator<<(ostream& out, const DynamicMas<T>& arr) {
+        for (int i = 0; i < arr.s; ++i)
+            out << arr.array[i] << " ";
 
-        while (current_node && curr_index < index) 
-        {
-            current_node = current_node->next;
-            curr_index++;
-        }
-
-        if (current_node) cout << current_node->value << endl;
-        else cout << "Invalid index" << endl;
+        return out;
     }
 
-    void set(int index, T value) 
-    {
-        Node<T>* current_node = head;
-        int curr_index = 0;
-
-        while (current_node && curr_index < index) {
-            current_node = current_node->next;
-            curr_index++;
-        }
-
-        if (current_node) current_node->value = value;
-    }
-
-    void print() const {
-        Node<T>* current_node = head;
-        while (current_node) {
-            cout << current_node->value << " ";
-            current_node = current_node->next;
-        }
-        cout << endl;
-    }
+    void print() const { cout << *this << "\n"; }
 };
 
-int main() 
-{
+int main() {
     int Q;
     cin >> Q;
-
-    DoublyLinkedList<int> list;
+    DynamicMas<int> arr;
 
     for (int i = 0; i < Q; ++i) {
         string command;
         cin >> command;
 
-        if (command == "insert") {
-            int index;
-            cin >> index;
-            int N;
-            cin >> N;
+        if (command == "size")
+            cout << arr.size() << "\n";
 
-            int arr[N];
-            for (int j = 0; j < N; ++j) {
-                cin >> arr[j];
-            }
+        else if (command == "capacity")
+            cout << arr.cap() << "\n";
 
-            list.insert(index, arr, N);
-        }
-        else if (command == "erase") {
-            int index, n;
-            cin >> index >> n;
-            list.erase(index, n);
-        }
-        else if (command == "size") {
-            cout << list.size() << endl;
-        }
+        else if (command == "print")
+            arr.print();
+
         else if (command == "get") {
-            int index;
-            cin >> index;
-            list.get(index);
+            int num;
+            cin >> num;
+            cout << arr.get(num) << "\n";
         }
+
         else if (command == "set") {
             int index, value;
             cin >> index >> value;
-            list.set(index, value);
+            arr.set(index, value);
         }
-        else if (command == "print") 
-        {
-            list.print();
+
+        else if (command == "erase") {
+            int index, n;
+            cin >> index >> n;
+            arr.erase(index, n);
+        }
+
+        else {
+            int index, num;
+            cin >> index >> num;
+
+            int* tempArr = new int[num];
+            for (int j = 0; j < num; ++j)
+                cin >> tempArr[j];
+
+            arr.insert(index, num, tempArr);
+            delete[] tempArr;
         }
     }
 
     return 0;
 }
-
-
-
-
 
