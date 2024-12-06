@@ -1,0 +1,123 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.8">
+  <diagram name="Page-1" id="lo8VAmBi-qsWojM0uxgD">
+    <mxGraphModel dx="2393" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-660" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-30" value="start&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-720" y="370" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-33" target="BmowW8GBw7AeqIfdlqTR-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-33" value="Ввести &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/mrow&gt;n&lt;/math&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp;(розмір послідовності)." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-740" y="540" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-34" target="BmowW8GBw7AeqIfdlqTR-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-34" value="Ввести послідовність &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;/mrow&gt;a[n]&lt;/math&gt;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-760" y="695" width="200" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-36" target="BmowW8GBw7AeqIfdlqTR-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-36" value="Ініціалізувати &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;/mrow&gt;dp[i]&lt;/math&gt;&lt;/span&gt;&lt;/span&gt;значенням 1." style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-720" y="842.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-38" target="BmowW8GBw7AeqIfdlqTR-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-42" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BmowW8GBw7AeqIfdlqTR-41">
+          <mxGeometry x="-0.6947" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-38" target="BmowW8GBw7AeqIfdlqTR-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-57" value="false" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BmowW8GBw7AeqIfdlqTR-56">
+          <mxGeometry x="-0.2333" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-38" value="i &amp;lt; n" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-700" y="972.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-40" target="BmowW8GBw7AeqIfdlqTR-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-40" value="Ініціалізувати &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/mrow&gt;j = 0&lt;/math&gt;&lt;/span&gt;&lt;/span&gt;(початок внутрішнього циклу)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-860" y="1109" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-43" target="BmowW8GBw7AeqIfdlqTR-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-47" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BmowW8GBw7AeqIfdlqTR-46">
+          <mxGeometry x="-0.25" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-43" target="BmowW8GBw7AeqIfdlqTR-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-58" value="false" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BmowW8GBw7AeqIfdlqTR-54">
+          <mxGeometry y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-43" value="&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;mspace&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mspace&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;i&lt;/span&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-840" y="1239" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-800" y="1559" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-51" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BmowW8GBw7AeqIfdlqTR-49">
+          <mxGeometry x="-0.0808" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-45" value="Умова: &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo&gt;&amp;gt;&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;/mrow&gt;a[j] &amp;gt; a[i]&lt;/math&gt;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-840" y="1399" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-50" target="BmowW8GBw7AeqIfdlqTR-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-50" value="&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;mspace&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mop&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;mspace&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mspace&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;div&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mclose&quot;&gt;j++&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-860" y="1560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-53" value="Завершення внутрішнього циклу" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1020" y="1249" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-55" target="BmowW8GBw7AeqIfdlqTR-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-55" value="&#xa;Завершення зовнішнього циклу.&#xa;&#xa;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="982.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-59" target="BmowW8GBw7AeqIfdlqTR-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-59" value="&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;mspace&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mop&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="1122.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-61" target="BmowW8GBw7AeqIfdlqTR-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-61" value="Вивести &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;/mrow&gt;lis&lt;/math&gt;&lt;/span&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;katex-html&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="1262.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-63" value="end" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="1390" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
