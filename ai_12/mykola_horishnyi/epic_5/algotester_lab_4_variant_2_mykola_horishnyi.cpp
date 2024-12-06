@@ -1,179 +1,37 @@
 #include <iostream>
+#include <vector>
+#include <set>
 #include <algorithm>
-
 using namespace std;
 
-void results(const int* result, int size)
+int main()
 {
-    cout << size << "\n";
-    for (int i = 0; i < size; i++)
-    {
-        cout << result[i] << " ";
-    }
-    cout << "\n";
-}
+    int N, K;
+    cin >> N >> K;
 
-void difference(const int* n, int N, const int* m, int M)
-{
-    int result[1000], resultSize = 0;
-
-    int i = 0, j = 0;
-    while (i < N && j < M)
+    vector<int> a(N);
+    for (int i = 0; i < N; ++i)
     {
-        if (n[i] < m[j])
-        {
-            result[resultSize++] = n[i++];
-        }
-        else if (n[i] > m[j])
-        {
-            j++;
-        }
-        else
-        {
-            i++;
-            j++;
-        }
+        cin >> a[i];
     }
 
-    while (i < N)
+    set<int> unique_elements(a.begin(), a.end());
+    vector<int> unique_array(unique_elements.begin(), unique_elements.end());
+
+    sort(unique_array.begin(), unique_array.end());
+
+    K %= unique_array.size();
+
+    rotate(unique_array.begin(), unique_array.begin() + K, unique_array.end());
+
+
+    cout << unique_array.size() << endl;
+    for (int num : unique_array)
     {
-        result[resultSize++] = n[i++];
+        cout << num << " ";
     }
+    cout << endl;
 
-    results(result, resultSize);
-}
-
-void section(const int* n, int N, const int* m, int M)
-{
-    int result[1000], resultSize = 0;
-
-    int i = 0, j = 0;
-    while (i < N && j < M)
-    {
-        if (n[i] < m[j])
-        {
-            i++;
-        }
-        else if (n[i] > m[j])
-        {
-            j++;
-        }
-        else
-        {
-            result[resultSize++] = n[i];
-            i++;
-            j++;
-        }
-    }
-
-    results(result, resultSize);
-}
-
-void unionNM(const int* n, int N, const int* m, int M)
-{
-    int result[2000], resultSize = 0;
-
-    int i = 0, j = 0;
-    while (i < N && j < M)
-    {
-        if (n[i] < m[j])
-        {
-            result[resultSize++] = n[i++];
-        }
-        else if (n[i] > m[j])
-        {
-            result[resultSize++] = m[j++];
-        }
-        else
-        {
-            result[resultSize++] = n[i];
-            i++;
-            j++;
-        }
-    }
-
-    while (i < N)
-    {
-        result[resultSize++] = n[i++];
-    }
-
-    while (j < M)
-    {
-        result[resultSize++] = m[j++];
-    }
-
-    results(result, resultSize);
-}
-
-void Difference(const int* n, int N, const int* m, int M)
-{
-    int result[2000], resultSize = 0;
-
-    int i = 0, j = 0;
-    while (i < N && j < M)
-    {
-        if (n[i] < m[j])
-        {
-            result[resultSize++] = n[i++];
-        }
-        else if (n[i] > m[j])
-        {
-            result[resultSize++] = m[j++];
-        }
-        else
-        {
-            i++;
-            j++;
-        }
-    }
-
-    while (i < N)
-    {
-        result[resultSize++] = n[i++];
-    }
-
-    while (j < M)
-    {
-        result[resultSize++] = m[j++];
-    }
-
-    results(result, resultSize);
-}
-
-int main() {
-    int N, M;
-
-    cin >> N;
-    int n[1000];
-    for (int i = 0; i < N; i++)
-    {
-        cin >> n[i];
-    }
-
-    cin >> M;
-    int m[1000];
-    for (int i = 0; i < M; i++)
-    {
-        cin >> m[i];
-    }
-
-    sort(n, n + N);
-    sort(m, m + M);
-
-    difference(n, N, m, M);
-    cout << "\n";
-
-    difference(m, M, n, N);
-    cout << "\n";
-
-    section(n, N, m, M);
-    cout << "\n";
-
-    unionNM(n, N, m, M);
-    cout << "\n";
-
-    Difference(n, N, m, M);
-    cout << "\n";
 
     return 0;
 }

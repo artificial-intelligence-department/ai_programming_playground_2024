@@ -26,15 +26,15 @@ int main()
 
     if (fail)
     {
-        cout << "scholarship wont be your";
+        cout << "Zabud pro stypendiiu";
     }
     else if (excellent)
     {
-        cout << "You will have the best scholarship";
+        cout << "Pidvyshchena";
     }
     else
     {
-        cout << "You will have scholarship";
+        cout << "Zvychaina";
     }
 
     return 0;
