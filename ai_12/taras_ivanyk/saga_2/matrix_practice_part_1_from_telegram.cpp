@@ -429,12 +429,19 @@ void search_even_numbers(int rand_row, int rand_col, int** matrix_rand){
     cout << endl;
 }
 
-void print_transpone_matrix_that_was_randomly_generated(int rand_row, int rand_col, int** matrix_rand){
-    cout << "Transpone matrix: "<< endl;
+void transpose_matrix(int rand_row, int rand_col, int** matrix_rand, int** transposed_matrix) {
+    for (int i = 0; i < rand_row; ++i) {
+        for (int j = 0; j < rand_col; ++j) {
+            transposed_matrix[j][i] = matrix_rand[i][j]; \
+        }
+    }
+}
 
-    for(int j = 0; j < rand_row; ++j){
-        for(int i = 0; i < rand_col; ++i){
-            cout << setw(3) << matrix_rand[i][j] << " ";
+void print_transposed_matrix(int rand_row, int rand_col, int** transposed_matrix) {
+    cout << "Transposed matrix: " << endl;
+    for (int i = 0; i < rand_col; ++i) {  
+        for (int j = 0; j < rand_row; ++j) {
+            cout << setw(3) << transposed_matrix[i][j] << " "; 
         }
         cout << endl;
     }
@@ -614,7 +621,13 @@ int main() {
 
     search_even_numbers(rand_row, rand_col, matrix_rand);
 
-    print_transpone_matrix_that_was_randomly_generated(rand_row, rand_col, matrix_rand);
+    int** transposed_matrix = new int*[rand_col];
+    for (int i = 0; i < rand_col; ++i) {
+        transposed_matrix[i] = new int[rand_row];
+    }
+
+    transpose_matrix(rand_row, rand_col, matrix_rand, transposed_matrix);
+    print_transposed_matrix(rand_row, rand_col, transposed_matrix);
 
     for (int i = 0; i < row; ++i) {
         delete[] matrix[i];
