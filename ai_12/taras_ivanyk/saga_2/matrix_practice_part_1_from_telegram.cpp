@@ -293,7 +293,151 @@ void determinat_for_matrix_DETERMINATOR(int rowD, int colD, int matrixD[3][3]){
             sum -= matrixD[0][2] * matrixD[1][1] * matrixD[2][0] + matrixD[0][0] * matrixD[2][1] * matrixD[1][2] + matrixD[1][0] * matrixD[0][1] * matrixD[2][2];
         }
     }
-    cout << endl << "Determinat of matrix 3*3 = " << sum;
+    cout << endl << "Determinat of matrix 3*3 = " << sum << endl;
+}
+
+// find exact number at the matrix_static_1:
+
+int exact_number_in_matrix(int num, int r1, int c1, int matrix_static_1[5][6]){
+    if(num < 0 || num >= r1 * c1){
+        cout << "Error, you enter wrong number [not from diapasone] " << endl;
+        return -1;
+    }
+
+    int row = num / c1;
+    int col = num % c1;
+    return matrix_static_1[row][col];
+}
+
+void sum_of_all_elements_in_matrix_1(int row, int col, int matrix_static_1[5][6]){
+    int sum = 0;
+    double count = 0.0;
+    for(int i = 0; i < row; ++i){
+        for(int j = 0; j < col; ++j){
+            sum += matrix_static_1[i][j];
+            count++;
+        }
+    }
+    cout << endl << "Sum of all elements in matrix 1 = " << sum << endl;
+    cout << endl <<"Average value of all elements = " << double(sum) / count << endl;
+}
+
+// from here i do everything with generate matrix: 
+void generate_random_matrix(int rand_row, int rand_col, int** matrix_rand){
+    srand(static_cast<unsigned>(time(nullptr)));
+
+    for(int i = 0; i < rand_row; ++i){
+        for(int j = 0; j < rand_col; ++j){
+            matrix_rand[i][j] = rand() % (rand_row * rand_col); 
+        }
+    }
+}
+
+void print_random_matrix(int rand_row, int rand_col, int** matrix_rand){
+    for(int i = 0; i < rand_row; ++i){
+        for(int j = 0; j < rand_col; ++j){
+            cout << setw(3) << matrix_rand[i][j] << " "; 
+        }
+        cout << endl;
+    }
+    cout << endl;
+}
+
+void find_elements_on_diagonale(int rand_row, int rand_col, int** matrix_rand){
+    if(rand_row != rand_col){
+        cout << "Error, random generate matrix is not square, so it doesn't have main diagonale( " << endl; 
+        return;
+    }
+    cout << endl << "Elements on the main diagonale for random generate matrix are: " << endl;
+    for(int i = 0; i < rand_row; ++i){
+        cout << matrix_rand[i][i] << " ";
+    }
+    cout << endl;
+}
+
+void find_row_with_max_sum(int rand_row, int rand_col, int** matrix_rand){
+    cout << endl;
+    
+    int max_sum = INT_MIN;
+    int row_index = -1;
+
+    for (int i = 0; i < rand_row; ++i) {
+        int current_sum = 0;
+        for (int j = 0; j < rand_col; ++j) {
+            current_sum += matrix_rand[i][j]; 
+        }
+
+        if (current_sum > max_sum) {
+            max_sum = current_sum;
+            row_index = i;
+        }
+    }
+    cout << "Row with maximum sum in generate matrix: " << row_index + 1 << endl; 
+    cout << "Maximum sum: " << max_sum << endl;
+
+    cout << "Elements of this row: ";
+    for (int j = 0; j < rand_col; ++j) {
+        cout << matrix_rand[row_index][j] << " ";
+    }
+    cout << endl;
+}
+
+int count_exact_number(int number, int rand_row, int rand_col, int** matrix_rand) { 
+    int count = 0;                                          
+    for (int i = 0; i < rand_row; ++i) {               // help function to know, how many times is exact number repeats
+        for (int j = 0; j < rand_col; ++j) {
+            if (matrix_rand[i][j] == number) {
+                count++;
+            }
+        }
+    }
+    return count;
+}
+
+void repeat_number(int rand_row, int rand_col, int** matrix_rand){
+    int max_repeats = matrix_rand[0][0];
+    int max_count = 0;
+
+    for(int i = 0; i < rand_row; ++i){
+        for(int j = 0; j < rand_col; ++j){
+            int cur_count = count_exact_number(matrix_rand[i][j], rand_row, rand_col, matrix_rand);
+
+            if(cur_count > max_count){
+                max_count = cur_count;
+                max_repeats = matrix_rand[i][j];
+            }
+        }
+    }
+    cout << endl << "The most repeated number: " << max_repeats << endl;
+    cout << "Repeats " << max_count << " times." << endl;
+}
+
+void search_even_numbers(int rand_row, int rand_col, int** matrix_rand){
+    int count_is_even = 0;
+
+    cout << endl << "Even numbers in this generated matrix are: " << endl;
+    for(int i = 0; i < rand_row; ++i){
+        for(int j = 0; j < rand_col; ++j){
+            if(matrix_rand[i][j] % 2 == 0){
+                count_is_even++;
+                cout << matrix_rand[i][j] << " "; 
+            }
+        }
+    }
+    cout << endl << "There are " << count_is_even << " even numbers in this generated matrix." << endl;
+    
+    cout << endl;
+}
+
+void print_transpone_matrix_that_was_randomly_generated(int rand_row, int rand_col, int** matrix_rand){
+    cout << "Transpone matrix: "<< endl;
+
+    for(int j = 0; j < rand_row; ++j){
+        for(int i = 0; i < rand_col; ++i){
+            cout << setw(3) << matrix_rand[i][j] << " ";
+        }
+        cout << endl;
+    }
 }
 
 
@@ -433,11 +577,54 @@ int main() {
     cout << "Matrix 3*3, we want to find determinator of this matrix \n";
     print_matrixD(rowD, colD, matrixD);
     determinat_for_matrix_DETERMINATOR(rowD, colD, matrixD);
+    cout << endl;
+
+    cout << "Matrix were you would search exact value of element by number: " << endl;
+    print_matrix_5_na_6(r1, c1, matrix_static_1);
+    cout << endl;
+
+    int num;
+    cout << "Enter number of element from 0 to 29 and I'll return the value of this element in matrix: " << endl;
+    cin >> num;
+
+    int value = exact_number_in_matrix(num, r1, c1, matrix_static_1);
+    if(value != -1) { cout << endl << "Value of element with number you entered = " << value << endl; }
+
+    sum_of_all_elements_in_matrix_1(r1, c1, matrix_static_1);
+
+// dynamic memory for generating random matrix for function that search elements on main diagonale
+    int rand_row = rand() % 5 + 1;
+    int rand_col = rand() % 5 + 1;           // rand matrix with size from 1*1 to 5*5
+    
+    int** matrix_rand = new int*[rand_row];
+    for(int i = 0; i < rand_row; ++i){
+        matrix_rand[i] = new int[rand_col];
+    }
+
+    generate_random_matrix(rand_row, rand_col, matrix_rand);
+
+    cout << endl << "Generate random matrix: " << endl;
+    print_random_matrix(rand_row, rand_col, matrix_rand);
+
+    find_elements_on_diagonale(rand_row, rand_col, matrix_rand);
+
+    find_row_with_max_sum(rand_row, rand_col, matrix_rand);
+
+    repeat_number(rand_row, rand_col, matrix_rand);
+
+    search_even_numbers(rand_row, rand_col, matrix_rand);
+
+    print_transpone_matrix_that_was_randomly_generated(rand_row, rand_col, matrix_rand);
 
     for (int i = 0; i < row; ++i) {
         delete[] matrix[i];
     }
     delete[] matrix;
+
+    for(int i = 0; i < rand_row; ++i){
+        delete[] matrix_rand[i];
+    }
+    delete[] matrix_rand;
 
     return 0;
 }
