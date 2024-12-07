@@ -1,0 +1,59 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Сторінка-1" id="g3zTHIjJwYcE6_m8W5ss">
+    <mxGraphModel dx="1050" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-1" value="Початок" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="374" y="10" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7PMLN2jjK_gD4DNHlFka-2" target="7PMLN2jjK_gD4DNHlFka-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-2" value="Ввід значень" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="366" y="150" width="96" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7PMLN2jjK_gD4DNHlFka-4" target="7PMLN2jjK_gD4DNHlFka-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-4" value="Оголошення змінних" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="374" y="80" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="7PMLN2jjK_gD4DNHlFka-1" target="7PMLN2jjK_gD4DNHlFka-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="250" as="sourcePoint" />
+            <mxPoint x="440" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7PMLN2jjK_gD4DNHlFka-7" target="7PMLN2jjK_gD4DNHlFka-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7PMLN2jjK_gD4DNHlFka-7" target="7PMLN2jjK_gD4DNHlFka-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-7" value="l &amp;lt;= w &amp;amp;&amp;amp; l &amp;lt;= u + d" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="352" y="210" width="124" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7PMLN2jjK_gD4DNHlFka-9" target="7PMLN2jjK_gD4DNHlFka-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-9" value="Three times Sex on the Beach, please!" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="221.25" width="150" height="47.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7PMLN2jjK_gD4DNHlFka-11" target="7PMLN2jjK_gD4DNHlFka-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-11" value="Forget about the cocktails, man!" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="356" y="300" width="116" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMLN2jjK_gD4DNHlFka-13" value="Кінець" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="371" y="360" width="86" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
