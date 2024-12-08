@@ -124,17 +124,31 @@ void buble_sort(Node* head){
     } while(swapped);
 }
 
-Node* merge_sorted(Node* head1, Node* head2) {
-    if (!head1) return head2;
-    if (!head2) return head1;
-
-    if (head1->data <= head2->data) {
-        head1->next = merge_sorted(head1->next, head2);
-        return head1;
-    } else {
-        head2->next = merge_sorted(head1, head2->next);
-        return head2;
+void insertion_sort(Node* &head){
+    if (!head) {
+        cout << "List is empty!" << endl;
+        return;
     }
+    Node* sorted = nullptr; 
+    Node* current = head;
+    
+    while (current != nullptr) {
+        Node* next = current->next;
+        
+        if (sorted == nullptr || sorted->data >= current->data) {
+            current->next = sorted;
+            sorted = current;
+        } else {
+            Node* temp = sorted;
+            while (temp->next != nullptr && temp->next->data < current->data) {
+                temp = temp->next;
+            }
+            current->next = temp->next;
+            temp->next = current;
+        }
+        current = next;
+    }
+    head = sorted; 
 }
 
 struct Cyclist{
@@ -235,7 +249,7 @@ int main(){
     cout << "New list after buble sort: \n";
     print_node(head);
 
-// Merge sort
+// Insertion sort
     cout << "********************************" << endl;
     cout << endl << "New list before sorting: \n";
 
@@ -254,8 +268,8 @@ int main(){
     print_node(head);
     cout << endl;
 
-    buble_sort(head);
-    cout << "New list after merge sort: \n";
+    insertion_sort(head);
+    cout << "New list after insertion sort: \n";
     print_node(head);
 
     cout << "********************************" << endl;
