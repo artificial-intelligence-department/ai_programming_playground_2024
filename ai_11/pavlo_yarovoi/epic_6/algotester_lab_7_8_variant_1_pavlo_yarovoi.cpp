@@ -1,142 +1,165 @@
 #include <iostream>
-#include <string>
-
+#include <cstring>
 using namespace std;
 
 template<typename Type>
-struct MyArray {
+class DoublyLinkedList {
+    struct Node {
+        Type data;
+        Node* prev;
+        Node* next;
+        Node(Type value) : data(value), prev(nullptr), next(nullptr) {}
+    };
 
-    int size = 0;
-    int capacity = 1;
-    Type *A;
+    Node* head;
+    Node* tail;
+    int size;
 
+public:
+    DoublyLinkedList() : head(nullptr), tail(nullptr), size(0) {}
 
-    MyArray() {
-        A = new Type[1];
-    }
-
-
-    void Insert(int index, int arr[], int N) {
-
-        if (capacity > size + N) {
-
-            for (int i = size - 1; i > index - 1; i--) {
-                A[i + N] = A[i];
-            }
-
-            for (int i = 0; i <  N; ++i) {
-                A[i+index]=arr[i];
-            }
-
-            size += N;
-
-        } else {
-
-            while (capacity <= size + N) {
-                capacity *= 2;
-            }
-
-            Type *B = new Type[capacity];
-
-            for (int i = 0; i < index; ++i) {
-                B[i] = A[i];
-            }
-
-            for (int i = 0; i <  N; ++i) {
-                B[i+index]=arr[i];
-            }
-
-            for (int i = index; i < size; ++i) {
-                B[i + N] = A[i];
-            }
-
-            delete[] A;
-            A = B;
-            size += N;
+    ~DoublyLinkedList() {
+        while (head) {
+            Node* temp = head;
+            head = head->next;
+            delete temp;
         }
     }
 
+    void Insert(int index, Type arr[], int N) {
+        if (index < 0 || index > size) return;
+        Node* current = head;
+        for (int i = 0; i < index; ++i) {
+            current = current->next;
+        }
+        for (int i = 0; i < N; ++i) {
+            Node* newNode = new Node(arr[i]);
+            if (!head) {
+                head = tail = newNode;
+            } else if (!current) {
+                tail->next = newNode;
+                newNode->prev = tail;
+                tail = newNode;
+            } else {
+                newNode->next = current;
+                newNode->prev = current->prev;
+                if (current->prev) {
+                    current->prev->next = newNode;
+                } else {
+                    head = newNode;
+                }
+                current->prev = newNode;
+            }
+        }
+        size += N;
+    }
 
     void Erase(int index, int n) {
-
-        for (int i = index; i < size; ++i) {
-            A[i] = A[i + n];
+        if (index < 0 || index >= size || n <= 0) return;
+        Node* current = head;
+        for (int i = 0; i < index; ++i) {
+            current = current->next;
+        }
+        for (int i = 0; i < n && current; ++i) {
+            Node* toDelete = current;
+            current = current->next;
+            if (toDelete->prev) {
+                toDelete->prev->next = toDelete->next;
+            } else {
+                head = toDelete->next;
+            }
+            if (toDelete->next) {
+                toDelete->next->prev = toDelete->prev;
+            } else {
+                tail = toDelete->prev;
+            }
+            delete toDelete;
         }
         size -= n;
     }
 
-
-    int Size() {
+    int Size() const {
         return size;
     }
 
-
-    int Capacity() {
-        return capacity;
+    Type Get(int index) const {
+        if (index < 0 || index >= size) throw out_of_range("Index out of range");
+        Node* current = head;
+        for (int i = 0; i < index; ++i) {
+            current = current->next;
+        }
+        return current->data;
     }
 
-
-    Type &operator[](int index) {
-        return A[index];
+    void Set(int index, Type value) {
+        if (index < 0 || index >= size) throw out_of_range("Index out of range");
+        Node* current = head;
+        for (int i = 0; i < index; ++i) {
+            current = current->next;
+        }
+        current->data = value;
     }
 
-
-    friend ostream &operator<<(ostream &os, const MyArray &array) {
-        for (int i = 0; i < array.size; ++i) {
-            os << array.A[i] << ' ';
+    friend ostream& operator<<(ostream& os, const DoublyLinkedList& list) {
+        Node* current = list.head;
+        while (current) {
+            os << current->data << ' ';
+            current = current->next;
         }
         return os;
     }
-
 };
 
-
 int main() {
-
-    MyArray<int> A;
+    DoublyLinkedList<int> list;
 
     int Q;
     cin >> Q;
 
-    string ident;
-    for (int i = 0; i < Q; ++i) {
+    char ident[10];
+
+    while (Q--) {
         cin >> ident;
 
-        if (ident == "insert") {
+        if (strcmp(ident, "insert") == 0) {
             int index, N;
             cin >> index >> N;
-
-            int arr[N];
+            int* arr = new int[N];
             for (int i = 0; i < N; ++i) {
                 cin >> arr[i];
             }
-            A.Insert(index, arr, N);
+            list.Insert(index, arr, N);
+            delete[] arr;
 
-        } else if (ident == "erase") {
+        } else if (strcmp(ident, "erase") == 0) {
             int index, n;
             cin >> index >> n;
-            A.Erase(index, n);
+            list.Erase(index, n);
 
-        } else if (ident == "size") {
-            cout << A.Size() << endl;
+        } else if (strcmp(ident, "size") == 0) {
+            cout << list.Size() << endl;
 
-        } else if (ident == "capacity") {
-            cout << A.Capacity() << endl;
-
-        } else if (ident == "get") {
+        } else if (strcmp(ident, "get") == 0) {
             int index;
             cin >> index;
-            cout << A[index] << endl;
+            try {
+                cout << list.Get(index) << endl;
+            } catch (const out_of_range& e) {
+                cout << e.what() << endl;
+            }
 
-        } else if (ident == "set") {
-            int index;
-            cin >> index;
-            cin >> A[index];
+        } else if (strcmp(ident, "set") == 0) {
+            int index, value;
+            cin >> index >> value;
+            try {
+                list.Set(index, value);
+            } catch (const out_of_range& e) {
+                cout << e.what() << endl;
+            }
 
-        } else if (ident == "print") {
-            cout << A << endl;
+        } else if (strcmp(ident, "print") == 0) {
+            cout << list << endl;
         }
-
     }
 
     return 0;
