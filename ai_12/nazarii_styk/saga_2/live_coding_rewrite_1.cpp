@@ -13,7 +13,7 @@ using namespace std;
 
 void SortArray(double array[], int size)
 {
-    for (int i = 0; i < size - 1; i++)
+    for (int i = 0; i < size - 1; i++) // 10. використаний for цикл 
     {
         for (int j = 0; j < size - i - 1; j++)
         {
@@ -29,18 +29,18 @@ void SortArray(double array[], int size)
 
 float function_1()
 {
-    float a, b, x;  // Дійсні числа
-    int c, d, e;    // Цілі числа
-    double f;       // Дійсне число з подвійною точністю
+    float a, b, x;  // Дійсні числа                         // 2. дійсна змінна
+    int c, d, e;    // Цілі числа                           // 1. цілочисельна змінна
+    double f;       // Дійсне число з подвійною точністю    // 3. дійсна з подвійною точністю змінна
 
-    cout << "Введіть два дійсних числа з клавіатури: ";
+    cout << "Введіть два дійсних числа з клавіатури: "; // 18. використано оператори виведення та введення даних
     cin >> a >> b;
     cout << "Введіть три цілих числа з клавіатури: ";
     cin >> c >> d >> e;
     cout << "Введіть одне число з подвійною точністю: ";
     cin >> f;
 
-    double numArray[6] = {a, b, c + 0.0, d + 0.0, e + 0.0, f};
+    double numArray[6] = {a, b, c + 0.0, d + 0.0, e + 0.0, f}; // 6. одновимірний масив 
     SortArray(numArray, 6);
 
     cout << "Відсортовані числа: " << endl;
@@ -53,7 +53,7 @@ float function_1()
     double sumOfBigger = numArray[0] + numArray[1] + numArray[2];
     double sumOfLess = numArray[3] + numArray[4] + numArray[5];
 
-    if (sumOfBigger > sumOfLess * 4)
+    if (sumOfBigger > sumOfLess * 4)    // 5. умовні оператори та розгалуження
     {
         x = sumOfBigger + sumOfLess;
     }
@@ -111,7 +111,7 @@ void function_2(float &x, float matrix[5][5])
     {
         for (int j = 0; j < 5; j++)
         {
-            matrix[i][j] = (matrix[i][j] + VARIANT + j - i) * (rand() % 100 + 1);
+            matrix[i][j] = (matrix[i][j] + VARIANT + j - i) * (rand() % 100 + 1); // 15. використано математичні операції та математичні функції
         }
     }
 
@@ -172,7 +172,7 @@ void function_3(float matrix[5][5], float resultArray[5])
 }
 
 // Завдання 4
-struct Student
+struct Student // 19. використано свою структуру даних
 {
     string firstName;
     string lastName;
@@ -244,7 +244,7 @@ void function_4(float resultArray[5], Student students[7])
 
 
 // Завдання 5
-void help_for_function_5(Student students[], int index, ofstream &file)
+void help_for_function_5(Student students[], int index, ofstream &file) // 13. використано рекурсивну функцію 
 {
     if (index < 0)
     {
@@ -258,7 +258,7 @@ void help_for_function_5(Student students[], int index, ofstream &file)
 
 void function_5(Student students[], int size)
 {
-    ofstream file("students.txt");
+    ofstream file("students.txt"); // 16. використано функції роботи з файлами, для того, щоб записати у файл
 
     if (!file.is_open())
     {
@@ -276,7 +276,7 @@ void function_5(Student students[], int size)
 void function_6()
 {
     string fileName = "students.txt";
-    ifstream file(fileName);
+    ifstream file(fileName); // 17. використано функції роботи з файлами, для того, щоб зчитати з файлу
 
     if (file.is_open())
     {
@@ -296,11 +296,13 @@ void function_6()
 
 int main()
 {
+    const int CONST = 5; // 4. цілочисельна константа
+
     float x = function_1();
-    float tower[5][5];
+    float tower[5][5]; // 7. двовимірний масив 
     float resultArray[5];
 
-    function_2(x, tower);
+    function_2(x, tower); // 14. використано параметри та аргументи функції	
 
     function_3(tower, resultArray);
     cout << "Масив результату: " << endl;
@@ -321,3 +323,41 @@ int main()
 
     return 0;
 }
+
+// 8. використаний do while цикл
+/*do{
+    cout << "Hello ";
+}while(true);*/
+
+// 9. використаний while цикл
+/*while(true)
+{
+    cout << "Hello ";
+}*/
+
+// 11. використано оператори break і continue
+/*switch(choise)
+{
+    case 1:
+        cout << " " << endl;
+        break;
+}*/
+
+// 12. використано перевантаження функції 
+/*int Add(int a, int b)
+{
+    return a + b;
+}
+float Add(float a, float b)
+{
+    return a + b;
+}
+*/
+
+// 20. використано вказівники
+/*
+int a = 7;
+std::cout << a << '\n'; 
+std::cout << &a << '\n'; 
+std::cout << *&a << '\n'; 
+*/
