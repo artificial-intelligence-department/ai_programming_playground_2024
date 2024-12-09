@@ -9,8 +9,8 @@ using namespace std;
 
 const int Variant = 2; // оголосив константу для варіанту щоб використовувати їх в всіх в функціях
 
-double function_1 () { // Перша задача
-    float a, b; // 
+double function_1 () { // Завдання 1
+    float a, b; 
     int c, d, e;
     double f;
 
@@ -42,7 +42,7 @@ double function_1 () { // Перша задача
     return x;
 }
 
-void function_2(double &x, double matrix [5][5]) { // Друга задача 
+void function_2(double &x, double matrix [5][5]) { // Завдання 2
 
     srand(static_cast<unsigned>(time(0)));
 
@@ -66,7 +66,7 @@ void function_2(double &x, double matrix [5][5]) { // Друга задача
     }
 }
 
-void function_3 (double matrix [5][5], double result [5]) {
+void function_3 (double matrix [5][5], double result [5]) { // Завдання 3
     // Для початку ми знайдемо мінімальні елементи в стовпцях
     for (int j = 0; j < 5; j++) {
         double minElement = matrix[0][j];
@@ -86,7 +86,7 @@ void function_3 (double matrix [5][5], double result [5]) {
     cout << endl;
 }
 
-struct Student {
+struct Student { // Структура для 4 завдання
     string name;
     string surname;
     double money;
@@ -96,7 +96,7 @@ struct Student {
     Student (string name, string surname, double money) : name(name), surname(surname), money(money), prev(nullptr), next(nullptr) {}
 };
 
-Student* function_4 (double result[5]) {
+Student* function_4 (double result[5]) { // Завдання 4
     string name[] = {"Денис", "Юрій", "Юрій", "Ярослав", "Іван", "Анастасія", "Євген"};
     string surname[] = {"Боднар", "Бубельник", "Вербицький", "Гнатюк", "Голейчук", "Гуменюк", "Єдинець"};
 
@@ -130,7 +130,7 @@ Student* function_4 (double result[5]) {
     return head;
 }
 
-void help_for_function_5 (Student* tail, ofstream& file) {
+void help_for_function_5 (Student* tail, ofstream& file) { // Допоміжна функція для 5 завдання
     if (tail == nullptr) {
         return;
     }
@@ -139,28 +139,28 @@ void help_for_function_5 (Student* tail, ofstream& file) {
     help_for_function_5(tail->prev, file);
 }
 
-void function_5 (Student* list) {
-    ofstream file ("Students.txt");
+void function_5 (Student* list) { // Завдання 5 та 6
+    ofstream file ("Students.txt"); // Запис у файл
     Student* tail = list;
     while (tail->next != nullptr) {
         tail = tail->next;
     }
     help_for_function_5(tail, file);
 
-    file.close();
+    file.close(); // Закриваємо файл
 
-    ifstream file1("Students.txt");
-    if (!file1.is_open()) {
+    ifstream file1("Students.txt"); // Відкриваємо файл для читання
+    if (!file1.is_open()) { // перевірка на те чи відкритий файл
         cout << "Такого файлу не існує!" << endl;
         return;
     }
-    
+    // Виводимо текст з файлу
     cout << "Текст з файлу: " << endl;
     string lineInfo;
     while (getline(file1, lineInfo)) {
         cout << lineInfo << endl;
     }
-    
+
     file1.close();
 }
 
@@ -168,7 +168,7 @@ int main (){
     double x = function_1();    
     cout << "Результат обчислення (function_1):\n " << x << endl;
 
-    double matrix [5][5];
+    double matrix [5][5]; // Це те саме що tower в умові завдання
     function_2(x, matrix);
 
     double result[5];
@@ -180,3 +180,27 @@ int main (){
 
     return 0;
 }
+
+/*
+1.	в коді використана як мінімум одна цілочисельна змінна ✅
+2.	в коді використана як мінімум одна дійсна змінна ✅
+3.	в коді використана як мінімум одна дійсний з подвійною точністю змінна ✅
+4.	в коді використана як мінімум одна цілочисельна константа ✅
+5.	в коді використані умовні оператори та розгалуження ✅
+6.	в коді використаний одновимірний масив ✅
+7.	в коді використаний двовимірний масив ✅
+8.	в коді використаний do while цикл ❎
+9.	в коді використаний while цикл ✅
+10.	в коді використаний for цикл ✅
+11.	в коді використано оператори break і continue ❎
+12.	в коді використано перевантаження функції ✅
+13.	в коді використано рекурсивну функцію ✅
+14.	в коді використано параметри та аргументи функції ✅	
+15.	в коді використано математичні операції та математичні функції ✅
+16.	в коді використано функції роботи з файлами, для того, щоб записати у файл ✅
+17.	в коді використано функції роботи з файлами, для того, щоб зчитати з файлу ✅
+18.	в коді використано оператори виведення та введення даних ✅
+19.	в коді використано свою структуру даних ✅
+20.	в коді використано вказівники ✅
+21.	в коді не можна використовувати вектори ✅
+*/
