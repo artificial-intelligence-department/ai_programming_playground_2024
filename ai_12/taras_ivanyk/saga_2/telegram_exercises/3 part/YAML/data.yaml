@@ -1,0 +1,7 @@
+server:
+  host: "localhost"
+  port: 8080
+  security:
+    enabled: true
+    ssl_cert: "/path/to/certificate.pem"
+    ssl_key: "/path/to/key.pem"
