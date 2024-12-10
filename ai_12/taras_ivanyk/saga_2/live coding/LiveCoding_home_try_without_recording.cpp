@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <cmath>
 #include <fstream>
 #include <ctime>
 #include <string>
@@ -48,7 +49,7 @@ float function_1(){
     double sum = 0.0;
 
     if(sum_max > sum_min * 2){
-        sum = sum_max * sum_min;
+        sum = sum_max * pow(sum_min, 1);  // using math functions
     } else if(sum_max > sum_min * 3){
         if(sum_min != 0){
             sum = sum_max / sum_min;
@@ -132,9 +133,7 @@ int* function_3(int** tower) {
 
     if(min_elements[j] != min_value_2){
             are_the_same = false;
-        } else {
-            are_the_same = true;
-        }
+        } 
         cout << min_value_2 << " ";  
     }
     cout << endl;
@@ -148,79 +147,72 @@ int* function_3(int** tower) {
     return min_elements; 
 }
 
-
-struct Node{
+struct Student {
     string firstName;
     string secondName;
     double accountBalance;
-    Node* prev;
-    Node* next;
+    Student* prev;
+    Student* next;
+
+    Student(string fName, string sName, double balance)
+        : firstName(fName), secondName(sName), accountBalance(balance), prev(nullptr), next(nullptr) {}
 };
 
-Node* function_4(int* array){
-
+Student* function_4(int* array) {
     srand(static_cast<unsigned>(time(nullptr)));
 
     string firstNames[] = {"Taras", "Iryna", "Mariya", "Stefan", "Nazar", "Ivanna", "Natalia"};
     string secondNames[] = {"Ivanyk", "Svyrydenko", "Ivanyk", "Shyjka", "Kryvychko", "Smachylo", "Ptychka"};
 
-    for(int i = sizeof(firstNames) / sizeof(firstNames[0]) - 1; i > 0; --i){
+    for (int i = sizeof(firstNames) / sizeof(firstNames[0]) - 1; i > 0; --i) {
         int j = rand() % (i + 1);
         swap(firstNames[i], firstNames[j]);
     }
 
-    for(int i = sizeof(secondNames) / sizeof(secondNames[0]) - 1; i > 0; --i){
+    for (int i = sizeof(secondNames) / sizeof(secondNames[0]) - 1; i > 0; --i) {
         int j = rand() % (i + 1);
-        swap(secondNames[i], secondNames[j]); // similar to [  random_shuffle(secondNames.begin(), secondNames.end())  ]
+        swap(secondNames[i], secondNames[j]);
     }
 
-    Node* head = nullptr;
-    Node* tail = nullptr;
+    Student* head = nullptr;
+    Student* tail = nullptr;
 
-    for(int i = 0; i < 7; ++i){
-        Node* newNode = new Node();
-        newNode -> firstName = firstNames[i];
-        newNode -> secondName = secondNames[i];
+    for (int i = 0; i < 7; ++i) {
+        Student* newStudent = new Student(firstNames[i], secondNames[i], array[i % 5]);  // Assign balance from array
+        newStudent->prev = tail;
+        newStudent->next = nullptr;
 
-        if(i == 0){
-            newNode -> accountBalance = *max_element(array, array + 5);
-        } else if(i == 6){
-            newNode -> accountBalance = *min_element(array, array + 5);
-        } else{
-            newNode -> accountBalance = array[i - 1];
+        if (tail) {
+            tail->next = newStudent;
+        } else {
+            head = newStudent;
         }
-        newNode -> prev = tail;
-        newNode -> next = nullptr;
+        tail = newStudent;
+    }
 
-        if(tail){
-            tail -> next = newNode;
-        } else{
-            head = newNode;
-        }
-        tail = newNode;
-    } 
-        cout << endl << "Students list: " << endl; //forward
-        cout <<  "****************************" << endl;
-        Node* current = head;
-        while(current){
-            cout << "Name: " << current -> firstName << " " << current -> secondName;
-            cout << ", Balance = " << current -> accountBalance << endl; 
-            current = current -> next;
-        }
-    return head; 
+    cout << endl << "Students list: " << endl;  //forward
+    cout << "****************************" << endl;
+    Student* current = head;
+    while (current) {
+        cout << "Name: " << current->firstName << " " << current->secondName;
+        cout << ", Balance = " << current->accountBalance << endl;
+        current = current->next;
+    }
+
+    return head;
 };
 
-void help_for_function_5(Node* head, ofstream &file_write, bool is_even){
+void help_for_function_5(Student* head, ofstream &file_write, bool is_even){
     
     if(is_even){
         if(head){
-            help_for_function_5(head -> next, file_write, is_even); // recursion
+            help_for_function_5(head -> next, file_write, is_even); // RECURSION
             file_write << "Name: " << head -> firstName << ", second name: " << head -> secondName << ", ";
             file_write << "balance account = " << head -> accountBalance << endl; 
         }
     } 
         else{
-            Node* current = head;
+            Student* current = head;
             while(current){
                 file_write << "Name: " << current -> firstName << " second name: " << current -> secondName;
                 file_write << "Balance account = " << current -> accountBalance << endl; 
@@ -229,7 +221,7 @@ void help_for_function_5(Node* head, ofstream &file_write, bool is_even){
         }
     }
 
-void help_for_function_5(Node* head, int variant){ // funtion_5 overloading function
+void help_for_function_5(Student* head, int variant){ // funtion_5 OVERLOADING FUNCTIONS
     
     bool is_even = variant % 2 == 0;
 
@@ -269,13 +261,13 @@ int main(){
         cout << "Element in column #" << j+1 << ": " << result[j] << endl;
     }
 
-    Node* students = function_4(result);
+    Student* students = function_4(result);
 
     help_for_function_5(students, variant);
     
-    Node* current = students;
+    Student* current = students;
     while(current){
-        Node* next = current -> next;
+        Student* next = current -> next;
         delete current;                 // cleaning of dynamic memory
         current = next;
     }

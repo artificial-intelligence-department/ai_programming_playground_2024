@@ -1,0 +1,7 @@
+Name: Mariya, second name: Ivanyk, balance account = 1666
+Name: Natalia, second name: Smachylo, balance account = 0
+Name: Ivanna, second name: Ivanyk, balance account = 297
+Name: Taras, second name: Shyjka, balance account = 1000
+Name: Nazar, second name: Svyrydenko, balance account = 1700
+Name: Iryna, second name: Ptychka, balance account = 1666
+Name: Stefan, second name: Kryvychko, balance account = 0
