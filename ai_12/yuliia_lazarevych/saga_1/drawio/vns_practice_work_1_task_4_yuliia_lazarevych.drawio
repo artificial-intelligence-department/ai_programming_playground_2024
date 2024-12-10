@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="24.9.3">
+  <diagram name="Page-1" id="cvvCFmWe8PDyQaMzPHBm">
+    <mxGraphModel dx="1545" dy="711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-2" value="Start" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="149" y="20" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-3" value="Введіть кількість цілих позитивних чисел, суму яких ви хочете обчислити" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="47" y="120" width="254" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-4" value="Ініціалізувати sum = 0" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="64" y="239" width="221" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-5" value="Введення n" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="103" y="337" width="144" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-6" value="цикл for" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="114" y="435" width="122" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-7" value="sum += i" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="534" width="120" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-8" value="continue" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="66" y="632" width="122" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-9" value="Сума перших n чисел: sum" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="210" y="541" width="235" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-10" value="End" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="307" y="636" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-11" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.51;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="3ss43C7s0YWoK5tKNrxK-2" target="3ss43C7s0YWoK5tKNrxK-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-12" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="3ss43C7s0YWoK5tKNrxK-3" target="3ss43C7s0YWoK5tKNrxK-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-13" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="3ss43C7s0YWoK5tKNrxK-4" target="3ss43C7s0YWoK5tKNrxK-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-14" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0.01;rounded=0;" edge="1" parent="1" source="3ss43C7s0YWoK5tKNrxK-5" target="3ss43C7s0YWoK5tKNrxK-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-15" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.11;exitY=1.02;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="3ss43C7s0YWoK5tKNrxK-6" target="3ss43C7s0YWoK5tKNrxK-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="509" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-16" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.31;entryY=0.01;rounded=0;" edge="1" parent="1" source="3ss43C7s0YWoK5tKNrxK-7" target="3ss43C7s0YWoK5tKNrxK-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="607" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-17" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.69;exitY=0.01;entryX=0.5;entryY=1.02;rounded=0;" edge="1" parent="1" source="3ss43C7s0YWoK5tKNrxK-8" target="3ss43C7s0YWoK5tKNrxK-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="175" y="607" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-18" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.99;exitY=0.92;rounded=0;" edge="1" parent="1" source="3ss43C7s0YWoK5tKNrxK-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="327" y="509" />
+            </Array>
+            <mxPoint x="328" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ss43C7s0YWoK5tKNrxK-19" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.02;entryX=0.49;entryY=0;rounded=0;" edge="1" parent="1" source="3ss43C7s0YWoK5tKNrxK-9" target="3ss43C7s0YWoK5tKNrxK-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
