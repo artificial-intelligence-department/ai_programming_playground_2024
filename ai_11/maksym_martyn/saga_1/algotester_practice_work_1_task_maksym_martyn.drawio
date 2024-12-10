@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.8">
+  <diagram name="Page-1" id="lo8VAmBi-qsWojM0uxgD">
+    <mxGraphModel dx="2828" dy="908" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-12" target="BmowW8GBw7AeqIfdlqTR-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-12" value="start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="260" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-13" target="BmowW8GBw7AeqIfdlqTR-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-13" value="ініціалізація змінної n, sum=0" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-15" target="BmowW8GBw7AeqIfdlqTR-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-15" value="cout &amp;lt;&amp;lt; &quot;Enter the number of even positive integers to sum: &quot;; cin &amp;gt;&amp;gt; n;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="560" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-17" target="BmowW8GBw7AeqIfdlqTR-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-21" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BmowW8GBw7AeqIfdlqTR-20">
+          <mxGeometry x="-0.2601" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-17" target="BmowW8GBw7AeqIfdlqTR-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-17" value="i &amp;lt;= n" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="735" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-19" target="BmowW8GBw7AeqIfdlqTR-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-19" value="sum += i * 2;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="905" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-22" target="BmowW8GBw7AeqIfdlqTR-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="775" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-22" value="i++" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="905" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BmowW8GBw7AeqIfdlqTR-25" target="BmowW8GBw7AeqIfdlqTR-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-25" value="cout &amp;lt;&amp;lt; &quot;The sum of the first &quot; &amp;lt;&amp;lt; n &amp;lt;&amp;lt; &quot; even positive integers is: &quot; &amp;lt;&amp;lt; sum" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="892.5" width="330" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-27" value="False" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="175" y="758" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BmowW8GBw7AeqIfdlqTR-28" value="end" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="1060" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
