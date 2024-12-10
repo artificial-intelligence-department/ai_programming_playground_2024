@@ -1,0 +1,7 @@
+server:
+  host: 127.0.0.1
+  port: 9090
+  security:
+    enabled: false
+    ssl_cert: /new/path/to/certificate.pem
+    ssl_key: /new/path/to/key.pem
