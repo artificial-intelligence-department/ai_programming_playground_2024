@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.0">
+  <diagram name="Page-1" id="e71unuatEAGvmhvDEqMK">
+    <mxGraphModel dx="529" dy="325" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-11" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="LNdbfIoY02ldZCpGgh4m-1" target="LNdbfIoY02ldZCpGgh4m-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="20" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-2" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="920" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-13" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="LNdbfIoY02ldZCpGgh4m-3" target="LNdbfIoY02ldZCpGgh4m-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-3" value="output&lt;br&gt;&lt;div&gt;Обчислення опору електричного ланцюгу із 3-ох послідовно сполучених резисторів.&lt;/div&gt;&lt;div&gt;Введіть опір кожного резистора:&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="15" y="250" width="510" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-12" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="LNdbfIoY02ldZCpGgh4m-4" target="LNdbfIoY02ldZCpGgh4m-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-4" value="double r1, r2, r3;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-17" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="LNdbfIoY02ldZCpGgh4m-5" target="LNdbfIoY02ldZCpGgh4m-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-5" value="double totalResistance = r1 + r2 + r3;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="720" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-14" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="LNdbfIoY02ldZCpGgh4m-7" target="LNdbfIoY02ldZCpGgh4m-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-7" value="output&lt;br&gt;Резистор R1 (Ом) &amp;gt;&amp;nbsp;&lt;br&gt;&lt;br&gt;input&lt;br&gt;r1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="360" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-15" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="LNdbfIoY02ldZCpGgh4m-8" target="LNdbfIoY02ldZCpGgh4m-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-8" value="output&lt;br&gt;Резистор R2 (Ом) &amp;gt;&amp;nbsp;&lt;br&gt;&lt;br&gt;input&lt;br&gt;r2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="480" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-16" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LNdbfIoY02ldZCpGgh4m-9" target="LNdbfIoY02ldZCpGgh4m-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-9" value="output&lt;br&gt;Резистор R3 (Ом) &amp;gt;&amp;nbsp;&lt;br&gt;&lt;br&gt;input&lt;br&gt;r3" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="600" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-18" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="LNdbfIoY02ldZCpGgh4m-10" target="LNdbfIoY02ldZCpGgh4m-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LNdbfIoY02ldZCpGgh4m-10" value="output&lt;br&gt;Загальний опір ... Ом." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="820" width="200" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
