@@ -304,6 +304,7 @@ int main()
     DoublyLinkedList list = function_4(arr);
     function_5(list);
 
+    delete[] arr;
     for (size_t i = 0; i < 5; i++)
     {
         delete[] tower[i];
