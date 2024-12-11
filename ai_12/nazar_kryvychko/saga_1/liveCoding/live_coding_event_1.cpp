@@ -3,7 +3,7 @@
 #include<string>
 #include <unistd.h>
 #include<fstream>
-const int taskN = 40; // Варіант 40 global constant
+const int taskN = 40;
 
 
 //Student Struct
@@ -433,5 +433,3 @@ int main(void)
      
     return 0;
 }
-
-// I love SoftServe ;)
