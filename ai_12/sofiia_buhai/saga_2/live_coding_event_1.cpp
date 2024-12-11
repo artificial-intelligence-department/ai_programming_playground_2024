@@ -276,5 +276,10 @@ int main(){
     StudentList list = function_4(min_elements);
     cout << "\n";
     function_5(list, variant);
+    for(int i=0; i<5; i++){
+        delete[] tower[i];
+    }
+    delete[] tower;
+    delete[] min_elements;
     return 0;
 }
