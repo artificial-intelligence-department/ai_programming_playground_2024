@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <cmath>
 #include <stdlib.h>
+#include <fstream>
 
 using namespace std;
 
@@ -265,8 +266,54 @@ void printList(Node *head, bool recursive)
     }
 }
 
+struct Student
+{
+    char name[50];
+    char lastname[50];
+    double grade;
+};
+
 int main()
 {
+
+    Student students[3] = {
+        {"John", "Doe", 85.5},
+        {"Alice", "Smith", 90.2},
+        {"Bob", "Johnson", 78.0}};
+
+    ofstream outFile("students.bin", ios::binary);
+    if (outFile.is_open())
+    {
+        for (int i = 0; i < 3; ++i)
+        {
+            outFile.write(reinterpret_cast<const char *>(&students[i]), sizeof(Student));
+        }
+        outFile.close();
+        cout << "Дані записані у двійковий файл students.bin" << endl;
+    }
+    else
+    {
+        cout << "Не вдалося відкрити файл для запису!" << endl;
+    }
+
+    ifstream inFile("students.bin", ios::binary);
+    if (inFile.is_open())
+    {
+        cout << "Дані, зчитані з файлу (Binary):" << endl;
+        Student student;
+        while (inFile.read(reinterpret_cast<char *>(&student), sizeof(Student)))
+        {
+            cout << "Name: " << student.name << ", Lastname: " << student.lastname << ", Grade: " << student.grade << endl;
+        }
+        inFile.close();
+    }
+    else
+    {
+        cout << "Не вдалося відкрити файл для читання!" << endl;
+    }
+
+    remove("students.bin");
+
     Node *head = nullptr;
 
     addToBeginning(head, 1);
@@ -347,8 +394,8 @@ int main()
         matrix[i] = new int[5];
         for (int j = 0; j < 5; j++)
         {
-           matrix[i][j] = x;
-           x++;
+            matrix[i][j] = x;
+            x++;
         }
     }
 
