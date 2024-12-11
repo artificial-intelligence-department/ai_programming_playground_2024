@@ -1,20 +1,41 @@
 #include<iostream>
 #include<algorithm>
 #include<string>
+#include<fstream>
 const double taskN = 40; // Варіант
 
+
+//Student Struct
+struct Student
+{
+    std::string name , surname;
+    double balance;
+    Student(std::string name, std::string surname, double balance)
+    {
+        this->name = name;
+        this->surname = surname;
+        this->balance = balance;
+    }
+    Student() { }
+};
+
+std::string studentToString(Student student)
+{
+    return "[" + student.name + ", " + student.surname + ", " + std::to_string(student.balance) + "]"; 
+}
 
 struct Node
 {
     public:
         Student val;
         Node* next;
-        Node(Student val, Node* next)
+        Node* prev;
+        Node(Student val, Node* next, Node* prev)
         {
             this->val = val;
             this->next = next;
+            this->prev = prev;
         }
-    Node() { }
 };
 
 double function_1()
@@ -35,7 +56,7 @@ double function_1()
     double result;
     if(greaterNumsSum > (lessNumsSum * 4))
     {
-        result = lessNumsSum = greaterNumsSum;
+        result = lessNumsSum + greaterNumsSum;
     } else if (greaterNumsSum > (lessNumsSum * 3))
     {
         result = greaterNumsSum / lessNumsSum;
@@ -128,20 +149,52 @@ void printArray(double* arr)
 }
 
 
-//Student Struct
-struct Student
+//Help Functions
+double findMax(double* array, const size_t& size)
 {
-    std::string name , surname;
-    double balance;
-    Student(std::string name, std::string surname, double balance)
+    if(array == nullptr) return 0.0; // Edge case
+    double max = array[0];
+    for (int i = 0; i < size; i++)
     {
-        this->name = name;
-        this->surname = surname;
-        this->balance = balance;
+        if(array[i] > max) max = array[i];
     }
-};
+    return max;
+    
+}
 
-void function_4(double* resArray)
+double findMin(double* array, const size_t& size)
+{
+    if(array == nullptr) return 0.0; // Edge case
+    double min = array[0];
+    for (int i = 0; i < size; i++)
+    {
+        if(array[i] < min) min = array[i];
+    }
+    return min;
+}
+
+double sum(double* array, const size_t& size)
+{
+    double acum = 0.0;
+    for (size_t i = 0; i < size; i++)
+    {
+        acum += array[i];
+    }
+    return acum;
+}
+
+
+void printLL_console(Node* head)
+{
+    while(head)
+    {
+        std::cout << studentToString(head->val) << ' ';
+        head = head->next;
+    }
+}
+
+
+Node* function_4(double* resArray, const size_t& size)
 {
     Student s1("Nazar", "Kryvychko", 20.00);
     Student s2("Taras", "Ivannyk", 37.79);
@@ -151,12 +204,78 @@ void function_4(double* resArray)
     Student s6("Stepan", "Shuika", 100.23);
     Student s7("Sergiy", "Tokaruk", 78.11);
     
-    Node* headLL = new Node(s1, new Node(s2,new Node(s3,new Node(s4,new Node(s5,new Node(s6, new Node(s7,nullptr)))))));
+
+    //Linked List xD
+    Node* headLL = new Node(s1,nullptr,nullptr);
+    headLL->next = new Node(s2,nullptr,headLL);
+    headLL->next->next = new Node(s3, nullptr, headLL->next);
+    headLL->next->next->next = new Node(s4, nullptr, headLL->next->next);
+    headLL->next->next->next->next = new Node(s5, nullptr, headLL->next->next->next);
+    headLL->next->next->next->next->next = new Node(s6, nullptr, headLL->next->next->next->next);
+    headLL->next->next->next->next->next->next = new Node(s7, nullptr, headLL->next->next->next->next->next);
+    
+
+
+    size_t index = 0;
+    Node* moveNode = headLL;
+    double sumOfResArray = sum(resArray,size);
+    while(moveNode)
+    {
+        // first Student
+        if(index == 0)
+            moveNode->val.balance = findMax(resArray,size);
+
+        //last Student
+        else if (moveNode->next == nullptr)
+            moveNode->val.balance = findMin(resArray,size);
+
+        // Middle Students
+        else 
+            moveNode->val.balance = sumOfResArray;
+
+        moveNode = moveNode->next;
+        index++;
+    }
+
+
+    printLL_console(headLL);
+
+    return headLL;
 }
+
+
+// Regular
+std::string help_for_function_5(Node* studentLL)
+{
+    std::string reversedStudents = ""; 
+    while(studentLL)
+    {
+        std::string appendString = studentToString(studentLL->val).append(" ");
+        reversedStudents.insert(0, appendString);
+        studentLL = studentLL->next;
+    }
+}
+
+//Recursive
+std::string help_for_function_5(Node* studentLL, bool IamRecursive)
+{
+    
+}
+
+void function_5(Node* studentLL)
+{
+    //Regular 
+    std::string studentsFileContent = help_for_function_5(studentLL);
+
+    //Recursive
+    // TODO: Recursive function
+    std::ofstream fileOut("C:\\IT\\Politex\\Epic_1\\src\\ai_programming_playground_2024\\ai_12\\nazar_kryvychko\\saga_1\\liveCoding\\file.txt");
+    fileOut << studentsFileContent;
+}
+
 
 double* function_3(double** tower)
 {
-    double* oneDimenArray = new double[5];
     double resultMinEl1[5] , resultMinEl2[5];
     for (int i = 0; i < 5; i++)
     {
@@ -195,11 +314,11 @@ double* function_3(double** tower)
             return resultMinEl1;
         }
     }
+    std::cout << std::endl;
     std::cout << "Everything is Good!" << std::endl;
     
     
 
-    delete oneDimenArray;
 
     return resultMinEl1;
     
@@ -219,6 +338,9 @@ int main(void)
     //Task function_3
     double* resultF3 = function_3(tower);
     
+    Node* LinkedList = function_4(resultF3, 5);
+
+    function_5(LinkedList);
 
 
 
