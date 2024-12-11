@@ -1,8 +1,9 @@
 #include<iostream>
 #include<algorithm>
 #include<string>
+#include <unistd.h>
 #include<fstream>
-const double taskN = 40; // Варіант
+const int taskN = 40; // Варіант
 
 
 //Student Struct
@@ -40,6 +41,7 @@ struct Node
 
 double function_1()
 {
+    int value; // Цілочисельна змінна
     double a,b;
     float c, d, e;
     double f;
@@ -243,7 +245,6 @@ Node* function_4(double* resArray, const size_t& size)
     return headLL;
 }
 
-
 // Regular
 std::string help_for_function_5(Node* studentLL)
 {
@@ -254,13 +255,17 @@ std::string help_for_function_5(Node* studentLL)
         reversedStudents.insert(0, appendString);
         studentLL = studentLL->next;
     }
+    return reversedStudents;
 }
 
 //Recursive
-std::string help_for_function_5(Node* studentLL, bool IamRecursive)
+std::string help_for_function_5(Node* studentLL, std::string middleBuffer)
 {
-    
+    if(!studentLL) return middleBuffer;
+    middleBuffer.insert(0, studentToString((studentLL->val)).append(" "));
+    return help_for_function_5(studentLL->next,middleBuffer);
 }
+
 
 void function_5(Node* studentLL)
 {
@@ -268,10 +273,41 @@ void function_5(Node* studentLL)
     std::string studentsFileContent = help_for_function_5(studentLL);
 
     //Recursive
-    // TODO: Recursive function
+    std::string middleBuffer = "";
+    std::string studentsFileContentRecursive = help_for_function_5(studentLL,middleBuffer);
+
+
     std::ofstream fileOut("C:\\IT\\Politex\\Epic_1\\src\\ai_programming_playground_2024\\ai_12\\nazar_kryvychko\\saga_1\\liveCoding\\file.txt");
-    fileOut << studentsFileContent;
+    fileOut << studentsFileContentRecursive;
+
+    fileOut.close();
 }
+
+
+
+//Task 6
+void function_5()
+{
+    std::ifstream fileIn("C:\\IT\\Politex\\Epic_1\\src\\ai_programming_playground_2024\\ai_12\\nazar_kryvychko\\saga_1\\liveCoding\\file.txt");
+
+    if(!fileIn.is_open())
+        std::cerr << "We are in trouble xD" << std::endl;
+    
+
+    std::string readBuffer , tmp;
+    while(std::getline(fileIn, tmp))
+    { 
+        std::cout << "Reading the file..." << std::endl;
+        readBuffer += tmp;
+        sleep(1);
+    }
+
+    std::cout << "File content: " << readBuffer  << std::endl;
+
+    fileIn.close();
+}
+
+
 
 
 double* function_3(double** tower)
@@ -306,21 +342,29 @@ double* function_3(double** tower)
     std::cout << "Array 2: " << std::endl;
     printArray(resultMinEl2);
 
+    double* returnArr = new double[5];
+    for (size_t i = 0; i < 5; i++)
+    {
+        returnArr[i] = resultMinEl1[i];
+    }
+    
+
     for (int i = 0; i < 5; i++)
     {
         if(resultMinEl1[i] != resultMinEl2[i])
         {
             std::cerr << "I am so bad at coding! Result are not equal!!1!1!" << std::endl;
-            return resultMinEl1;
+            return returnArr;
         }
     }
     std::cout << std::endl;
     std::cout << "Everything is Good!" << std::endl;
     
+
     
 
 
-    return resultMinEl1;
+    return returnArr;
     
 }
 
@@ -343,13 +387,49 @@ int main(void)
     function_5(LinkedList);
 
 
-
+    function_5();
 
     for (size_t i = 0; i < 5; i++)
     {
         delete[] tower[i];
     }
     delete tower;
+    
+
+    int counter = 0;
+    bool flag = true;
+    // Do while loop
+    do
+    {
+        if(counter < 0)
+        {
+            break;
+        }
+        if(counter == 3) flag = false;
+
+        if(!flag)
+        {
+            flag = true;
+            counter++;
+            continue;
+        }
+        counter++;
+        std::cout << "I want to join SoftServe so much!!! xD" << std::endl;
+        
+    } while (counter <= 5);
+    
+
+
+
+
+    // I'm done xD ))))
+    // Node* saveStep = nullptr;
+    // while(LinkedList)
+    // {
+    //     LinkedList = LinkedList->next;
+    //     saveStep = LinkedList;
+    //     delete saveStep;
+    // }
      
     return 0;
 }
