@@ -101,9 +101,9 @@ void sort_main(char name[], int len)
 int main()
 {
    string user_name;
-   int lenght = user_name.length();
-   char name[lenght + 1];
-   for (int i = 0; i < lenght; i++)
+   int length = user_name.length();
+   char name[length + 1];
+   for (int i = 0; i < length; i++)
    {
       name[i] = user_name[i];
    }
