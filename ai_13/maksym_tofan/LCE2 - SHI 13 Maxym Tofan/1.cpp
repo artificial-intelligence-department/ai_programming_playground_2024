@@ -159,9 +159,108 @@ if (km_for_discount > 0) {
 }
 }
 
-double
-
-
-
-
+double convert_bonuses_to_distance() { 
+    return total_bonuses * 1000;
 }
+
+double calculate_shipping_cost(const string& unit)  {
+
+    double price = 0;
+    if(unit == "meter") {
+
+        price = total_distance * price_per_meter;
+    } else if (unit == "mile") {
+        price = convert_distance(total_distance, "meter", "mile") * price_per_mile;
+    } else if (unit == "mile_us") {
+        price = convert_distance(total_distance, "meter", "mile_us") * price_per_mile_us;
+    }
+    return price;
+}
+
+void show_info() {
+    cout << "Ідентифікатор користувача: " << id << endl;
+    cout << "Загальна накопичена відстань: " << total_distance / 1000 << "км" << endl;
+    cout << "Накопичені бонуси: " << total_bonuses << "км" << endl;
+}
+
+
+};
+
+
+int main() {
+
+    string userName, measurementSystem, convertBonus;
+
+
+double distanceValue;
+cout << "Введіть ваше імя: ";
+cin >> userName;
+
+User user(userName);
+
+while (true)  {
+
+
+    cout << "\nОберіть опцію: " << endl;
+    cout << "1. Додати відстань" << endl;
+    cout << "2. Подивитись відстань" << endl;
+    cout << "3. Використати бонуси" << endl;
+    cout << "4. Вийти" << endl;
+
+
+
+    int choice;
+
+    cout << "Ваш вибір: ";
+    cin >> choice;
+
+    if (choice == 1) {
+        cout << "Введіть відстань: ";
+        cin >> distanceValue;
+
+
+        cout << "Введіть відстань: ";
+        cin >> distanceValue;
+
+        cout << "Введіть одииниці виміру (meter/mile/mile_us): ";
+        cin >> measurementSystem;
+
+        user.add_distance(distanceValue, measurementSystem);
+
+
+        cout << "Бажаєте конвертувати бонуси у відстань (y/n)? ";
+        cin >> convertBonus;
+
+              if (convertBonus == "y") {
+                double bonusDistance = user.convert_bonuses_to_distance();
+                cout << "Ваші бонуси дорівнюють: " << bonusDistance << " м" << endl;
+            }
+
+            // Обчислення вартості доставки
+            double deliveryDistanceInMeters = user.total_distance;
+            double totalPrice = user.calculate_shipping_cost(measurementSystem);
+            double discount = user.get_discount();
+            double deliveryDistanceInKiloMeters = deliveryDistanceInMeters / 1000;
+
+            cout << "Відстань поточної доставки: " << deliveryDistanceInMeters << "м" << endl;
+            cout << "Ваша знижка: " << discount << "$" << endl;
+            cout << "Накопичена відстань: " << deliveryDistanceInKiloMeters << "км" << endl;
+            cout << "Вартість відправки: " << totalPrice - discount << "$" << endl;
+        } else if (choice == 2) {
+            user.show_info();
+        } else if (choice == 3) {
+            user.apply_bonuses();
+        } else if (choice == 4) {
+            break;
+        } else {
+            cout << "Невірний вибір! Спробуйте ще раз." << endl;
+        }
+    }
+
+    return 0;
+    }
+
+
+
+
+
