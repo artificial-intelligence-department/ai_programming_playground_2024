@@ -1,4 +1,4 @@
-#include <iostream>
+#include<iostream>
 #include<fstream>
 #include<sstream>
 #include<cmath>
@@ -83,7 +83,29 @@ double read_bonuses_file(string id) {
         if (array[i].id == id)
             bonuses += array[i].bonuses;
     }
+    file.close();
     return bonuses;
+}
+
+void write_bonuses_file(string id, double bonusesToAdd) {
+    ifstream file("collected_distance.txt");
+    User array[20];
+    string line;
+    int i = 0;
+    while (getline(file, line)) {
+        stringstream ss(line);
+        ss >> array[i].id;
+        ss >> array[i].bonuses;
+        i++;
+        if (array[i].id == id)
+            array[i].bonuses += bonusesToAdd;
+    }
+    file.close();
+    //ofstream file("collected_distance.txt");
+    //for (int j = 0; j < i; j++)
+        //file<<array[j].id<<" "<<array[j].bonuses<<endl;
+        //file.close();
+
 }
 
 int main() {
@@ -98,8 +120,8 @@ int main() {
         string measurementSystem;
         cout << "Введіть одиницю виміру (meter/mile/mile_us): ";
         cin >> measurementSystem;
-        string ID=get_id(userName);
-        cout <<"Ваше ID" << ID << endl;;
+        string ID = get_id(userName);
+        cout << "Ваше ID" << ID << endl;;
         double distanceValue = conver_meters(distanceValueOld, measurementSystem);
 
         double deliveryDistanceInMeters = simulateMoneyPrecision(distanceValue);
