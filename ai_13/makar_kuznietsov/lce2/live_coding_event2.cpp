@@ -10,7 +10,7 @@
 std::string identMaker(std::string name);
 void writeToFile(std::string name, std::string ident, int distance, int measureUnit);
 bool checkPalindrome(int distance);
-std::string checkIfInFile(int ident);
+std::string checkIfInFile(std::string ident);
 
 int main()
 {
@@ -18,21 +18,23 @@ int main()
     std::cout << "enter name: ";
     std::cin >> name;
     std::string identifier = identMaker(name);
-    // std::cout << identifier << '\n';
 
     int measurementSystem;
     do
     {
         std::cout << "choose measurement unit (1 - meter / 2 - mile / 3 - mile_us): ";
         std::cin >> measurementSystem;
-
     } while (measurementSystem != 1 && measurementSystem != 2 && measurementSystem != 3);
 
     int distanceValue;
     std::cout << "enter distance: ";
     std::cin >> distanceValue;
 
-    writeToFile(name, identifier, distanceValue, measurementSystem);
+    std::string bonus = checkIfInFile(identifier);
+    if (bonus == "")
+    {
+        writeToFile(name, identifier, distanceValue, measurementSystem);
+    }
 }
 
 double simulateMoneyPrecision(double value)
@@ -105,11 +107,12 @@ bool checkPalindrome(int distance)
     return (reverse == distance);
 }
 
-std::string checkIfInFile(int ident)
+std::string checkIfInFile(std::string ident)
 {
     std::ifstream myFile("database.txt");
     bool isInFile = 0;
     std::string accum;
+    std::string unit;
     if (!myFile.is_open())
     {
         std::cerr << "cant open file";
@@ -123,10 +126,11 @@ std::string checkIfInFile(int ident)
             std::string word;
             while (ifs >> word)
             {
-                if (word == std::to_string(ident))
+                if (word == ident)
                 {
                     isInFile = 1;
                     ifs >> accum;
+                    ifs >> unit;
                     break;
                 }
             }
@@ -135,7 +139,9 @@ std::string checkIfInFile(int ident)
                 break;
             }
         }
-        return accum;
+        return std::to_string(unit == "meter" ? (int)(std::stoi(accum) / 1000)
+                                              : (unit == "mile" ? (int)(std::stoi(accum) * 1.609344)
+                                                                : (int)(std::stoi(accum) * 1.609347)));
     }
     return 0;
 }
