@@ -83,7 +83,7 @@ int distanceInMeters(double value, string filename)
     else
     {
         cout << "Can`t open file" << endl;
-        return;
+        return 1;
     }
 }
 
@@ -92,18 +92,40 @@ double simulateMoneyPrecision(double value)
     return round(value * 100.0) / 100.0;
 }
 
-void sortString(string &s) {
-  
+void sortString(string &s)
+{
+
     int charCount[100] = {0};
-    
-    for (int i = 0; i < s.length(); i++) {
-      
+
+    for (int i = 0; i < s.length(); i++)
+    {
+
         charCount[s[i] - 'a']++;
     }
-    
-    for (int i = 0; i < 100; i++) {
-        for (int j = 0; j < charCount[i]; j++) {
+
+    for (int i = 0; i < 100; i++)
+    {
+        for (int j = 0; j < charCount[i]; j++)
+        {
             cout << (char)('a' + i);
+        }
+    }
+}
+
+int returnVal(char x)
+{
+    return (int)x - 87;
+}
+
+void bubbleSort(int arr[], int n)
+{
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+
+            if (arr[j] > arr[j + 1])
+                swap(arr[j], arr[j + 1]);
         }
     }
 }
@@ -121,28 +143,29 @@ int main()
     {
         cout << "Can`t open or create file" << endl;
     }
-    ofstream file("price_per_mile.txt");
-    if (file.is_open())
+    ofstream file2("price_per_mile.txt");
+    if (file2.is_open())
     {
         double mi = 1609.344;
-        file << mi;
-        file.close();
+        file2 << mi;
+        file2.close();
     }
     else
     {
         cout << "Can`t open or create file" << endl;
     }
-    ofstream file("price_per_mile_us.txt");
-    if (file.is_open())
+    ofstream file3("price_per_mile_us.txt");
+    if (file3.is_open())
     {
         double mi_US = 1609.347;
-        file << mi_US;
-        file.close();
+        file3 << mi_US;
+        file3.close();
     }
     else
     {
         cout << "Can`t open or create file" << endl;
     }
+
     bool op = true;
     do
     {
@@ -152,6 +175,75 @@ int main()
         cin >> userName;
 
         sortString(userName);
+
+        int arr[userName.length()];
+
+        for (int i = 0; i < userName.length(); i++)
+        {
+            arr[i] = returnVal(userName[i]) * 0.4;
+        }
+
+        bubbleSort(arr, userName.length());
+        int *redactedarr;
+        for (int i = 0; i < userName.length(); i++)
+        {
+            if (arr[i] <= 3 && arr[i] >= 1)
+            {
+                redactedarr[i] = arr[i];
+            }
+        }
+
+        float newarr[5][3];
+        for (int i = 0; i < sizeof(arr) / sizeof(*arr); i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                for (int k = 0; k < sizeof(arr) / sizeof(*arr); k++)
+                {
+
+                    newarr[i][j] = redactedarr[j];
+                }
+                newarr[i][j] = redactedarr[j];
+            }
+        }
+        int i = 0, j = 0;
+        while (i < 5 && i < sizeof(arr) / sizeof(*arr))
+        {
+            newarr[i][j] = redactedarr[j];
+            i++;
+        }
+        if (i >= 5)
+        {
+            j++;
+            i = 0;
+            while (i < 5 && i < sizeof(arr) / sizeof(*arr))
+            {
+                newarr[i][j] = redactedarr[j];
+                i++;
+            }
+        }
+        if (i >= 5)
+        {
+            j++;
+            i = 0;
+            while (i < 5 && i < sizeof(arr) / sizeof(*arr))
+            {
+                newarr[i][j] = redactedarr[j];
+                i++;
+            }
+        }
+
+        float mnoz[5][3];
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                for (int k = 0; k < 5; k++)
+                {
+                    mnoz[i][j] += redactedarr[i] * newarr[k][j];
+                }
+            }
+        }
 
         cout << "Введіть одиницю виміру (meter/mile/mile_us): ";
         cin >> measurementSystem;
@@ -184,8 +276,11 @@ int main()
             deliveryDistanceInMeters = distanceInMeters(distanceValue, filename);
         }
 
+        int bonuses;
+
         if (isPalindrome(deliveryDistanceInMeters))
         {
+            bonuses += 200000;
         }
 
         cout << "Бажаєте конвертувати бонуси у відстань (y/n)? ";
