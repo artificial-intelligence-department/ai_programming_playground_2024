@@ -1,4 +1,5 @@
 #include <cmath>
+#include <cstdio>
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -8,6 +9,8 @@
 
 std::string identMaker(std::string name);
 void writeToFile(std::string name, std::string ident, int distance, int measureUnit);
+bool checkPalindrome(int distance);
+std::string checkIfInFile(int ident);
 
 int main()
 {
@@ -90,7 +93,7 @@ void writeToFile(std::string name, std::string ident, int distance, int measureU
     myFile.close();
 }
 
-bool checPalindrome(int distance)
+bool checkPalindrome(int distance)
 {
     int reverse = 0;
     int temp = distance;
@@ -100,4 +103,39 @@ bool checPalindrome(int distance)
         temp /= 10;
     }
     return (reverse == distance);
+}
+
+std::string checkIfInFile(int ident)
+{
+    std::ifstream myFile("database.txt");
+    bool isInFile = 0;
+    std::string accum;
+    if (!myFile.is_open())
+    {
+        std::cerr << "cant open file";
+    }
+    else
+    {
+        std::string line;
+        while (getline(myFile, line))
+        {
+            std::ifstream ifs(line);
+            std::string word;
+            while (ifs >> word)
+            {
+                if (word == std::to_string(ident))
+                {
+                    isInFile = 1;
+                    ifs >> accum;
+                    break;
+                }
+            }
+            if (isInFile)
+            {
+                break;
+            }
+        }
+        return accum;
+    }
+    return 0;
 }
