@@ -81,17 +81,17 @@ double loadBonusFromFile(const string &filename, const string &userid){
     }
     
 int main(){
-    string name,unit,file="collected_distance.txt";
-    cout << "enter your Name";
+    string name,unit,file="bonus_data.txt";
+    cout << "enter your Name: ";
     cin >> name;
 
     int userid[3];
     generateuserID(name, userid);
     string userIdStr = to_string(userid[0]) + to_string(userid[1]) + to_string(userid[2]);
 
-    double totalBonusDistance = loadBonusFromFile(file, userIdStr);
+    double totalBonusDistance = loadBonusFromFile(file,userIdStr);
 
-    cout << "Поточні бонуси користувача " << userIdStr << ": " < totalBonusDistance << " m" << endl;
+    cout << "Поточні бонуси користувача " << userIdStr << ": " << totalBonusDistance << " m" << endl;
 
     double distance;
     cout << "Введіть відстань: ";
