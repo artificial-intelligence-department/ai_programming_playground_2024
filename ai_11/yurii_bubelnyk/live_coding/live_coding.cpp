@@ -1,34 +1,72 @@
 #include <iostream>
 #include <string>
+#include <fstream>
+
 using namespace std;
 
 // const для відстаней
 const double METER = 1.0;
 const double MI = 1609.344;
 const double MI_US = 1609.347;
+
+const double METER_PRICE = 0.0005;
+const double MI_PRICE = 0.8;
+const double MI_US_PRICE = 1.2;
 // ідентифікатор
 void userID(const string& userName);
+void calculateDistance(const string& choice, double& totalDistance, double distance);
 bool isPalindrome(int num);
+
+void readFromFile(const string &filename);
+void writeToFile(const string &filename, double value);
+
+
 int main()
 {
+    const string file_meter = "price_per_meter.txt";
+    const string file_mile = "price_per_mile.txt";
+    const string file_mile_us = "price_per_mile_us.txt";
+    const string file_RESULT = "price_per_mile_us.txt";
+
+    writeToFile(file_meter, 0.0005);
+    writeToFile(file_mile, 0.8);
+    writeToFile(file_mile_us, 1.2);
+    
+    cout << "Enter your name: " << endl;
     string name;
-    getline(cin, name);
-    cout << name;
+    cin >> name;
     userID(name);
 
     double total_distance = 0.0;
+    double distance;
+    cout << "Enter distance: " << endl;
+    cin >> distance;
+    distance = distance / 1000;
     string choice;
     do
-    {
-        double distance = 0.0;
-        cout << "Enter length measurement: 1)METER;\n\t2)MI;\n\t3)MI_US.\n";
-        getline(cin, choice);
-        cin.ignore(32767, '\n');
+    {        
+        cout << "\nEnter length measurement: \n\t1)METER;\n\t2)MI;\n\t3)MI_US.\n";
+        cin >> choice;
+
+        calculateDistance(choice, total_distance, distance);
+        cout << "Total length: " << total_distance; 
 
         cout << "Do you want to add another measurement: (Y, N)" << endl;
-        getline(cin, choice);
+        cin >> choice;
     } while(choice == "Y");
 
+    int discount = static_cast<int>(total_distance) / 100;
+    cout << "Would you like to use discount? (Y, N)" << endl;
+    cin >> choice;
+    if (choice == "Y")
+    {
+        total_distance -= discount * 100;
+        cout << "After discount distance is: " << total_distance << endl;
+    }
+    
+    writeToFile(file_RESULT, total_distance);
+    readFromFile(file_RESULT);
+    
     return 0;
 }
 
@@ -53,9 +91,10 @@ void userID(const string& userName)
         }
         cout << name_array[i] << " ";
     }
+    delete[] name_array;
 }
 
-void calculateDistance(const string& choice, double totalDistance, double distance)
+void calculateDistance(const string& choice, double& totalDistance, double distance)
 {
     if (choice == "MI")
     {
@@ -88,4 +127,35 @@ bool isPalindrome(int num) {
     }
     
     return original == reversed;
+}
+
+void writeToFile(const string &filename, double value)
+{
+    ofstream fout(filename);
+    if(!fout.is_open())
+    {
+        cout << "Error, can not open the file to write data!!!" << endl;
+    }
+    else
+    {
+        fout << value;
+    }
+}
+
+void readFromFile(const string &filename)
+{
+    string str;
+    ifstream fin(filename);
+    if(!fin.is_open())
+    {
+        cout << "Error, can not open the file to write data!!!" << endl;
+    }
+    else
+    {
+        cout << "DATA FROM FILE" << endl;
+        while (getline(fin, str))
+        {
+            cout << str;
+        }
+    }
 }
