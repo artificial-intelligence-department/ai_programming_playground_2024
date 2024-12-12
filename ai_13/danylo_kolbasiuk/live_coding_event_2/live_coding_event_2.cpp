@@ -4,6 +4,23 @@
 #include <string>
 #include <cstring>
 
+int distanceinMeteres(int distance, std::string type)
+{
+    if(type=="mile")
+    {
+        distance*=1609.344;
+    }
+    if(type=="mile_US")
+    {
+        distance+=1609.347;
+    }
+    if(type=="meter")
+    {
+        return distance;
+    }
+    return distance;
+}
+
 void sort(char arr[], int len)
 {
     for(int i=0; i<len-1; i++)
@@ -64,16 +81,45 @@ int main()
     value_of_id(identifier, len, array);
     if(type_of_distance=="mile")
     {
-        distance*=1609.344;
+        std::ifstream ifile("mi.txt");
+        ifile >> price;
+        ifile.close();
     }
     else if(type_of_distance=="mile_US")
     {
-        distance*=1609.347;
+        std::ifstream ifile("mi_US.txt");
+        ifile >> price;
+        ifile.close();
     }
     else if(type_of_distance=="meter")
     {
-        distance*=1;
+        std::ifstream ifile("m.txt");
+        ifile >> price;
+        ifile.close();
+    }
+    else
+    {
+        std::cout << "No such type of distance." << std::endl;
+        return 0;
     }
     std::string file_name="IDs.txt";
-    
+    int tempo=distance;
+    if(palindrome(tempo))
+    {
+        bonus+=200;
+    }
+    std::ofstream ofile(file_name);
+    for(int i=0; i<len; i++)
+    {
+        ofile << array[i];
+    }
+    ofile << " " << bonus << std::endl;
+    int discount=0;
+    int ide;
+    int bon;
+    std::ifstream ifile(file_name);
+    ofile.close();
+    ifile.close();
+    std::cout << "Distance of current delivery: " << distanceinMeteres(distance, type_of_distance) << std::endl;
+    std::cout << "Your discount: " << discount << "$" << std::endl;
 }
