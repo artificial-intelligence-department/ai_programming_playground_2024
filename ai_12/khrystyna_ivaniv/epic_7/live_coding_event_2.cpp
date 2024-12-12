@@ -107,7 +107,6 @@ int main()
    {
       name[i] = user_name[i];
    }
-   name[length] = '\0';
 
    double distance_value;
    string measurement_system;
