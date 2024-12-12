@@ -7,19 +7,21 @@
 
 using namespace std;
 
+// цілочисельна константа
 const double IMPERIAL_MILE = 1609.344; // в метри
 const double US_SURVEY_MILE = 1609.347; // в метри
 
-// для округлення
+// для округлення, математична операція
 double simulateMoneyPrecision(double value) {
-    return std::round(value * 100.0) / 100.0;
+    return round(value * 100.0) / 100.0;
 }
 
 
-// сортування
+// сортування, двовимірний масив
 string mySort(const string& name) {
     string sortedName = name;
 
+    // цикл for
     for(size_t i = 0; i < sortedName.length() - 1; ++i) {
         for(size_t j = 0; j < sortedName.length() - i - 1; ++j) {
             if(sortedName[j] > sortedName[j + 1]) {
@@ -43,21 +45,23 @@ double generateUserId(const string& name) {
     return userId;
 }
 
-// перевірка паліндрому
-// bool isPalindrome(int distance) {
-//     string distStr = to_string(distance);
-//     string reversedDistStr = distStr;
-//     size_t n = distStr.length();
 
-//     for(size_t i = 0; i < n / 2; ++i) {
-//         if(distStr[i] != distStr[n - i - 1]) {                        переписати рекурсивно
-//             return false;
-//         }
-//     }
-//     return true;
-// }
+// рекурсивно шукаємо паліндром
+bool isPalindromeBasic(const string& distStr, int start, int end){
+    if(start >= end) return true;
+    if(distStr[start] != distStr[end]) return false;
+    return isPalindromeBasic(distStr, start + 1, end - 1);
+}
 
 
+// основна функція паліндрому
+bool isPalindrome(int distance) {
+    string distStr = to_string(distance);
+    return isPalindromeBasic(distStr, 0, distStr.length() - 1);
+}
+
+
+// читання з файлу
 double readPrice(const string& filename) {
     ifstream file(filename);
     double price = 0.0;
@@ -85,6 +89,8 @@ double convertToMeters(double distance, const string& unit) {
     }
 }
 
+
+// запис у файл
 void writeDistance(const string& userName, double userId, double distanceMeter) {
     ofstream outputFile("collected_distance.txt", ios::app);
     if(outputFile.is_open()) {
@@ -93,4 +99,56 @@ void writeDistance(const string& userName, double userId, double distanceMeter) 
         cerr << "Помилка запису у файл" << endl;
     }
     outputFile.close();
+}
+
+void calculateCost() {
+    string userName, measurementSystem;
+    double distanceValue;
+
+    // цикл do while
+    do {
+        cout << "Введіть ваше ім'я: ";
+        cin >> userName;
+
+        double userId = generateUserId(userName);
+        cout << "Ваш унікальний ідентифікатор: " << static_cast<int>(userId) << endl;
+
+        cout << "Введіть відстань: ";
+        cin >> distanceValue;
+
+        cout << "Введіть одиницю виміру (meter/mile/mile_us): ";
+        cin >> measurementSystem;
+
+        double pricePerUnit = 0.0;
+        if(measurementSystem  == "meter") {
+            pricePerUnit = readPrice("price_per_meter.txt");
+        } else if(measurementSystem == "mile") {
+            pricePerUnit = readPrice("price_per_mile.txt");
+        } else if(measurementSystem == "mile_us") {
+            pricePerUnit = readPrice("price_per_mile_us.txt");
+        } else {
+            cerr << "Невідома одиниця виміру" << endl;
+            continue;  // continue
+        }
+
+        double deliveryDistanceInMeters = convertToMeters(distanceValue, measurementSystem);
+
+        if(isPalindrome(static_cast<int>(distanceValue))) {
+            deliveryDistanceInMeters += 200 * 1000;
+        }
+
+        double totalPrice = simulateMoneyPrecision(pricePerUnit + distanceValue);
+
+        cout << "Відстань поточної доставки: " << deliveryDistanceInMeters << "m" << endl;
+        cout << "Вартість відправки: " << totalPrice << "$" << endl;
+
+        writeDistance(userName, userId, deliveryDistanceInMeters);
+
+        break;  // break
+    } while(false);
+}
+
+int main() {
+    calculateCost();
+    return 0;
 }
