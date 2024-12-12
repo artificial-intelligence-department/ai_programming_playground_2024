@@ -41,7 +41,7 @@ bool isUser(string user_name){
 }
 
 void input(string user_name, int distance, int bonus){
-    ofstream file("collected_distance.txt");
+    ofstream file("collected_distance.txt"); //функції роботи з файлами, для того, щоб записати у файл
     if (!file.is_open())
     {
         cerr << "Файл не вдалось відкрити" << endl;
@@ -54,9 +54,30 @@ void input(string user_name, int distance, int bonus){
         file << bonus << endl;
     }
 
-    ifstream fin("collected_distance.txt");
+    ifstream fin("collected_distance.txt"); //функції роботи з файлами, для того, щоб зчитати з файлу
+
+    if (!fin.is_open())
+    {
+        cerr << "Файл не вдалось відкрити" << endl;
+        return;
+    }
+    
+    string line;
+    getline(fin, line);
+
+    string name;
+    string distance;
+
+    while (line != '\n') // цикл while
+    {
+
+        name == line;
+        
+    }
     
     
+
+
     
 }
 
@@ -64,19 +85,21 @@ int main(){
     string user_name;
     string system;
     string choice;
-    int bonus;
-    cout << "Введіть ім'я: "<< endl;
-    cin >> user_name;
+    int bonus = 0; // цілочисленна змінна
+    cout << "Введіть ім'я: "<< endl; // оператор виведення
+    cin >> user_name; // оператор введення
     int distance;
     cout << "Введіть відстань: " << endl;
     cin >> distance;
-    if (isPolindrom)
+    if (isPolindrom) // умовний оператор
     {
         bonus += 200;
     }
     
     cout << "Введіть одиницю виміру: "<< endl;
     cin >> system;
+
+    input(user_name, distance, bonus);
 
     
 
