@@ -7,7 +7,7 @@ using namespace std;
 bool isPalindrom(int number){
     int returned = 0, original = number, ost;
     while( number > 0){ //цикл while для проходу по числу
-        ost = number %10;
+        ost = number % 10;
         returned = returned *10 + ost;
         number /=10;
     }
@@ -75,7 +75,7 @@ int main(){
         double distance;
         file >> distance;
         double distanceInMeters = converter(distance, measurementSystem);
-        if (isPalindrom(static_cast<int>(distanceInMeters))){
+        if (isPalindrom(distanceValue)){
             bonusDistance += (200*1000);
 
         }
