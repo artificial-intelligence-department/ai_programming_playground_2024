@@ -23,6 +23,7 @@ int createID(char* name){
     int number[50];
     for(int i = 0; i < size; i++){
         number[i] = (int) name[i];
+        number[i] *= 0.4;
     }
 
     int num = 0;
@@ -49,45 +50,58 @@ bool isPalindrome(int num) {
 }
 
 int main(){
-    ofstream me("price_per_meter.txt");
-    ofstream mi("price_per_mile.txt");
-    ofstream mi_US("price_per_mile_US.txt");
-    me << 0.0005;
-    mi << 0.8;
-    mi_US << 1.2;
-    me.close();
-    mi.close();
-    mi_US.close();
+    ofstream meter_val("price_per_meter.txt");
+    ofstream mile_val("price_per_mile.txt");
+    ofstream mile_US_val("price_per_mile_US.txt");
+    meter_val << 0.0005;
+    mile_val << 0.8;
+    mile_US_val << 1.2;
+    meter_val.close();
+    mile_val.close();
+    mile_US_val.close();
     
     char* userName;
     cout << "Введіть ваше ім'я: ";
     cin >> userName;
     int ID = createID(userName);
 
-    int distanceValue;
-    bool PalinCheck = isPalindrome(distanceValue);
+    double distanceValue;
     cout << "Введіть відстань: ";
     cin >> distanceValue;
+    int bonus = 0;
+    if(isPalindrome(distanceValue)){
+        bonus += 200;
+    }
 
     string mSys;
     cout << "Введіть одиницю виміру (meter/mile/mile_us): ";
     cin >> mSys;
+    int meterDist;
     if(mSys == "meter"){
-        
+        meterDist = distanceValue;
     } else if (mSys == "mile"){
-        
+        meterDist = distanceValue * mi;
     } else if (mSys == "mile_us"){
-
+        meterDist = distanceValue * mi_US;
     }
+
+    ofstream userInfo("collected_distance.txt");
+    userInfo << ID << " " << meterDist;
+    userInfo.close();
 
     char convertBonus;
     cout << "Бажаєте конвертувати бонуси у відстань (y/n)? ";
     cin >> convertBonus;
     if(convertBonus == 'y'){
-
-    } else if (convertBonus == 'n'){
-
+        meterDist += bonus;
+        bonus -= 200;
     }
+
+    ifstream last("price_per_meter.txt");
+    double temp;
+    last >> temp;
+    double value = temp * meterDist;
+    last.close();
 
     return 0;
 }
