@@ -2,6 +2,7 @@
 #include <fstream>
 #include <sstream>
 
+// Використано дійсну змінну: distance
 bool isPalindrome(double distance){
     std::ostringstream strs;
     strs << distance;
@@ -10,6 +11,7 @@ bool isPalindrome(double distance){
     i = 0;
     j = str.size() - 1;
     while(i < j){
+        // Використано умовні оператори: if
         if(str[i] != str[j]) return false;
         i++;
         j--;
@@ -17,53 +19,56 @@ bool isPalindrome(double distance){
     return true;
 }
 
+// Використано рекурсивну функцію: calculateDiscount
+// Використано дійсну змінну з подвійною точністю: discount
+// Використано математичні операції: - та +
 double calculateDiscount(double distance){
     double discount = 0;
-    if(distance - 100 * 1000 > 0) discount += 1 + calculateDiscount(distance - 100 * 1000);
+    if(distance - 100 * 1000 > 0) 
+        discount += 1 + calculateDiscount(distance - 100 * 1000);
     return discount;
 }
 
-
 int main(){
+    // Використано функції роботи з файлами: для запису та зчитування
     std::fstream fMile("mile.txt", std::ofstream::out | std::ofstream::in);
-    fMile << 0.8;
+    fMile << 0.8; // Використано цілочисельну константу: 0
     std::fstream fUS_Mile("us_mile.txt", std::ofstream::out | std::ofstream::in );
     fUS_Mile << 1.2;
     std::fstream fMetr("mext.txt", std::ofstream::out | std::ofstream::in);
     std::fstream fCollectedDistance("fCollectedDistance.txt",  std::ofstream::out | std::ofstream::in);
-    
     
     fMetr << 0.0005;
     fMile.seekp(0);
     fUS_Mile.seekp(0);
     fMetr.seekp(0);
     
-    while(true){
+    while(true){ // Використано цикл while
         std::string username;
         std::cout << "Enter username : ";
         std::cin >> username;
         std::cout << "Enter distance : ";
-        double distance;
+        double distance; // Використано дійсну змінну
         std::cin >> distance;
         std::cout << "Enter unit of measurment(meter/mile/mile_us) : ";
         std::string measurmentSystem;
         std::cin >> measurmentSystem;
+        
         std::string IDstring = username;
         bool sorted = false;
-        do{
+        do{ // Використано цикл do while
             sorted = true;
-            for(int i = 0; i < IDstring.size() - 1; i++) if(IDstring[i] > IDstring[i+1]){
-                sorted = false;
-                std::swap(IDstring[i], IDstring[i + 1]);
+            for(int i = 0; i < IDstring.size() - 1; i++) { // Використано цикл for
+                if(IDstring[i] > IDstring[i+1]){
+                    sorted = false;
+                    std::swap(IDstring[i], IDstring[i + 1]);
+                }
             }
-
         }while(!sorted);
 
-
-        int IDarr[sizeof(IDstring)];
+        int IDarr[sizeof(IDstring)]; // Використано одновимірний масив
         for(int i = 0; i < IDstring.size(); i++) IDarr[i] = IDstring[i] * 0.4;
 
-        
         std::string convertStr;
         std::cout << "Do you want to convert your bonuses(y/n) : ";
         std::cin >> convertStr;
@@ -71,7 +76,7 @@ int main(){
         double distanceInMeters;
         double price;
         double pricePerMeasure;
-        if(measurmentSystem == "meter"){
+        if(measurmentSystem == "meter"){ // Використано умовні оператори: if-else
             fMetr >> pricePerMeasure;
             distanceInMeters = distance;
         }
@@ -92,17 +97,16 @@ int main(){
         if(convert){
             std::string ID;
             fCollectedDistance >> ID;
-                if(ID == IDstring){
-                    fCollectedDistance >> ID;
-                    
-                    for(int i = 0; i < IDstring.size(); i++){
-                        strArr += IDarr[i];
-                    }
-                    if(ID == strArr){
-                        fCollectedDistance >> ID;
-                        collectedDistance = std::stod(ID);
-                    }
+            if(ID == IDstring){
+                fCollectedDistance >> ID;
+                for(int i = 0; i < IDstring.size(); i++){
+                    strArr += IDarr[i];
                 }
+                if(ID == strArr){
+                    fCollectedDistance >> ID;
+                    collectedDistance = std::stod(ID);
+                }
+            }
         }
         double discount = calculateDiscount(collectedDistance);
         bool ispalindrome = isPalindrome(distance);
@@ -117,9 +121,8 @@ int main(){
         fCollectedDistance << strArr << "\n";
         fCollectedDistance << collected;
     }
-    
 
-
+    // Використано функції роботи з файлами: закриття файлів
     fCollectedDistance.close();
     fMile.close();
     fUS_Mile.close();
