@@ -52,12 +52,22 @@ string identifier(string name)
         }
     }
     string result = "";
-    for(int i = 0; i < name.length(); i++)
+    for (int i = 0; i < name.length(); i++)
     {
-        n[i] = name[i]*0.4;
+        n[i] = name[i] * 0.4;
         result.append(to_string(n[i]));
     }
-    
+
+    return result;
+}
+bool isPalindrome(string num)
+{
+    bool result = true;
+    for (int i = 0; i < num.length(); i++)
+    {
+        if (num[i] != num[num.length() - 1 - i])
+            result = false;
+    }
     return result;
 }
 int main()
@@ -71,11 +81,11 @@ int main()
     ofstream price_per_mile_us("price_per_mile_us.txt");
     price_per_mile_us << 1.2;
     price_per_mile_us.close();
-    fstream collected_distance("collected_distance.txt", ios::in | ios::out | ios::app);
+    fstream collected_distance("collected_distance.txt", ios::in | ios::out);
 
     string userName, measurementSystem;
     char y_n;
-    float distanceValue;
+    int distanceValue;
     bool use_bonus = false;
     cout << "Name: ";
     cin >> userName;
@@ -90,21 +100,53 @@ int main()
     cin >> y_n;
     if (y_n == 'y')
         use_bonus = true;
+
+    int cost, tariff;
+    float distanceValue_m = 0;
+
+    if (measurementSystem == "meter")
+    {
+        ifstream price_per_meter("price_per_meter.txt");
+        price_per_meter >> tariff;
+        price_per_meter.close();
+        distanceValue_m = distanceValue;
+    }
+    else if (measurementSystem == "mile")
+    {
+        ifstream price_per_mile("price_per_mile.txt");
+        price_per_mile >> tariff;
+        price_per_mile.close();
+        distanceValue_m = distanceValue * 1609.344;
+    }
+    else{
+        ifstream price_per_mile_us("price_per_mile_us.txt");
+        price_per_mile_us >> tariff;
+        price_per_mile_us.close();
+        distanceValue_m = distanceValue * 1609.347;
+    }
+    cost = tariff * distanceValue;
+
+    if (isPalindrome(to_string(distanceValue)))
+    {
+        distanceValue_m += 200;
+    }
     string id = identifier(userName);
     string word, line;
     string current_distance = "0";
-    int distanceValue_m = 0;
+    collected_distance.seekg(0);
     streampos oldpos = collected_distance.tellg();
-    while(getline(collected_distance, line, '\n'))
+    while (getline(collected_distance, line, '\n'))
     {
         stringstream ss(line);
         getline(ss, word, ' ');
-        if(word == id)
+        if (word == id)
         {
             getline(ss, current_distance);
             collected_distance.seekp(oldpos);
-            collected_distance << distanceValue_m;
-            
+            collected_distance << "                                                  ";
+            collected_distance.seekp(oldpos);
+            collected_distance << identifier << ' '<< distanceValue_m + to_integer(current_distance);
+            break;
         }
         oldpos = collected_distance.tellg();
     }
