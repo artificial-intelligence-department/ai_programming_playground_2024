@@ -29,6 +29,7 @@
 #include <iostream>
 #include <cstring>
 #include <fstream>
+#include <iomanip>
 
 using namespace std;
 
@@ -67,13 +68,8 @@ void bubblesort(string name){
     }
 }
 
-void fileinsert(string filename, double value){
-    ofstream file(filename);
-    file << value;
-    file.close();
-}
-
 double* ASCII(string userName){
+    bubblesort(userName);
     double* ASCIIarray= new double[userName.size()];
 
     for (int i = 0; i < userName.size(); i++){
@@ -81,7 +77,6 @@ double* ASCII(string userName){
     }
     return ASCIIarray;
 }
-
 
 
 int main(){
@@ -108,9 +103,21 @@ int main(){
     string price_per_meter = "price_per_meter.txt", price_per_mile = "price_per_mile.txt", price_per_mile_us = "price_per_mile_us.txt" ;
     double price_meter = 0.0005, price_mile = 0.8, price_mile_US = 1.2;
 
-    fileinsert(price_per_meter,price_meter);
-    fileinsert(price_per_mile, price_mile);
-    fileinsert(price_per_mile_us, price_mile_US);
+    double* ID = ASCII(userName);
 
-    double* ID = ASCII;
+    int distanceinkm = static_cast<int>(convertToMeters(distance,charArray));
+    int bonuspoints = 0;
+
+    if(isPalindrome(distanceinkm)){
+        bonuspoints += 200;
+    }
+    int discount = bonuspoints/100;
+    double cost = distanceinkm * 0.5 - discount;
+
+    cout << "Ідентифікатор: " << ID << endl;
+    cout << "Відстань поточної доставки: " << distance << "m" << endl;
+    cout << "Ваша знижка: " << discount << "$" << endl;
+    cout << "Накопичена відстань: " << distanceinkm << "km" << endl;
+    cout << "Вартість відправки: " << cost << "$" << endl;
+
 }
