@@ -4,12 +4,12 @@
 #include <sstream>
 #include <fstream>
 #include <cmath>
+#include <algorithm>
 using namespace std;
 
 struct Distance{
-    int distance_meters;
-    double dastance_miles;
-    double distance_miles_us;
+    double distance;
+    int identifier[15];
 };
 
 long long bonus = 0;
@@ -21,17 +21,29 @@ int* Identifier(string name){
     for(int i=0; i<sorted.size(); ++i){
         identifier[i] = static_cast<int>(sorted[i+1])*0.4;
     }
-    ofstream outFile("students.txt");
+    ofstream outFile("id.txt");
     outFile << name <<" "<<endl;
+    for(int i=0; i<sorted.size(); i++){
+        outFile<<identifier[i];
+    }
+    outFile<<endl;
     outFile.close();
     return identifier;
 }
 
-int distanceInMeters(double value){
-    
+double distanceInMeters(double value, string num){
+    double val;
+    if(num=="meter"){
+            val=value;
+        }
+    if(num=="mile"){
+            val=value*1609.344;
+        }
+    if(num=="mile_us"){
+            val=value*1609.347;        
+    }
+    return val;
 }
-
-double distanceInMeters(Distance distance);
 
 bool isPalindrome(long long num) {
     if (num < 0) {
@@ -54,9 +66,9 @@ double simulateMoneyPrecision(double value) {
     return round(value * 100.0) / 100.0;
 }
 
-long long bonusCount(long long distance){
+double bonusCount(double distance){
     long long discount = 0;
-    if(isPalindrom(distance)){
+    if(isPalindrome(distance)){
         bonus+=200000;
     }
     discount += bonus/100000;
@@ -68,21 +80,21 @@ double identifyPrice(string num){
         ifstream inFile("price_per_meter.txt");
         string line;
         while (getline(inFile, line)) {
-        double price_m = line.stod(line);
+        double price_m = atof(line.c_str());
         }
         inFile.close();}
-    if(num=="mile"){
+    else if(num=="mile"){
         ifstream inFile("price_per_mile.txt");
         string line;
         while (getline(inFile, line)) {
-        double price_m = line.stod(line);
+        double price_m = atof(line.c_str());
         }
         inFile.close();}
-    if(num=="mile_us"){
+    else if(num=="mile_us"){
         ifstream inFile("price_per_mile.txt");
         string line;
         while (getline(inFile, line)) {
-        double price_m = line.stod(line);
+        double price_m = atof(line.c_str());
         }
         inFile.close();
     }
@@ -93,24 +105,50 @@ int main(){
     int distanceValue;
     string measurementSystem;
     char convertBonus;
-    long long discount = bonusCount();
-    int* identifier = Identifier(name);
+    string meter = "meter";
+
     cout << "Введіть ваше ім'я: ";
     cin >> userName;
+    int* identifier = Identifier(userName);
 
     cout << "Введіть відстань: ";
     cin >> distanceValue;
+    long long discount = bonusCount(distanceValue);
 
     cout << "Введіть одиницю виміру (meter/mile/mile_us): ";
     cin >> measurementSystem;
 
-    cout << "Бажаєте конвертувати бонуси у відстань (y/n)? ";
-    cin >> convertBonus;
+    double deliveryDistanceInMeters = distanceInMeters(distanceValue, measurementSystem);
 
-    cout << "Відстань поточної доставки: " << deliveryDistanceInMeters << "m" << endl;
-    cout << "Ваша знижка: " << discount << "$" << endl;
-    cout << "Накопичена відстань: " << deliveryDistanceInKiloMeters << "km" << endl;
-    cout << "Вартість відправки: " << totalPrice << "$" << endl;
+    while(true){
+        cout<<"Menu:"<<endl;
+        cout<<"1. Накопичена відстань"<<endl;
+        cout<<"2. Вартість відправки"<<endl;
+        cout<<"3. Скористатися знижкою"<<endl;
+        cout<<"4. Вийти з меню"<<endl;
+
+        int choice;
+        cin>>choice;
+
+        if(choice == 1){
+            cout<<"Накопичена відстань: "<<bonus<<" m"<<endl;
+        }
+
+        if(choice == 2){
+            cout << "Вартість відправки: " << identifyPrice(meter)*deliveryDistanceInMeters - discount << "$" << endl;
+        }
+
+        if(choice == 3){
+            discount = bonusCount(deliveryDistanceInMeters);
+            cout << "Ваша знижка: " << discount << "$" << endl;
+            cout << "Вартість відправки: " << identifyPrice("meter")*deliveryDistanceInMeters - discount << "$" << endl;
+        }
+
+        if(choice == 4){
+            cout<<"Гарного дня!";
+            break;
+        }
+    }
 
     delete[]identifier;
     return 0;
