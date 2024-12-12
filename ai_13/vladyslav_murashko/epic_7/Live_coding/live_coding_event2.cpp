@@ -57,6 +57,39 @@ void saveInfo(string id, double distance)
     }
 }
 
+void updateInfo(User user)
+{
+    string info = "";
+    ifstream file(FILE_NAME);
+    if (file)
+    {
+        string data;
+        while (file >> data)
+        {
+
+            info += data + " ";
+            if (user.Id.compare(data) == 0)
+            {
+                file >> data;
+                info += to_string(user.value) + "\n";
+            }
+            else
+            {
+                file >> data;
+                info += data + "\n";
+            }
+        }
+        file.close();
+    }
+
+    ofstream file2(FILE_NAME);
+    if (file2)
+    {
+        file2 << info;
+        file2.close();
+    }
+}
+
 User logIn(string name)
 {
     ifstream file(FILE_NAME);
@@ -84,23 +117,9 @@ User logIn(string name)
     return user;
 }
 
-double getDistanceIfLogin()
+void checkBonuses(User& user, double distance)
 {
-    ifstream file(FILE_NAME);
-    if (file)
-    {
-        string data;
-        file >> data;
-        file >> data;
-        file.close();
-        return stod(data);
-    }
-    return 0;
-}
-
-void checkBonuses(User user, double distance)
-{
-    string str = to_string(distance);
+    string str = to_string((int)round(distance));
     bool isPalindrome = true;
     for (size_t i = 0; i < str.length(); i++)
     {
@@ -118,20 +137,48 @@ void checkBonuses(User user, double distance)
 
 double getPriceByType(string type)
 {
+    string tmp;
+    if (type == "meter")
+    {
+        tmp = "price_per_meter.txt";
+    }
+    else if (type == "mile")
+    {
+        tmp = "price_per_mile.txt";
+    }
+    else
+    {
+        tmp = "price_per_mile_us.txt";
+    }
+    ifstream file(tmp);
+    file >> tmp;
+    return stod(tmp);
 }
 
 double calculateMaxDiscount(User user)
 {
-    return simulatePrecision(user.value / 100);
+    return simulatePrecision(user.value / 100000);
 }
 
-double calculateSumWithDiscount(User user, double distance, string type)
+double calculateSum(User& user, double distance, string type)
 {
-    return
+    double disc = calculateMaxDiscount(user);
+    double price = distance * getPriceByType(type);
+    if (price < disc)
+    {
+        user.value -= price * 100000;
+        return 0;
+    }
+    else
+    {
+        user.value = 0;
+        return price - disc;
+    }
 }
 
 double calculateSum(double distance, string type)
 {
+    return distance * getPriceByType(type);
 }
 
 int main()
@@ -140,41 +187,57 @@ int main()
 
     string name;
     cout << "Enter your name: ";
-    getline(cin, name);
+    cin >> name;
     user = logIn(name);
     if (user.Id == "0")
     {
         user.Id = generateId(name);
         user.value = 0;
+        saveInfo(user.Id, user.value);
     }
 
     double distance;
     cout << "Enter the distance: ";
-    cin.ignore();
     cin >> distance;
     string system;
     do
     {
-        cout << "Choose the metric system (meter/mile/mile_us):";
+        cout << "Choose the metric system (meter/mile/mile_us): ";
         cin >> system;
-    } while (system != "meter" || system != "mile" || system != "mile_us");
-    if (system == "meter")
-    {
-        user.value += simulatePrecision(distance);
-    }
-    else if (system == "mile"){
-
-    }
-    else{
-        
-    }
+    } while (system.compare("mile_us") != 0 && system.compare("mile") != 0 && system.compare("meter") != 0);
 
     char convertBonus;
     do
     {
+        cout << "Your bonuses: " << calculateMaxDiscount(user) << endl;
         cout << "Do you want to convert bonuses (y/n)? ";
         cin >> convertBonus;
-    } while (convertBonus != 'y' || convertBonus != 'n');
+    } while (convertBonus != 'y' && convertBonus != 'n');
+
+    switch (convertBonus)
+    {
+    case 'y':
+        cout << "Total cost with bonuses is: " << calculateSum(user, distance, system);
+        break;
+    case 'n':
+        cout << "Total cost without bonuses is: " << calculateSum(distance, system);
+        break;
+    }
+
+    if (system == "meter")
+    {
+        user.value += simulatePrecision(distance);
+    }
+    else if (system == "mile")
+    {
+        user.value += simulatePrecision(distance * mi);
+    }
+    else
+    {
+        user.value += simulatePrecision(distance * mi_US);
+    }
+    checkBonuses(user, distance);
+    updateInfo(user);
 
     return 0;
 }
