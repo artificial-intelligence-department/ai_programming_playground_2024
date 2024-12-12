@@ -177,7 +177,7 @@ int main(){
                     pr = atoi(line.c_str());
                 }
             }
-            int sale = dist_in_km/100;
+            sale = std::round(dist_in_km/100);
             nakop = sale*100;
             if(is_palindrom(dist_in_km)){
                 sale+=2;
@@ -194,12 +194,12 @@ int main(){
     std::cout << "\n";
 
     if(suma > 0){
-        std::cout << "Відстань поточної доставки: " << dist_in_km*1000 << " m" << "\n";
+        std::cout << "Відстань поточної доставки: " << simulateMoneyPrecision(dist_in_km*1000) << " m" << "\n";
         std::cout << "Ваша знижка: " << sale << " $" << "\n";
         std::cout << "Накопичена відстань: " << nakop << " km" << "\n";
         std::cout << "Вартість відправки: " << suma << " $" << "\n";
     } else {
-        std::cout << "Відстань поточної доставки: " << dist_in_km*1000 << " m" << "\n";
+        std::cout << "Відстань поточної доставки: " << simulateMoneyPrecision(dist_in_km*1000)  << " m" << "\n";
         std::cout << "Ваша знижка: " << sale << " $" << "\n";
         std::cout << "Накопичена відстань: " << nakop << " km" << "\n";
         std::cout << "Відправка безкоштовна" << "\n";
