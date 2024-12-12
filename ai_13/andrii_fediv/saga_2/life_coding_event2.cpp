@@ -3,6 +3,7 @@
 #include <fstream>
 #include <algorithm>
 #include <vector>
+#include <cmath>
 using namespace std;
 
 double transformd(string typef, double value)
@@ -149,16 +150,13 @@ int main()
 
     sort(userName.begin(), userName.end());
     int *idarr = new int[userName.size()];
-    string idstr;
+    int id = 0;
     for (int i = 0; i < userName.size(); i++)
     {
         idarr[i] = char(userName[i]) * 0.4;
         cout << idarr[i] << " ";
-        idstr += to_string(idarr[i]);
+        id += idarr[i] * pow(10, i);
     }
-    int id;
-    stringstream ss(idstr);
-    ss >> id;
 
     cout << "Введіть відстань: ";
     cin >> distanceValue;
