@@ -115,11 +115,9 @@ int main()
     }
     ofile << " " << bonus << std::endl;
     int discount=0;
-    int ide;
-    int bon;
-    std::ifstream ifile(file_name);
+    int temp=distance;
     ofile.close();
-    ifile.close();
-    std::cout << "Distance of current delivery: " << distanceinMeteres(distance, type_of_distance) << std::endl;
+    std::cout << "Distance of current delivery: " << distanceinMeteres(temp, type_of_distance) << std::endl;
     std::cout << "Your discount: " << discount << "$" << std::endl;
+    std::cout << "Total price: " << distance*price << "$" << std::endl;
 }
