@@ -4,34 +4,35 @@
 
 using namespace std;
 
-const int VARIANT = 61;
+const int VARIANT = 61; // v4
 
 double function_1()
 {
-    float a, b;
-    int c, d, e;
-    double f;
-    cin >> a >> b;
+    float a, b; // v2
+    int c, d, e; // v1
+    double f; // v3
+    cin >> a >> b; // v18
     cin >> c >> d >> e;
     cin >> f;
-    double zeepzorp[6] = {a,b,c,d,e,f};
+    double zeepzorp[6] = {a,b,c,d,e,f}; // v6
     sort(zeepzorp, zeepzorp + 6);
-    double sum_biggest = zeepzorp[3]+zeepzorp[4]+zeepzorp[5];
+    double sum_biggest = zeepzorp[3]+zeepzorp[4]+zeepzorp[5]; // v15
     double sum_smallest = zeepzorp[0]+zeepzorp[1]+zeepzorp[2];
     double res = 0;
+    // v5
     if (sum_biggest > sum_smallest * 4) res = sum_biggest + sum_smallest;
     else if (sum_biggest > sum_smallest * 3) res = sum_biggest / sum_smallest;
     else if (sum_biggest > sum_smallest * 2) res = sum_biggest * sum_smallest;
-    cout << res / VARIANT << endl;
+    cout << res / VARIANT << endl; // v18
     return res / VARIANT;
 }
 
-double ** function_2(double x)
+double ** function_2(double x) // v14
 {
     srand(time(0));
 
-    double **matrix = new double *[5];
-    for (int i = 0; i < 5; i++)
+    double **matrix = new double *[5]; // v7
+    for (int i = 0; i < 5; i++) // v10
     {
         matrix[i] = new double[5];
         for (int j = 0; j < 5; j++)
@@ -85,7 +86,7 @@ double * function_3(double **tower)
         if (mins1[i] != mins2[i])
         {
             equal = 0;
-            break;
+            break; // v11
         }
     }
     cout << (equal ? "Equal" : "Not equal") << endl;
@@ -95,10 +96,10 @@ double * function_3(double **tower)
 
 struct Student 
 {
-    char *name;
+    char *name; // v20
     char *surname;
     double money;
-};
+}; // v19
 
 struct Node
 {
@@ -137,7 +138,7 @@ Node * function_4(double *mins)
     n->val = new Student {random_name(), random_name(), *min_element(mins, mins+5)};
     
     n = head;
-    while (n)
+    while (n) // v9
     {
         cout << n->val->name << " " << n->val->surname << " " << n->val->money << endl;
         n = n->next;
@@ -148,31 +149,31 @@ Node * function_4(double *mins)
 void help_for_function_5(fstream *fs, Node *ll)
 {
     Node *n = ll;
-    while (n)
+    do
     {
         *fs << n->val->name << " " << n->val->surname << " " << n->val->money << endl;
         n = n->next;
-    }
+    } while (n->next); // v8
 }
 
 void function_5(Node *ll)
 {
     fstream fs;
-    fs.open("live_coding_1.dat", fstream::out | fstream::binary);
+    fs.open("live_coding_1.dat", fstream::out | fstream::binary); // v16
     help_for_function_5(&fs, ll);
 }
 
 void function_6()
 {
     fstream fs;
-    fs.open("live_coding_1.dat", fstream::in | fstream::binary);
+    fs.open("live_coding_1.dat", fstream::in | fstream::binary); // v17
     if (fs.fail())
     {
         cout << "Error when opening file" << endl;
         return;
     }
     char buf[300];
-    while(fs.read(buf, 300)) ; // read all into buf
+    while(fs.read(buf, 300)) ; // read all into buf until eofbit is set
     cout << buf << endl;
 }
 
