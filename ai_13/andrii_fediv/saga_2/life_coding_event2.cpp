@@ -13,11 +13,11 @@ double transformd(string typef, double value)
     }
     else if (typef == "mile_us")
     {
-        return value / 1609.347;
+        return value * 1609.347;
     }
     else if (typef == "mile")
     {
-        return value / 1609.344;
+        return value * 1609.344;
     }
 }
 
@@ -29,11 +29,11 @@ double transformto(string typef, double value)
     }
     else if (typef == "mile_us")
     {
-        return value * 1609.347;
+        return value / 1609.347;
     }
     else if (typef == "mile")
     {
-        return value * 1609.344;
+        return value / 1609.344;
     }
 }
 
@@ -45,6 +45,14 @@ double transformto(string typef, double value)
 "price_per_mile_us.txt", 1.2
 
 */
+
+bool isPalindrome(double distance)
+{
+    string distStr = to_string(int(distance));
+    string reversed = distStr;
+    reverse(reversed.begin(), reversed.end());
+    return distStr == reversed;
+}
 
 double get_tarification(string typef)
 {
@@ -70,8 +78,8 @@ double get_tarification(string typef)
             double distance;
 
             ss >> distance;
-            return distance;
             file.close();
+            return distance;
         }
     }
     else if (typef == "mile_us")
@@ -201,9 +209,9 @@ int main()
     file.close();
     if (new_user)
     {
-        index ++;
+        index++;
         distance = 0;
-        string user = id + " " + to_string(distanceValue);
+        string user = to_string(id) + " " + to_string(distanceValue);
         FILEARR.push_back(user);
     }
 
@@ -218,24 +226,23 @@ int main()
         }
     }
 
-    string* lineinarr =&(FILEARR[index]);
-    *lineinarr = id + " " + to_string(deliveryDistanceInMeters);
+    (FILEARR[index]) = to_string(id) + " " + to_string(deliveryDistanceInMeters);
+
+    if (isPalindrome(deliveryDistanceInMeters))
+        deliveryDistanceInMeters += 200000;
 
     fstream file2("collected_distance.txt", ios::out);
     for (size_t i = 0; i < FILEARR.size(); i++)
     {
-        file2 << FILEARR[i];
+        file2 << FILEARR[i] << endl;
     }
     file2.close();
-    
-    
 
-
-
-
-
-    double deliveryDistanceInKiloMeters = deliveryDistanceInMeters * 1000;
+    double deliveryDistanceInKiloMeters = deliveryDistanceInMeters / 1000;
     double totalPrice = tarif * transformto(measurementSystem, deliveryDistanceInMeters) - discount;
+    if(totalPrice < 0){
+        totalPrice = 0;
+    }
 
     cout << "Відстань поточної доставки: " << distance_in_meters << "m" << endl;
     cout << "Ваша знижка: " << discount << "$" << endl;
