@@ -41,12 +41,48 @@ class Delivery {
     static constexpr double mile_us = 1609.347;
 
     double pricemeter, pricemile, pricemileus;
-    double bonusdistance;
-    int userid = 0;
-    std::string user;
+    double calcdistance = 0;  
+    double distanceinmeter = 0;  
+    std::string asciiusername;
 
     bool ispalindrome(int distance){
+        std::stringstream ss;
+        ss << distance;
+        std::string diststr = ss.str(); 
+        int start = 0;  
+        int end = diststr.length() - 1;
+        while (start < end){
+            if(diststr[start] != diststr[end]){
+                return false;
+            }
+            start++;
+            end--;
+        }
+        return true;
+    }
 
+    double readcollecteddistance(const std::string& username){  
+        std::string filename = "collected_distance.txt";
+        std::ifstream file(filename);  
+        if(file.is_open()){
+            std::string userinfile;
+            double distance;
+            file >> userinfile >> distance;
+            file.close();
+            if(userinfile == username){
+                return distance;
+            }
+        }
+        return 0;  
+    }
+
+    void savecollecteddistance(){
+        std::string filename = "collected_distance.txt";
+        std::ofstream file(filename);  
+        if (file.is_open()) {
+            file << asciiusername << " " << static_cast<int>(calcdistance);
+            file.close();
+        }
     }
 
     void sortname(char* name, int length){
@@ -65,13 +101,12 @@ class Delivery {
         if(type == "mile"){
             return distance * mile;
         } else if(type == "mile_us"){
-            return distance * mile_us
+            return distance * mile_us;
         }
         return distance;
     }
 
-
-    void prices(){
+    void loadprices(){
     std::ifstream meterpricefile("price_per_meter.txt");
     std::ifstream milepricefile("price_per_mile.txt");
     std::ifstream mileuspricefile("price_per_mile_us.txt");
@@ -90,31 +125,8 @@ class Delivery {
     mileuspricefile.close();
     }
 
-    void readcollecteddistance(const std::string& username){
-    std::string filename = "collected_distance.txt";
-    std::ofstream file(filename);
-        if(file.is_open()){
-            std::string userinfile;
-            double distance;
-            file >> userinfile >> distance;
-            file.close();
-            if(userinfile == username){
-                return distance;
-            }
-        }
-    }
-
-    void savecollecteddistance(){
-        std::string filename = "collected_distance.txt";
-        std::ifstream file(filename);
-        if (file.is_open()) {
-            file << asciiusername << " " <<
-            file.close();
-        }
-    }
-
     public:
-    delivery(){
+    Delivery(){  
         loadprices();
     }
 
@@ -125,7 +137,6 @@ class Delivery {
             sortname[i] = name[i];
         }
 
-    sortname(sortname, length);
 
     std::stringstream ss;
     for(int i = 0; i < length; i++){
@@ -136,19 +147,99 @@ class Delivery {
     calcdistance = readcollecteddistance(asciiusername);
     }
 
-
     double calculateprice(double distance, const std::string& type){
+        distanceinmeter = convertation(distance, type);
+        double price;
 
+        if(type == "mile"){
+            price = distance * pricemile;
+        } else if(type == "mile_us"){
+            price = distance * pricemileus;
+        } else {
+            price = distance * pricemeter;
+        }
+
+        if(ispalindrome(static_cast<int>(distance))){
+            calcdistance += 200;
+        }
+
+        double discount = static_cast<int>(calcdistance / 100);
+        double totaldistanceinkmm = calcdistance + distanceinmeter/1000.0;
+
+        std::cout << "Відстань: " << static_cast<int>(distanceinmeter) << "m" << std::endl;
+        std::cout << "Знижка: " << discount << "$" << std::endl;
+        std::cout << "Накопичена відстань: " << static_cast<int>(calcdistance) << "km" << std::endl;
+        std::cout << "Вартість: " << price - discount << "$" << std::endl;
+
+        savecollecteddistance();
+        return price - discount;
     }
 
+    void bonus(double& distance, const std::string& type){
+        if(calcdistance < 100){
+            return;
+        }
+
+        double curprice;
+        if(type == "mile"){
+            curprice = distance * pricemile;
+        } else if(type == "mile_us"){
+            curprice = distance * pricemileus;
+        } else {
+            curprice = distance * pricemeter;
+        }
+
+        int availablediscount = static_cast<int>(calcdistance/100);
+        double maxdiscount = curprice;
+        double actualdiscount = std::min(static_cast<double>(availablediscount), maxdiscount);
+
+        double usedbonusdistance = actualdiscount * 100;
+        calcdistance -= usedbonusdistance;
+
+        double newprice = curprice - actualdiscount;
+
+        if(newprice < 0) newprice = 0;
+        
+        if(type == "mile"){
+            distance = newprice / pricemile;
+        } else if(type == "mile_us"){
+            distance = newprice / pricemileus;
+        } else {
+            distance = newprice / pricemeter;
+        }
+
+        savecollecteddistance();
+    }
+
+    void displayresult(const std::string& name, double distance, const std::string& type){
+        std::cout << asciiusername << "     " << static_cast<int>(distance) << std::endl;
+    }
 };
-
-
-
-
-
 
 int main(){
     Delivery delivery;
     std::string username;
+    double distancevalue;
+    std::string measurementsyst;
+    char convertbonus;
+
+    std::cout << "Введіть імя: ";
+    std::cin >> username;
+    std::cout << "Введіть відстань: ";
+    std::cin >> distancevalue;
+    std::cout << "Введіть одиницю виміру (meter/mile/mile_us): ";
+    std::cin >> measurementsyst;
+    std::cout << "Конфертувати? (y/n): ";
+    std::cin >> convertbonus;
+
+    delivery.checkname(username);
+
+    if(convertbonus == 'y' || convertbonus == 'Y'){
+        delivery.bonus(distancevalue, measurementsyst);
+    }
+
+    double price = delivery.calculateprice(distancevalue, measurementsyst);
+    delivery.displayresult(username, distancevalue, measurementsyst);  
+    
+    return 0;
 }
