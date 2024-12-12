@@ -49,7 +49,7 @@ int distanceInMeters(User user, double value);
 
 void saveInfo(string id, double distance)
 {
-    ofstream file(FILE_NAME, ios_base::app);
+    ofstream file(FILE_NAME,std::ios::out | std::ios::app);
     if (file)
     {
         file << id << " " << simulatePrecision(distance) << endl;
@@ -112,12 +112,12 @@ User logIn(string name)
             {
                 file >> data;
             }
+        file.close();
     }
-    file.close();
     return user;
 }
 
-void checkBonuses(User& user, double distance)
+void checkBonuses(User &user, double distance)
 {
     string str = to_string((int)round(distance));
     bool isPalindrome = true;
@@ -160,7 +160,7 @@ double calculateMaxDiscount(User user)
     return simulatePrecision(user.value / 100000);
 }
 
-double calculateSum(User& user, double distance, string type)
+double calculateSum(User &user, double distance, string type)
 {
     double disc = calculateMaxDiscount(user);
     double price = distance * getPriceByType(type);
