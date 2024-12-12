@@ -12,7 +12,7 @@ int distanceinMeteres(int distance, std::string type)
     }
     if(type=="mile_US")
     {
-        distance+=1609.347;
+        distance*=1609.347;
     }
     if(type=="meter")
     {
