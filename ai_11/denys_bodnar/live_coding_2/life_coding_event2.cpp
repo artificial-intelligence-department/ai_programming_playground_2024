@@ -1,8 +1,41 @@
 #include <iostream>
 #include <cmath>
 #include <string>
+#include <fstream>
 
 using namespace std;
+
+const double impireMileToMeters = 1609.344;
+const double usMileToMeters = 1609.347;
+const double meterToMeret = 1;
+
+bool palindrom (int distance) {
+    string str = to_string(distance);
+    string reversedStr = str;
+    for (int i = 0; i < str.length() / 2; i++) {
+        if (str[i] != str[str.length() - i - 1]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+bool priceFromFile (const string& filename, double& price) {
+    ifstream file(filename);
+    if (file.is_open()) {
+        string label;
+        file >> label >> price;
+        file.close();
+        return true;
+    } else {
+        cout << "Такого файлу не існує!" << filename << endl;
+        return false;
+    }
+}
+
+double simulateMoneyPrecision(double value) {
+    return round(value * 100.0) / 100.0;
+}
 
 void bubbleSort (string& name) {
     for (size_t i = 0; i < name.length() - 1; i++) {
@@ -32,7 +65,7 @@ int main () {
     double mileUsTometer = 1609.347;
 
     string userName;
-    double distanceValue;
+
 
     cout << "Введіть ваше ім'я: ";
     cin >> userName;
@@ -48,12 +81,45 @@ int main () {
     }
     cout << endl;
 
+    double priceMeter , priceMile, priceMileUS;
+    if (!priceFromFile("price_per_meter.txt", priceMeter) || !priceFromFile("price_per_male.txt", priceMile) || !priceFromFile("price_per_mile_us", priceMileUS)) {
+        return 1;
+    }
 
-    cout << "Введіть відстань: ";
-    cin >> distanceValue;
+    double totalDistanceMeters = 0;
+    double BonusDistanceMeters = 0;
 
-    cout << "Введіть одиницю виміру (meter/mile/mile_us): ";
+    while (true) { 
+        double distanceValue;
+        string measurementSystem;
 
+        cout << "Введіть відстань: ";
+        cin >> distanceValue;
+
+        cout << "Введіть одиницю виміру (meter/mile/mile_us): ";
+        cin >> measurementSystem;
+
+        double conversionRate = 0;
+        double pricePerUnit = 0;
+
+        if (measurementSystem == "mile") {
+            conversionRate = impireMileToMeters;
+            pricePerUnit = priceMile;
+        } else if (measurementSystem == "mile_us") {
+            conversionRate = usMileToMeters;
+            pricePerUnit = priceMileUS;
+        } else if (measurementSystem == "meter") {
+            measurementSystem = meterToMeret;
+            pricePerUnit = priceMeter;
+        } else {
+            cout << "Ви ввели невідому одиницю вимірювання!" << endl;
+            continue;
+        }
+
+        double deliveryDistanceInMeters = distanceValue * conversionRate;
+        totalDistanceMeters += deliveryDistanceInMeters;
+
+    }
 
     return 0;
 }
