@@ -4,7 +4,7 @@
 using namespace std;
 
 void collectData();
-void enterUserDataInFile(int* userIdent, double userDistance, string userMeasurementSystem);
+void enterUserDataInFile(string userIdent, double userDistance, string userMeasurementSystem);
 
 int main() {
     bool correctInput;
@@ -29,17 +29,17 @@ int main() {
 }
 
 void collectData() {
-    string UserName;
+    string userName;
     cout << "\nEnter your name: ";
-    cin >> UserName;
+    cin >> userName;
 
-    char* symbols = new char[UserName.length()]; // 6. Одновимірний масив
-    for (int i = 0; i < UserName.length(); i++) { // 10. for цикл
-        symbols[i] = UserName[i];
+    char* symbols = new char[userName.length()]; // 6. Одновимірний масив
+    for (int i = 0; i < userName.length(); i++) { // 10. for цикл
+        symbols[i] = userName[i];
     }
 
-    for (int i = 0; i < UserName.length() - 1; ++i) {
-        for (int j = 0; j < UserName.length() - i - 1; ++j) {
+    for (int i = 0; i < userName.length() - 1; ++i) {
+        for (int j = 0; j < userName.length() - i - 1; ++j) {
             if (symbols[j] > symbols[j + 1]) {
                 int temp = symbols[j];
                 symbols[j] = symbols[j + 1];
@@ -48,12 +48,17 @@ void collectData() {
         }
     }
 
-    int* userIdent = new int[UserName.length()];
+    int* userIdent = new int[userName.length()];
 
-    for (int i = 0; i < UserName.length(); i++) {
+    for (int i = 0; i < userName.length(); i++) {
         userIdent[i] = (symbols[i] * 0.4);
-        cout << userIdent[i];
     }
+
+    string userIdentStr = "";
+    for (int i = 0; i < userName.length(); i++) {
+        userIdentStr += to_string(userIdent[i]);
+    } 
+
 
     double userDistance;
     cout << "Enter distance: ";
@@ -63,22 +68,39 @@ void collectData() {
     cout << "Enter measurement system: ";
     cin >> userMeasurementSystem;
 
-    enterUserDataInFile(userIdent, userDistance, userMeasurementSystem);
+    enterUserDataInFile(userIdentStr, userDistance, userMeasurementSystem);
 
     delete[] symbols;
     delete[] userIdent;
 }
 
-void enterUserDataInFile(int* userIdent, double userDistance, string userMeasurementSystem) {
+void enterUserDataInFile(string userIdent, double userDistance, string userMeasurementSystem) {
     ifstream file("users_data.txt");
 
     int rowsNum = 0;
-    int userRowNum;
+    int userRowNum = -1;
     string row;
+
     while (getline(file, row)) {
-        if (row.find("userIdent")) userRowNum = rowsNum + 1;
+        if (row.find(userIdent)) {
+            userRowNum = rowsNum + 1;}
+        cout << row << endl;
         rowsNum++;
     }
+
+    file.close();
+    ifstream file1("users_data.txt");
+
+    if (userRowNum == -1) {
+        string* lines = new string[++rowsNum];
+        for (int i = 0; i < rowsNum - 1; i++) {
+             getline(file1, lines[i]);
+        }
+        delete[] lines;
+    }
+
+    
+    file1.close();
 }
 
 /**
