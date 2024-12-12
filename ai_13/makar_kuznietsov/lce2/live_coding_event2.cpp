@@ -89,3 +89,15 @@ void writeToFile(std::string name, std::string ident, int distance, int measureU
     }
     myFile.close();
 }
+
+bool checPalindrome(int distance)
+{
+    int reverse = 0;
+    int temp = distance;
+    while (temp != 0)
+    {
+        reverse = (reverse * 10) + (temp % 10);
+        temp /= 10;
+    }
+    return (reverse == distance);
+}
