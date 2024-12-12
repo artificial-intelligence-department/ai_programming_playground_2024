@@ -5,19 +5,19 @@
 
 using namespace std;
 
-const float mi = 1609.344;
+const float mi = 1609.344; // в коді використана як мінімум одна дійсна змінна
 const float mi_US = 1609.347;
 const string FILE_NAME = "collected_distance.txt";
 
 struct User
-{
+{ // в коді використано свою структуру даних
     string Id;
     double value;
 };
 
 string generateId(string name)
 {
-    int arr[name.length()];
+    int arr[name.length()]; // в коді використана як мінімум одна цілочисельна змінна + масив + по факту вказівник
     for (size_t i = 0; i < name.length(); i++)
     {
         arr[i] = name[i] * 0.4;
@@ -42,14 +42,12 @@ string generateId(string name)
 
 double simulatePrecision(double value)
 {
-    return std::round(value * 100.0) / 100.0;
+    return std::round(value * 100.0) / 100.0; // в коді використано математичні операції та математичні функції
 }
-
-int distanceInMeters(User user, double value);
 
 void saveInfo(string id, double distance)
 {
-    ofstream file(FILE_NAME,std::ios::out | std::ios::app);
+    ofstream file(FILE_NAME,std::ios::out | std::ios::app); // в коді використано функції роботи з файлами, для того, щоб записати у файл
     if (file)
     {
         file << id << " " << simulatePrecision(distance) << endl;
@@ -92,7 +90,7 @@ void updateInfo(User user)
 
 User logIn(string name)
 {
-    ifstream file(FILE_NAME);
+    ifstream file(FILE_NAME); // в коді використано функції роботи з файлами, для того, щоб зчитати з файлу
     User user;
     user.Id = "0";
     string id = generateId(name);
@@ -121,12 +119,12 @@ void checkBonuses(User &user, double distance)
 {
     string str = to_string((int)round(distance));
     bool isPalindrome = true;
-    for (size_t i = 0; i < str.length(); i++)
+    for (size_t i = 0; i < str.length(); i++) // в коді використаний for цикл 
     {
         if (str[i] != str[str.length() - 1 - i])
         {
             isPalindrome = false;
-            break;
+            break; // в коді використано оператор break
         }
     }
     if (isPalindrome)
@@ -176,7 +174,7 @@ double calculateSum(User &user, double distance, string type)
     }
 }
 
-double calculateSum(double distance, string type)
+double calculateSum(double distance, string type) // в коді використано перевантаження функції 
 {
     return distance * getPriceByType(type);
 }
@@ -187,7 +185,7 @@ int main()
 
     string name;
     cout << "Enter your name: ";
-    cin >> name;
+    cin >> name; // в коді використано оператори виведення та введення даних
     user = logIn(name);
     if (user.Id == "0")
     {
@@ -196,7 +194,7 @@ int main()
         saveInfo(user.Id, user.value);
     }
 
-    double distance;
+    double distance; // в коді використана як мінімум одна дійсний з подвійною точністю змінна
     cout << "Enter the distance: ";
     cin >> distance;
     string system;
@@ -207,7 +205,7 @@ int main()
     } while (system.compare("mile_us") != 0 && system.compare("mile") != 0 && system.compare("meter") != 0);
 
     char convertBonus;
-    do
+    do // в коді використаний do while цикл
     {
         cout << "Your bonuses: " << calculateMaxDiscount(user) << endl;
         cout << "Do you want to convert bonuses (y/n)? ";
@@ -224,7 +222,7 @@ int main()
         break;
     }
 
-    if (system == "meter")
+    if (system == "meter") // в коді використані умовні оператори та розгалуження
     {
         user.value += simulatePrecision(distance);
     }
