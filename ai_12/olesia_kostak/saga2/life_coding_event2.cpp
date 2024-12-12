@@ -1,5 +1,9 @@
 #include <iostream>
 #include <string>
+#include <sstream> 
+#include <fstream>
+
+int calculate_bonuses(int distance);
 
 const char* file_meter = "price_per_meter.txt"; //using pointers and const
 const char* file_mile = "price_per_mile.txt";
@@ -12,6 +16,7 @@ int main()
     double mi_US = 1609.347;
     double meter;
     double convertBonus;
+    int bonuses = 0;
     int distanceValue; //using int
     std::string measurementSystem;
     std::string userName;
@@ -45,12 +50,93 @@ int main()
     }
     arr[size_of_name - 1] = userName[size_of_name - 1] * 0.4;
 
+    if (measurementSystem == "meter") //using if
+    {
+        bonuses += calculate_bonuses(distanceValue);
+        
+    } 
+    else if (measurementSystem == "mile")
+    {
+
+    }
+    else if (measurementSystem == "mile_us")
+    {
+
+    }
+    else
+    {
+        std::cout << "Your metric system is not correct" << std::endl;
+        return 0;
+    }
+
 
 
     return 0;
 }
 
-// void write_to_file(std::string uderName, )
+void write_to_file(int indetifier[], int size, const char* filename, int price)
+{
+    std::ofstream myfile(filename);
+    if (myfile.is_open())
+    {
+        myfile << "Indentifier: ";
+        for (int i = 0; i < size-1; i++)
+        {
+            myfile << indetifier[i];
+        }
+        myfile << std::endl;
+        myfile << "Price: " << price;
+    }
+    else
+    {
+        perror("Error opening file");
+        exit (1);
+    }
+}
+int calculate_bonuses(int distance)
+{
+    if (isPalindrome(distance))
+    {
+        return 200;
+    }
+}
+
+double simulateMoneyPrecision(double value) {
+    return std::round(value * 100.0) / 100.0;
+}
+
+bool isPalindrome(int num)
+{
+    if(num < 0)
+        return 0;
+
+    int temp = num;
+    int reversed = 0;
+
+    while (temp > 0)
+        {
+            reversed = (temp % 10) + (reversed * 10);
+            temp /= 10;
+        }
+    return reversed == num; 
+}
+
+int read_from_file(int price, const char* filename, int indetifier[], int size)
+{
+    std::ifstream myfile(filename);
+    if (myfile.is_open())
+    {
+        std::string buffer;
+        while (getline(myfile, buffer))
+        {
+        }
+    
+    }
+    else
+    {
+        exit(1);
+    }
+}
 
 
 
