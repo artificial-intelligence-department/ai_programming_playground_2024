@@ -87,7 +87,7 @@ int main () {
     }
 
     double totalDistanceMeters = 0;
-    double BonusDistanceMeters = 0;
+    double bonusDistanceMeters = 0;
 
     while (true) { 
         double distanceValue;
@@ -118,6 +118,14 @@ int main () {
 
         double deliveryDistanceInMeters = distanceValue * conversionRate;
         totalDistanceMeters += deliveryDistanceInMeters;
+
+        double totalPrice = simulateMoneyPrecision(distanceValue * pricePerUnit);
+        cout << "Вартість доставки: " << totalPrice << "$" << endl;
+        
+        if (palindrom(static_cast<int>(distanceValue))) {
+            bonusDistanceMeters += 200000; // 200 км бонусу в метрах
+            cout << "Відстань є паліндромом! Вам нараховано бонус 200км" << endl;
+        }
 
     }
 
