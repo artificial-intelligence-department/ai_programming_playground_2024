@@ -32,8 +32,11 @@
 #include <cmath>
 
 
+
 struct Person{
-    std::string name;
+    std::string name, metr_sys;
+    double dist;
+    int* index = new int[0];
 
 };
 
@@ -89,31 +92,127 @@ void bubble_sort(std::string name, int* &index){
 
 
 int main(){
-    double dist, dist_in_km, nakop;
-    int suma, sale;
-    int* index = new int[0];
-    std::string name, metr_sys;
+    double dist_in_km, suma, sale, nakop;
+    Person first;
 
     std::cout << "Введіть ваше ім'я : ";
-    std::cin >> name;
+    std::cin >> first.name;
     std::cout << "Введіть відстань : ";
-    std::cin >> dist;
+    std::cin >> first.dist;
     std::cout << "Введіть одиницю виміру (meter/mile/mile_us) : ";
-    std::cin >> metr_sys;
+    std::cin >> first.metr_sys;
 
-    bubble_sort(name, index);
+    bubble_sort(first.name, first.index);
     // for(int i =0; i<name.size(); i++){
     //     std::cout << index[i];
     // }
 
-    std::ofstream outFile("Data.txt");
-    if(outFile.is_open()){
-        outFile << name;
+    if(first.metr_sys!="meter" && first.metr_sys!="mile" && first.metr_sys!="mile_us"){
+        return 0;
     }
+
+    std::ofstream pr_met("price_per_meter.txt", std::ios::binary);
+    if(pr_met.is_open()){
+        pr_met << 0.0005;
+    } else {
+        std::cerr << "Файл не вдалося відкрити" << " price_per_meter.txt";
+    }
+
+    std::ofstream pr_mi("price_per_mile.txt", std::ios::binary);
+    if(pr_mi.is_open()){
+        pr_met << 0.8;
+    } else {
+        std::cerr << "Файл не вдалося відкрити" << " price_per_mile.txt";
+    }
+
+    std::ofstream pr_mi_us("price_per_mile_us.txt", std::ios::binary);
+    if(pr_mi_us.is_open()){
+        pr_met << 1.2;
+    } else {
+        std::cerr << "Файл не вдалося відкрити" << " price_per_mile_us.txt";
+    }
+
+
+    std::cout << "\n";
+
+
+
+
+
+    std::ofstream outFile("Data.txt", std::ios::binary);
+    if(outFile.is_open()){
+        outFile.write(reinterpret_cast<char*>(&first), sizeof(Person));
+        outFile.close();
+    } else {
+        std::cerr << "Файл не вдалося відкрити";
+    }
+
+    Person help;
+    std::ifstream iFile("Data.txt", std::ios::binary);
+    if(iFile.is_open()){
+        while(iFile.read(reinterpret_cast<char*>(&help), sizeof(Person))){
+            double pr;
+            std::string line;
+            if(first.metr_sys == "meter"){
+                dist_in_km = first.dist/1000;
+                std::ifstream price("price_per_meter.txt", std::ios::binary);
+                if(price.is_open()){
+                    std::getline(price, line);
+                    pr = atoi(line.c_str());
+                }
+            }
+            if(first.metr_sys == "mile"){
+                dist_in_km = first.dist*1609.344/1000;
+                std::ifstream price("price_per_mile.txt", std::ios::binary);
+                if(price.is_open()){
+                    std::getline(price, line);
+                    pr = atoi(line.c_str());
+                }
+            }
+            if(first.metr_sys == "mile_us"){
+                dist_in_km = first.dist*1609.347/1000;
+                std::ifstream price("price_per_mile_us.txt", std::ios::binary);
+                if(price.is_open()){
+                    std::getline(price, line);
+                    pr = atoi(line.c_str());
+                }
+            }
+            int sale = dist_in_km/100;
+            nakop = sale*100;
+            if(is_palindrom(dist_in_km)){
+                sale+=2;
+                nakop +=200;
+            }
+            
+            suma = dist_in_km*pr - sale;
+        }
+        outFile.close();
+    } else {
+        std::cerr << "Файл не вдалося відкрити" << " Data.txt";
+    }
+
+    std::cout << "\n";
+
+    if(suma > 0){
+        std::cout << "Відстань поточної доставки: " << dist_in_km*1000 << " m" << "\n";
+        std::cout << "Ваша знижка: " << sale << " $" << "\n";
+        std::cout << "Накопичена відстань: " << nakop << " km" << "\n";
+        std::cout << "Вартість відправки: " << suma << " $" << "\n";
+    } else {
+        std::cout << "Відстань поточної доставки: " << dist_in_km*1000 << " m" << "\n";
+        std::cout << "Ваша знижка: " << sale << " $" << "\n";
+        std::cout << "Накопичена відстань: " << nakop << " km" << "\n";
+        std::cout << "Відправка безкоштовна" << "\n";
+    }
+
+    
+
+
 
 //     std::cout << "Відстань поточної доставки: " << deliveryDistanceInMeters << "m" << endl;
 // std::cout << "Ваша знижка: " << discount << "$" << endl;
 // std::cout << "Накопичена відстань: " << deliveryDistanceInKiloMeters << "km" << endl;
 // std::cout << "Вартість відправки: " << totalPrice << "$" << endl;
+    delete[] first.index; 
     return 0;
 }
