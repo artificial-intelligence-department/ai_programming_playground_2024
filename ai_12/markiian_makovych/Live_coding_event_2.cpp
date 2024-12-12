@@ -2,6 +2,7 @@
 #include <string>
 #include <cmath>
 #include <fstream>
+#include <sstream>
 using namespace std;
 int getFirstDigit(int number)
 {
@@ -86,11 +87,6 @@ int main()
     int distance;
     cin >> distance;
 
-    if (isPalindrom(distance))
-    {
-        bonus += 2;
-    }
-
     cout << "Meters/Miles/MilesUS" << endl;
     string len;
     cin >> len;
@@ -98,28 +94,59 @@ int main()
     fstream file(fileName);
     for (int i = myName.length() - 1; i >= 0; i--)
     {
-        file << nameInt[i];
+        file << to_string(nameInt[i]);
     }
-    file << "  " << kilometers;
+    file << " " << to_string(kilometers);
     if (len == "Meters")
     {
-        cout << "Delivery price: " << distance * pricePerMeter << endl;
+        cout << "Delivery price: " << distance * pricePerMeter << "$" << endl;
     }
     if (len == "Miles")
     {
-        cout << "Delivery price: " << distance * pricePerMile << endl;
+        cout << "Delivery price: " << distance * pricePerMile << "$" << endl;
     }
     if (len == "MilesUS")
     {
-        cout << "Delivery price: " << distance * pricePerMileUs << endl;
+        cout << "Delivery price: " << distance * pricePerMileUs << "$" << endl;
     }
+    double discount = 0;
+    while (distance >= 100)
+    {
+        distance -= 100;
+        discount++;
+    }
+    if (isPalindrom(distance))
+    {
+        discount += 2;
+    }
+    cout << "Your Discount: " << discount << "$" << endl;
+
+    file.close();
     cout << "Do you Want to use your bonuses? (0/1)" << endl;
     bool bon = false;
     cin >> bon;
-
+    ifstream file1(fileName);
     string line;
-    while (file.getline(line))
+    string ignore;
+    int buks = 0;
+    string bonusDistance;
+
+    while (getline(file1, line))
     {
+        istringstream iss(line);
+        iss >> ignore >> bonusDistance;
     }
+    file1.close();
+    ofstream file2(fileName);
+    for (int i = myName.length() - 1; i >= 0; i--)
+    {
+        file2 << to_string(nameInt[i]);
+    }
+    file2 << " " << to_string(kilometers + stoi(bonusDistance));
+    if (bon)
+    {
+        cout << "Accumulated Discount: " << bonusDistance << "(in km)" << endl;
+    }
+
     return 0;
 }
