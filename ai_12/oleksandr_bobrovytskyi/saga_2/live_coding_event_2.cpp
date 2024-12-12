@@ -1,36 +1,33 @@
 #include<iostream>
 #include<fstream>
+#include<string>
+#include <sstream> 
 
 using namespace std;
 
 double GetTarifs(string s)
 {
     ifstream file1;
-    ifstream file2;
-    ifstream file3;
     string value;
     double tarif;
 
     if(s == "meter")
     {
         file1.open("C:/Users/sabob/projects/ai_programming_playground_2024/ai_12/oleksandr_bobrovytskyi/saga_2/price_per_meter.txt");
-        getline(file1, value);
-        tarif = stod(value);
+        file1 >> tarif;
         file1.close();
     }
     else if(s == "miles_US")
     {
-        file2.open("C:/Users/sabob/projects/ai_programming_playground_2024/ai_12/oleksandr_bobrovytskyi/saga_2/price_per_mile.txt");
-        getline(file2, value);
-        tarif = stod(value);
-        file2.close();
+        file1.open("C:/Users/sabob/projects/ai_programming_playground_2024/ai_12/oleksandr_bobrovytskyi/saga_2/price_per_mile.txt");
+        file1 >> tarif;
+        file1.close();
     }
     else if(s == "miles")
     {
-        file2.open("C:/Users/sabob/projects/ai_programming_playground_2024/ai_12/oleksandr_bobrovytskyi/saga_2/price_per_mile_us.txt");
-        getline(file3, value);
-        tarif = stod(value);
-        file3.close();
+        file1.open("C:/Users/sabob/projects/ai_programming_playground_2024/ai_12/oleksandr_bobrovytskyi/saga_2/price_per_mile_us.txt");
+        file1 >> tarif;
+        file1.close();
     }
 
     return tarif;
@@ -38,8 +35,9 @@ double GetTarifs(string s)
 
 string GetIdentificator(string Name)
 {
-    string temp, ID;
+    string ID;
     int code;
+    char temp;
 
     for(int i = 0; i < Name.length(); i++)
     {
@@ -57,17 +55,44 @@ string GetIdentificator(string Name)
     for(int i = 0; i < Name.length(); i++)
     {
         code = Name[i];
-        ID.push_back(code);
+        ID.push_back(to_string(code));
     }
 
     return ID;
+}
+
+void StoreInfo(int ID, double distance)
+{
+    ofstream file;
+    file.open("C:/Users/sabob/projects/ai_programming_playground_2024/ai_12/oleksandr_bobrovytskyi/saga_2/collected_distance.txt");
+
+    file << ID << endl << distance;
+
+    file.close();
+}
+
+double CheckForDiscount(int ID)
+{
+    double value;
+    int FileID;
+    ifstream file;
+    file.open("C:/Users/sabob/projects/ai_programming_playground_2024/ai_12/oleksandr_bobrovytskyi/saga_2/collected_distance.txt");
+
+    file >> FileID;
+    
+    if(ID == FileID)
+    {   
+        file >> value;
+        return value;
+    }
+    return 0.0;
 }
 
 int main()
 {
     int meter, miles_US, miles;
     string UserName, units, convertBonus;
-    double distance, tarif;
+    double distance, tarif, DiscountDIstance;
     int ID;
 
     cout << "Enter your name" << endl;
@@ -79,12 +104,32 @@ int main()
     cout << "Choose meter/miles_US/miles" << endl;
     cin >> units;
 
+    if(units == "meter")
+    {
+        distance /= 1000;
+    }
+    else if(units == "miles")
+    {
+        distance /= 1609.344;
+    }
+    else if(units == "miles_US")
+    {
+        distance /= 1609.347;
+    }
+
     tarif = GetTarifs(units);
 
     cout << "Бажаєте конвертувати бонуси у відстань (y/n)? ";
     cin >> convertBonus;
 
-    ID = stoi(GetIdentificator(UserName));
+    ID = GetIdentificator(UserName);
+
+    StoreInfo(ID, distance);
+
+    if(convertBonus == "y")
+    {
+        DiscountDIstance = CheckForDiscount(ID);
+    }
 
     return 0;
 }
