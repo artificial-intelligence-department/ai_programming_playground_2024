@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.6">
+  <diagram name="Page-1" id="ZSbQIbWOCOKgJizHfT5Z">
+    <mxGraphModel dx="712" dy="823" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="48IlKQiQu7yWEoJTAOXK-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="48IlKQiQu7yWEoJTAOXK-1" target="48IlKQiQu7yWEoJTAOXK-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48IlKQiQu7yWEoJTAOXK-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="48IlKQiQu7yWEoJTAOXK-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="48IlKQiQu7yWEoJTAOXK-2" target="48IlKQiQu7yWEoJTAOXK-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48IlKQiQu7yWEoJTAOXK-2" value="double x = 1.23;&lt;div&gt;double y = 0.79;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="48IlKQiQu7yWEoJTAOXK-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="48IlKQiQu7yWEoJTAOXK-4" target="48IlKQiQu7yWEoJTAOXK-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48IlKQiQu7yWEoJTAOXK-4" value="double a = y + x / (pow(y, 3) + abs(pow(x, 2)/(y + pow(x, 2.0/3.0))));" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="166" y="230" width="374" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="48IlKQiQu7yWEoJTAOXK-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="48IlKQiQu7yWEoJTAOXK-6" target="48IlKQiQu7yWEoJTAOXK-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48IlKQiQu7yWEoJTAOXK-6" value="double tg = tan( x / 2 );&amp;nbsp;&lt;div&gt;double b = 1 + pow(tg, 2);&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="167" y="320" width="374" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="48IlKQiQu7yWEoJTAOXK-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="48IlKQiQu7yWEoJTAOXK-8" target="48IlKQiQu7yWEoJTAOXK-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48IlKQiQu7yWEoJTAOXK-8" value="Value of a:&lt;div&gt;Value of b:&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="48IlKQiQu7yWEoJTAOXK-10" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="297" y="510" width="114" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
