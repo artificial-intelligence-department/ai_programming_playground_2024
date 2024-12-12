@@ -36,6 +36,29 @@
 
 using namespace std;
 
+double simulateMoneyPrecision(double value) {
+    return round(value * 100.0) / 100.0;
+}
+
+
+bool isPalindrome(int num)
+{
+    if (num<0)
+    {
+        return 0;
+    }
+    int original = num; 
+    int reversed = 0;
+    int digit;
+
+    while (num != 0) {
+        digit = num % 10;
+        reversed = reversed * 10 + digit;  
+        num /= 10;  
+    }
+    return original == reversed; 
+}
+
 int main()
 {
     string userName;
@@ -63,10 +86,22 @@ int main()
             break;
         }
     }
-    double arr[userName.length()]; 
-    for (int i = 0; i < userName.length(); i++)
+    double arr[userName.length()];  //дійсний з подвійною точністю; одновимірний масив 
+    for (int i = 0; i < userName.length(); i++) //for цикл
     {
         arr[i] = (double) userName[i]*0,4;
-
+        simulateMoneyPrecision(arr[i]);
     }
+    
+    int bonuses;
+
+    if(isPalindrome(distanceValue))  
+    {
+        bonuses += 2; 
+    }
+
+    bonuses += distanceValue / 100000;
+    
+
+    
 }
