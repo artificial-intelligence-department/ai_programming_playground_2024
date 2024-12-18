@@ -1,0 +1,41 @@
+sort1 uses: Buble sort
+
+How do you know?:
+
+    sort1 for random50000.txt:
+        real    0m6.997s
+        user    0m6.187s
+        sys     0m0.139s
+
+    sort1 for sorted50000.txt:
+        real    0m0.531s
+        user    0m0.008s
+        sys     0m0.125s
+
+        We can see that here we have longer time for sorted
+        list of numbers than in sort3 (Buble sort), this is, because
+        of Buble sort have stop factor (like, if list sorted, you stop, what
+        don't have selection sort).
+
+sort2 uses: Merge sort
+
+How do you know?:
+
+    sort2 for random50000.txt:
+        real    0m0.576s
+        user    0m0.025s
+        sys     0m0.120s
+
+sort3 uses: Selection sort
+
+How do you know?:
+
+    sort3 for random50000.txt:
+        real    0m3.226s
+        user    0m2.559s
+        sys     0m0.119s
+
+    sort3 for sorted50000.txt:
+        real    0m2.834s
+        user    0m2.296s
+        sys     0m0.131s
