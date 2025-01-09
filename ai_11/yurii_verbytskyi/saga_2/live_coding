@@ -1,0 +1,283 @@
+#include <iostream>
+#include "stdlib.h"
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+float function_1(){
+    const int num_of_var = 4;
+    float a, b;
+    cin >> a >> b;
+    int c, d, e;
+    cin >> c >> d >> e;
+    double f;
+    cin >> f;
+    int size = 6;
+    double maxmin_value[size] = {a, b, c, d, e, f};
+
+    bool swapped;
+    for (int i = 0; i < size - 1; i++) {
+        swapped = false;
+        for (int j = 0; j < size - i - 1; j++) {
+            if (maxmin_value[j] > maxmin_value[j + 1]) {
+                swap(maxmin_value[j], maxmin_value[j + 1]);
+                swapped = true;
+            }
+        }
+        if (!swapped) {
+            break;
+        }
+    }
+
+    double min[3] = {maxmin_value[0], maxmin_value[1], maxmin_value[2]};
+    double max[3] = {maxmin_value[3], maxmin_value[4], maxmin_value[5]};
+
+    double max_sum = 0;
+    double min_sum = 0;
+
+    for(int i = 0; i < 3; i++){
+        min_sum += min[i];
+        max_sum += max[i];
+    }
+
+    
+    float x;
+    if(max_sum > (min_sum * 4)){
+        x = (max_sum + min_sum) / num_of_var;
+        cout << x << endl;
+        return x;
+    }
+    else if(max_sum > (min_sum * 3)){
+        x = (max_sum / min_sum) / num_of_var;
+        cout << x << endl;
+        return x;
+    }
+    else if(max_sum > (min_sum * 2)){
+        x = (max_sum * min_sum) / num_of_var;
+        cout << x << endl;
+        return x;
+    }
+    else{
+        cout << "Checkout the input" << endl;
+        return 0;
+    }
+
+    return 0;
+}
+
+float** function_2(float x){
+    int size = 5;
+
+    float** matrix = new float*[5];
+    for(int i = 0; i < size; i++){
+        matrix[i] = new float[5];
+    
+    }
+
+    for(int i = 0; i < size; i++){
+        for(int j = 0; j < size; j++){
+            matrix[i][j] = x;
+        }
+    }
+
+    for(int i = 0; i < size; i++){
+        for(int j = 0; j < size; j++){
+            matrix[i][j] = ((matrix[i][j] + 4 + j - i) * (rand() % 100));
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+
+    return matrix; 
+}
+
+float* function_3(float** tower){
+    float* mass_1 = new float[5];
+    for(int col = 0; col < 5; col++){
+        float max_col = tower[0][col];
+        for(int row = 1; row < 5; row++){
+            if(tower[row][col] > max_col){
+                max_col = tower[row][col];
+            }
+        }
+        mass_1[col] = max_col;
+    }
+
+    float* mass = new float[5];
+    for(int col = 0; col < 5; col++){
+        for(int i = 0; i < 4; i++){
+            for(int j = i + 1; j < 5; j++){
+                if(tower[i][col] < tower[j][col]){
+                    swap(tower[i][col], tower[j][col]);
+                }
+            }
+        }
+    }
+
+    for(int i = 0; i < 5; i++){
+        mass[i] = tower[0][i];
+        cout << mass[i] << " ";
+    }
+    cout << endl;
+
+    // for(int i = 0; i < 5; i++){
+    //     cout << mass_1[i] << " ";
+    // }
+    // cout << endl;
+
+
+    bool is_equal = true;
+    for(int i = 0; i < 5; i++){
+        if(mass[i] != mass_1[i]){
+            is_equal = false;  
+        }
+    }
+
+    if(is_equal = false){
+        cout << "Values are not equal!" << endl;
+    }
+    else{
+        cout << "Values are equal!" << endl;
+    }
+
+    return mass;
+}
+
+struct Student {
+    string name;
+    string surname;
+    float money;           
+    Student* prev;         
+    Student* next;         
+};
+
+Student* function_4(float* mass){
+    string name[] = {"Yurii", "Victoria", "Yarema", "Taras", "Denys", "Oksana", "Vitaliy"};
+    string surname[] = {"Verbytskyi", "Kostiv", "Leil", "Gus", "Mord", "Sunt", "Ruh"};
+
+    float max = mass[0]; 
+    float min = mass[0];
+    for(int i = 0; i < 5; i++){
+        if(max < mass[i]){
+            max = mass[i];
+        }
+        if(min > mass[i]){
+            min = mass[i];
+        }
+    }
+
+    Student* head = nullptr;
+    Student* tail = nullptr;
+    float sum = mass[0];
+
+    for(int i = 0; i < 7; i++){
+        Student* newStudent = new Student;
+        newStudent -> name = name[rand() % 6];
+        newStudent -> surname = surname[rand() % 6];
+        newStudent -> prev = tail;
+        newStudent -> next = nullptr;
+
+        if(i == 0){
+            newStudent -> money = max;
+        }
+        else if(i > 1 && i < 6){
+            newStudent -> money = sum += mass[i];
+        }
+        else{
+            newStudent -> money = min;
+        }
+
+        if(head == 0){
+            head = newStudent;
+        }
+        else{
+            tail -> next = newStudent;
+        }
+        tail = newStudent;        
+    }
+    Student* current = head;
+    while(current != nullptr){
+        cout << current -> name << " " << current -> surname << " " << current -> money << " UAH" << endl;
+        current = current -> next;
+    }
+    cout << endl;
+    
+    return head;
+}
+
+void help_for_function_5(Student* current, ofstream& file){
+    if(current != nullptr){
+        file << "Name: " << current -> name << endl;
+        file << "Surname: " << current -> surname << endl;
+        file << "Money: " << current -> money << endl;
+        file << endl;
+        current = current -> prev;
+        help_for_function_5(current, file);
+    }
+}
+
+void function_5(Student* head){
+    ofstream file("live_coding_h.txt");
+    if(!file.is_open()){
+        cerr << "File can`t be opened" << endl;
+        exit(1);
+    }
+
+    Student* tail = head;
+    while(tail && tail -> next != nullptr){
+        tail = tail -> next;
+    }
+
+    Student* current = tail;
+
+    help_for_function_5(current, file);
+    file.close();
+    cout << "Everything is written" << endl;
+    cout << endl;
+
+}
+
+void function_6(){
+    ifstream file("live_coding_h.txt");
+    if(!file.is_open()){
+        cerr << "File can`t be opened" << endl;
+        exit(1);
+    }
+    while(file){
+        string output;
+        getline(file, output);
+        cout << output << endl;
+    }
+}
+
+int main(){
+    float x = function_1();
+
+    float** tower = function_2(x);
+    cout << endl;
+    float* mass = function_3(tower);
+
+    Student* studentlist = function_4(mass);
+
+    function_5(studentlist);
+
+    function_6();
+
+
+    for(int i = 0; i < 5; i++){
+        delete[] tower[i];
+    }
+    delete[] tower;
+
+    delete[] mass;
+
+    while(studentlist != nullptr){
+        Student* temp = studentlist;
+        studentlist = studentlist -> next;
+        delete temp;
+    }
+
+    return 0;
+}
