@@ -35,18 +35,6 @@ int main(){
 
     return 0;
 }
-
-bool isPalindrome(string a, int start, int end){
-    
-    if(start >= end)
-    return true;
-
-    if (a[start] != a[end])
-    return false;
-
-    return isPalindrome(a, ++start, --end);
-}
-
 bool isPalindrome(int num) {
     int original = num;
     int reversed = 0;
