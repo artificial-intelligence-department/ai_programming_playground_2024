@@ -1,3 +1,6 @@
+*
+!/**/
+!*.*
 *.exe
 assets/
 .vscode/
@@ -7,7 +10,7 @@ epic_2/
 epic_3/
 epic_4/
 epic_5/
-# epic_6/
+epic_6/
 *.bin
 *.txt
 *temp
